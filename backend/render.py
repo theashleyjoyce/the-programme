@@ -381,6 +381,32 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
     return f'<footer class="colophon">{"".join(cols)}</footer>'
 
 
+def _chat(plan_id: str | None, reply: str = "", message: str = "") -> str:
+    """The conversation box under a plan.
+
+    A finished night is the natural place to ask for a change, and "cheaper"
+    or "swap the second one" is something no form can express. The reply sits
+    above the box so the exchange reads as a conversation rather than a
+    submitted form.
+    """
+    if not plan_id:
+        return ""
+    said = (f'<p class="chat__said">{e(message)}</p>' if message else "")
+    answer = (f'<p class="chat__reply">{e(reply)}</p>' if reply else "")
+    return f"""
+<section class="chat">
+  <h4 class="chat__label">Not quite right?</h4>
+  {said}{answer}
+  <form class="chat__form" method="post" action="/night/{e(plan_id)}/refine">
+    <input class="chat__input" type="text" name="message" autocomplete="off"
+           placeholder="cheaper, somewhere smaller, swap the second one, add dessert after&hellip;">
+    <button class="chat__go" type="submit">Change it</button>
+  </form>
+  <p class="chat__hint">Tell it what to change in your own words. It keeps what
+  you liked.</p>
+</section>"""
+
+
 def render_night(
     night: Night,
     brief: Brief | None = None,
@@ -389,6 +415,9 @@ def render_night(
     budget: dict | None = None,
     show_costs: bool = False,
     standalone: bool = False,
+    plan_id: str | None = None,
+    reply: str = "",
+    message: str = "",
 ) -> str:
     """Full HTML document for one night."""
     if standalone and CSS_PATH.is_file():
@@ -429,6 +458,8 @@ def render_night(
 {_advisory(night)}
 
 <main class="night">{stops}</main>
+
+{_chat(plan_id, reply, message)}
 
 <div class="footer-actions">
   <a class="primary" href="{_refine_query(brief)}">Change something</a>

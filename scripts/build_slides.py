@@ -151,7 +151,7 @@ letter-spacing:.12em;text-transform:uppercase}}
 
 <section>
   <p class="kicker">How it works</p>
-  <h2>Five agents, two tiers</h2>
+  <h2>Seven agents, two tiers</h2>
   <pre class="diagram">OFFLINE — runs on a refresh, shared by every user
   SCOUT ──▶ RESEARCHER ──▶ WRITER        reads listings · finds rooms · writes the copy
     └──────────┬──────────────┘
@@ -163,8 +163,12 @@ PER REQUEST ───┼──────────────────�
  you type ─▶ CONCIERGE ─▶ Brief ─▶ PLANNER ─▶ Night ─▶ page
              (free text)          (no model,
                                    pure Python)
-                                      │  corpus cannot cover it?
-                                      ▼
+                                      │
+                        CRITIC ◀─────┤  judges the plan; one objection sends it back
+                                      │
+                       REFINER ◀──────┤  "cheaper" · "swap the second one"
+                                      │
+                                      ▼  corpus cannot cover it?
                                    EDITOR  (plans it, with web search)</pre>
   <p style="font-size:.56em;color:var(--soft)">The expensive agents run once and
   are amortised across every plan. The Planner is deliberately not an agent:

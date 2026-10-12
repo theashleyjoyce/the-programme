@@ -141,9 +141,13 @@ WHATS_NEW_CLAIMS = [
 ]
 
 AGENTS_INTRO = """
-Five agents across two tiers. The split is the main design decision in the
+Seven agents across two tiers. The split is the main design decision in the
 project and the one worth defending: the expensive work runs once, offline,
-and is shared by every user, rather than being repeated for each visitor."""
+and is shared by every user, rather than being repeated for each visitor.
+
+What remains at request time is the work a database genuinely cannot do:
+reading what someone meant, judging whether the result is any good, and
+understanding an amendment to a plan already on screen."""
 
 AGENTS = [
     ("Scout", "offline", "web_search",
@@ -171,11 +175,25 @@ AGENTS = [
      "Plans the whole evening itself when the corpus cannot cover the "
      "request, and writes the line that ties it together.",
      "Live web search, with everything it returns treated as untrusted."),
+    ("Critic", "per request", "none",
+     "Reads the assembled plan before anyone sees it and judges it the way a "
+     "person would: does it answer what they asked, does the timing work, is "
+     "it one evening or two unrelated halves. Names a single stop to drop, "
+     "and the planner rebuilds without it.",
+     "The plan and the brief. Nothing else; it judges, it never writes."),
+    ("Refiner", "per request, on a change", "none",
+     "Turns 'cheaper' or 'swap the second one' into a structured amendment "
+     "the planner can apply, protecting whatever the person did not complain "
+     "about.",
+     "The plan on screen and one message."),
 ]
 
 PLANNER_NOTE = """
 The Planner is deliberately **not** an agent, and that is the decision this
-section exists to argue. Choosing venues that match a request is filtering.
+section exists to argue. It is also why the Critic exists: a deterministic
+planner is fast and predictable and structurally unable to notice that its own
+output does not work as an evening. Judgment is the one thing it cannot do, so
+that is exactly the job given to a model. Choosing venues that match a request is filtering.
 Sequencing them is arithmetic. The prose about a venue does not change between
 visitors, so it is written once and cached. None of that needs a language
 model, so none of it uses one. What remains for a model at request time is
@@ -255,6 +273,14 @@ SAFETY_STORIES = [
      A link that resolves but opens the wrong venue is worse than no link,
      because nobody finds out until they arrive. Booking links are now shown
      only when the page has been fetched and confirmed to name that venue."""),
+
+    ("A critic that catches what the filters cannot",
+     """The planner matched categories, respected every filter and kept the
+     stops close together, and still produced an evening with a three-hour hole
+     in it between dinner and an eleven o'clock dance floor. No filter can
+     express that objection. The Critic reads the finished plan and says so in
+     the terms a person would, and the planner rebuilds without the stop it
+     named."""),
 
     ("Failing without losing the plan",
      """An invented venue used to fail schema validation and take the whole

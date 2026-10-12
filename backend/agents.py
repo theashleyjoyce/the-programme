@@ -23,6 +23,8 @@ EDITOR     writes the night: picks stops, sequences them, times the travel, and
 
 from __future__ import annotations
 
+import logging
+
 from datetime import date as Date
 from datetime import datetime
 from typing import Any
@@ -30,6 +32,8 @@ from typing import Any
 from brief import Brief
 from budget import BudgetExceeded, RunBudget, check_before_call, record, status as budget_status
 from config import fallback_config, model_config, read_prompt
+from critic import Critique, Verdict, plan_as_text
+from refine import Amendment
 from models import Night, NightDraft, Setting, StopKind, VenueSize
 from planner import build_night, catalogue
 from openai import AuthenticationError, OpenAI
@@ -398,6 +402,115 @@ def _format_candidates(candidates: dict[str, Any]) -> str:
 # --- the whole run ---------------------------------------------------------
 
 
+def run_critic(night, brief, run: RunBudget | None = None) -> tuple[Critique, Usage]:
+    """Read a finished plan and judge it as a person would.
+
+    Cheap: the plan is a few hundred tokens and the verdict is shorter. Worth
+    it because the deterministic planner is structurally unable to notice that
+    its own output does not work as an evening.
+    """
+    response = _call(lambda client, model: client.responses.parse(
+        model=model, store=False,
+        instructions=read_prompt("critic"),
+        input=plan_as_text(night, brief),
+        text_format=Critique,
+    ), label="critic", run=run)
+    return response.output_parsed, Usage.from_response(response)
+
+
+def run_refiner(night, brief, message: str,
+                run: RunBudget | None = None) -> tuple[Amendment, Usage]:
+    """Turn 'cheaper' or 'swap the second one' into a structured edit.
+
+    The model reads the message against the plan the person is actually
+    looking at. It never picks venues; it decides what they meant, and the
+    deterministic planner applies it.
+    """
+    ask = (f"{plan_as_text(night, brief)}\n\n"
+           f"THEIR MESSAGE: \"{message.strip()}\"")
+    response = _call(lambda client, model: client.responses.parse(
+        model=model, store=False,
+        instructions=read_prompt("refine"),
+        input=ask,
+        text_format=Amendment,
+    ), label="refine", run=run)
+    return response.output_parsed, Usage.from_response(response)
+
+
+def apply_amendment(brief: Brief, amendment: Amendment) -> Brief:
+    """A new Brief with the amendment folded in. The original is untouched."""
+    from brief import Budget
+    from models import Setting, StopKind, VenueSize
+
+    data = brief.model_dump()
+    c = amendment.brief_changes
+
+    def enum_list(values, cls):
+        out = []
+        for v in values:
+            try:
+                out.append(cls(v))
+            except ValueError:
+                continue
+        return out
+
+    if c.budget:
+        try:
+            data["budget"] = Budget(c.budget)
+        except ValueError:
+            pass
+    for field in ("start_time", "party_size", "neighborhood", "borough"):
+        if (v := getattr(c, field)) is not None:
+            data[field] = v
+    if c.roam is not None:
+        data["roam"] = c.roam
+    if sizes := enum_list(c.venue_sizes, VenueSize):
+        data["venue_sizes"] = sizes
+    if settings := enum_list(c.settings, Setting):
+        data["settings"] = settings
+    if c.style:
+        data["style"] = list(dict.fromkeys(list(brief.style) + c.style))
+
+    wants = list(brief.wants)
+    for w in enum_list(c.remove_wants, StopKind):
+        wants = [x for x in wants if x is not w]
+    for w in enum_list(c.add_wants, StopKind):
+        if w not in wants:
+            wants.append(w)
+    data["wants"] = wants
+
+    return Brief(**data)
+
+
+def refine_night(night, brief, message: str, seed: int | None = None) -> dict[str, Any]:
+    """One turn of conversation about a plan already on screen."""
+    started = datetime.now()
+    run = RunBudget()
+
+    amendment, usage = run_refiner(night, brief, message, run=run)
+    if amendment.is_noop:
+        return {"night": night, "brief": brief, "amendment": amendment,
+                "changed": False, "usage": usage,
+                "seconds": round((datetime.now() - started).total_seconds(), 2)}
+
+    new_brief = apply_amendment(brief, amendment)
+    keep = {s.name for s in night.stops} & set(amendment.keep)
+    pin = {s.kind.value: s.name for s in night.stops if s.name in keep}
+
+    rebuilt = build_night(new_brief, seed=seed, exclude=set(amendment.drop), pin=pin)
+    if rebuilt is None:
+        # The edit asked for something the corpus cannot cover. Keep what they
+        # already have rather than replacing it with nothing.
+        return {"night": night, "brief": brief, "amendment": amendment,
+                "changed": False, "usage": usage, "no_coverage": True,
+                "seconds": round((datetime.now() - started).total_seconds(), 2)}
+
+    filter_booking_urls(rebuilt.stops)
+    return {"night": rebuilt, "brief": new_brief, "amendment": amendment,
+            "changed": True, "usage": usage,
+            "seconds": round((datetime.now() - started).total_seconds(), 2)}
+
+
 def plan_night(text: str, prefilled: dict[str, Any] | None = None,
                allow_web: bool = True, seed: int | None = None,
                exclude: set[str] | None = None,
@@ -429,10 +542,34 @@ def plan_night(text: str, prefilled: dict[str, Any] | None = None,
     # three requested means the dataset is thin here, so fall through.
     wanted_count = len(brief.wants) or 2
     if instant is not None and len(instant.stops) >= min(wanted_count, 2):
+
+        # The Critic reads the assembled plan and judges it the way a person
+        # would. On a reshuffle the planner rebuilds without the stop it
+        # named; we do this at most once, because a critic you argue with
+        # forever is a loop, not a review.
+        t0 = datetime.now()
+        critique = None
+        u_crit = Usage()
+        try:
+            critique, u_crit = run_critic(instant, brief, run=run)
+            if critique.verdict is Verdict.RESHUFFLE and critique.worst_stop:
+                second = build_night(brief, seed=(seed or 0) + 101,
+                                     exclude=(exclude or set()) | {critique.worst_stop},
+                                     pin=pin)
+                if second is not None and len(second.stops) >= min(wanted_count, 2):
+                    instant = second
+        except (BudgetExceeded, TooManyCalls):
+            pass          # a plan without a review beats no plan
+        except Exception:                                      # noqa: BLE001
+            logging.exception("critic failed; shipping the plan unreviewed")
+        timings["critic"] = round((datetime.now() - t0).total_seconds(), 2)
+
+        total = u1 + u_crit
         blocked = filter_booking_urls(instant.stops)
         return {
-            "brief": brief, "night": instant, "usage": u1,
-            "usage_breakdown": {"concierge": u1.as_dict()},
+            "brief": brief, "night": instant, "usage": total,
+            "critique": critique,
+            "usage_breakdown": {"concierge": u1.as_dict(), "critic": u_crit.as_dict()},
             "blocked": blocked, "dataset": dataset_status(),
             "candidates_considered": len(catalogue()),
             "seconds": round((datetime.now() - started).total_seconds(), 2),

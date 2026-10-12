@@ -1373,3 +1373,91 @@ body {
   padding-left: 0.85rem;
   border-left: 2px solid var(--accent);
 }
+
+/* ---- the conversation under a plan ---- */
+
+.chat {
+  max-width: 46rem;
+  margin: 0 var(--gutter) 2.5rem;
+  padding: 1.6rem 0 0;
+  border-top: 1px solid var(--rule);
+}
+
+.chat__label {
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+/* What they asked for last time, so the exchange reads as a conversation. */
+.chat__said {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.5rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--rule);
+}
+.chat__reply {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 0 0 1.2rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+
+.chat__form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--ink);
+}
+.chat__form:focus-within { border-bottom-color: var(--accent); }
+
+.chat__input {
+  flex: 1 1 auto;
+  border: none;
+  background: transparent;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink);
+  padding: 0.5rem 0 0.7rem;
+  outline: none;
+}
+.chat__input::placeholder { color: var(--ink-mute); }
+
+.chat__go {
+  flex: 0 0 auto;
+  margin-bottom: 0.45rem;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.chat__go:hover { background: var(--accent); border-color: var(--accent); }
+.chat__go:disabled { opacity: 0.45; cursor: progress; }
+
+.chat__hint {
+  font-size: 0.76rem;
+  color: var(--ink-mute);
+  margin: 0.7rem 0 0;
+}
+
+@media (max-width: 560px) {
+  .chat__form { flex-direction: column; align-items: stretch; gap: 0.8rem; }
+  .chat__go { width: 100%; margin-bottom: 0.6rem; }
+}
+@media print { .chat { display: none; } }

@@ -5573,7 +5573,9 @@
       "lon": -73.903,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Th, Su 11:00-24:00; Mo-We 12:00-24:00; Fr, Sa 11:00-25:00"
     },
     {
       "name": "Stone Circle Theatre",
@@ -5592,7 +5594,8 @@
       "genre": [
         "comedy",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Footlight Underground at the Windjammer",
@@ -5611,7 +5614,8 @@
       "genre": [
         "electronic",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Bohemian Hall & Beer Garden",
@@ -5627,7 +5631,8 @@
       "lon": -73.915793,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Mosaic",
@@ -5643,7 +5648,8 @@
       "lon": -73.918453,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Last Word",
@@ -5661,7 +5667,8 @@
       "cuisine": [],
       "genre": [
         "jazz"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Judy & Punch",
@@ -5677,7 +5684,9 @@
       "lon": -73.918796,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Fr 16:00-04:00; Sa-Su 14:00-22:00"
     },
     {
       "name": "The Bonnie",
@@ -5693,7 +5702,9 @@
       "lon": -73.913601,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Th 15:00-02:00; Fr 12:00-04:00; Sa 10:00-04:00; Su 10:00-02:00"
     },
     {
       "name": "Daly's Pub",
@@ -5709,7 +5720,8 @@
       "lon": -73.925327,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Museum of the Moving Image",
@@ -5725,7 +5737,8 @@
       "lon": -73.924007,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Q.E.D. Astoria",
@@ -5743,7 +5756,8 @@
       "cuisine": [],
       "genre": [
         "comedy"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Grove 34",
@@ -5761,7 +5775,8 @@
       "cuisine": [],
       "genre": [
         "comedy"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "The Local Bar",
@@ -5779,7 +5794,8 @@
       "cuisine": [],
       "genre": [
         "comedy"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Aida's Parkside Gelato",
@@ -5795,7 +5811,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Omonia Cafe",
@@ -5814,7 +5831,9 @@
         "greek",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 06:00-13:30"
     },
     {
       "name": "Paris Oven Bakery",
@@ -5833,7 +5852,8 @@
         "french",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Astoria Art Center",
@@ -5849,7 +5869,8 @@
       "lon": -73.913077,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Socrates Sculpture Park",
@@ -5865,7 +5886,8 @@
       "lon": -73.936712,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Ramro",
@@ -5884,7 +5906,8 @@
         "japanese",
         "french"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Taverna Kyclades",
@@ -5904,7 +5927,8 @@
         "middle eastern",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Vesta Trattoria & Wine Bar",
@@ -5922,7 +5946,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Vite Vinosteria",
@@ -5941,7 +5966,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Zen Astoria",
@@ -5957,7 +5983,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Queen's Room",
@@ -5975,7 +6002,8 @@
       "cuisine": [
         "french"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Via Trenta Osteria & Wine Bar",
@@ -5993,7 +6021,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Macoletta",
@@ -6013,7 +6042,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Astoria Playhouse at Greek Cultural Center",
@@ -6031,7 +6061,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "THESPIS Theater",
@@ -6049,7 +6080,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "WildHeart Performing Arts Studio",
@@ -6065,7 +6097,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Art House Astoria",
@@ -6083,7 +6116,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Dutch Kills Bar",
@@ -6099,7 +6133,9 @@
       "lon": -73.940224,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Fr, Sa 11:00-03:00; Tu-Th, Su 11:00-02:00; Mo 16:00-02:00"
     },
     {
       "name": "Debbie's at Dutch Kills Bar",
@@ -6115,7 +6151,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "LIC Bar",
@@ -6131,7 +6168,9 @@
       "lon": -73.95284,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Fr 16:00-04:00; Sa 13:00-04:00; Su 13:00-00:00"
     },
     {
       "name": "Sweetleaf Coffee & Cocktail Bar",
@@ -6147,7 +6186,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Lost in Paradise Rooftop",
@@ -6163,7 +6203,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Partake NYC",
@@ -6179,7 +6220,8 @@
       "lon": -73.94998,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Culture Lab LIC",
@@ -6198,7 +6240,8 @@
       "genre": [
         "comedy",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Cannelle Patisserie",
@@ -6217,7 +6260,8 @@
         "french",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Somedays Bakery",
@@ -6235,7 +6279,8 @@
       "cuisine": [
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "MoMA PS1",
@@ -6251,7 +6296,8 @@
       "lon": -73.947467,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "SculptureCenter",
@@ -6267,7 +6313,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Flux Factory",
@@ -6283,7 +6330,8 @@
       "lon": -73.935078,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Noguchi Museum",
@@ -6299,7 +6347,9 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo,Tu off; We-Su 11:00-18:00; Dec 25 off"
     },
     {
       "name": "LaGuardia and Wagner Archives",
@@ -6315,7 +6365,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Casa Enrique",
@@ -6334,7 +6385,8 @@
         "mexican",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Jora Restaurant & Bar",
@@ -6352,7 +6404,8 @@
       "cuisine": [
         "latin"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "American Brass",
@@ -6370,7 +6423,8 @@
       "cuisine": [
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Maiella",
@@ -6389,7 +6443,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Il Falco",
@@ -6407,7 +6462,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Beebe's",
@@ -6426,7 +6482,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Oh! Calcutta",
@@ -6445,7 +6502,9 @@
         "indian",
         "vegetarian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Fr 11:30-15:00, 16:30-21:45; Sa-Su 11:30-21:45"
     },
     {
       "name": "Traze",
@@ -6463,7 +6522,8 @@
       "cuisine": [
         "pizza"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "On the 7",
@@ -6479,7 +6539,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "3AM Theatre",
@@ -6497,7 +6558,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "LaGuardia Performing Arts Center",
@@ -6515,7 +6577,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "The Secret Theatre",
@@ -6533,7 +6596,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "The Queensboro",
@@ -6549,7 +6613,9 @@
       "lon": -73.88702,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo off; Tu-Th 09:00-21:00; Fr 09:00-22:00; Sa 11:00-22:00; Su 10:30-21:00"
     },
     {
       "name": "Espresso 77",
@@ -6565,7 +6631,8 @@
       "lon": -73.888891,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "True Colors Bar",
@@ -6581,7 +6648,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Jahn's",
@@ -6599,7 +6667,8 @@
       "cuisine": [
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Maya's Snack Bar",
@@ -6617,7 +6686,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Cannelle Patisserie",
@@ -6636,7 +6706,9 @@
         "french",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:00-20:00; Su 07:00-16:00"
     },
     {
       "name": "T-Swirl Cr\u00eape",
@@ -6654,7 +6726,8 @@
       "cuisine": [
         "japanese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Gallery 77 at Espresso 77",
@@ -6670,7 +6743,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Art Retail Therapy",
@@ -6686,7 +6760,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Arepa Lady",
@@ -6704,7 +6779,8 @@
       "cuisine": [
         "latin"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Himalayan Yak",
@@ -6723,7 +6799,8 @@
         "chinese",
         "indian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Nepali Bhanchha Ghar",
@@ -6739,7 +6816,8 @@
       "lon": -73.890824,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Izakaya Fuku",
@@ -6757,7 +6835,9 @@
       "cuisine": [
         "japanese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Fr 12:00-22:00"
     },
     {
       "name": "Angel Indian Restaurant",
@@ -6777,7 +6857,8 @@
         "vegetarian",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Namaste Tasi Delek",
@@ -6795,7 +6876,8 @@
       "cuisine": [
         "indian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Montielle Cafe & Restaurant",
@@ -6813,7 +6895,8 @@
       "cuisine": [
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Uncle Peter's",
@@ -6833,7 +6916,8 @@
         "latin",
         "spanish"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Kafras Bakery",
@@ -6852,7 +6936,8 @@
         "middle eastern",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Talavera Cantina",
@@ -6868,7 +6953,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bar 47",
@@ -6884,7 +6970,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Charlies Bar & Kitchen",
@@ -6900,7 +6987,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "SoBro Garden",
@@ -6916,7 +7004,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Maisonetta",
@@ -6935,7 +7024,9 @@
         "mexican",
         "french"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Tu-Su 12:00-22:00"
     },
     {
       "name": "iNine Bistro",
@@ -6955,7 +7046,8 @@
         "french",
         "west african"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Nourish Cafe",
@@ -6971,7 +7063,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Hudson Smokehouse",
@@ -6989,7 +7082,8 @@
       "cuisine": [
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "BX Eatery",
@@ -7008,7 +7102,8 @@
         "american",
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Pio Pio 4 Mott Haven",
@@ -7026,7 +7121,8 @@
       "cuisine": [
         "latin"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Mottley Kitchen",
@@ -7042,7 +7138,8 @@
       "lon": -73.921691,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "La Morada",
@@ -7060,7 +7157,9 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-We 10:00-17:00"
     },
     {
       "name": "Milk Burger",
@@ -7078,7 +7177,8 @@
       "cuisine": [
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bronx Slice",
@@ -7097,7 +7197,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Valencia Bakery",
@@ -7116,7 +7217,8 @@
         "latin",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bronx Children's Museum",
@@ -7132,7 +7234,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Culture Lab at The Hip Hop Museum",
@@ -7148,7 +7251,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "ID Studio Theater",
@@ -7166,7 +7270,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Pasquale\u2019s Rigoletto",
@@ -7185,7 +7290,8 @@
         "italian",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Zero Otto Nove",
@@ -7205,7 +7311,8 @@
         "italian",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Morrone Pastry Shop & Caf\u00e9",
@@ -7224,7 +7331,8 @@
         "italian",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Clinton Hall BX",
@@ -7240,7 +7348,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Howl at the Moon",
@@ -7256,7 +7365,8 @@
       "lon": -73.886262,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Jolly Tinker",
@@ -7272,7 +7382,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Fordham Museum of Greek, Etruscan and Roman Art",
@@ -7288,7 +7399,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Refuge Gallery",
@@ -7304,7 +7416,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Leonard Theatre",
@@ -7323,7 +7436,8 @@
       "genre": [
         "classical",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "North Star Cafe",
@@ -7342,7 +7456,8 @@
         "mexican",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bobo's Crab Shack",
@@ -7360,7 +7475,8 @@
       "cuisine": [
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Zhongzhong Noodles",
@@ -7378,7 +7494,8 @@
       "cuisine": [
         "chinese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Estrellita Poblana III",
@@ -7396,7 +7513,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Famosa Pizza",
@@ -7415,7 +7533,8 @@
         "pizza",
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Pasteles Capy",
@@ -7434,7 +7553,8 @@
         "mexican",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "An Beal Bocht Cafe",
@@ -7450,7 +7570,8 @@
       "lon": -73.904952,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Blackstone Bar & Grill",
@@ -7466,7 +7587,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Jake's Steakhouse",
@@ -7482,7 +7604,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Curly's Homemade Ice Cream",
@@ -7500,7 +7623,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "iScream",
@@ -7516,7 +7640,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Glyndor Gallery at Wave Hill",
@@ -7532,7 +7657,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Derfner Judaica Museum + Art Collection",
@@ -7548,7 +7674,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Liebman's Delicatessen",
@@ -7566,7 +7693,8 @@
       "cuisine": [
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Tobal\u00e1",
@@ -7584,7 +7712,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Arnaud's Steak & Seafood",
@@ -7603,7 +7732,8 @@
         "french",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Bronx Public",
@@ -7619,7 +7749,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Corner Cafe",
@@ -7637,7 +7768,8 @@
       "cuisine": [
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Riverdale Steak House",
@@ -7655,7 +7787,8 @@
       "cuisine": [
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Metate Restaurant",
@@ -7673,7 +7806,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Riverdale Y Performing Arts Center",
@@ -7691,7 +7825,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Riverdale Children's Theatre",
@@ -7709,7 +7844,8 @@
       "cuisine": [],
       "genre": [
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Boots Bar",
@@ -7727,7 +7863,8 @@
       "cuisine": [],
       "genre": [
         "electronic"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Empire Beer Garden",
@@ -7743,7 +7880,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Enoteca Maria",
@@ -7761,7 +7899,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Pier 76 Italian Restaurant",
@@ -7781,7 +7920,8 @@
         "italian",
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Beso",
@@ -7800,7 +7940,8 @@
         "latin",
         "spanish"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bake Culture",
@@ -7818,7 +7959,8 @@
       "cuisine": [
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "National Lighthouse Museum",
@@ -7834,7 +7976,8 @@
       "lon": -74.073411,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "St. George Theatre",
@@ -7853,7 +7996,8 @@
       "genre": [
         "comedy",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Staten Island Playhouse",
@@ -7872,7 +8016,8 @@
       "genre": [
         "classical",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "The Hop Shoppe",
@@ -7888,7 +8033,8 @@
       "lon": -74.079684,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Coupe",
@@ -7904,7 +8050,9 @@
       "lon": -74.079723,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 18:00-04:00"
     },
     {
       "name": "Lakruwana",
@@ -7920,7 +8068,9 @@
       "lon": -74.075241,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo off; Tu-Fr 12:30-15:00,17:00-21:00; Sa-Su 12:30-21:30"
     },
     {
       "name": "Shaw-nae\u2019s House",
@@ -7938,7 +8088,8 @@
       "cuisine": [
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Blue Pearl",
@@ -7956,7 +8107,8 @@
       "cuisine": [
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Pastavino",
@@ -7974,7 +8126,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Seppe Pizza Bar",
@@ -7993,7 +8146,8 @@
         "pizza",
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Taverna on the Bay",
@@ -8012,7 +8166,8 @@
         "greek",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Jerry\u2019s 637 Diner",
@@ -8031,7 +8186,8 @@
         "american",
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Flagship Brewing Co.",
@@ -8047,7 +8203,8 @@
       "lon": -74.075555,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Every Thing Goes Book Cafe & Neighborhood Stage",
@@ -8063,7 +8220,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Coyle Cavern",
@@ -8079,7 +8237,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "New Asha Sri Lanka Restaurant",
@@ -8097,7 +8256,8 @@
       "cuisine": [
         "vegetarian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Lacey\u2019s Bridge Tavern",
@@ -8113,7 +8273,8 @@
       "lon": null,
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Denino\u2019s Pizzeria & Tavern",
@@ -8131,7 +8292,9 @@
       "cuisine": [
         "pizza"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Su-Th 11:00-23:00; Fr,Sa 11:00-24:00"
     },
     {
       "name": "La Bottiglia Restaurant",
@@ -8150,7 +8313,8 @@
         "italian",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Mia\u2019s Rostiseria y Parrilladas",
@@ -8169,7 +8333,8 @@
         "latin",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Los Potrillos",
@@ -8187,7 +8352,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Gino\u2019s Cheesesteaks",
@@ -8205,7 +8371,8 @@
       "cuisine": [
         "pizza"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Brother Pizza",
@@ -8223,7 +8390,9 @@
       "cuisine": [
         "pizza"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Sa 11:00-21:00; Su 12:00-21:00"
     },
     {
       "name": "San Jeronimo Bakery & Restaurant",
@@ -8243,7 +8412,9 @@
         "american",
         "bakery"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Su-Th 11:00-22:00; Fr 11:00-23:00; Sa 10:00-23:00"
     },
     {
       "name": "Ralph\u2019s Famous Italian Ices",
@@ -8261,7 +8432,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Botanas Mexican Ice Cream & Snacks",
@@ -8279,7 +8451,8 @@
       "cuisine": [
         "mexican"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Ha's Snack Bar",
@@ -8300,7 +8473,8 @@
       "cuisine": [
         "vietnamese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Cervo\u2019s",
@@ -8323,7 +8497,8 @@
         "spanish",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Le French Diner",
@@ -8346,7 +8521,8 @@
         "french",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Una Pizza Napoletana",
@@ -8369,7 +8545,8 @@
         "neapolitan",
         "pizza"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Buf\u00f3n",
@@ -8391,7 +8568,8 @@
       "cuisine": [
         "french"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Wildair",
@@ -8412,7 +8590,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Th, Su 18:00-23:00; Fr-Sa 18:00-23:30"
     },
     {
       "name": "Kisa",
@@ -8433,7 +8613,8 @@
       "cuisine": [
         "korean"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Forsythia",
@@ -8454,7 +8635,8 @@
       "cuisine": [
         "italian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Yopparai",
@@ -8475,7 +8657,8 @@
       "cuisine": [
         "japanese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Katz\u2019s Delicatessen",
@@ -8497,7 +8680,8 @@
       "cuisine": [
         "deli"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Subject",
@@ -8517,7 +8701,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Colbo Next Door",
@@ -8536,7 +8721,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Funny Bar",
@@ -8557,7 +8743,8 @@
       "cuisine": [],
       "genre": [
         "jazz"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "The Ten Bells",
@@ -8576,7 +8763,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Clandestino",
@@ -8595,7 +8783,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Fr-Su 16:00-04:00; Mo-Th 19:00-04:00"
     },
     {
       "name": "169 Bar",
@@ -8616,7 +8806,9 @@
       "cuisine": [],
       "genre": [
         "electronic"
-      ]
+      ],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 14:00-04:00"
     },
     {
       "name": "Swan Room",
@@ -8635,7 +8827,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Mr. Purple",
@@ -8654,7 +8847,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "The Box",
@@ -8673,7 +8867,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Julia Jean\u2019s Ice Cream",
@@ -8693,7 +8888,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Economy Candy",
@@ -8712,7 +8908,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 11:00-18:00"
     },
     {
       "name": "T\u00e9 Company at Tera",
@@ -8729,7 +8927,8 @@
       "sources": [],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Bridget Donahue",
@@ -8748,7 +8947,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Nathalie Karg Gallery",
@@ -8767,7 +8967,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Miguel Abreu Gallery",
@@ -8787,7 +8988,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "We-Su 10:00-18:00"
     },
     {
       "name": "Perrotin New York",
@@ -8807,7 +9010,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Tu-Sa 10:00-18:00"
     },
     {
       "name": "Marc Straus Gallery",
@@ -8826,7 +9031,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Participant Inc.",
@@ -8845,7 +9051,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Dixon Place",
@@ -8867,7 +9074,8 @@
       "genre": [
         "experimental",
         "theatre"
-      ]
+      ],
+      "hours_checked": true
     },
     {
       "name": "Moscot Lower East Side",
@@ -8886,7 +9094,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Sa 10:00-18:00, Su 12:00-18:00"
     },
     {
       "name": "P&T Knitwear",
@@ -8905,7 +9115,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Sweet Pickle Books",
@@ -8924,7 +9135,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Sa 10:00-21:00; Su 10:00-20:00"
     },
     {
       "name": "Hester Street Fair",
@@ -8943,7 +9156,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Sa-Su 11:00-18:00"
     },
     {
       "name": "Claud",
@@ -8963,7 +9178,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 17:00-22:30"
     },
     {
       "name": "Ariari",
@@ -8985,7 +9202,9 @@
         "korean",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Th 17:00-23:00; Fr 17:00-24:00; Sa 16:30-24:00; Su 16:30-23:00"
     },
     {
       "name": "Nowon",
@@ -9008,7 +9227,8 @@
         "korean",
         "american"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Superiority Burger",
@@ -9031,7 +9251,9 @@
         "american",
         "vegetarian"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo 12:00-22:00; Tu-We 17:00-23:00; Th 12:00-23:00; Fr 12:00-24:00; Sa 11:00-24:00; Su 11:00-22:00"
     },
     {
       "name": "Cafe Mogador",
@@ -9051,7 +9273,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Th, Su 09:00-23:30; Fr, Sa 09:00-00:30"
     },
     {
       "name": "Veselka",
@@ -9071,7 +9295,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Sa 08:00-24:00; Su 08:00-23:00"
     },
     {
       "name": "Hanoi House",
@@ -9092,7 +9318,9 @@
       "cuisine": [
         "vietnamese"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Tu-Fr 12:00-21:00; Sa,Su 11:00-21:00"
     },
     {
       "name": "Szechuan Mountain House",
@@ -9115,7 +9343,9 @@
         "chinese",
         "seafood"
       ],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 11:30-23:00"
     },
     {
       "name": "PDT (Please Don't Tell)",
@@ -9135,7 +9365,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Amor y Amargo",
@@ -9155,7 +9386,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Su 17:00-24:00"
     },
     {
       "name": "Death & Company",
@@ -9175,7 +9408,9 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true,
+      "opening_hours": "Mo-Th, Su 18:00-02:00; Fr, Sa 18:00-03:00"
     },
     {
       "name": "Bar Kabawa",
@@ -9195,7 +9430,8 @@
       ],
       "still_open": true,
       "cuisine": [],
-      "genre": []
+      "genre": [],
+      "hours_checked": true
     },
     {
       "name": "Banshee",

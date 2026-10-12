@@ -523,10 +523,26 @@ def build_night(brief: Brief, seed: int | None = None,
     roaming = bool(getattr(brief, "roam", False))
     max_miles = ROAM_NIGHT_MILES if roaming else MAX_NIGHT_MILES
 
-    # Decide where the night happens before deciding what is in it.
-    area = None if roaming else _pick_area(rows, kinds, brief, rng)
+    # A pinned venue decides the area. Otherwise "keep the restaurant, change
+    # the bar" quietly moves the night to another borough and drops the very
+    # stop the person asked to keep, because the pinned venue is no longer in
+    # the filtered rows.
+    pinned_names = set((pin or {}).values())
+    pinned_rows = [r for r in rows if r["name"] in pinned_names]
+
+    if pinned_rows:
+        area = pinned_rows[0].get("borough")
+    elif roaming:
+        area = None
+    else:
+        area = _pick_area(rows, kinds, brief, rng)
+
     if area:
         local = [r for r in rows if (r.get("borough") or "").lower() == area.lower()]
+        # Keep the pinned rows whatever happens to the filter.
+        for r in pinned_rows:
+            if r not in local:
+                local.append(r)
         if len(local) >= len(kinds):
             rows = local
 

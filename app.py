@@ -28,7 +28,7 @@ from fastapi.staticfiles import StaticFiles                     # noqa: E402
 
 import accounts                                                  # noqa: E402
 import pages                                                     # noqa: E402
-from agents import plan_night                                   # noqa: E402
+from agents import plan_night, refine_night                     # noqa: E402
 from brief import Budget, Occasion                              # noqa: E402
 from budget import BudgetExceeded, TooManyCalls, status as budget_status  # noqa: E402
 from collage import (collage_credit_line, collage_html,           # noqa: E402
@@ -158,6 +158,36 @@ def _vibe_from_filters(prefilled: dict) -> str:
     return ", ".join(parts)
 
 
+def _save_plan(plan_id: str, night, brief, page: str, show_costs: bool) -> None:
+    """Keep the HTML and the objects behind it.
+
+    The page alone is enough to re-read a plan, but not to change one. Storing
+    the Night and the Brief is what makes the conversation on the plan page
+    possible at all.
+    """
+    (PLANS_DIR / f"{plan_id}.html").write_text(page, encoding="utf-8")
+    (PLANS_DIR / f"{plan_id}.json").write_text(
+        json.dumps({"night": night.model_dump(mode="json"),
+                    "brief": brief.model_dump(mode="json"),
+                    "show_costs": show_costs}, indent=1),
+        encoding="utf-8")
+
+
+def _load_plan(plan_id: str):
+    """The Night and Brief behind a saved plan, or (None, None, False)."""
+    path = PLANS_DIR / f"{plan_id}.json"
+    if not path.is_file():
+        return None, None, False
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        from brief import Brief
+        from models import Night
+        return (Night(**data["night"]), Brief(**data["brief"]),
+                bool(data.get("show_costs")))
+    except (json.JSONDecodeError, OSError, ValueError):
+        return None, None, False
+
+
 def _error_page(title: str, detail: str) -> str:
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8">
 <title>{title} — The Programme</title>
@@ -209,6 +239,12 @@ def saved_night(plan_id: str) -> str:
     """A previously planned night. Stable URL, no model call."""
     if not plan_id.isalnum() or len(plan_id) > 40:
         return _error_page("No such plan", "That link does not look right.")
+    night, brief, show_costs = _load_plan(plan_id)
+    if night is not None:
+        return render_night(night, brief=brief, dataset=dataset_status(),
+                            budget=budget_status(), show_costs=show_costs,
+                            plan_id=plan_id)
+
     path = PLANS_DIR / f"{plan_id}.html"
     if not path.is_file():
         return _error_page(
@@ -217,6 +253,49 @@ def saved_night(plan_id: str) -> str:
             '<a href="/">Plan a new one</a>.',
         )
     return path.read_text(encoding="utf-8")
+
+
+@app.post("/night/{plan_id}/refine", response_class=HTMLResponse)
+async def refine(plan_id: str, request: Request) -> str:
+    """One turn of conversation about a plan already on screen."""
+    if not plan_id.isalnum() or len(plan_id) > 40:
+        return _error_page("No such plan", "That link does not look right.")
+
+    night, brief, show_costs = _load_plan(plan_id)
+    if night is None:
+        return _error_page(
+            "That night cannot be changed",
+            'It was planned before edits were possible. '
+            '<a href="/">Plan a new one</a>.')
+
+    form = await request.form()
+    message = (form.get("message") or "").strip()[:300]
+    if not message:
+        return RedirectResponse(f"/night/{plan_id}", status_code=303)
+
+    try:
+        result = refine_night(night, brief, message)
+    except BudgetExceeded as exc:
+        return _error_page("Budget reached", str(exc))
+    except Exception as exc:                                   # noqa: BLE001
+        logging.exception("refine failed for %r", message[:80])
+        return _error_page("That change did not work",
+                           "Try saying it a different way.")
+
+    reply = result["amendment"].reply
+    if result.get("no_coverage"):
+        reply = (f"{reply} I could not find anything matching that, so I have "
+                 f"left the night as it was.")
+
+    new_id = uuid.uuid4().hex[:12] if result["changed"] else plan_id
+    page = render_night(result["night"], brief=result["brief"],
+                        usage=result["usage"].as_dict(),
+                        dataset=dataset_status(), budget=budget_status(),
+                        show_costs=show_costs, plan_id=new_id,
+                        reply=reply, message=message)
+    if result["changed"]:
+        _save_plan(new_id, result["night"], result["brief"], page, show_costs)
+    return page
 
 
 @app.post("/plan")
@@ -324,7 +403,7 @@ async def plan(request: Request):
     )
 
     plan_id = uuid.uuid4().hex[:12]
-    (PLANS_DIR / f"{plan_id}.html").write_text(page, encoding="utf-8")
+    _save_plan(plan_id, result["night"], result["brief"], page, show_costs)
 
     if wants_json:
         return JSONResponse({
