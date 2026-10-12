@@ -30,6 +30,7 @@ sys.path.insert(0, str(ROOT / "backend"))
 from config import DATA_DIR  # noqa: E402
 
 VENUES = DATA_DIR / "nyc_venues.json"
+CANDIDATES = DATA_DIR / "candidate_venues.json"
 API = "https://nominatim.openstreetmap.org/search"
 UA = {"User-Agent": "TheProgramme/0.1 (Yale MGT409 course project; ashley.wheeler@yale.edu)"}
 
@@ -95,14 +96,27 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Geocode the venue dataset.")
     ap.add_argument("--limit", type=int, default=100)
     ap.add_argument("--redo", action="store_true", help="re-geocode venues that already have coords")
+    ap.add_argument("--file", choices=["venues", "candidates", "both"], default="both")
     args = ap.parse_args()
 
-    data = json.loads(VENUES.read_text())
-    venues = data["venues"]
+    # Both datasets need coordinates. Only the music venues were ever covered,
+    # which is why most stops rendered without a map: a stop gets one only when
+    # its venue can be placed.
+    targets = []
+    if args.file in ("venues", "both") and VENUES.is_file():
+        targets.append((VENUES, json.loads(VENUES.read_text())))
+    if args.file in ("candidates", "both") and CANDIDATES.is_file():
+        targets.append((CANDIDATES, json.loads(CANDIDATES.read_text())))
+
+    venues = []
+    for _, data in targets:
+        venues.extend(data["venues"])
     done = hit = 0
 
     with httpx.Client(headers=UA, timeout=30, follow_redirects=True) as c:
         for v in venues:
+            if (b := v.get("borough")) in ("The Bronx", "the Bronx"):
+                v["borough"] = "Bronx"
             if done >= args.limit:
                 break
             if v.get("lat") is not None and not args.redo:
@@ -127,12 +141,20 @@ def main() -> int:
             if found:
                 v["lat"], v["lon"] = round(found[0], 6), round(found[1], 6)
                 hit += 1
-                print(f"  + {name[:30]:32} {v['lat']:.4f}, {v['lon']:.4f}")
+                print(f"  + {name[:30]:32} {v['lat']:.4f}, {v['lon']:.4f}", flush=True)
             else:
                 v["lat"], v["lon"] = None, None
-                print(f"  - {name[:30]:32} not found")
+                print(f"  - {name[:30]:32} not found", flush=True)
 
-    VENUES.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+            # Flush to disk periodically. Nominatim takes a second per venue,
+            # so a run over the whole dataset is twenty minutes of work to
+            # lose to a single timeout.
+            if done % 20 == 0:
+                for path, data in targets:
+                    path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+
+    for path, data in targets:
+        path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     total = sum(1 for v in venues if v.get("lat") is not None)
     print(f"\nGeocoded {hit} of {done} tried. {total}/{len(venues)} venues now have coordinates.")
     return 0

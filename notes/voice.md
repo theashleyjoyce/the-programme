@@ -104,9 +104,11 @@ Drafted from her own lines above, not invented. Needs her eye before it ships:
 
 Two claims in there to make true before submitting:
 1. "The photography is hers" is false until the Friday shoot happens.
+   RESOLVED 2026-10-12: the line was cut from the About page, so the site no
+   longer claims it. If it goes back in after the shoot, it will be true.
 2. "everyone she asked had the same problem" should rest on real conversations.
    Even two would make it honest, and the Impact row wants exactly that
-   evidence anyway.
+   evidence anyway. STILL OUTSTANDING.
 
 
 ## The novelty argument — for Report section 3, NOT the website

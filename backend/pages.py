@@ -69,14 +69,12 @@ def signup_page(css_v: str, error: str = "", values: dict | None = None,
     <label class="account__check">
       <input type="checkbox" name="newsletter" value="1">
       <span><strong>Send me the newsletter.</strong> A curated note on what is
-      worth going to, and new vibes opening around the city. Unsubscribe in one
-      click from your account.</span>
+      worth going to, and the new places opening around the city.</span>
     </label>
     """
     return _shell(
-        title="Make an account", kicker="The Programme",
-        blurb="Keep the nights you plan, mark the ones you actually went to, "
-              "and get the newsletter if you want it.",
+        title="Create an account", kicker="The Programme",
+        blurb="Keep the nights you plan, revisit the spots you love.",
         action="/signup", fields=fields, cta="Create account",
         alt='Already have one? <a href="/login">Log in</a>.',
         error=error, css_v=css_v, user=user)
@@ -99,9 +97,9 @@ def login_page(css_v: str, error: str = "", values: dict | None = None,
     """
     return _shell(
         title="Log in", kicker="The Programme",
-        blurb="Your saved nights are waiting.",
+        blurb="Your plans await.",
         action="/login", fields=fields, cta="Log in",
-        alt='No account yet? <a href="/signup">Make one</a>.',
+        alt='No account yet? <a href="/signup">Create one</a>.',
         error=error, css_v=css_v, user=user)
 
 
@@ -131,7 +129,11 @@ def about_page(css_v: str, user: dict | None, facts: dict) -> str:
 
 <article class="about">
   <p class="hero__kicker">About</p>
-  <h2 class="about__title">New York, Your Way</h2>
+
+  <div class="about__hero">
+    <h2 class="about__title">New York,<br>Your Way</h2>
+    <img class="about__art" src="/static/img/programme.svg" alt="" aria-hidden="true">
+  </div>
 
   <p class="about__lead">For the explorers, the city lovers, the lovers and the
   friends. Your one stop shop for daytime or night time plans in New York City.</p>
@@ -154,51 +156,29 @@ def about_page(css_v: str, user: dict | None, facts: dict) -> str:
     think. For the Friday with forty dollars in it that should still feel like
     something. The city holds an evening for each of them. The looking is what
     gets in the way.</p>
-    <p>The photography is ours. So are the opinions, written by people who have
-    been. A recommendation without a point of view is only a listing.</p>
   </section>
 
   <section class="about__block">
     <h3>What we do</h3>
-    <p>Discovery. The opening you would not have thought to look for. The tea
-    room that keeps late hours. The basement with a sound system better than it
-    has any right to be. We are built with a bias against the obvious, because a
-    recommendation you could have made yourself is not worth making.</p>
-    <p>And we pay attention to the room. A night in a space that holds eighty
-    is not a night in one that holds three thousand, and a yard in July is not
-    the same place in January. So we know which of a venue's rooms you would be
-    standing in, how big it is, whether it sits indoors or out, and whether
-    they will seat all eight of you.</p>
-  </section>
-
-  <section class="about__block">
-    <h3>How it works</h3>
     <p>Tell us the vibe. We plan the night.</p>
     <p>Behind that, we keep a standing file on the city. What is open, which
     room you would be in, how big it is, whether it takes a group, what is on
     this week. It is checked and written up before you ever ask, which is why
     the answer arrives in about a second.</p>
-    <p>You can say it in a sentence or set it with the filters. Either way you
-    get one evening, in order, with the booking links and the nearest train.</p>
-  </section>
+    <p>What we are really after is discovery. The opening you would not have
+    thought to look for. The tea room that keeps late hours. The basement with
+    a sound system better than it has any right to be. We are built with a bias
+    against the obvious, because a recommendation you could have made yourself
+    is not worth making.</p>
+    <p>And we pay attention to the room. A night in a space that holds eighty
+    is not a night in one that holds three thousand, and a yard in July is not
+    the same place in January. So we know which of a venue's rooms you would be
+    standing in, how big it is, whether it sits indoors or out, and whether
+    they will seat all eight of you.</p>
+    <p>Say it in a sentence or set it with the filters. Either way you get one
+    evening, in order, with the booking links and the nearest train.</p>
 
-  <section class="about__block">
-    <h3>Where the facts come from</h3>
-    <ul class="about__list">
-      <li><strong>Venues and recommendations</strong> from the city's editorial
-      listings, cited on each card.</li>
-      <li><strong>Room capacities</strong> researched per venue against the
-      venue's own material, with the source recorded. Where a figure is
-      disputed we say so rather than pick one.</li>
-      <li><strong>Subway stations</strong> from the MTA's open data,
-      {e(facts.get("stations", 0))} of them, with walking distance calculated
-      from coordinates.</li>
-      <li><strong>Maps</strong> from OpenStreetMap.</li>
-      <li><strong>Photographs</strong> from each venue's own site, used only
-      where the image is genuinely of the place.</li>
-    </ul>
-    <p class="about__note">Currently holding {e(facts.get("venues", 0))} venues
-    across {e(facts.get("rooms", 0))} rooms.</p>
+    <p class="about__count">{e(facts.get("line", ""))}</p>
   </section>
 
   <section class="about__block">
@@ -219,6 +199,8 @@ def about_page(css_v: str, user: dict | None, facts: dict) -> str:
   </section>
 
   <p class="about__sig">Built by Ashley Wheeler. New York, 2026.</p>
+  <p class="about__credit">Maps &copy; OpenStreetMap contributors. Transit data
+  from the MTA. Venue photographs belong to the venues.</p>
 </article>
 </body>
 </html>"""

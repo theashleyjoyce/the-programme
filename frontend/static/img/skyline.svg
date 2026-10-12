@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" fill="none"
+     role="img" aria-label="Line drawing of New York rooftops with two figures on a stoop">
+  <!-- Hand-authored line illustration. Sempe and Steinberg house style: a
+       spare ink line, generous air, and one small human detail dwarfed by
+       something enormous. Drawn rather than generated, so it is ours, it
+       scales, and it uses the page's own ink and accent colours. -->
+  <g stroke="#14110F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- far towers, lighter line for depth -->
+    <g opacity="0.38" stroke-width="0.9">
+      <path d="M14 196V96h30v100M20 108h18M20 124h18M20 140h18M20 156h18M20 172h18"/>
+      <path d="M262 196V120h26v76M268 132h14M268 148h14M268 164h14"/>
+      <path d="M232 196V140h22v56M238 150h10M238 164h10M238 178h10"/>
+    </g>
+
+    <!-- the tall one -->
+    <path d="M62 196V54h54v142"/>
+    <path d="M70 70h38M70 88h38M70 106h38M70 124h38M70 142h38M70 160h38M70 178h38"/>
+    <path d="M76 54V40h26v14"/>
+    <path d="M89 40V24"/>
+
+    <!-- water tower on the roof, the most New York object there is -->
+    <path d="M140 196v-46"/>
+    <path d="M176 196v-46"/>
+    <path d="M134 150h48"/>
+    <path d="M138 150v-34h40v34"/>
+    <path d="M138 116l20-14 20 14"/>
+    <path d="M138 128h40"/>
+    <path d="M146 150v46M170 150v46"/>
+
+    <!-- mid block with fire escape -->
+    <path d="M190 196v-74h40v74"/>
+    <path d="M196 138h28M196 156h28M196 174h28"/>
+    <path d="M196 132h28M196 150h28M196 168h28" opacity="0.5"/>
+    <path d="M190 132h-8v64h8" />
+
+    <!-- street line -->
+    <path d="M0 196h300" stroke-width="1.3"/>
+
+    <!-- stoop -->
+    <path d="M96 196v-20h46v20"/>
+    <path d="M96 182h46M103 196v-14M135 196v-14"/>
+
+    <!-- two figures, sitting. the whole point of the drawing -->
+    <g stroke-width="1.2">
+      <circle cx="110" cy="163" r="4.4"/>
+      <path d="M110 168v12M110 172l-6 5M110 172l6 5M107 180l-2 9M113 180l2 9"/>
+      <circle cx="127" cy="163" r="4.4"/>
+      <path d="M127 168v12M127 172l-6 5M127 172l6 5M124 180l-2 9M130 180l2 9"/>
+    </g>
+  </g>
+
+  <!-- one lit window, in the accent. the only colour in the drawing. -->
+  <rect x="84" y="82" width="10" height="12" fill="#B8402C"/>
+  <rect x="152" y="158" width="8" height="10" fill="#B8402C" opacity="0.5"/>
+</svg>

@@ -77,6 +77,8 @@ def _refine_query(brief: Brief | None) -> str:
         params.append(("budget", brief.budget.value))
     if brief.occasion:
         params.append(("occasion", brief.occasion.value))
+    if getattr(brief, "roam", False):
+        params.append(("roam", "1"))
     params += [("venue_sizes", v.value) for v in brief.venue_sizes]
     params += [("settings", v.value) for v in brief.settings]
     params += [("wants", v.value) for v in brief.wants]
@@ -268,6 +270,11 @@ def _stop(index: int, stop: Stop) -> str:
     feels = (f'<p class="stop__feels">{e(stop.venue_size.blurb)} '
              f'{e(stop.setting.blurb) if stop.setting else ""}</p>'
              if stop.venue_size else "")
+
+    # Say plainly when a place needs a ticket. "Club, 11pm" on a venue that
+    # only opens for programmed events is a promise the plan cannot keep.
+    entry_note = (f'<p class="stop__entry">{e(stop.entry.note)}</p>'
+                  if stop.entry and stop.entry.note else "")
     return f"""{_travel(stop)}
 <article class="stop" id="stop-{index}">
   <div>
@@ -281,6 +288,7 @@ def _stop(index: int, stop: Stop) -> str:
     {_figure(stop)}
     <p class="stop__why">{e(stop.why)}</p>
     {feels}
+    {entry_note}
     {_actions(stop)}
     {_sources(stop)}
   </div>
@@ -342,10 +350,10 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
     if dataset:
         cols.append(
             "<div><h4>Where this came from</h4>"
-            f'<p>{dataset.get("rooms_known", 0)} rooms across '
-            f'{dataset.get("venues_known", 0)} venues</p>'
-            f'<p>{dataset.get("multi_room_venues", 0)} venues with more than one room</p>'
-            f'<p>Events: {e(dataset.get("events_source", "unknown"))}</p></div>')
+            f'<p class="colophon__figure">{dataset.get("venues_known", 0):,} venues '
+            f'across {dataset.get("neighborhoods", 0)} neighborhoods</p>'
+            f'<p>{dataset.get("categories", 0)} kinds of evening, all five boroughs</p>'
+            f'<p>{dataset.get("venues_mapped", 0):,} with coordinates on file</p></div>')
 
     if budget:
         cols.append(

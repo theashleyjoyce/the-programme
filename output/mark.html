@@ -1,0 +1,195 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>body{background:#FBF9F6;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh}
+svg{width:560px;height:auto}</style></head><body><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 360" fill="none"
+     role="img" aria-label="An illustrated programme for a night in New York">
+  <!-- The mark: a theatre programme whose cover carries the night on it.
+       Hand-authored line work in the page's own ink and accent. Drawn rather
+       than generated, so it is ours, it scales, and it costs nothing. -->
+
+  <defs>
+    <style>
+      .ink   { stroke:#14110F; stroke-width:1.15; stroke-linecap:round; stroke-linejoin:round; }
+      .thin  { stroke:#14110F; stroke-width:0.85; stroke-linecap:round; stroke-linejoin:round; opacity:.55; }
+      .fill  { fill:#B8402C; }
+      .type  { fill:#14110F; font-family:'Bodoni Moda',Didot,Georgia,serif; }
+    </style>
+  </defs>
+
+  <!-- the card itself, with a second leaf behind it -->
+  <path d="M18 24h236v312H18z" fill="#FFFFFF" class="thin"/>
+  <path d="M10 16h236v312H10z" fill="#FBF9F6" stroke="#14110F" stroke-width="1.3"/>
+
+  <!-- masthead -->
+  <text class="type" x="128" y="48" text-anchor="middle" font-size="17"
+        font-weight="600" letter-spacing="4.2">THE PROGRAMME</text>
+  <path d="M40 58h176" class="ink"/>
+  <text x="128" y="72" text-anchor="middle" font-size="7" fill="#B8402C"
+        font-family="Inter,sans-serif" font-weight="600" letter-spacing="3">NEW YORK, YOUR WAY</text>
+
+  <!-- ─── row 1 ─── taxi · martini · disco ball ─────────────────── -->
+
+  <!-- taxi -->
+  <g class="ink" transform="translate(30,92)">
+    <path d="M2 20h40M4 20v-7l6-9h20l8 9v7"/>
+    <path d="M12 6h8v5h-10M24 6h6l5 5h-11z"/>
+    <circle cx="12" cy="21" r="3.2"/><circle cx="32" cy="21" r="3.2"/>
+  </g>
+  <rect x="48" y="86" width="9" height="4" class="fill"/>
+
+  <!-- martini -->
+  <g class="ink" transform="translate(108,88)">
+    <path d="M4 4h28L18 20z"/>
+    <path d="M18 20v14M10 34h16"/>
+  </g>
+  <circle cx="126" cy="97" r="2.6" class="fill"/>
+
+  <!-- disco ball -->
+  <g transform="translate(192,86)">
+    <path d="M14 2v6" class="ink"/>
+    <circle cx="14" cy="22" r="13" class="ink"/>
+    <g class="thin">
+      <path d="M1 22h26M4 13h20M4 31h20"/>
+      <path d="M14 9v26M7 11v22M21 11v22"/>
+    </g>
+    <path d="M0 36l-5 6M28 36l5 6M14 36v7" class="thin"/>
+  </g>
+
+  <!-- ─── row 2 ─── spaghetti · painting ─────────────────────────── -->
+
+  <!-- a fork, mid-twirl. the plate is below and mostly out of frame, which
+       is what makes it a picture rather than a diagram -->
+  <g transform="translate(30,136)">
+    <!-- the fork, on the diagonal -->
+    <g class="ink">
+      <path d="M40 2 28.5 19.5"/>
+      <path d="M26.2 18 23 22.9"/>
+      <!-- tines, splayed slightly, disappearing into the twirl -->
+      <path d="M22.4 22.2 18.6 29.4M24.6 23.6 21.8 31.2M26.8 25 25.2 32.4"/>
+    </g>
+
+    <!-- the twirl: strands wound round the tines, loosest on the outside -->
+    <g class="ink">
+      <path d="M16.6 30.4c-4.6-1.2-7.4 2.4-6 6.2 1.6 4.4 8.2 6 13.2 3.4 5.4-2.8 6.4-9 2.6-11.6"/>
+      <path d="M18.4 32.6c-2.8-.6-4.4 1.6-3.5 3.9 1 2.6 5 3.6 8 2 3.2-1.7 3.8-5.4 1.5-6.9"/>
+    </g>
+    <g class="thin">
+      <path d="M20.6 34.6c-1.4-.3-2.2.8-1.8 2 .5 1.3 2.5 1.8 4 1 1.6-.9 1.9-2.7.8-3.5"/>
+      <path d="M13.4 33.2c-1.6 1.6-1.6 4 .2 5.6M26.8 31.4c1.8 1.4 2.2 3.8.8 5.6"/>
+    </g>
+
+    <!-- two strands falling, which is the whole charm of the thing -->
+    <g class="ink">
+      <path d="M12.2 36.8c-3.4 1.6-5.6 4.6-5 8.2"/>
+      <path d="M24.8 41.4c-.6 3-2.6 5.2-5.6 6"/>
+    </g>
+    <path d="M17.4 40.6c-1.6 2.4-1.8 5-.6 7.4" class="thin"/>
+
+    <!-- the rim of the plate, suggested -->
+    <path d="M1 49.4c6.6 3.4 20.6 3.6 28 .4" class="thin"/>
+
+    <!-- one caper, or an olive, in the accent -->
+    <circle cx="8.6" cy="44.6" r="2.2" class="fill"/>
+  </g>
+
+  <!-- framed painting -->
+  <g transform="translate(108,142)">
+    <path d="M2 2h36v34H2z" class="ink"/>
+    <path d="M7 7h26v24H7z" class="thin"/>
+    <path d="M9 27c5-9 9 3 13-6s7 4 11-3" class="ink"/>
+    <circle cx="16" cy="14" r="3" class="fill"/>
+  </g>
+
+  <!-- lady liberty. a robe with a line down it, not a stick with spikes -->
+  <g transform="translate(192,136)">
+    <g class="ink">
+      <path d="M17 17.6a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"/>
+      <!-- crown -->
+      <path d="M12.6 12.8 10 10.4M14.2 10.8l-.9-3.4M17 10.2V6.6M19.8 10.8l.9-3.4M21.4 12.8 24 10.4"/>
+      <!-- raised arm and torch -->
+      <path d="M19.4 19.6 24 11.2l2.4-4.6"/>
+      <path d="M25 6.6h3.4l-1.7 3z"/>
+      <path d="M26.7 3.4V.8M24.6 4 23 2.2M28.8 4l1.6-1.8"/>
+      <!-- the robe: one silhouette, with the folds suggested -->
+      <path d="M17 18.4c-3.6.6-5.6 3-6.2 7.2L8.6 44h16.8l-2.2-18.4c-.6-4.2-2.6-6.6-6.2-7.2z"/>
+      <path d="M14.4 25.6 13 44M19.6 25.6 21 44" class="thin"/>
+      <!-- tablet, tucked in -->
+      <path d="M11 24.6 7.6 27v7.6l3.4-1.8z"/>
+      <!-- pedestal -->
+      <path d="M6.8 44h20.4M4.8 48h24.4"/>
+    </g>
+  </g>
+
+  <!-- ─── row 3 ─── friends meeting · crowd ──────────────────────── -->
+
+  <!-- two people, meeting. silhouettes, not stick figures -->
+  <g transform="translate(30,204)">
+    <!-- figure in a long coat, turning -->
+    <g class="ink">
+      <path d="M12 9.5a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8z"/>
+      <path d="M12 10c-3.4.4-5.4 2.6-5.8 6l-.9 9.6 2.6.5.7 10.4h7l.7-10.4 2.6-.5-.9-9.6c-.4-3.4-2.4-5.6-5.8-6z"/>
+      <path d="M8.1 17.4 6 24M15.9 17.4 18 24" />
+    </g>
+    <!-- figure with a bag, arm raised -->
+    <g class="ink">
+      <path d="M36 9.5a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8z"/>
+      <path d="M36 10c-3.2.4-5.1 2.4-5.6 5.6l-1.2 10.2h2.5l.9 10.7h6.8l.9-10.7h2.5l-1.2-10.2c-.5-3.2-2.4-5.2-5.6-5.6z"/>
+      <path d="M31.1 16.6 27.5 11"/>
+      <path d="M41 17.2l3.4 5.6"/>
+      <path d="M44.4 22.8v4.6h3.4v-4.6z"/>
+    </g>
+  </g>
+  <!-- a crowd. a mass with a silhouette, not a row of lollipops -->
+  <g transform="translate(104,206)">
+    <!-- back row, lighter, taller and shorter so the line is not flat -->
+    <g class="thin">
+      <path d="M6 12a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/>
+      <path d="M6 12.4c-2.7.3-4.3 2-4.6 4.8L.6 28h10.8l-.8-10.8c-.3-2.8-1.9-4.5-4.6-4.8z"/>
+      <path d="M20 9.6a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/>
+      <path d="M20 10c-2.7.3-4.3 2-4.6 4.8L14.6 28h10.8l-.8-13.2c-.3-2.8-1.9-4.5-4.6-4.8z"/>
+      <path d="M48 8.4a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/>
+      <path d="M48 8.8c-2.7.3-4.3 2-4.6 4.8L42.6 28h10.8l-.8-14.4c-.3-2.8-1.9-4.5-4.6-4.8z"/>
+      <path d="M62 11.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/>
+      <path d="M62 11.6c-2.7.3-4.3 2-4.6 4.8L56.6 28h10.8l-.8-11.6c-.3-2.8-1.9-4.5-4.6-4.8z"/>
+    </g>
+    <!-- front row, full weight, overlapping the back -->
+    <g class="ink">
+      <path d="M31 14.6a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2z"/>
+      <path d="M31 15c-3 .4-4.7 2.2-5.1 5.3L25 28h12l-.9-7.7c-.4-3.1-2.1-4.9-5.1-5.3z"/>
+      <path d="M41 16.2a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2z"/>
+      <path d="M41 16.6c-3 .4-4.7 2.2-5.1 5.3L35 28h12l-.9-6.1c-.4-3.1-2.1-4.9-5.1-5.3z"/>
+    </g>
+    <!-- a raised arm, because a crowd has one -->
+    <path d="M46.6 20.4 50 13.6" class="ink"/>
+  </g>
+
+  <!-- ─── the skyline, along the foot ────────────────────────────── -->
+  <g transform="translate(0,262)">
+    <!-- bridge -->
+    <g class="thin">
+      <path d="M22 44h64"/>
+      <path d="M38 44V18M70 44V18"/>
+      <path d="M38 18l-3-4 3-4 3 4z M70 18l-3-4 3-4 3 4z"/>
+      <path d="M22 36c8-14 16-18 16-18s8 4 16 18M54 36c8-14 16-18 16-18s8 4 16 18"/>
+      <path d="M28 40v-6M46 40v-7M62 40v-7M80 40v-6"/>
+    </g>
+    <!-- towers -->
+    <g class="ink">
+      <path d="M100 44V22h14v22M118 44V12h12v32M134 44V28h16v16"/>
+      <path d="M154 44V18h12v26M170 44V30h10v14M184 44V20h14v24M202 44V34h12v10"/>
+      <path d="M124 12V4"/>
+      <path d="M218 44V24h14v20M236 44V32h12v12"/>
+    </g>
+    <g class="thin">
+      <path d="M104 28h6M104 34h6M122 20h4M122 28h4M122 36h4M138 34h8M158 24h4M158 32h4M188 26h6M188 34h6M222 30h6M222 36h6"/>
+    </g>
+    <rect x="121" y="24" width="5" height="6" class="fill"/>
+    <path d="M10 44h236" stroke="#14110F" stroke-width="1.3"/>
+  </g>
+
+  <!-- footer rule -->
+  <path d="M40 322h176" class="thin"/>
+  <text x="128" y="336" text-anchor="middle" font-size="6.5" fill="#14110F"
+        font-family="Inter,sans-serif" letter-spacing="2.4" opacity=".55">ONE EVENING, IN ORDER</text>
+</svg>
+</body></html>

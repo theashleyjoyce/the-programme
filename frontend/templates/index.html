@@ -26,19 +26,16 @@
   <div class="vibe">
     <div class="vibe__row">
       <textarea class="vibe__input" name="vibe" id="vibe" rows="2"
-        placeholder="loud and a little sweaty, somewhere we can actually dance&hellip;"></textarea>
+        placeholder="{{VIBE_PLACEHOLDER}}"></textarea>
       <button type="submit" class="vibe__go" id="vibego">Take me there</button>
+      <!-- The suggestion currently on screen. If someone presses go without
+           typing anything, that is the night they are asking for. -->
+      <input type="hidden" name="suggested" value="{{VIBE_PLACEHOLDER}}">
     </div>
     <p class="vibe__hint">Describe your vibe and we will plan your night. Press enter to go, or narrow it down below.</p>
   </div>
 
-  <div class="seeds">
-    <button type="button" class="seed" data-vibe="somewhere I can hear a conversation, good wine, not a scene">quiet and good</button>
-    <button type="button" class="seed" data-vibe="loud, late, dancing, I want to disappear into a crowd">lost in a crowd</button>
-    <button type="button" class="seed" data-vibe="a gallery opening then dinner, something I haven't done before">art first</button>
-    <button type="button" class="seed" data-vibe="it's my birthday, there are eight of us, we need a table and then somewhere to dance">birthday, eight of us</button>
-    <button type="button" class="seed" data-vibe="surprise me, somewhere I'd never think to go">surprise me</button>
-  </div>
+  <div class="seeds">{{SEEDS}}</div>
 
   <div class="controls">
 
@@ -102,6 +99,15 @@
         <label class="toggle"><input type="checkbox" name="venue_sizes" value="large"><span>Large &middot; 700&ndash;3k</span></label>
         <label class="toggle"><input type="checkbox" name="venue_sizes" value="massive"><span>Massive &middot; 3k+</span></label>
       </div>
+    </div>
+
+    <div class="field" style="grid-column: 1 / -1;">
+      <span class="field__label">How far</span>
+      <div class="toggles">
+        <label class="toggle"><input type="radio" name="roam" value="" checked><span>Keep it close</span></label>
+        <label class="toggle"><input type="radio" name="roam" value="1"><span>Let me range across the city</span></label>
+      </div>
+      <span class="account__note">Close together means less time on the train and more stops in the night.</span>
     </div>
 
     <div class="field" style="grid-column: 1 / -1;">

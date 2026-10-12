@@ -75,6 +75,15 @@ class Brief(BaseModel):
     wants: list[StopKind] = Field(default_factory=list)
     avoid: list[str] = Field(default_factory=list, description="Named dislikes: 'no techno', 'not a dive'")
 
+    roam: bool = Field(
+        default=False,
+        description=(
+            "True only when they say they want to range across the city: "
+            "'bounce around', 'explore', 'all over town', 'show me the city'. "
+            "Default false, because a tighter night fits in more stops."
+        ),
+    )
+
     @property
     def is_group(self) -> bool:
         """Six is where reservations get hard and most rooms stop being an

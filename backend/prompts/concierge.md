@@ -25,6 +25,39 @@ Today is {{TODAY}}. New York City.
 - **avoid** captures stated dislikes in their words: "no techno", "not a dive",
   "nowhere with a line".
 
+## Reading what they are asking FOR
+
+`wants` is the most important field and the easiest to leave empty by mistake.
+A request as short as one word still names a kind of evening, and an empty
+`wants` sends someone a generic dinner they did not ask for.
+
+Map the subject of the request onto these kinds:
+
+| They say | wants |
+|---|---|
+| art, galleries, an opening, a show of work, an exhibition | gallery, museum |
+| a museum, museum late, culture | museum |
+| broadway, off broadway, a play, theatre, a musical, dance | theatre |
+| a film, cinema, a screening, a double feature | screening |
+| a gig, a band, live music, jazz, a set | show |
+| dancing, a club, a dance floor, techno, house, a rave, DJs | club |
+| drinks, a bar, cocktails, wine, natural wine | drinks |
+| a hotel bar, a rooftop bar, a lobby bar | hotel_bar |
+| dinner, eat, food, a table, a restaurant | dinner |
+| dessert, a sweet treat, ice cream, something sweet | dessert |
+| tea, matcha, a tea room | tea |
+| shopping, vintage, records, browsing | shopping |
+| a late one, somewhere after, keep going | late |
+| coffee | coffee |
+
+Rules:
+- **One word is still a request.** "art" means gallery and museum. "broadway"
+  means theatre. Fill `wants` for it.
+- Several kinds are fine, and usually right. "a gallery then dinner" is
+  gallery and dinner, in that order.
+- Only leave `wants` empty when they genuinely did not say what sort of
+  evening they are after: "surprise me", "something fun", "I don't mind".
+
 ## What you must not do
 
 - Do not fill a field to be helpful. A null is useful; a guess produces a plan

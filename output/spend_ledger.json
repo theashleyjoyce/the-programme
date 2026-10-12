@@ -459,9 +459,495 @@
       "cached_input_tokens": 5527,
       "output_tokens": 6501,
       "cost_usd": 0.140413
+    },
+    {
+      "at": "2026-10-12T20:37:10+00:00",
+      "label": "discover:Williamsburg",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 59022,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6119,
+      "cost_usd": 0.135658
+    },
+    {
+      "at": "2026-10-12T20:39:04+00:00",
+      "label": "discover:Bushwick",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 76710,
+      "cached_input_tokens": 5527,
+      "output_tokens": 7252,
+      "cost_usd": 0.169098
+    },
+    {
+      "at": "2026-10-12T20:40:37+00:00",
+      "label": "discover:Fort Greene",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 63011,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6012,
+      "cost_usd": 0.139575
+    },
+    {
+      "at": "2026-10-12T20:42:21+00:00",
+      "label": "discover:Crown Heights",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 77646,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5357,
+      "cost_usd": 0.151318
+    },
+    {
+      "at": "2026-10-12T20:43:53+00:00",
+      "label": "discover:Ridgewood",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 63446,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6099,
+      "cost_usd": 0.140988
+    },
+    {
+      "at": "2026-10-12T20:45:30+00:00",
+      "label": "discover:Astoria",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 58014,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5445,
+      "cost_usd": 0.127658
+    },
+    {
+      "at": "2026-10-12T20:47:24+00:00",
+      "label": "discover:Long Island City",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 74053,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6158,
+      "cost_usd": 0.154837
+    },
+    {
+      "at": "2026-10-12T20:48:21+00:00",
+      "label": "discover:Jackson Heights",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 54157,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5451,
+      "cost_usd": 0.122897
+    },
+    {
+      "at": "2026-10-12T20:49:21+00:00",
+      "label": "discover:Mott Haven",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 50426,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3286,
+      "cost_usd": 0.096583
+    },
+    {
+      "at": "2026-10-12T20:49:59+00:00",
+      "label": "discover:Belmont",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 44550,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3099,
+      "cost_usd": 0.087368
+    },
+    {
+      "at": "2026-10-12T20:50:55+00:00",
+      "label": "discover:Fordham",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 48780,
+      "cached_input_tokens": 5527,
+      "output_tokens": 4027,
+      "cost_usd": 0.101936
+    },
+    {
+      "at": "2026-10-12T20:51:40+00:00",
+      "label": "discover:Riverdale",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 42008,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3631,
+      "cost_usd": 0.089511
+    },
+    {
+      "at": "2026-10-12T20:52:40+00:00",
+      "label": "discover:St. George",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 58214,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3191,
+      "cost_usd": 0.105368
+    },
+    {
+      "at": "2026-10-12T20:53:52+00:00",
+      "label": "discover:Stapleton",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 86850,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3766,
+      "cost_usd": 0.146913
+    },
+    {
+      "at": "2026-10-12T20:54:55+00:00",
+      "label": "discover:Tompkinsville",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 65094,
+      "cached_input_tokens": 5527,
+      "output_tokens": 2852,
+      "cost_usd": 0.110578
+    },
+    {
+      "at": "2026-10-12T20:54:57+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1281,
+      "cached_input_tokens": 0,
+      "output_tokens": 72,
+      "cost_usd": 0.002321
+    },
+    {
+      "at": "2026-10-12T20:55:51+00:00",
+      "label": "discover:Port Richmond",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 49960,
+      "cached_input_tokens": 5527,
+      "output_tokens": 3215,
+      "cost_usd": 0.095291
+    },
+    {
+      "at": "2026-10-12T20:56:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 18,
+      "cached_input_tokens": 1265,
+      "output_tokens": 66,
+      "cost_usd": 0.000841
+    },
+    {
+      "at": "2026-10-12T20:58:12+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 14,
+      "cached_input_tokens": 1265,
+      "output_tokens": 61,
+      "cost_usd": 0.000786
+    },
+    {
+      "at": "2026-10-12T20:58:13+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1276,
+      "output_tokens": 61,
+      "cost_usd": 0.000773
+    },
+    {
+      "at": "2026-10-12T20:58:14+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1276,
+      "output_tokens": 61,
+      "cost_usd": 0.000773
+    },
+    {
+      "at": "2026-10-12T21:24:37+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 29,
+      "cached_input_tokens": 1265,
+      "output_tokens": 71,
+      "cost_usd": 0.000904
+    },
+    {
+      "at": "2026-10-12T21:26:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 15,
+      "cached_input_tokens": 1265,
+      "output_tokens": 68,
+      "cost_usd": 0.000857
+    },
+    {
+      "at": "2026-10-12T21:28:11+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 30,
+      "cached_input_tokens": 1265,
+      "output_tokens": 71,
+      "cost_usd": 0.000906
+    },
+    {
+      "at": "2026-10-12T21:39:24+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1341,
+      "cached_input_tokens": 0,
+      "output_tokens": 76,
+      "cost_usd": 0.002436
+    },
+    {
+      "at": "2026-10-12T22:11:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1341,
+      "cached_input_tokens": 0,
+      "output_tokens": 78,
+      "cost_usd": 0.002456
+    },
+    {
+      "at": "2026-10-12T22:12:11+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1338,
+      "output_tokens": 78,
+      "cost_usd": 0.000951
+    },
+    {
+      "at": "2026-10-12T22:46:12+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1347,
+      "cached_input_tokens": 0,
+      "output_tokens": 85,
+      "cost_usd": 0.002534
+    },
+    {
+      "at": "2026-10-12T22:46:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 20,
+      "cached_input_tokens": 1324,
+      "output_tokens": 73,
+      "cost_usd": 0.00092
+    },
+    {
+      "at": "2026-10-12T22:46:57+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 15,
+      "cached_input_tokens": 1324,
+      "output_tokens": 71,
+      "cost_usd": 0.000894
+    },
+    {
+      "at": "2026-10-12T22:47:11+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 14,
+      "cached_input_tokens": 1324,
+      "output_tokens": 70,
+      "cost_usd": 0.000883
+    },
+    {
+      "at": "2026-10-12T22:47:39+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 14,
+      "cached_input_tokens": 1324,
+      "output_tokens": 66,
+      "cost_usd": 0.000843
+    },
+    {
+      "at": "2026-10-12T22:47:49+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 11,
+      "cached_input_tokens": 1324,
+      "output_tokens": 63,
+      "cost_usd": 0.000809
+    },
+    {
+      "at": "2026-10-12T22:49:25+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1332,
+      "output_tokens": 63,
+      "cost_usd": 0.0008
+    },
+    {
+      "at": "2026-10-12T22:49:26+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 12,
+      "cached_input_tokens": 1324,
+      "output_tokens": 65,
+      "cost_usd": 0.00083
+    },
+    {
+      "at": "2026-10-12T22:49:53+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1723,
+      "cached_input_tokens": 0,
+      "output_tokens": 67,
+      "cost_usd": 0.002824
+    },
+    {
+      "at": "2026-10-12T22:49:55+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 12,
+      "cached_input_tokens": 1712,
+      "output_tokens": 68,
+      "cost_usd": 0.000909
+    },
+    {
+      "at": "2026-10-12T22:49:56+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 14,
+      "cached_input_tokens": 1712,
+      "output_tokens": 71,
+      "cost_usd": 0.000942
+    },
+    {
+      "at": "2026-10-12T22:49:58+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 11,
+      "cached_input_tokens": 1712,
+      "output_tokens": 66,
+      "cost_usd": 0.000888
+    },
+    {
+      "at": "2026-10-12T22:49:59+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 12,
+      "cached_input_tokens": 1712,
+      "output_tokens": 65,
+      "cost_usd": 0.000879
+    },
+    {
+      "at": "2026-10-12T22:50:00+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 13,
+      "cached_input_tokens": 1712,
+      "output_tokens": 70,
+      "cost_usd": 0.00093
+    },
+    {
+      "at": "2026-10-12T22:50:16+00:00",
+      "label": "discover:Midtown",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 48419,
+      "cached_input_tokens": 0,
+      "output_tokens": 6132,
+      "cost_usd": 0.121844
+    },
+    {
+      "at": "2026-10-12T22:51:41+00:00",
+      "label": "discover:Theater District",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 69865,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5610,
+      "cost_usd": 0.144122
+    },
+    {
+      "at": "2026-10-12T22:53:13+00:00",
+      "label": "discover:Chelsea",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 68273,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5391,
+      "cost_usd": 0.139942
+    },
+    {
+      "at": "2026-10-12T22:54:29+00:00",
+      "label": "discover:SoHo",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 54257,
+      "cached_input_tokens": 5527,
+      "output_tokens": 7025,
+      "cost_usd": 0.138762
+    },
+    {
+      "at": "2026-10-12T22:56:04+00:00",
+      "label": "discover:Tribeca",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 58832,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6845,
+      "cost_usd": 0.142681
+    },
+    {
+      "at": "2026-10-12T22:56:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 1712,
+      "output_tokens": 68,
+      "cost_usd": 0.000914
+    },
+    {
+      "at": "2026-10-12T22:56:55+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 33092,
+      "cached_input_tokens": 0,
+      "output_tokens": 2403,
+      "cost_usd": 0.065395
+    },
+    {
+      "at": "2026-10-12T22:56:55+00:00",
+      "label": "discover:Upper East Side",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 34094,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5806,
+      "cost_usd": 0.101368
+    },
+    {
+      "at": "2026-10-12T22:58:10+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 17,
+      "cached_input_tokens": 1712,
+      "output_tokens": 75,
+      "cost_usd": 0.000985
+    },
+    {
+      "at": "2026-10-12T22:58:12+00:00",
+      "label": "discover:Upper West Side",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 50639,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5416,
+      "cost_usd": 0.11815
+    },
+    {
+      "at": "2026-10-12T22:59:26+00:00",
+      "label": "discover:Union Square",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 58723,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5903,
+      "cost_usd": 0.133125
+    },
+    {
+      "at": "2026-10-12T23:00:18+00:00",
+      "label": "discover:Flatiron",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 42224,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5291,
+      "cost_usd": 0.106381
+    },
+    {
+      "at": "2026-10-12T23:01:22+00:00",
+      "label": "discover:Greenwich Village",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 47172,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6252,
+      "cost_usd": 0.122176
     }
   ],
-  "total_usd": 3.834895,
+  "total_usd": 7.176206,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 1.25,

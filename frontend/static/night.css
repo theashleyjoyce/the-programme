@@ -1190,9 +1190,10 @@ body {
 .about__lead {
   font-family: var(--display);
   font-style: italic;
-  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  font-size: clamp(1.2rem, 2.7vw, 1.6rem);
   line-height: 1.45;
-  color: var(--ink-soft);
+  color: var(--ink);
+  font-weight: 500;
   margin: 0 0 3rem;
 }
 .about__block { padding: 2rem 0; border-top: 1px solid var(--rule); }
@@ -1234,12 +1235,14 @@ body {
   color: var(--ink-soft);
 }
 
-/* The second lead paragraph sits quieter than the first, so the opening line
- * still lands as the statement and this reads as the breath after it. */
+/* Both lead paragraphs carry equal weight. An earlier version greyed this one
+ * back as "the breath after" the first line, which just made it look like
+ * small print under a headline. */
 .about__lead--second {
-  font-size: clamp(1rem, 2.2vw, 1.25rem);
-  color: var(--ink-soft);
-  margin-top: -1.6rem;
+  font-size: clamp(1.05rem, 2.3vw, 1.35rem);
+  color: var(--ink);
+  font-weight: 500;
+  margin-top: -1.4rem;
   margin-bottom: 3rem;
 }
 
@@ -1304,4 +1307,64 @@ body {
 
 @media (max-width: 560px) {
   .about__lead, .about__lead--second { max-width: none; }
+}
+
+/* ---- About hero: title and illustration side by side ----
+ * The pair is centred as a unit, so the page keeps its centred composition
+ * while the drawing sits next to the words rather than under them. */
+
+.about { max-width: 52rem; }
+
+.about__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  margin-bottom: 1.6rem;
+}
+
+.about__hero .about__title {
+  margin: 0;
+  text-align: right;
+  flex: 0 1 auto;
+}
+
+.about__art {
+  flex: 0 0 auto;
+  width: clamp(8.5rem, 20vw, 13rem);
+  height: auto;
+  display: block;
+}
+
+/* Stacked on a narrow screen, drawing first, so the page opens on an image. */
+@media (max-width: 640px) {
+  .about__hero { flex-direction: column-reverse; gap: 1.5rem; }
+  .about__hero .about__title { text-align: center; }
+  .about__art { width: 8rem; }
+}
+
+.about__count {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+.about__credit {
+  text-align: center;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  margin-top: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Said plainly when a venue needs a ticket rather than a walk-in. */
+.stop__entry {
+  font-size: 0.82rem;
+  color: var(--accent-ink);
+  max-width: var(--measure);
+  margin: 0 0 1.2rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--accent);
 }

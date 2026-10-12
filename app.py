@@ -31,7 +31,8 @@ import pages                                                     # noqa: E402
 from agents import plan_night                                   # noqa: E402
 from brief import Budget, Occasion                              # noqa: E402
 from budget import BudgetExceeded, TooManyCalls, status as budget_status  # noqa: E402
-from collage import collage_credit_line, collage_html           # noqa: E402
+from collage import (collage_credit_line, collage_html,           # noqa: E402
+                     suggested_seeds, suggested_vibe)
 from config import MissingCredentials, model_config             # noqa: E402
 from models import Setting, StopKind, VenueSize                 # noqa: E402
 from render import css_version, render_night                    # noqa: E402
@@ -83,6 +84,11 @@ def home() -> str:
         (TEMPLATES / "index.html").read_text(encoding="utf-8")
         .replace("{{HOODS_JSON}}", json.dumps(neighborhoods_by_borough()))
         .replace("{{CSS_V}}", css_version())
+        .replace("{{VIBE_PLACEHOLDER}}", html.escape(suggested_vibe()))
+        .replace("{{SEEDS}}", "".join(
+            f'<button type="button" class="seed" data-vibe="{html.escape(full)}">'
+            f'{html.escape(label)}</button>'
+            for label, full in suggested_seeds()))
         .replace("{{COLLAGE}}", collage_html())
         .replace("{{COLLAGE_CREDIT}}", collage_credit_line())
     )
@@ -133,6 +139,9 @@ def _vibe_from_filters(prefilled: dict) -> str:
     if settings := [_SETTING_WORDS.get(v.value, v.value) for v in prefilled.get("settings", [])]:
         parts.append(settings[0])
 
+    if prefilled.get("roam"):
+        parts.append("happy to range across the city")
+
     occasion_words = {
         "date": "it is a date", "birthday": "it is a birthday",
         "celebration": "we are celebrating", "friends_visiting": "friends are in town",
@@ -159,7 +168,7 @@ def _error_page(title: str, detail: str) -> str:
 
 
 FORM_FIELDS = ("vibe", "date", "borough", "neighborhood", "party_size",
-               "budget", "occasion")
+               "budget", "occasion", "roam", "suggested")
 FORM_LISTS = ("venue_sizes", "settings", "wants")
 
 
@@ -178,11 +187,18 @@ def working(request: Request) -> str:
         payload[k] = q.getlist(k)
 
     vibe = (payload.get("vibe") or "").strip()
-    shown = vibe or "whatever you picked"
+    # Show the suggestion on the working page too, so the night they are
+    # waiting for is the one they saw.
+    shown = vibe or (payload.get("suggested") or "").strip() or "whatever you picked"
 
     return (
         (TEMPLATES / "working.html").read_text(encoding="utf-8")
         .replace("{{CSS_V}}", css_version())
+        .replace("{{VIBE_PLACEHOLDER}}", html.escape(suggested_vibe()))
+        .replace("{{SEEDS}}", "".join(
+            f'<button type="button" class="seed" data-vibe="{html.escape(full)}">'
+            f'{html.escape(label)}</button>'
+            for label, full in suggested_seeds()))
         .replace("{{VIBE}}", html.escape(shown))
         .replace("{{PAYLOAD}}", json.dumps(payload))
     )
@@ -246,17 +262,29 @@ async def plan(request: Request):
             prefilled["budget"] = Budget(raw_budget)
         except ValueError:
             pass
+    if (form.get("roam") or "").strip():
+        prefilled["roam"] = True
+
     if raw_occasion := (form.get("occasion") or "").strip():
         try:
             prefilled["occasion"] = Occasion(raw_occasion)
         except ValueError:
             pass
 
-    # Filters alone are a complete request. Someone who ticked "late night" and
-    # "sweet treat" has said what they want; demanding they also write a
-    # sentence about it is the form getting in the way.
+    # Three ways to ask, in order of how specific they are.
+    #
+    #   1. what they typed
+    #   2. the filters they ticked, which are a complete request on their own
+    #   3. the suggestion that was on screen when they pressed go
+    #
+    # The third matters most for someone with no idea what they want. Pressing
+    # the button under "a museum that stays open late, then noodles" is a
+    # choice, and refusing it with "tell me something to go on" would turn the
+    # one moment of inspiration the page offers into an error message.
     if not vibe:
         vibe = _vibe_from_filters(prefilled)
+    if not vibe:
+        vibe = (form.get("suggested") or "").strip().rstrip("…").strip()
     if not vibe:
         return fail("Tell me something to go on",
                     "Either describe the night, or pick a few filters below.")
@@ -310,13 +338,22 @@ async def plan(request: Request):
 
 @app.get("/about", response_class=HTMLResponse)
 def about(request: Request) -> str:
-    status = dataset_status()
+    from collections import Counter
+
     from planner import catalogue
-    return pages.about_page(css_version(), current_user(request), {
-        "venues": len(catalogue()),
-        "rooms": status["rooms_known"],
-        "stations": len(__import__("transit").stations()),
-    })
+
+    rows = catalogue()
+    kinds = Counter(r["category"] for r in rows)
+    hoods = {r["neighborhood"] for r in rows if r.get("neighborhood")}
+    rooms = sum(1 for r in rows if r.get("capacity"))
+
+    # One sentence, counted from the same list every time, so the numbers
+    # cannot disagree with each other the way two separate counters did.
+    line = (f"{len(rows):,} places across {len(kinds)} kinds of evening "
+            f"and {len(hoods)} neighborhoods, in all five boroughs"
+            + (f", {rooms} of them with the room size on file." if rooms else "."))
+
+    return pages.about_page(css_version(), current_user(request), {"line": line})
 
 
 @app.get("/signup", response_class=HTMLResponse)

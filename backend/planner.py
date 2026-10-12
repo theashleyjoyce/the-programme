@@ -31,12 +31,15 @@ from typing import Any
 from brief import Brief, Budget
 from config import DATA_DIR
 from models import (
-    Night, PriceBand, Setting, Source, Stop, StopKind, VenueSize,
+    Entry, Night, PriceBand, Setting, Source, Stop, StopKind, VenueSize,
 )
+from sanitize import classify_booking_url
 from sources import lookup_venue, venues
 from transit import haversine_miles
 
 COPY_PATH = DATA_DIR / "venue_copy.json"
+VENUES_FILE = DATA_DIR / "nyc_venues.json"
+CANDIDATES_FILE = DATA_DIR / "candidate_venues.json"
 
 # A night runs in this order when several kinds are wanted. Shopping and
 # galleries close early; dessert and clubs are where a night ends.
@@ -69,6 +72,68 @@ KIND_CATEGORIES: dict[StopKind, tuple[str, ...]] = {
     StopKind.SCREENING: ("cinema",), StopKind.SHOPPING: ("shopping",),
 }
 
+# What the button says, by kind of stop. "Book" is wrong for a gallery and
+# "Tickets" is wrong for a bar, and a button that misdescribes where it goes is
+# worse than a plain one.
+BOOKING_LABEL: dict[StopKind, str] = {
+    StopKind.DINNER: "Book a table", StopKind.DRINKS: "Visit the bar",
+    StopKind.HOTEL_BAR: "Visit the bar", StopKind.CLUB: "Tickets and hours",
+    StopKind.SHOW: "Tickets", StopKind.THEATRE: "Tickets",
+    StopKind.SCREENING: "Showtimes", StopKind.LATE: "Hours and door",
+    StopKind.DESSERT: "Hours", StopKind.TEA: "Hours",
+    StopKind.COFFEE: "Hours", StopKind.GALLERY: "What is on",
+    StopKind.MUSEUM: "What is on", StopKind.SHOPPING: "Hours",
+    StopKind.ACTIVITY: "Details",
+}
+
+# Kinds that are usually programmed rather than open-door. Until a venue has
+# been checked individually, the card says so rather than implying you can
+# turn up. Honest uncertainty beats a confident wrong answer.
+# What a stop of each kind should actually be about. The dataset's categories
+# are coarse -- "club" covers both a dance floor and a members' room -- so the
+# venue's own description is used to tell them apart. A CLUB stop should mean
+# music and dancing, not a sofa and a doorman.
+KIND_KEYWORDS: dict[StopKind, tuple[str, ...]] = {
+    StopKind.CLUB:   ("dance", "dancing", "dj", "djs", "techno", "house",
+                      "disco", "dancefloor", "dance floor", "party", "nightclub",
+                      "late-night", "soundsystem", "sound system"),
+    StopKind.SHOW:   ("live music", "band", "bands", "concert", "gig", "stage",
+                      "venue", "jazz", "sets", "performance"),
+    StopKind.DRINKS: ("cocktail", "cocktails", "wine", "beer", "bar", "natural wine"),
+    StopKind.HOTEL_BAR: ("hotel", "rooftop", "lobby", "terrace"),
+    StopKind.DINNER: ("restaurant", "menu", "kitchen", "plates", "dining",
+                      "tasting", "trattoria", "cuisine"),
+    StopKind.DESSERT: ("ice cream", "dessert", "pastry", "bakery", "gelato",
+                       "cake", "sweet", "soft serve"),
+    StopKind.TEA:    ("tea", "matcha", "teahouse", "tea room"),
+    StopKind.GALLERY: ("gallery", "exhibition", "artist", "opening", "art"),
+    StopKind.MUSEUM: ("museum", "collection", "exhibition"),
+    StopKind.THEATRE: ("theater", "theatre", "play", "stage", "dance company",
+                       "performance"),
+    StopKind.SCREENING: ("cinema", "film", "screening", "repertory", "movies"),
+    StopKind.SHOPPING: ("shop", "store", "vintage", "records", "books", "market",
+                        "boutique"),
+}
+
+# A venue whose description says nothing relevant is not rejected, it just
+# loses to one that does. Rejecting outright would empty the thinner
+# categories entirely.
+def _keyword_miss(row: dict, kind: StopKind) -> int:
+    """0 when the description matches what this kind of stop is for, 1 when it
+    says nothing either way."""
+    words = KIND_KEYWORDS.get(kind)
+    if not words:
+        return 0
+    text = f"{row.get('one_line', '')} {row.get('name', '')}".lower()
+    if not text.strip():
+        return 1
+    return 0 if any(w in text for w in words) else 1
+
+
+TICKETED_KINDS: frozenset[StopKind] = frozenset({
+    StopKind.SHOW, StopKind.THEATRE, StopKind.SCREENING, StopKind.CLUB,
+})
+
 PRICE_CEILING = {
     PriceBand.FREE: 0.0, PriceBand.CHEAP: 25.0, PriceBand.MODERATE: 60.0,
     PriceBand.SPENDY: 120.0, PriceBand.SPLURGE: 250.0,
@@ -76,9 +141,60 @@ PRICE_CEILING = {
 
 WALK_MINUTES_PER_MILE = 20
 
+# New York is a grid, so you cannot cut the diagonal between two points. A
+# straight line underestimates a real walk by roughly a third, which is the
+# difference between "two minutes" and actually arriving on time.
+GRID_FACTOR = 1.32
+
+# Travel is reported in the increments people actually think in. "Twelve
+# minutes" is a number; "fifteen minutes" is a plan.
+TRAVEL_BUCKETS = (5, 15, 30, 60)
+
+
+def _bucket_travel(minutes: float) -> int:
+    """Round a journey to 5, 15, 30 or 60 minutes, whichever is nearest."""
+    if minutes <= 0:
+        return TRAVEL_BUCKETS[0]
+    return min(TRAVEL_BUCKETS, key=lambda b: (abs(b - minutes), b))
+
+
+def _round_clock(moment: datetime) -> datetime:
+    """Round a start time up to the next quarter hour.
+
+    A plan that says 9:02 reads like a train timetable. Rounding up rather
+    than to nearest also means the time printed is never earlier than the
+    journey actually allows.
+    """
+    if moment.minute % 15 == 0 and moment.second == 0:
+        return moment.replace(second=0, microsecond=0)
+    add = 15 - (moment.minute % 15)
+    return (moment + timedelta(minutes=add)).replace(second=0, microsecond=0)
+
 # The whole night should fit inside a believable radius of the first stop.
 # Beyond this it stops being an evening and becomes a commute.
 MAX_NIGHT_MILES = 2.5
+
+# When someone explicitly wants to range across the city. Still bounded: an
+# unbounded night is a night spent on the train.
+ROAM_NIGHT_MILES = 7.0
+
+
+def _same_area(a: dict, b: dict) -> int:
+    """Geographic closeness without coordinates: 0 same neighborhood,
+    1 same borough, 2 different borough.
+
+    New Yorkers are acutely aware of travel time, and until a venue is
+    geocoded the mileage check cannot run at all. This is the fallback that
+    stops a plan sending someone from the Lower East Side to Williamsburg
+    between courses just because neither venue has a latitude yet.
+    """
+    an, bn = (a.get("neighborhood") or "").lower(), (b.get("neighborhood") or "").lower()
+    if an and an == bn:
+        return 0
+    ab, bb = (a.get("borough") or "").lower(), (b.get("borough") or "").lower()
+    if ab and ab == bb:
+        return 1
+    return 2
 
 
 def _miles_apart(a: dict, b: dict) -> float | None:
@@ -93,18 +209,39 @@ def _miles_apart(a: dict, b: dict) -> float | None:
     return haversine_miles(a["lat"], a["lon"], b["lat"], b["lon"])
 
 
-def _rank(row: dict, anchor: dict | None) -> tuple:
-    """Sort key: known-near first, then unknown, then known-far.
+def _incompleteness(row: dict) -> int:
+    """How much of a card this venue cannot fill: 0 best, 2 worst.
 
-    An unplaceable venue is not rejected, it just loses to one we can confirm
-    is round the corner.
+    A stop with no coordinates draws no map and no walk time, and one with no
+    website shows no button. Both are honest omissions, but a plan full of
+    them looks broken, so a complete record wins a tie. Nothing is invented to
+    fill the gap; we simply prefer the venues we actually know more about.
     """
+    return (row.get("lat") is None) + (not row.get("website"))
+
+
+def _rank(row: dict, anchor: dict | None, kind: StopKind,
+          max_miles: float = MAX_NIGHT_MILES) -> tuple:
+    """Sort key: right kind of place, then near, then well documented.
+
+    Order matters. Relevance comes first because a nearby venue that is the
+    wrong sort of place is not a better answer than a right one ten minutes
+    away. Proximity comes second because the less time spent travelling, the
+    more of the night is actually spent somewhere.
+    """
+    miss = _keyword_miss(row, kind)
+    incomplete = _incompleteness(row)
+
     if anchor is None:
-        return (0, 0.0, row.get("lat") is None)
+        return (miss, 0, incomplete, 0.0)
+
     distance = _miles_apart(anchor, row)
     if distance is None:
-        return (1, 0.0, True)            # unknown: middle of the pack
-    return (0 if distance <= MAX_NIGHT_MILES else 2, round(distance, 2), False)
+        area = _same_area(anchor, row)
+        return (miss, area, incomplete, 50.0 + area)
+
+    band = 0 if distance <= max_miles else 2
+    return (miss, band, incomplete, round(distance, 2))
 
 
 @lru_cache(maxsize=1)
@@ -118,9 +255,30 @@ def venue_copy() -> dict[str, dict]:
         return {}
 
 
-@lru_cache(maxsize=1)
+def _data_fingerprint() -> tuple:
+    """Modification times of the files the catalogue is built from.
+
+    Used as the cache key so rebuilding the dataset takes effect without a
+    restart. An earlier version cached on nothing, so after an hour of
+    geocoding the running app was still serving the old coordinates and every
+    plan came back without a map.
+    """
+    out = []
+    for path in (VENUES_FILE, CANDIDATES_FILE):
+        try:
+            out.append(path.stat().st_mtime_ns)
+        except OSError:
+            out.append(0)
+    return tuple(out)
+
+
 def catalogue() -> list[dict[str, Any]]:
     """Every venue we can place, from both datasets, flattened."""
+    return _catalogue_cached(_data_fingerprint())
+
+
+@lru_cache(maxsize=2)
+def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
 
     for v in venues().values():
@@ -135,10 +293,9 @@ def catalogue() -> list[dict[str, Any]]:
             "website": None, "source_url": v.source_url,
         })
 
-    path = DATA_DIR / "candidate_venues.json"
-    if path.is_file():
+    if CANDIDATES_FILE.is_file():
         try:
-            for v in json.loads(path.read_text(encoding="utf-8")).get("venues", []):
+            for v in json.loads(CANDIDATES_FILE.read_text(encoding="utf-8")).get("venues", []):
                 band = None
                 if v.get("price_band"):
                     try:
@@ -194,16 +351,33 @@ def _travel_minutes(a: dict, b: dict) -> tuple[int, str]:
     # a number someone will plan their evening around.
     if None in (a.get("lat"), a.get("lon"), b.get("lat"), b.get("lon")):
         return 0, ""
-    miles = haversine_miles(a["lat"], a["lon"], b["lat"], b["lon"])
+    miles = haversine_miles(a["lat"], a["lon"], b["lat"], b["lon"]) * GRID_FACTOR
     if miles <= 0.9:
-        return max(2, round(miles * WALK_MINUTES_PER_MILE)), "walk"
+        return _bucket_travel(miles * WALK_MINUTES_PER_MILE), "walk"
     if miles <= 4:
-        return max(8, round(miles * 6)), "subway"
-    return max(12, round(miles * 4)), "cab"
+        return _bucket_travel(max(10, miles * 6)), "subway"
+    return _bucket_travel(max(15, miles * 4)), "cab"
 
 
 def _to_stop(row: dict, kind: StopKind, start: datetime, end: datetime | None,
              travel: tuple[int, str] | None) -> Stop:
+    """Build one stop. Also decides whether it can honestly be called a SHOW.
+
+    The schema requires a SHOW to state its room size, because the size of the
+    room is the product's whole promise. Most venues in the discovered dataset
+    have no capacity on file, so rather than fail the plan or invent a number,
+    such a stop is reported as a late one instead. Demoting the label is
+    honest; guessing the capacity would not be.
+    """
+    size = row.get("size")
+    if size is None:
+        known = lookup_venue(row["name"])
+        if known is not None:
+            size = known.size
+            row = {**row, "size": size, "capacity": known.main_space.capacity}
+    if kind is StopKind.SHOW and size is None:
+        kind = StopKind.LATE
+
     copy = venue_copy().get(row["name"], {})
     why = copy.get("why") or row.get("one_line") or (
         f"{row['category'].replace('_', ' ').title()} in {row['neighborhood']}.")
@@ -217,6 +391,16 @@ def _to_stop(row: dict, kind: StopKind, start: datetime, end: datetime | None,
     else:
         sources = [Source(name=copy.get("source_name") or "The Programme dataset",
                           url=row.get("source_url") or None)]
+    # The venue's own page. The About page promises every button opens the
+    # venue's own site, and this is where that promise is kept. Anything that
+    # fails the allowlist check is dropped downstream rather than shown.
+    booking_url = booking_label = None
+    if (site := row.get("website")) and str(site).startswith("https://"):
+        verdict, _ = classify_booking_url(str(site))
+        if verdict in {"trusted", "venue"}:
+            booking_url = str(site)
+            booking_label = BOOKING_LABEL.get(kind, "Visit")
+
     return Stop(
         name=row["name"], kind=kind, neighborhood=row["neighborhood"] or "New York",
         start_time=start.strftime("%H:%M"),
@@ -224,11 +408,48 @@ def _to_stop(row: dict, kind: StopKind, start: datetime, end: datetime | None,
         why=why[:320], order_this=copy.get("order_this"),
         venue_size=row["size"], capacity=row["capacity"],
         setting=row["setting"], price_band=row["price_band"],
+        entry=(Entry(row["entry"]) if row.get("entry")
+               else (Entry.TICKETED if kind in TICKETED_KINDS else Entry.WALK_IN)),
         lat=row.get("lat"), lon=row.get("lon"),
         travel_minutes_from_previous=travel[0] if travel else None,
         travel_mode=travel[1] if travel else None,
+        booking_url=booking_url, booking_label=booking_label,
         sources=sources,
     )
+
+
+def _pick_area(rows: list[dict], kinds: list[StopKind], brief: Brief,
+               rng: random.Random) -> str | None:
+    """Choose the borough the night happens in, before choosing any venue.
+
+    Picking a restaurant first and then hoping a club is nearby produces
+    either a cross-city plan or a plan missing its second half. Deciding the
+    area first guarantees both: everything that follows is already local.
+
+    Prefers a borough that can satisfy every kind asked for. Falls back to the
+    one that covers the most.
+    """
+    if brief.borough:
+        return brief.borough
+
+    boroughs: dict[str, set[StopKind]] = {}
+    for row in rows:
+        b = row.get("borough")
+        if not b:
+            continue
+        for kind in kinds:
+            if row["category"] in KIND_CATEGORIES.get(kind, ()):
+                boroughs.setdefault(b, set()).add(kind)
+
+    if not boroughs:
+        return None
+
+    best = max(len(v) for v in boroughs.values())
+    complete = [b for b, v in boroughs.items() if len(v) == best]
+    # Weight by how much there is to choose from, so Manhattan and Brooklyn
+    # come up more often than Staten Island without ever excluding it.
+    weights = [sum(1 for r in rows if r.get("borough") == b) for b in complete]
+    return rng.choices(complete, weights=weights, k=1)[0]
 
 
 def build_night(brief: Brief, seed: int | None = None,
@@ -246,6 +467,19 @@ def build_night(brief: Brief, seed: int | None = None,
     rng = random.Random(seed)
     when = brief.date or Date.today()
     kinds = _wanted_kinds(brief)
+
+    # Someone who asks to bounce around the city is asking for a wider night,
+    # so the radius opens up. Everyone else gets the tight one, because the
+    # less time spent travelling, the more places you actually get to.
+    roaming = bool(getattr(brief, "roam", False))
+    max_miles = ROAM_NIGHT_MILES if roaming else MAX_NIGHT_MILES
+
+    # Decide where the night happens before deciding what is in it.
+    area = None if roaming else _pick_area(rows, kinds, brief, rng)
+    if area:
+        local = [r for r in rows if (r.get("borough") or "").lower() == area.lower()]
+        if len(local) >= len(kinds):
+            rows = local
 
     chosen: list[tuple[StopKind, dict]] = []
     used: set[str] = set(exclude or ())
@@ -267,15 +501,19 @@ def build_night(brief: Brief, seed: int | None = None,
         rng.shuffle(options)
 
         anchor = chosen[0][1] if chosen else None
-        options.sort(key=lambda r: _rank(r, anchor))
+        options.sort(key=lambda r: _rank(r, anchor, kind, max_miles))
         pick = options[0]
 
-        # A night that crosses the city is not a night. Drop a stop only when
-        # we KNOW it is too far -- an unknown distance is not a reason to lose
-        # a venue, it is a reason to geocode it later.
+        # A night that crosses the city is not a night.
         if anchor is not None:
             apart = _miles_apart(anchor, pick)
-            if apart is not None and apart > MAX_NIGHT_MILES:
+            if apart is not None:
+                if apart > max_miles:
+                    continue
+            elif not roaming and _same_area(anchor, pick) == 2:
+                # Different boroughs, and no coordinates to prove it is close.
+                # Leave the stop out rather than put someone on a long train
+                # ride they did not ask for.
                 continue
         used.add(pick["name"])
         chosen.append((kind, pick))
@@ -297,25 +535,43 @@ def build_night(brief: Brief, seed: int | None = None,
             gap, mode = _travel_minutes(previous, row)
             travel = (gap, mode) if gap else None
             earliest = cursor + timedelta(minutes=gap or 15) if cursor else wanted
-            start = max(wanted, earliest)
+            start = _round_clock(max(wanted, earliest))
         else:
-            start = wanted
+            start = _round_clock(wanted)
 
         end = start + timedelta(minutes=minutes)
         stops.append(_to_stop(row, kind, start, end, travel))
         cursor, previous = end, row
 
-    first, last = chosen[0][1], chosen[-1][1]
-    where = first["neighborhood"] or brief.neighborhood or "New York"
+    # Name every neighborhood the night touches, in the order you reach them.
+    # Saying only the first is how someone ends up surprised by a train ride
+    # they did not agree to.
+    seen: list[str] = []
+    for _, row in chosen:
+        hood = (row.get("neighborhood") or "").strip()
+        if hood and hood not in seen:
+            seen.append(hood)
+
+    if not seen:
+        where = brief.neighborhood or brief.borough or "New York"
+    elif len(seen) == 1:
+        where = seen[0]
+    elif len(seen) == 2:
+        where = f"{seen[0]} and {seen[1]}"
+    else:
+        where = ", ".join(seen[:-1]) + f" and {seen[-1]}"
+
     headline = f"{when:%A} in {where}"
 
     names = [s.name for s in stops]
     if len(names) == 1:
         summary = f"A night at {names[0]}."
+    elif len(names) == 2:
+        summary = f"A night that starts at {names[0]} and ends at {names[1]}."
     else:
-        summary = f"A night that starts at {names[0]}, " + \
-                  ", then ".join(names[1:-1] + [f"and ends at {names[-1]}."]) \
-                  if len(names) > 2 else f"A night that starts at {names[0]} and ends at {names[1]}."
+        middle = ", then ".join(names[1:-1])
+        summary = (f"A night that starts at {names[0]}, then {middle}, "
+                   f"and ends at {names[-1]}.")
 
     return Night(
         summary=summary, headline=headline, dek="",

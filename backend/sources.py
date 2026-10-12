@@ -296,15 +296,28 @@ def find_rooms(
 
 
 def dataset_status() -> dict[str, Any]:
-    """Shown in the UI footer and recorded in the audit trail, so every
-    screenshot says whether it came from live data or the committed sample."""
+    """Shown in the UI footer and recorded in the audit trail.
+
+    Counts the WHOLE catalogue, not just the music venues. An earlier version
+    reported only this file's 45 venues while the page alongside it said 845,
+    which read as a bug because it was one.
+    """
     all_spaces = [sp for v in venues().values() for sp in v.spaces]
+
+    # Imported here rather than at module scope: planner imports sources, so a
+    # top-level import would be circular.
+    from planner import catalogue
+
+    rows = catalogue()
     return {
-        "venues_known": len(venues()),
+        "venues_known": len(rows),
+        "venues_mapped": sum(1 for r in rows if r.get("lat") is not None),
         "rooms_known": len(all_spaces),
         "rooms_with_capacity": sum(1 for sp in all_spaces if sp.capacity),
         "multi_room_venues": sum(1 for v in venues().values() if len(v.spaces) > 1),
         "outdoor_rooms": sum(1 for sp in all_spaces if sp.setting.weather_dependent),
+        "neighborhoods": len({r.get("neighborhood") for r in rows if r.get("neighborhood")}),
+        "categories": len({r.get("category") for r in rows if r.get("category")}),
         "events_loaded": len(events()),
         "events_source": "live pull" if using_live_events() else "committed sample",
     }

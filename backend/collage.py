@@ -123,3 +123,79 @@ def collage_credit_line() -> str:
         return ""
     shown = ", ".join(names[:4]) + (", and others" if len(names) > 4 else "")
     return f"Placeholder imagery via Openverse: {shown}. To be replaced with original photography."
+
+
+# ---------------------------------------------------------------------------
+# Placeholder vibes
+# ---------------------------------------------------------------------------
+
+# One of these sits in the vibe field on each load. They double as a tour:
+# between them they demonstrate group size, room size, indoors and out, the
+# arts, budget, timing and the bias against the obvious, without the page
+# having to explain any of it.
+VIBES: tuple[str, ...] = (
+    # Each one should plant an idea rather than describe a filter. Someone who
+    # arrives with no plan should read one of these and want that night.
+    "a museum that stays open late, then noodles…",
+    "an opening in a neighborhood I have never been to…",
+    "oysters, and then a play…",
+    "a basement, a DJ, and nobody filming…",
+    "vintage shopping, then somewhere with a garden…",
+    "a double feature with dumplings in between…",
+    "somewhere that used to be a bank…",
+    "tea in the afternoon that turns into wine…",
+    "a night that starts in a bookshop…",
+    "an early show, so there is still time for dinner…",
+    "a bar with a view of something, anything…",
+    "dancing somewhere with no sign on the door…",
+    "a long dinner and nowhere to be afterwards…",
+    "live music I have never heard of…",
+    "a rooftop while the weather still allows it…",
+    "somewhere with a piano and no cover…",
+    "the kind of night you end up telling people about…",
+    "loud and a little sweaty, somewhere we can actually dance…",
+    "quiet enough to hear each other, good wine, not a scene…",
+    "somewhere I can disappear into the crowd…",
+    "it is my birthday, there are eight of us, we need a table…",
+    "a back room and a long table, twelve of us…",
+    "first date, nowhere with a line…",
+    "friends are in town and I want to show off the city…",
+    "cheap, late, and walkable…",
+    "out alone, happily, with something to look at…",
+    "somewhere my parents would like that I would like too…",
+    "forty dollars and nowhere to be…",
+)
+
+
+def suggested_vibe(seed: int | None = None) -> str:
+    """A different one each time the page is loaded."""
+    return random.Random(seed).choice(VIBES)
+
+
+# Short labels for the chips under the vibe field, each with the longer request
+# it fills in. Rotated per load like the placeholder, so the page suggests
+# something different every time rather than the same five ideas forever.
+SEEDS: tuple[tuple[str, str], ...] = (
+    ("art first", "a gallery opening, then dinner somewhere I would never think to go"),
+    ("lost in a crowd", "loud, late, dancing, I want to disappear into a crowd"),
+    ("quiet and good", "somewhere I can hear a conversation, good wine, not a scene"),
+    ("a long dinner", "a long dinner and nowhere to be afterwards"),
+    ("museum late", "a museum that stays open late, then somewhere to eat nearby"),
+    ("birthday, eight of us", "it is my birthday, there are eight of us, we need a table and then somewhere to dance"),
+    ("on a roof", "a rooftop while the weather still allows it, then somewhere after"),
+    ("under forty dollars", "cheap, late, walkable, forty dollars and nowhere to be"),
+    ("first date", "a first date, nowhere with a line, somewhere we can talk"),
+    ("no sign on the door", "dancing somewhere with no sign on the door"),
+    ("show me off the city", "friends are in town and I want to show off the city"),
+    ("out alone", "out on my own, happily, with something to look at"),
+    ("tea into wine", "tea in the afternoon that turns into wine"),
+    ("surprise me", "surprise me, somewhere I would never think to go"),
+)
+
+
+def suggested_seeds(count: int = 5, seed: int | None = None) -> list[tuple[str, str]]:
+    """A handful of chips, different each load. 'Surprise me' always stays."""
+    rng = random.Random(seed)
+    pool = [s for s in SEEDS if s[0] != "surprise me"]
+    picked = rng.sample(pool, min(count - 1, len(pool)))
+    return picked + [("surprise me", dict(SEEDS)["surprise me"])]

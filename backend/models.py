@@ -102,6 +102,30 @@ class StopKind(str, Enum):
     ACTIVITY = "activity"
 
 
+class Entry(str, Enum):
+    """Can you walk in, or do you need a ticket for something specific?
+
+    This is the difference between a plan that works and one that leaves you
+    outside a dark building. A bar you turn up to. A promoter-led venue opens
+    only for programmed events, so "club, 11pm" is a promise it cannot keep
+    unless something is actually on that night.
+    """
+
+    WALK_IN = "walk_in"        # turn up
+    TICKETED = "ticketed"      # only open for programmed events
+    EITHER = "either"          # a bar most nights, a venue when something is on
+    UNKNOWN = "unknown"        # not checked, and said so
+
+    @property
+    def note(self) -> str:
+        return {
+            "walk_in": "",
+            "ticketed": "Opens for programmed events only. Check what is on before you go.",
+            "either": "Sometimes a walk-in, sometimes a ticketed night. Check the listing.",
+            "unknown": "We have not checked whether this needs a ticket.",
+        }[self.value]
+
+
 class PriceBand(str, Enum):
     FREE = "free"
     CHEAP = "$"
@@ -147,6 +171,10 @@ class Stop(BaseModel):
     setting: Setting | None = Field(
         default=None,
         description="Indoor/outdoor/rooftop. Drives the seasonal warning on the rendered page.",
+    )
+    entry: Entry | None = Field(
+        default=None,
+        description="Walk in, or does it need a ticket for a specific event?",
     )
     capacity: int | None = Field(default=None, description="Stated capacity, when a source gives one.")
     price_band: PriceBand | None = Field(default=None)

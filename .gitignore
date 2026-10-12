@@ -13,6 +13,9 @@ venv/
 
 # Generated at runtime
 output/plans/
+output/*.log
+output/preview.html
+output/index.html
 output/*.tmp
 output/*.corrupt.json
 
