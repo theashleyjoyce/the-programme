@@ -115,6 +115,54 @@ check("a real venue has its missing facts filled from our own data, not guessed"
       night.stops[0].venue_size is not None and night.stops[0].lat is not None,
       f"size={night.stops[0].venue_size} coords={night.stops[0].lat is not None}")
 
+check("a booking link the model invented but did not cite is dropped",
+      (lambda: (
+          lambda n: n.stops[0].booking_url is None
+      )(repair_draft(NightDraft(
+          summary="s", headline="h", date="2026-10-18", neighborhood="SoHo", vibe="v",
+          stops=[Stop(name="JIMMY SoHo", kind=StopKind.DRINKS, neighborhood="SoHo",
+                      start_time="21:00", why="A rooftop bar.",
+                      booking_url="https://resy.com/cities/new-york-ny/venues/jimmy",
+                      booking_label="Book a table",
+                      sources=[Source(name="Time Out",
+                                      url="https://www.timeout.com/newyork/x")])]))[0]))(),
+      "a remembered Resy URL resolves, but opens a different restaurant")
+
+# A cited link must ALSO be confirmed to open that venue. Seed the cache so
+# the test exercises the real rule rather than reaching the network.
+import linkcheck  # noqa: E402
+
+linkcheck._load()[
+    "resy.com|/venues/somewhere|somewhere real"
+] = {"ok": True, "at": int(__import__("time").time()),
+     "url": "https://resy.com/venues/somewhere", "venue": "Somewhere Real"}
+
+check("a cited AND verified booking link survives",
+      (lambda: (
+          lambda n: n.stops[0].booking_url is not None
+      )(repair_draft(NightDraft(
+          summary="s", headline="h", date="2026-10-18", neighborhood="SoHo", vibe="v",
+          stops=[Stop(name="Somewhere Real", kind=StopKind.DRINKS, neighborhood="SoHo",
+                      start_time="21:00", why="Cited.",
+                      booking_url="https://resy.com/venues/somewhere",
+                      booking_label="Book a table",
+                      sources=[Source(name="Resy",
+                                      url="https://resy.com/venues/somewhere")])]))[0]))(),
+      "cited by the model, and the page confirmed to name the venue")
+
+check("a cited but UNVERIFIED booking link is still hidden",
+      (lambda: (
+          lambda n: n.stops[0].booking_url is None
+      )(repair_draft(NightDraft(
+          summary="s", headline="h", date="2026-10-18", neighborhood="SoHo", vibe="v",
+          stops=[Stop(name="Never Checked", kind=StopKind.DRINKS, neighborhood="SoHo",
+                      start_time="21:00", why="Cited but unverified.",
+                      booking_url="https://resy.com/venues/never-checked",
+                      booking_label="Book a table",
+                      sources=[Source(name="Resy",
+                                      url="https://resy.com/venues/never-checked")])]))[0]))(),
+      "a citation is not proof the page opens the right venue")
+
 # ───────────────────────────────────────────── 4. overspending
 head("4. Overspending and runaway loops")
 

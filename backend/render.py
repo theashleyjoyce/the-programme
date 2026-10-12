@@ -328,7 +328,8 @@ def _advisory(night: Night) -> str:
 
 
 def _colophon(night: Night, brief: Brief | None, usage: dict | None,
-              dataset: dict | None, budget: dict | None = None) -> str:
+              dataset: dict | None, budget: dict | None = None,
+              show_costs: bool = False) -> str:
     """Magazine colophon, doing double duty as rubric evidence.
 
     The assignment says the app may display its own token usage as tokenomics
@@ -337,7 +338,11 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
     """
     cols: list[str] = []
 
-    if usage:
+    # Token counts and the running spend are operator figures, not reader
+    # ones. Nobody choosing a restaurant wants to see how much the business
+    # has left in its budget. They stay available behind ?costs=1, which is
+    # what the tokenomics evidence screenshots use.
+    if usage and show_costs:
         cols.append(
             "<div><h4>What this cost</h4>"
             f'<p class="colophon__figure">{usage.get("input_tokens", 0):,} input · '
@@ -355,7 +360,7 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
             f'<p>{dataset.get("categories", 0)} kinds of evening, all five boroughs</p>'
             f'<p>{dataset.get("venues_mapped", 0):,} with coordinates on file</p></div>')
 
-    if budget:
+    if budget and show_costs:
         cols.append(
             "<div><h4>Running total</h4>"
             f'<p class="colophon__figure">${budget["spent_usd"]:.2f} of '
@@ -368,9 +373,10 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
                     f'<p>“{e(brief.vibe)}”</p><p>{e(brief.constraints_summary())}</p></div>')
 
     cols.append("<div><h4>How to read this</h4>"
-                "<p>Capacities are researched per room and cited. Booking links "
-                "open the venue's own page — The Programme never completes a "
-                "purchase for you.</p></div>")
+                "<p>Room sizes are researched per venue and cited. Every link "
+                "opens the venue's own page, and we check it really is theirs "
+                "before showing it. The Programme never books anything for "
+                "you.</p></div>")
 
     return f'<footer class="colophon">{"".join(cols)}</footer>'
 
@@ -381,6 +387,7 @@ def render_night(
     usage: dict | None = None,
     dataset: dict | None = None,
     budget: dict | None = None,
+    show_costs: bool = False,
     standalone: bool = False,
 ) -> str:
     """Full HTML document for one night."""
@@ -428,6 +435,6 @@ def render_night(
   <a href="/">Plan a different night</a>
 </div>
 
-{_colophon(night, brief, usage, dataset, budget)}
+{_colophon(night, brief, usage, dataset, budget, show_costs)}
 </body>
 </html>"""

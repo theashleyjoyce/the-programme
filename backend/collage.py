@@ -16,6 +16,10 @@ import random
 from pathlib import Path
 
 IMG_DIR = Path(__file__).resolve().parent.parent / "frontend" / "static" / "img"
+
+# Below this an image reads as a blank rectangle on the page. Measured by
+# scripts/rank_images.py from contrast, saturation and brightness.
+MIN_QUALITY = 45.0
 CREDITS = IMG_DIR / "credits.json"
 
 # Order matters -- it is the visual rhythm of the cluster, biggest first.
@@ -70,16 +74,26 @@ def collage_images(count: int = 8, seed: int | None = None) -> list[dict]:
         options = by_slot.get(slot)
         if not options:
             continue
+        # A floor, not a preference. An image that renders as a white
+        # rectangle is worse than one fewer tile, and a soft "prefer the good
+        # ones" still let the shuffle draw them.
+        usable = [o for o in options
+                  if (o[1].get("quality") is None or o[1]["quality"] >= MIN_QUALITY)]
         pinned = [o for o in options if o[1].get("pinned")]
         if pinned:
             name, meta = pinned[0]
+        elif not usable:
+            continue          # nothing in this slot is good enough to show
         else:
+            options = usable
             # Shuffle among the strongest images rather than all of them. A
             # washed-out photo renders as an empty rectangle against the paper
             # background, so rotation should not be free to pick one.
             # scripts/rank_images.py writes the "quality" score.
+        if not pinned:
             ranked = sorted(options, key=lambda o: -(o[1].get("quality") or 0))
-            top = [o for o in ranked if (o[1].get("quality") or 0) >= (ranked[0][1].get("quality") or 0) * 0.8]
+            top = [o for o in ranked
+                   if (o[1].get("quality") or 0) >= (ranked[0][1].get("quality") or 0) * 0.8]
             name, meta = rng.choice(top or ranked)
         picked.append({
             "src": f"/static/img/{name}",

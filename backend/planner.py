@@ -33,6 +33,7 @@ from config import DATA_DIR
 from models import (
     Entry, Night, PriceBand, Setting, Source, Stop, StopKind, VenueSize,
 )
+from linkcheck import verify
 from sanitize import classify_booking_url
 from sources import lookup_venue, venues
 from transit import haversine_miles
@@ -220,8 +221,40 @@ def _incompleteness(row: dict) -> int:
     return (row.get("lat") is None) + (not row.get("website"))
 
 
+def _style_miss(row: dict, style: list[str]) -> int:
+    """How badly a venue misses what was asked for: 0 best, 2 worst.
+
+    Three tiers, because a structured tag is a stronger signal than a word
+    that happens to appear in a sentence:
+
+        0  a cuisine or genre tag matches     "techno" vs genre=["techno"]
+        1  the description mentions it        "techno" appears in the prose
+        2  nothing matches
+
+    Tiered rather than binary so a request still returns something when
+    nothing in the city matches exactly, rather than an empty page.
+    """
+    if not style:
+        return 0
+
+    wanted = [w.lower().strip() for w in style if w.strip()]
+    if not wanted:
+        return 0
+
+    tags = {t.lower() for t in (row.get("cuisine") or []) + (row.get("genre") or [])}
+    if tags and any(w in t or t in w for w in wanted for t in tags):
+        return 0
+
+    text = f"{row.get('one_line', '')} {row.get('name', '')}".lower()
+    if text.strip() and any(w in text for w in wanted):
+        return 1
+
+    return 2
+
+
 def _rank(row: dict, anchor: dict | None, kind: StopKind,
-          max_miles: float = MAX_NIGHT_MILES) -> tuple:
+          max_miles: float = MAX_NIGHT_MILES,
+          style: list[str] | None = None) -> tuple:
     """Sort key: right kind of place, then near, then well documented.
 
     Order matters. Relevance comes first because a nearby venue that is the
@@ -229,19 +262,23 @@ def _rank(row: dict, anchor: dict | None, kind: StopKind,
     away. Proximity comes second because the less time spent travelling, the
     more of the night is actually spent somewhere.
     """
+    # Asked-for style comes first. Someone who said "techno" would rather
+    # travel ten minutes for a techno room than walk two minutes to a room
+    # playing something else.
+    style_miss = _style_miss(row, style or [])
     miss = _keyword_miss(row, kind)
     incomplete = _incompleteness(row)
 
     if anchor is None:
-        return (miss, 0, incomplete, 0.0)
+        return (style_miss, miss, 0, incomplete, 0.0)
 
     distance = _miles_apart(anchor, row)
     if distance is None:
         area = _same_area(anchor, row)
-        return (miss, area, incomplete, 50.0 + area)
+        return (style_miss, miss, area, incomplete, 50.0 + area)
 
     band = 0 if distance <= max_miles else 2
-    return (miss, band, incomplete, round(distance, 2))
+    return (style_miss, miss, band, incomplete, round(distance, 2))
 
 
 @lru_cache(maxsize=1)
@@ -291,6 +328,7 @@ def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
             "setting": room.setting, "size": room.size,
             "price_band": None, "good_for_groups": v.takes_large_groups,
             "website": None, "source_url": v.source_url,
+            "cuisine": [], "genre": [],
         })
 
     if CANDIDATES_FILE.is_file():
@@ -312,6 +350,8 @@ def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
                     "website": v.get("website"), "source_url": v.get("website"),
                     "one_line": v.get("one_line", ""),
                     "sources": v.get("sources") or [],
+                    "cuisine": v.get("cuisine") or [],
+                    "genre": v.get("genre") or [],
                 })
         except json.JSONDecodeError:
             pass
@@ -333,8 +373,14 @@ def _matches(row: dict, kind: StopKind, brief: Brief) -> bool:
     if brief.is_group and row.get("good_for_groups") is False:
         return False
     if brief.budget and brief.budget is not Budget.NO_LIMIT and row["price_band"]:
+        spend = PRICE_CEILING.get(row["price_band"], 0)
         ceiling = brief.budget.ceiling_usd
-        if ceiling is not None and PRICE_CEILING.get(row["price_band"], 0) > ceiling:
+        if ceiling is not None and spend > ceiling:
+            return False
+        # A budget is a target, not only a limit. Someone who says "high end"
+        # is asking to be taken somewhere good, so a $ dive is as wrong an
+        # answer as a $$$$ one is for someone who said cheap.
+        if brief.budget is Budget.SPENDY and spend < PRICE_CEILING[PriceBand.MODERATE]:
             return False
     return True
 
@@ -397,7 +443,10 @@ def _to_stop(row: dict, kind: StopKind, start: datetime, end: datetime | None,
     booking_url = booking_label = None
     if (site := row.get("website")) and str(site).startswith("https://"):
         verdict, _ = classify_booking_url(str(site))
-        if verdict in {"trusted", "venue"}:
+        # Two gates. The allowlist stops a lookalike domain; the link check
+        # stops a real domain that opens the wrong venue. Cache only, so this
+        # never adds time to a request.
+        if verdict in {"trusted", "venue"} and verify(str(site), row["name"], allow_fetch=False):
             booking_url = str(site)
             booking_label = BOOKING_LABEL.get(kind, "Visit")
 
@@ -501,7 +550,7 @@ def build_night(brief: Brief, seed: int | None = None,
         rng.shuffle(options)
 
         anchor = chosen[0][1] if chosen else None
-        options.sort(key=lambda r: _rank(r, anchor, kind, max_miles))
+        options.sort(key=lambda r: _rank(r, anchor, kind, max_miles, brief.style))
         pick = options[0]
 
         # A night that crosses the city is not a night.

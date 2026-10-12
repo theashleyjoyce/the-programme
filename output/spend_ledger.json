@@ -7,8 +7,9 @@
       "input_tokens": 0,
       "cached_input_tokens": 0,
       "output_tokens": 0,
-      "cost_usd": 0.4705,
-      "backfilled": true
+      "cost_usd": 0.07528,
+      "backfilled": true,
+      "note": "backfilled; rescaled when prices were corrected 2026-10-12"
     },
     {
       "at": "2026-10-12T16:57:57+00:00",
@@ -17,7 +18,7 @@
       "input_tokens": 1274,
       "cached_input_tokens": 0,
       "output_tokens": 68,
-      "cost_usd": 0.002273
+      "cost_usd": 0.000336
     },
     {
       "at": "2026-10-12T16:58:33+00:00",
@@ -26,7 +27,7 @@
       "input_tokens": 42073,
       "cached_input_tokens": 0,
       "output_tokens": 2538,
-      "cost_usd": 0.077971
+      "cost_usd": 0.01146
     },
     {
       "at": "2026-10-12T19:51:24+00:00",
@@ -35,7 +36,7 @@
       "input_tokens": 1274,
       "cached_input_tokens": 0,
       "output_tokens": 70,
-      "cost_usd": 0.002292
+      "cost_usd": 0.000339
     },
     {
       "at": "2026-10-12T19:58:44+00:00",
@@ -44,7 +45,7 @@
       "input_tokens": 19,
       "cached_input_tokens": 1256,
       "output_tokens": 67,
-      "cost_usd": 0.000851
+      "cost_usd": 0.000109
     },
     {
       "at": "2026-10-12T19:59:16+00:00",
@@ -53,7 +54,7 @@
       "input_tokens": 41495,
       "cached_input_tokens": 6638,
       "output_tokens": 2586,
-      "cost_usd": 0.078559
+      "cost_usd": 0.011535
     },
     {
       "at": "2026-10-12T19:59:27+00:00",
@@ -62,7 +63,7 @@
       "input_tokens": 37965,
       "cached_input_tokens": 0,
       "output_tokens": 1435,
-      "cost_usd": 0.061806
+      "cost_usd": 0.009315
     },
     {
       "at": "2026-10-12T20:01:06+00:00",
@@ -71,7 +72,7 @@
       "input_tokens": 42887,
       "cached_input_tokens": 0,
       "output_tokens": 2708,
-      "cost_usd": 0.080689
+      "cost_usd": 0.011827
     },
     {
       "at": "2026-10-12T20:02:22+00:00",
@@ -80,7 +81,7 @@
       "input_tokens": 21,
       "cached_input_tokens": 1256,
       "output_tokens": 73,
-      "cost_usd": 0.000913
+      "cost_usd": 0.000117
     },
     {
       "at": "2026-10-12T20:03:02+00:00",
@@ -89,7 +90,7 @@
       "input_tokens": 47307,
       "cached_input_tokens": 6638,
       "output_tokens": 2135,
-      "cost_usd": 0.081313
+      "cost_usd": 0.012156
     },
     {
       "at": "2026-10-12T20:06:57+00:00",
@@ -98,7 +99,7 @@
       "input_tokens": 2640,
       "cached_input_tokens": 0,
       "output_tokens": 589,
-      "cost_usd": 0.00919
+      "cost_usd": 0.001235
     },
     {
       "at": "2026-10-12T20:09:59+00:00",
@@ -107,7 +108,7 @@
       "input_tokens": 26810,
       "cached_input_tokens": 0,
       "output_tokens": 1915,
-      "cost_usd": 0.052663
+      "cost_usd": 0.00766
     },
     {
       "at": "2026-10-12T20:10:01+00:00",
@@ -116,7 +117,7 @@
       "input_tokens": 15,
       "cached_input_tokens": 1256,
       "output_tokens": 63,
-      "cost_usd": 0.000806
+      "cost_usd": 0.000104
     },
     {
       "at": "2026-10-12T20:11:24+00:00",
@@ -125,7 +126,7 @@
       "input_tokens": 16,
       "cached_input_tokens": 1256,
       "output_tokens": 69,
-      "cost_usd": 0.000867
+      "cost_usd": 0.000111
     },
     {
       "at": "2026-10-12T20:11:50+00:00",
@@ -134,7 +135,7 @@
       "input_tokens": 38676,
       "cached_input_tokens": 0,
       "output_tokens": 3720,
-      "cost_usd": 0.085545
+      "cost_usd": 0.012199
     },
     {
       "at": "2026-10-12T20:11:55+00:00",
@@ -143,7 +144,7 @@
       "input_tokens": 25819,
       "cached_input_tokens": 6774,
       "output_tokens": 2255,
-      "cost_usd": 0.055671
+      "cost_usd": 0.008005
     },
     {
       "at": "2026-10-12T20:12:36+00:00",
@@ -152,7 +153,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1268,
       "output_tokens": 63,
-      "cost_usd": 0.000792
+      "cost_usd": 0.000102
     },
     {
       "at": "2026-10-12T20:12:58+00:00",
@@ -161,7 +162,7 @@
       "input_tokens": 30268,
       "cached_input_tokens": 0,
       "output_tokens": 2118,
-      "cost_usd": 0.059015
+      "cost_usd": 0.008595
     },
     {
       "at": "2026-10-12T20:13:01+00:00",
@@ -170,7 +171,7 @@
       "input_tokens": 56561,
       "cached_input_tokens": 5094,
       "output_tokens": 4569,
-      "cost_usd": 0.117028
+      "cost_usd": 0.016897
     },
     {
       "at": "2026-10-12T20:13:49+00:00",
@@ -179,7 +180,7 @@
       "input_tokens": 34763,
       "cached_input_tokens": 5094,
       "output_tokens": 5466,
-      "cost_usd": 0.09875
+      "cost_usd": 0.013614
     },
     {
       "at": "2026-10-12T20:14:48+00:00",
@@ -188,7 +189,7 @@
       "input_tokens": 55993,
       "cached_input_tokens": 5094,
       "output_tokens": 4336,
-      "cost_usd": 0.113988
+      "cost_usd": 0.016504
     },
     {
       "at": "2026-10-12T20:15:43+00:00",
@@ -197,7 +198,7 @@
       "input_tokens": 50294,
       "cached_input_tokens": 5094,
       "output_tokens": 3735,
-      "cost_usd": 0.100854
+      "cost_usd": 0.014643
     },
     {
       "at": "2026-10-12T20:16:44+00:00",
@@ -206,7 +207,7 @@
       "input_tokens": 50237,
       "cached_input_tokens": 5094,
       "output_tokens": 4996,
-      "cost_usd": 0.113393
+      "cost_usd": 0.016144
     },
     {
       "at": "2026-10-12T20:18:03+00:00",
@@ -215,7 +216,7 @@
       "input_tokens": 67941,
       "cached_input_tokens": 5094,
       "output_tokens": 5090,
-      "cost_usd": 0.136463
+      "cost_usd": 0.019798
     },
     {
       "at": "2026-10-12T20:19:03+00:00",
@@ -224,7 +225,7 @@
       "input_tokens": 56787,
       "cached_input_tokens": 5094,
       "output_tokens": 4932,
-      "cost_usd": 0.120941
+      "cost_usd": 0.017378
     },
     {
       "at": "2026-10-12T20:19:20+00:00",
@@ -233,7 +234,7 @@
       "input_tokens": 15,
       "cached_input_tokens": 1256,
       "output_tokens": 62,
-      "cost_usd": 0.000796
+      "cost_usd": 0.000103
     },
     {
       "at": "2026-10-12T20:19:48+00:00",
@@ -242,7 +243,7 @@
       "input_tokens": 25824,
       "cached_input_tokens": 6728,
       "output_tokens": 2336,
-      "cost_usd": 0.056481
+      "cost_usd": 0.008103
     },
     {
       "at": "2026-10-12T20:19:48+00:00",
@@ -251,7 +252,7 @@
       "input_tokens": 31602,
       "cached_input_tokens": 5094,
       "output_tokens": 3432,
-      "cost_usd": 0.074459
+      "cost_usd": 0.010541
     },
     {
       "at": "2026-10-12T20:21:03+00:00",
@@ -260,7 +261,7 @@
       "input_tokens": 64120,
       "cached_input_tokens": 5094,
       "output_tokens": 4401,
-      "cost_usd": 0.124797
+      "cost_usd": 0.018207
     },
     {
       "at": "2026-10-12T20:22:12+00:00",
@@ -269,7 +270,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1268,
       "output_tokens": 62,
-      "cost_usd": 0.000782
+      "cost_usd": 0.0001
     },
     {
       "at": "2026-10-12T20:22:24+00:00",
@@ -278,7 +279,7 @@
       "input_tokens": 54989,
       "cached_input_tokens": 5094,
       "output_tokens": 4745,
-      "cost_usd": 0.116823
+      "cost_usd": 0.016794
     },
     {
       "at": "2026-10-12T20:22:33+00:00",
@@ -287,7 +288,7 @@
       "input_tokens": 15467,
       "cached_input_tokens": 6728,
       "output_tokens": 1898,
-      "cost_usd": 0.039155
+      "cost_usd": 0.005506
     },
     {
       "at": "2026-10-12T20:23:04+00:00",
@@ -296,7 +297,7 @@
       "input_tokens": 31563,
       "cached_input_tokens": 5094,
       "output_tokens": 2749,
-      "cost_usd": 0.067581
+      "cost_usd": 0.009713
     },
     {
       "at": "2026-10-12T20:24:30+00:00",
@@ -305,7 +306,7 @@
       "input_tokens": 66316,
       "cached_input_tokens": 5094,
       "output_tokens": 4007,
-      "cost_usd": 0.123602
+      "cost_usd": 0.018173
     },
     {
       "at": "2026-10-12T20:24:37+00:00",
@@ -314,7 +315,7 @@
       "input_tokens": 1283,
       "cached_input_tokens": 0,
       "output_tokens": 67,
-      "cost_usd": 0.002274
+      "cost_usd": 0.000337
     },
     {
       "at": "2026-10-12T20:25:15+00:00",
@@ -323,7 +324,7 @@
       "input_tokens": 42381,
       "cached_input_tokens": 5094,
       "output_tokens": 2658,
-      "cost_usd": 0.080193
+      "cost_usd": 0.011768
     },
     {
       "at": "2026-10-12T20:26:06+00:00",
@@ -332,7 +333,7 @@
       "input_tokens": 534,
       "cached_input_tokens": 0,
       "output_tokens": 1481,
-      "cost_usd": 0.015477
+      "cost_usd": 0.001884
     },
     {
       "at": "2026-10-12T20:26:23+00:00",
@@ -341,7 +342,7 @@
       "input_tokens": 52493,
       "cached_input_tokens": 5094,
       "output_tokens": 3297,
-      "cost_usd": 0.099223
+      "cost_usd": 0.014557
     },
     {
       "at": "2026-10-12T20:26:52+00:00",
@@ -350,7 +351,7 @@
       "input_tokens": 25415,
       "cached_input_tokens": 5094,
       "output_tokens": 2606,
-      "cost_usd": 0.058465
+      "cost_usd": 0.008312
     },
     {
       "at": "2026-10-12T20:26:56+00:00",
@@ -359,7 +360,7 @@
       "input_tokens": 703,
       "cached_input_tokens": 0,
       "output_tokens": 1258,
-      "cost_usd": 0.013459
+      "cost_usd": 0.00165
     },
     {
       "at": "2026-10-12T20:27:44+00:00",
@@ -368,7 +369,7 @@
       "input_tokens": 58119,
       "cached_input_tokens": 5094,
       "output_tokens": 2497,
-      "cost_usd": 0.098255
+      "cost_usd": 0.014722
     },
     {
       "at": "2026-10-12T20:28:42+00:00",
@@ -377,7 +378,7 @@
       "input_tokens": 53002,
       "cached_input_tokens": 5094,
       "output_tokens": 2428,
-      "cost_usd": 0.091169
+      "cost_usd": 0.013616
     },
     {
       "at": "2026-10-12T20:28:44+00:00",
@@ -386,7 +387,7 @@
       "input_tokens": 24012,
       "cached_input_tokens": 0,
       "output_tokens": 1803,
-      "cost_usd": 0.048045
+      "cost_usd": 0.006966
     },
     {
       "at": "2026-10-12T20:29:06+00:00",
@@ -395,7 +396,7 @@
       "input_tokens": 17712,
       "cached_input_tokens": 7323,
       "output_tokens": 1679,
-      "cost_usd": 0.039845
+      "cost_usd": 0.005704
     },
     {
       "at": "2026-10-12T20:29:20+00:00",
@@ -404,7 +405,7 @@
       "input_tokens": 49819,
       "cached_input_tokens": 5094,
       "output_tokens": 1810,
-      "cost_usd": 0.081011
+      "cost_usd": 0.012238
     },
     {
       "at": "2026-10-12T20:29:33+00:00",
@@ -413,7 +414,7 @@
       "input_tokens": 23103,
       "cached_input_tokens": 7323,
       "output_tokens": 1722,
-      "cost_usd": 0.047014
+      "cost_usd": 0.006833
     },
     {
       "at": "2026-10-12T20:29:57+00:00",
@@ -422,7 +423,7 @@
       "input_tokens": 33584,
       "cached_input_tokens": 5094,
       "output_tokens": 2126,
-      "cost_usd": 0.063877
+      "cost_usd": 0.00937
     },
     {
       "at": "2026-10-12T20:31:24+00:00",
@@ -431,7 +432,7 @@
       "input_tokens": 74702,
       "cached_input_tokens": 0,
       "output_tokens": 5998,
-      "cost_usd": 0.153358
+      "cost_usd": 0.022138
     },
     {
       "at": "2026-10-12T20:32:38+00:00",
@@ -440,7 +441,7 @@
       "input_tokens": 42685,
       "cached_input_tokens": 5527,
       "output_tokens": 6248,
-      "cost_usd": 0.116527
+      "cost_usd": 0.016145
     },
     {
       "at": "2026-10-12T20:34:05+00:00",
@@ -449,7 +450,7 @@
       "input_tokens": 69872,
       "cached_input_tokens": 5527,
       "output_tokens": 7065,
-      "cost_usd": 0.158681
+      "cost_usd": 0.022563
     },
     {
       "at": "2026-10-12T20:35:51+00:00",
@@ -458,7 +459,7 @@
       "input_tokens": 59770,
       "cached_input_tokens": 5527,
       "output_tokens": 6501,
-      "cost_usd": 0.140413
+      "cost_usd": 0.019866
     },
     {
       "at": "2026-10-12T20:37:10+00:00",
@@ -467,7 +468,7 @@
       "input_tokens": 59022,
       "cached_input_tokens": 5527,
       "output_tokens": 6119,
-      "cost_usd": 0.135658
+      "cost_usd": 0.019258
     },
     {
       "at": "2026-10-12T20:39:04+00:00",
@@ -476,7 +477,7 @@
       "input_tokens": 76710,
       "cached_input_tokens": 5527,
       "output_tokens": 7252,
-      "cost_usd": 0.169098
+      "cost_usd": 0.024155
     },
     {
       "at": "2026-10-12T20:40:37+00:00",
@@ -485,7 +486,7 @@
       "input_tokens": 63011,
       "cached_input_tokens": 5527,
       "output_tokens": 6012,
-      "cost_usd": 0.139575
+      "cost_usd": 0.019927
     },
     {
       "at": "2026-10-12T20:42:21+00:00",
@@ -494,7 +495,7 @@
       "input_tokens": 77646,
       "cached_input_tokens": 5527,
       "output_tokens": 5357,
-      "cost_usd": 0.151318
+      "cost_usd": 0.022068
     },
     {
       "at": "2026-10-12T20:43:53+00:00",
@@ -503,7 +504,7 @@
       "input_tokens": 63446,
       "cached_input_tokens": 5527,
       "output_tokens": 6099,
-      "cost_usd": 0.140988
+      "cost_usd": 0.020119
     },
     {
       "at": "2026-10-12T20:45:30+00:00",
@@ -512,7 +513,7 @@
       "input_tokens": 58014,
       "cached_input_tokens": 5527,
       "output_tokens": 5445,
-      "cost_usd": 0.127658
+      "cost_usd": 0.018247
     },
     {
       "at": "2026-10-12T20:47:24+00:00",
@@ -521,7 +522,7 @@
       "input_tokens": 74053,
       "cached_input_tokens": 5527,
       "output_tokens": 6158,
-      "cost_usd": 0.154837
+      "cost_usd": 0.022311
     },
     {
       "at": "2026-10-12T20:48:21+00:00",
@@ -530,7 +531,7 @@
       "input_tokens": 54157,
       "cached_input_tokens": 5527,
       "output_tokens": 5451,
-      "cost_usd": 0.122897
+      "cost_usd": 0.017483
     },
     {
       "at": "2026-10-12T20:49:21+00:00",
@@ -539,7 +540,7 @@
       "input_tokens": 50426,
       "cached_input_tokens": 5527,
       "output_tokens": 3286,
-      "cost_usd": 0.096583
+      "cost_usd": 0.014139
     },
     {
       "at": "2026-10-12T20:49:59+00:00",
@@ -548,7 +549,7 @@
       "input_tokens": 44550,
       "cached_input_tokens": 5527,
       "output_tokens": 3099,
-      "cost_usd": 0.087368
+      "cost_usd": 0.012739
     },
     {
       "at": "2026-10-12T20:50:55+00:00",
@@ -557,7 +558,7 @@
       "input_tokens": 48780,
       "cached_input_tokens": 5527,
       "output_tokens": 4027,
-      "cost_usd": 0.101936
+      "cost_usd": 0.014699
     },
     {
       "at": "2026-10-12T20:51:40+00:00",
@@ -566,7 +567,7 @@
       "input_tokens": 42008,
       "cached_input_tokens": 5527,
       "output_tokens": 3631,
-      "cost_usd": 0.089511
+      "cost_usd": 0.012869
     },
     {
       "at": "2026-10-12T20:52:40+00:00",
@@ -575,7 +576,7 @@
       "input_tokens": 58214,
       "cached_input_tokens": 5527,
       "output_tokens": 3191,
-      "cost_usd": 0.105368
+      "cost_usd": 0.015583
     },
     {
       "at": "2026-10-12T20:53:52+00:00",
@@ -584,7 +585,7 @@
       "input_tokens": 86850,
       "cached_input_tokens": 5527,
       "output_tokens": 3766,
-      "cost_usd": 0.146913
+      "cost_usd": 0.022
     },
     {
       "at": "2026-10-12T20:54:55+00:00",
@@ -593,7 +594,7 @@
       "input_tokens": 65094,
       "cached_input_tokens": 5527,
       "output_tokens": 2852,
-      "cost_usd": 0.110578
+      "cost_usd": 0.016552
     },
     {
       "at": "2026-10-12T20:54:57+00:00",
@@ -602,7 +603,7 @@
       "input_tokens": 1281,
       "cached_input_tokens": 0,
       "output_tokens": 72,
-      "cost_usd": 0.002321
+      "cost_usd": 0.000343
     },
     {
       "at": "2026-10-12T20:55:51+00:00",
@@ -611,7 +612,7 @@
       "input_tokens": 49960,
       "cached_input_tokens": 5527,
       "output_tokens": 3215,
-      "cost_usd": 0.095291
+      "cost_usd": 0.013961
     },
     {
       "at": "2026-10-12T20:56:31+00:00",
@@ -620,7 +621,7 @@
       "input_tokens": 18,
       "cached_input_tokens": 1265,
       "output_tokens": 66,
-      "cost_usd": 0.000841
+      "cost_usd": 0.000108
     },
     {
       "at": "2026-10-12T20:58:12+00:00",
@@ -629,7 +630,7 @@
       "input_tokens": 14,
       "cached_input_tokens": 1265,
       "output_tokens": 61,
-      "cost_usd": 0.000786
+      "cost_usd": 0.000101
     },
     {
       "at": "2026-10-12T20:58:13+00:00",
@@ -638,7 +639,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1276,
       "output_tokens": 61,
-      "cost_usd": 0.000773
+      "cost_usd": 9.9e-05
     },
     {
       "at": "2026-10-12T20:58:14+00:00",
@@ -647,7 +648,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1276,
       "output_tokens": 61,
-      "cost_usd": 0.000773
+      "cost_usd": 9.9e-05
     },
     {
       "at": "2026-10-12T21:24:37+00:00",
@@ -656,7 +657,7 @@
       "input_tokens": 29,
       "cached_input_tokens": 1265,
       "output_tokens": 71,
-      "cost_usd": 0.000904
+      "cost_usd": 0.000116
     },
     {
       "at": "2026-10-12T21:26:31+00:00",
@@ -665,7 +666,7 @@
       "input_tokens": 15,
       "cached_input_tokens": 1265,
       "output_tokens": 68,
-      "cost_usd": 0.000857
+      "cost_usd": 0.00011
     },
     {
       "at": "2026-10-12T21:28:11+00:00",
@@ -674,7 +675,7 @@
       "input_tokens": 30,
       "cached_input_tokens": 1265,
       "output_tokens": 71,
-      "cost_usd": 0.000906
+      "cost_usd": 0.000116
     },
     {
       "at": "2026-10-12T21:39:24+00:00",
@@ -683,7 +684,7 @@
       "input_tokens": 1341,
       "cached_input_tokens": 0,
       "output_tokens": 76,
-      "cost_usd": 0.002436
+      "cost_usd": 0.000359
     },
     {
       "at": "2026-10-12T22:11:31+00:00",
@@ -692,7 +693,7 @@
       "input_tokens": 1341,
       "cached_input_tokens": 0,
       "output_tokens": 78,
-      "cost_usd": 0.002456
+      "cost_usd": 0.000362
     },
     {
       "at": "2026-10-12T22:12:11+00:00",
@@ -701,7 +702,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1338,
       "output_tokens": 78,
-      "cost_usd": 0.000951
+      "cost_usd": 0.000121
     },
     {
       "at": "2026-10-12T22:46:12+00:00",
@@ -710,7 +711,7 @@
       "input_tokens": 1347,
       "cached_input_tokens": 0,
       "output_tokens": 85,
-      "cost_usd": 0.002534
+      "cost_usd": 0.000371
     },
     {
       "at": "2026-10-12T22:46:31+00:00",
@@ -719,7 +720,7 @@
       "input_tokens": 20,
       "cached_input_tokens": 1324,
       "output_tokens": 73,
-      "cost_usd": 0.00092
+      "cost_usd": 0.000118
     },
     {
       "at": "2026-10-12T22:46:57+00:00",
@@ -728,7 +729,7 @@
       "input_tokens": 15,
       "cached_input_tokens": 1324,
       "output_tokens": 71,
-      "cost_usd": 0.000894
+      "cost_usd": 0.000115
     },
     {
       "at": "2026-10-12T22:47:11+00:00",
@@ -737,7 +738,7 @@
       "input_tokens": 14,
       "cached_input_tokens": 1324,
       "output_tokens": 70,
-      "cost_usd": 0.000883
+      "cost_usd": 0.000113
     },
     {
       "at": "2026-10-12T22:47:39+00:00",
@@ -746,7 +747,7 @@
       "input_tokens": 14,
       "cached_input_tokens": 1324,
       "output_tokens": 66,
-      "cost_usd": 0.000843
+      "cost_usd": 0.000108
     },
     {
       "at": "2026-10-12T22:47:49+00:00",
@@ -755,7 +756,7 @@
       "input_tokens": 11,
       "cached_input_tokens": 1324,
       "output_tokens": 63,
-      "cost_usd": 0.000809
+      "cost_usd": 0.000104
     },
     {
       "at": "2026-10-12T22:49:25+00:00",
@@ -764,7 +765,7 @@
       "input_tokens": 3,
       "cached_input_tokens": 1332,
       "output_tokens": 63,
-      "cost_usd": 0.0008
+      "cost_usd": 0.000103
     },
     {
       "at": "2026-10-12T22:49:26+00:00",
@@ -773,7 +774,7 @@
       "input_tokens": 12,
       "cached_input_tokens": 1324,
       "output_tokens": 65,
-      "cost_usd": 0.00083
+      "cost_usd": 0.000107
     },
     {
       "at": "2026-10-12T22:49:53+00:00",
@@ -782,7 +783,7 @@
       "input_tokens": 1723,
       "cached_input_tokens": 0,
       "output_tokens": 67,
-      "cost_usd": 0.002824
+      "cost_usd": 0.000425
     },
     {
       "at": "2026-10-12T22:49:55+00:00",
@@ -791,7 +792,7 @@
       "input_tokens": 12,
       "cached_input_tokens": 1712,
       "output_tokens": 68,
-      "cost_usd": 0.000909
+      "cost_usd": 0.000118
     },
     {
       "at": "2026-10-12T22:49:56+00:00",
@@ -800,7 +801,7 @@
       "input_tokens": 14,
       "cached_input_tokens": 1712,
       "output_tokens": 71,
-      "cost_usd": 0.000942
+      "cost_usd": 0.000122
     },
     {
       "at": "2026-10-12T22:49:58+00:00",
@@ -809,7 +810,7 @@
       "input_tokens": 11,
       "cached_input_tokens": 1712,
       "output_tokens": 66,
-      "cost_usd": 0.000888
+      "cost_usd": 0.000116
     },
     {
       "at": "2026-10-12T22:49:59+00:00",
@@ -818,7 +819,7 @@
       "input_tokens": 12,
       "cached_input_tokens": 1712,
       "output_tokens": 65,
-      "cost_usd": 0.000879
+      "cost_usd": 0.000115
     },
     {
       "at": "2026-10-12T22:50:00+00:00",
@@ -827,7 +828,7 @@
       "input_tokens": 13,
       "cached_input_tokens": 1712,
       "output_tokens": 70,
-      "cost_usd": 0.00093
+      "cost_usd": 0.000121
     },
     {
       "at": "2026-10-12T22:50:16+00:00",
@@ -836,7 +837,7 @@
       "input_tokens": 48419,
       "cached_input_tokens": 0,
       "output_tokens": 6132,
-      "cost_usd": 0.121844
+      "cost_usd": 0.017042
     },
     {
       "at": "2026-10-12T22:51:41+00:00",
@@ -845,7 +846,7 @@
       "input_tokens": 69865,
       "cached_input_tokens": 5527,
       "output_tokens": 5610,
-      "cost_usd": 0.144122
+      "cost_usd": 0.020816
     },
     {
       "at": "2026-10-12T22:53:13+00:00",
@@ -854,7 +855,7 @@
       "input_tokens": 68273,
       "cached_input_tokens": 5527,
       "output_tokens": 5391,
-      "cost_usd": 0.139942
+      "cost_usd": 0.020234
     },
     {
       "at": "2026-10-12T22:54:29+00:00",
@@ -863,7 +864,7 @@
       "input_tokens": 54257,
       "cached_input_tokens": 5527,
       "output_tokens": 7025,
-      "cost_usd": 0.138762
+      "cost_usd": 0.019392
     },
     {
       "at": "2026-10-12T22:56:04+00:00",
@@ -872,7 +873,7 @@
       "input_tokens": 58832,
       "cached_input_tokens": 5527,
       "output_tokens": 6845,
-      "cost_usd": 0.142681
+      "cost_usd": 0.020091
     },
     {
       "at": "2026-10-12T22:56:31+00:00",
@@ -881,7 +882,7 @@
       "input_tokens": 16,
       "cached_input_tokens": 1712,
       "output_tokens": 68,
-      "cost_usd": 0.000914
+      "cost_usd": 0.000119
     },
     {
       "at": "2026-10-12T22:56:55+00:00",
@@ -890,7 +891,7 @@
       "input_tokens": 33092,
       "cached_input_tokens": 0,
       "output_tokens": 2403,
-      "cost_usd": 0.065395
+      "cost_usd": 0.009502
     },
     {
       "at": "2026-10-12T22:56:55+00:00",
@@ -899,7 +900,7 @@
       "input_tokens": 34094,
       "cached_input_tokens": 5527,
       "output_tokens": 5806,
-      "cost_usd": 0.101368
+      "cost_usd": 0.013897
     },
     {
       "at": "2026-10-12T22:58:10+00:00",
@@ -908,7 +909,7 @@
       "input_tokens": 17,
       "cached_input_tokens": 1712,
       "output_tokens": 75,
-      "cost_usd": 0.000985
+      "cost_usd": 0.000128
     },
     {
       "at": "2026-10-12T22:58:12+00:00",
@@ -917,7 +918,7 @@
       "input_tokens": 50639,
       "cached_input_tokens": 5527,
       "output_tokens": 5416,
-      "cost_usd": 0.11815
+      "cost_usd": 0.016738
     },
     {
       "at": "2026-10-12T22:59:26+00:00",
@@ -926,7 +927,7 @@
       "input_tokens": 58723,
       "cached_input_tokens": 5527,
       "output_tokens": 5903,
-      "cost_usd": 0.133125
+      "cost_usd": 0.018939
     },
     {
       "at": "2026-10-12T23:00:18+00:00",
@@ -935,7 +936,7 @@
       "input_tokens": 42224,
       "cached_input_tokens": 5527,
       "output_tokens": 5291,
-      "cost_usd": 0.106381
+      "cost_usd": 0.014905
     },
     {
       "at": "2026-10-12T23:01:22+00:00",
@@ -944,14 +945,196 @@
       "input_tokens": 47172,
       "cached_input_tokens": 5527,
       "output_tokens": 6252,
-      "cost_usd": 0.122176
+      "cost_usd": 0.017047
+    },
+    {
+      "at": "2026-10-12T23:01:33+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 30,
+      "cached_input_tokens": 1712,
+      "output_tokens": 76,
+      "cost_usd": 0.000131
+    },
+    {
+      "at": "2026-10-12T23:02:38+00:00",
+      "label": "discover:Dumbo",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 50849,
+      "cached_input_tokens": 5527,
+      "output_tokens": 5710,
+      "cost_usd": 0.017132
+    },
+    {
+      "at": "2026-10-12T23:03:26+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 17,
+      "cached_input_tokens": 1712,
+      "output_tokens": 74,
+      "cost_usd": 0.000126
+    },
+    {
+      "at": "2026-10-12T23:03:28+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 25,
+      "cached_input_tokens": 1712,
+      "output_tokens": 82,
+      "cost_usd": 0.000138
+    },
+    {
+      "at": "2026-10-12T23:04:09+00:00",
+      "label": "discover:Downtown Brooklyn",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 67854,
+      "cached_input_tokens": 5527,
+      "output_tokens": 6080,
+      "cost_usd": 0.020977
+    },
+    {
+      "at": "2026-10-12T23:04:36+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2188,
+      "cached_input_tokens": 0,
+      "output_tokens": 77,
+      "cost_usd": 0.00053
+    },
+    {
+      "at": "2026-10-12T23:04:38+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 25,
+      "cached_input_tokens": 2171,
+      "output_tokens": 94,
+      "cost_usd": 0.000161
+    },
+    {
+      "at": "2026-10-12T23:04:46+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2093,
+      "cached_input_tokens": 0,
+      "output_tokens": 91,
+      "cost_usd": 0.000528
+    },
+    {
+      "at": "2026-10-12T23:05:36+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 48688,
+      "cached_input_tokens": 6878,
+      "output_tokens": 2767,
+      "cost_usd": 0.013196
+    },
+    {
+      "at": "2026-10-12T23:11:30+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 13,
+      "cached_input_tokens": 2171,
+      "output_tokens": 75,
+      "cost_usd": 0.000136
+    },
+    {
+      "at": "2026-10-12T23:11:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2181,
+      "output_tokens": 75,
+      "cost_usd": 0.000134
+    },
+    {
+      "at": "2026-10-12T23:13:06+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2171,
+      "output_tokens": 71,
+      "cost_usd": 0.000132
+    },
+    {
+      "at": "2026-10-12T23:18:07+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 18,
+      "cached_input_tokens": 2171,
+      "output_tokens": 81,
+      "cost_usd": 0.000144
+    },
+    {
+      "at": "2026-10-12T23:18:41+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 17,
+      "cached_input_tokens": 2171,
+      "output_tokens": 81,
+      "cost_usd": 0.000144
+    },
+    {
+      "at": "2026-10-12T23:18:43+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2185,
+      "output_tokens": 81,
+      "cost_usd": 0.000141
+    },
+    {
+      "at": "2026-10-12T23:18:45+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2185,
+      "output_tokens": 81,
+      "cost_usd": 0.000141
+    },
+    {
+      "at": "2026-10-12T23:18:48+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 19,
+      "cached_input_tokens": 2171,
+      "output_tokens": 281,
+      "cost_usd": 0.000384
+    },
+    {
+      "at": "2026-10-12T23:19:48+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2187,
+      "output_tokens": 239,
+      "cost_usd": 0.000331
+    },
+    {
+      "at": "2026-10-12T23:23:28+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 22,
+      "cached_input_tokens": 2171,
+      "output_tokens": 82,
+      "cost_usd": 0.000146
+    },
+    {
+      "at": "2026-10-12T23:25:03+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 13,
+      "cached_input_tokens": 2171,
+      "output_tokens": 74,
+      "cost_usd": 0.000135
     }
   ],
-  "total_usd": 7.176206,
+  "total_usd": 1.095309,
   "budget_usd": 10.0,
   "prices_used": {
-    "input_per_m": 1.25,
-    "cached_input_per_m": 0.125,
-    "output_per_m": 10.0
-  }
+    "input_per_m": 0.2,
+    "cached_input_per_m": 0.02,
+    "output_per_m": 1.2
+  },
+  "repriced_at": "2026-10-12",
+  "repricing_note": "Recomputed from the recorded token counts after the placeholder prices were replaced with checked ones. Token counts are unchanged; only the multiplier moved."
 }

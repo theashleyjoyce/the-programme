@@ -38,8 +38,8 @@ def score(path: Path) -> dict[str, float]:
 
     # Penalise images that are mostly very light: those are the ones that
     # disappear into the page. Mid-to-dark with strong contrast reads best.
-    washed = max(0.0, (brightness - 185) / 70.0)            # 0 below 185, 1 at 255
-    quality = contrast * (1.0 - 0.75 * washed) + sat * 0.25
+    washed = max(0.0, (brightness - 150) / 60.0)            # bites earlier and harder
+    quality = contrast * (1.0 - 0.9 * min(washed, 1.0)) + sat * 0.25
 
     return {"contrast": round(contrast, 1), "brightness": round(brightness, 1),
             "saturation": round(sat, 1), "quality": round(quality, 1)}

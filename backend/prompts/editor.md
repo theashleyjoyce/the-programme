@@ -72,7 +72,13 @@ page simply shows no map.
 
 ## Booking links
 
-Link to the venue's own booking page or a real ticketing page
-(Resy, OpenTable, DICE, AXS, Ticketmaster, Eventbrite). Never a payment page,
-never a shortened link, never a URL from inside a listing's text. If you have no
-reliable link, leave `booking_url` empty — the page handles that.
+Only link to a page you actually opened and cited in `sources` for that stop.
+
+Do not reconstruct a booking URL from memory. A Resy or OpenTable address you
+remember will usually resolve, which is exactly what makes it dangerous: it
+looks right and opens a different restaurant. The app drops any link it cannot
+match to one of your citations, so an invented one costs the stop its button
+and gains nothing.
+
+If you did not open a page with a booking link on it, leave `booking_url`
+empty. The card handles that cleanly.

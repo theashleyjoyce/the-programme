@@ -1,0 +1,3020 @@
+{
+ "resy.com|/cities/new-york-ny/venues/jimmy|jimmy soho": {
+  "ok": false,
+  "at": 1791846604,
+  "url": "https://resy.com/cities/new-york-ny/venues/jimmy",
+  "venue": "JIMMY SoHo"
+ },
+ "www.jimmysoho.com||jimmy soho": {
+  "ok": true,
+  "at": 1791846604,
+  "url": "https://www.jimmysoho.com",
+  "venue": "JIMMY SoHo"
+ },
+ "www.opentable.com|/restaurant/profile/1394212|audace": {
+  "ok": false,
+  "at": 1791846608,
+  "url": "https://www.opentable.com/restaurant/profile/1394212?ref=1068",
+  "venue": "Audace"
+ },
+ "elsewherebrooklyn.com||elsewhere": {
+  "ok": true,
+  "at": 1791846609,
+  "url": "https://elsewherebrooklyn.com",
+  "venue": "Elsewhere"
+ },
+ "attaboy.us|/nyc/|attaboy": {
+  "ok": true,
+  "at": 1791846609,
+  "url": "https://attaboy.us/nyc/",
+  "venue": "Attaboy"
+ },
+ "www.doublechickenplease.com|/|double chicken please": {
+  "ok": true,
+  "at": 1791846711,
+  "url": "https://www.doublechickenplease.com/",
+  "venue": "Double Chicken Please"
+ },
+ "www.bargoto.com|/|bar goto": {
+  "ok": true,
+  "at": 1791846711,
+  "url": "https://www.bargoto.com/",
+  "venue": "Bar Goto"
+ },
+ "www.tenbellsnyc.com|/|ten bells": {
+  "ok": true,
+  "at": 1791846716,
+  "url": "https://www.tenbellsnyc.com/",
+  "venue": "Ten Bells"
+ },
+ "www.msalicenyc.com|/|ms. alice": {
+  "ok": true,
+  "at": 1791846717,
+  "url": "https://www.msalicenyc.com/",
+  "venue": "Ms. Alice"
+ },
+ "www.afteredennyc.com|/|after eden": {
+  "ok": true,
+  "at": 1791846717,
+  "url": "https://www.afteredennyc.com/",
+  "venue": "After Eden"
+ },
+ "barrevivalnyc.com|/|bar revival": {
+  "ok": true,
+  "at": 1791846717,
+  "url": "https://barrevivalnyc.com/",
+  "venue": "Bar Revival"
+ },
+ "metrograph.com|/|metrograph": {
+  "ok": true,
+  "at": 1791846718,
+  "url": "https://metrograph.com/",
+  "venue": "Metrograph"
+ },
+ "www.offnights.nyc|/|off nights comedy": {
+  "ok": true,
+  "at": 1791846718,
+  "url": "https://www.offnights.nyc/",
+  "venue": "Off Nights Comedy"
+ },
+ "seshcomedy.com|/|sesh comedy": {
+  "ok": true,
+  "at": 1791846719,
+  "url": "https://seshcomedy.com/",
+  "venue": "Sesh Comedy"
+ },
+ "www.lescomedydungeon.com|/|les comedy dungeon": {
+  "ok": true,
+  "at": 1791846719,
+  "url": "https://www.lescomedydungeon.com/",
+  "venue": "LES Comedy Dungeon"
+ },
+ "www.softswervenyc.com|/|soft swerve": {
+  "ok": true,
+  "at": 1791846719,
+  "url": "https://www.softswervenyc.com/",
+  "venue": "Soft Swerve"
+ },
+ "vanleeuwenicecream.com|/|van leeuwen ice cream": {
+  "ok": true,
+  "at": 1791846720,
+  "url": "https://vanleeuwenicecream.com/",
+  "venue": "Van Leeuwen Ice Cream"
+ },
+ "lowereastsideicecreamfactory.com|/|l.e.s. ice cream factory": {
+  "ok": true,
+  "at": 1791846720,
+  "url": "https://lowereastsideicecreamfactory.com/",
+  "venue": "L.E.S. Ice Cream Factory"
+ },
+ "56henry.nyc|/|56 henry": {
+  "ok": true,
+  "at": 1791846721,
+  "url": "https://56henry.nyc/",
+  "venue": "56 Henry"
+ },
+ "lylesandking.com|/|lyles & king": {
+  "ok": true,
+  "at": 1791846721,
+  "url": "https://lylesandking.com/",
+  "venue": "Lyles & King"
+ },
+ "www.vanderplasgallery.com|/|vanderplas gallery": {
+  "ok": true,
+  "at": 1791846721,
+  "url": "https://www.vanderplasgallery.com/",
+  "venue": "Vanderplas Gallery"
+ },
+ "www.601artspace.org|/|601artspace": {
+  "ok": true,
+  "at": 1791846722,
+  "url": "https://www.601artspace.org/",
+  "venue": "601Artspace"
+ },
+ "www.newmuseum.org|/|new museum": {
+  "ok": true,
+  "at": 1791846723,
+  "url": "https://www.newmuseum.org/",
+  "venue": "New Museum"
+ },
+ "www.tenement.org|/|tenement museum": {
+  "ok": false,
+  "at": 1791846723,
+  "url": "https://www.tenement.org/",
+  "venue": "Tenement Museum"
+ },
+ "www.eldridgestreet.org|/|museum at eldridge street": {
+  "ok": true,
+  "at": 1791846723,
+  "url": "https://www.eldridgestreet.org/",
+  "venue": "Museum at Eldridge Street"
+ },
+ "www.katzsdelicatessen.com|/|katz's delicatessen": {
+  "ok": true,
+  "at": 1791846724,
+  "url": "https://www.katzsdelicatessen.com/",
+  "venue": "Katz's Delicatessen"
+ },
+ "www.kikisnyc.com|/|kiki's": {
+  "ok": true,
+  "at": 1791846724,
+  "url": "https://www.kikisnyc.com/",
+  "venue": "Kiki's"
+ },
+ "www.dimesnyc.com|/|dimes": {
+  "ok": true,
+  "at": 1791846725,
+  "url": "https://www.dimesnyc.com/",
+  "venue": "Dimes"
+ },
+ "www.ernestosnyc.com|/|ernesto's": {
+  "ok": true,
+  "at": 1791846725,
+  "url": "https://www.ernestosnyc.com/",
+  "venue": "Ernesto's"
+ },
+ "www.dirtcandynyc.com|/|dirt candy": {
+  "ok": true,
+  "at": 1791846725,
+  "url": "https://www.dirtcandynyc.com/",
+  "venue": "Dirt Candy"
+ },
+ "www.pigandkhao.com|/|pig and khao": {
+  "ok": true,
+  "at": 1791846726,
+  "url": "https://www.pigandkhao.com/",
+  "venue": "Pig and Khao"
+ },
+ "www.freemansrestaurant.com|/|freemans": {
+  "ok": true,
+  "at": 1791846726,
+  "url": "https://www.freemansrestaurant.com/",
+  "venue": "Freemans"
+ },
+ "www.abronsartscenter.org|/|abrons arts center": {
+  "ok": true,
+  "at": 1791846730,
+  "url": "https://www.abronsartscenter.org/",
+  "venue": "Abrons Arts Center"
+ },
+ "www.orensanz.org|/|angel orensanz foundation": {
+  "ok": false,
+  "at": 1791846731,
+  "url": "https://www.orensanz.org/",
+  "venue": "Angel Orensanz Foundation"
+ },
+ "www.slipperroom.com|/|the slipper room": {
+  "ok": true,
+  "at": 1791846734,
+  "url": "https://www.slipperroom.com/",
+  "venue": "The Slipper Room"
+ },
+ "www.boweryballroom.com|/|bowery ballroom": {
+  "ok": true,
+  "at": 1791846735,
+  "url": "https://www.boweryballroom.com/",
+  "venue": "Bowery Ballroom"
+ },
+ "www.superbuenonyc.com|/|superbueno": {
+  "ok": true,
+  "at": 1791846736,
+  "url": "https://www.superbuenonyc.com/",
+  "venue": "Superbueno"
+ },
+ "www.pineappleclub.com|/|pineapple club": {
+  "ok": true,
+  "at": 1791846736,
+  "url": "https://www.pineappleclub.com/",
+  "venue": "Pineapple Club"
+ },
+ "www.thewaylandnyc.com|/|the wayland": {
+  "ok": true,
+  "at": 1791846736,
+  "url": "https://www.thewaylandnyc.com/",
+  "venue": "The Wayland"
+ },
+ "batemansnyc.com|/|bateman\u2019s": {
+  "ok": true,
+  "at": 1791846737,
+  "url": "https://batemansnyc.com/",
+  "venue": "Bateman\u2019s"
+ },
+ "www.jewelboxnyc.com|/|jewel box": {
+  "ok": true,
+  "at": 1791846737,
+  "url": "https://www.jewelboxnyc.com/",
+  "venue": "Jewel Box"
+ },
+ "nomorecocktails.shop|/|no more cafe": {
+  "ok": true,
+  "at": 1791846738,
+  "url": "https://nomorecocktails.shop/",
+  "venue": "No More Cafe"
+ },
+ "www.lastresortnyc.com|/|the last resort": {
+  "ok": true,
+  "at": 1791846738,
+  "url": "https://www.lastresortnyc.com/",
+  "venue": "The Last Resort"
+ },
+ "www.phebesnyc.com|/|phebe\u2019s tavern": {
+  "ok": true,
+  "at": 1791846738,
+  "url": "https://www.phebesnyc.com/",
+  "venue": "Phebe\u2019s Tavern"
+ },
+ "www.kingstonhall.com|/|kingston hall": {
+  "ok": true,
+  "at": 1791846739,
+  "url": "https://www.kingstonhall.com/",
+  "venue": "Kingston Hall"
+ },
+ "angelikafilmcenter.com|/villageeast|village east by angelika": {
+  "ok": false,
+  "at": 1791846739,
+  "url": "https://angelikafilmcenter.com/villageeast",
+  "venue": "Village East by Angelika"
+ },
+ "www.stmarkscomedyclub.com|/|st. marks comedy club": {
+  "ok": true,
+  "at": 1791846739,
+  "url": "https://www.stmarkscomedyclub.com/",
+  "venue": "St. Marks Comedy Club"
+ },
+ "www.sundaes.nyc|/|sundaes and cones": {
+  "ok": true,
+  "at": 1791846740,
+  "url": "https://www.sundaes.nyc/",
+  "venue": "Sundaes and Cones"
+ },
+ "www.daveysicecream.com|/|davey\u2019s ice cream": {
+  "ok": true,
+  "at": 1791846740,
+  "url": "https://www.daveysicecream.com/",
+  "venue": "Davey\u2019s Ice Cream"
+ },
+ "www.mangomangodessert.com|/|mango mango dessert": {
+  "ok": true,
+  "at": 1791846741,
+  "url": "https://www.mangomangodessert.com/",
+  "venue": "Mango Mango Dessert"
+ },
+ "www.rayscandystore.com|/|ray\u2019s candy store": {
+  "ok": false,
+  "at": 1791846741,
+  "url": "http://www.rayscandystore.com/",
+  "venue": "Ray\u2019s Candy Store"
+ },
+ "www.14bcgallery.org|/|14bc gallery": {
+  "ok": true,
+  "at": 1791846741,
+  "url": "https://www.14bcgallery.org/",
+  "venue": "14BC Gallery"
+ },
+ "marchgallery.org|/|march": {
+  "ok": true,
+  "at": 1791846743,
+  "url": "https://marchgallery.org/",
+  "venue": "MARCH"
+ },
+ "www.relativeartsnyc.com|/|relative arts": {
+  "ok": true,
+  "at": 1791846743,
+  "url": "https://www.relativeartsnyc.com/",
+  "venue": "Relative Arts"
+ },
+ "slip-house.com|/|slip house": {
+  "ok": true,
+  "at": 1791846743,
+  "url": "https://slip-house.com/",
+  "venue": "Slip House"
+ },
+ "www.graymatters.nyc|/|studio 9bc": {
+  "ok": true,
+  "at": 1791846744,
+  "url": "https://www.graymatters.nyc/",
+  "venue": "Studio 9BC"
+ },
+ "www.ukrainianmuseum.org|/|the ukrainian museum": {
+  "ok": true,
+  "at": 1791846744,
+  "url": "https://www.ukrainianmuseum.org/",
+  "venue": "The Ukrainian Museum"
+ },
+ "morusnyc.org|/|museum of reclaimed urban space": {
+  "ok": true,
+  "at": 1791846746,
+  "url": "https://morusnyc.org/",
+  "venue": "Museum of Reclaimed Urban Space"
+ },
+ "www.restauranthearth.com|/|hearth": {
+  "ok": true,
+  "at": 1791846746,
+  "url": "https://www.restauranthearth.com/",
+  "venue": "Hearth"
+ },
+ "www.uluhny.com|/|uluh": {
+  "ok": true,
+  "at": 1791846747,
+  "url": "https://www.uluhny.com/",
+  "venue": "Uluh"
+ },
+ "www.alisonny.com|/|alison": {
+  "ok": true,
+  "at": 1791846747,
+  "url": "https://www.alisonny.com/",
+  "venue": "Alison"
+ },
+ "www.rubyscafe.com|/|little ruby\u2019s east village": {
+  "ok": true,
+  "at": 1791846747,
+  "url": "https://www.rubyscafe.com/",
+  "venue": "Little Ruby\u2019s East Village"
+ },
+ "www.rakunyc.com|/|raku": {
+  "ok": true,
+  "at": 1791846748,
+  "url": "https://www.rakunyc.com/",
+  "venue": "Raku"
+ },
+ "www.pangeanyc.com|/|pangea": {
+  "ok": true,
+  "at": 1791846749,
+  "url": "https://www.pangeanyc.com/",
+  "venue": "Pangea"
+ },
+ "thewildproject.org|/|wild project": {
+  "ok": true,
+  "at": 1791846750,
+  "url": "https://thewildproject.org/",
+  "venue": "wild project"
+ },
+ "www.eastvillagebasement.com|/|east village basement": {
+  "ok": true,
+  "at": 1791846751,
+  "url": "https://www.eastvillagebasement.com/",
+  "venue": "East Village Basement"
+ },
+ "performancespacenewyork.org|/|performance space new york": {
+  "ok": true,
+  "at": 1791846751,
+  "url": "https://performancespacenewyork.org/",
+  "venue": "Performance Space New York"
+ },
+ "www.maboumines.org|/|mabou mines": {
+  "ok": true,
+  "at": 1791846751,
+  "url": "https://www.maboumines.org/",
+  "venue": "Mabou Mines"
+ },
+ "theaterforthenewcity.net|/|theater for the new city": {
+  "ok": true,
+  "at": 1791846752,
+  "url": "https://theaterforthenewcity.net/",
+  "venue": "Theater for the New City"
+ },
+ "lamama.org|/|la mama experimental theatre club": {
+  "ok": true,
+  "at": 1791846752,
+  "url": "https://lamama.org/",
+  "venue": "La MaMa Experimental Theatre Club"
+ },
+ "www.employeesonlynyc.com||employees only": {
+  "ok": true,
+  "at": 1791846753,
+  "url": "https://www.employeesonlynyc.com",
+  "venue": "Employees Only"
+ },
+ "www.dante-nyc.com||dante west village": {
+  "ok": true,
+  "at": 1791846753,
+  "url": "https://www.dante-nyc.com",
+  "venue": "Dante West Village"
+ },
+ "www.katanakitten.com||katana kitten": {
+  "ok": true,
+  "at": 1791846753,
+  "url": "https://www.katanakitten.com",
+  "venue": "Katana Kitten"
+ },
+ "www.sipandguzzle.com||sip & guzzle": {
+  "ok": true,
+  "at": 1791846755,
+  "url": "https://www.sipandguzzle.com",
+  "venue": "Sip & Guzzle"
+ },
+ "thestonewallinn.nyc||the stonewall inn": {
+  "ok": true,
+  "at": 1791846755,
+  "url": "https://thestonewallinn.nyc",
+  "venue": "The Stonewall Inn"
+ },
+ "www.mariescrisiscafe.com||marie\u2019s crisis cafe": {
+  "ok": true,
+  "at": 1791846756,
+  "url": "https://www.mariescrisiscafe.com",
+  "venue": "Marie\u2019s Crisis Cafe"
+ },
+ "arthurstavern.nyc||arthur\u2019s tavern": {
+  "ok": true,
+  "at": 1791846756,
+  "url": "https://arthurstavern.nyc",
+  "venue": "Arthur\u2019s Tavern"
+ },
+ "www.theduplex.com||the duplex": {
+  "ok": true,
+  "at": 1791846757,
+  "url": "https://www.theduplex.com",
+  "venue": "The Duplex"
+ },
+ "www.houstonhallny.com||houston hall": {
+  "ok": true,
+  "at": 1791846757,
+  "url": "https://www.houstonhallny.com",
+  "venue": "Houston Hall"
+ },
+ "lumewestvillage.com||lume west village": {
+  "ok": true,
+  "at": 1791846758,
+  "url": "https://lumewestvillage.com",
+  "venue": "Lume West Village"
+ },
+ "www.thegarretwest.com||the garret west": {
+  "ok": true,
+  "at": 1791846758,
+  "url": "https://www.thegarretwest.com",
+  "venue": "The Garret West"
+ },
+ "www.cubbyholebar.com||cubbyhole": {
+  "ok": true,
+  "at": 1791846759,
+  "url": "https://www.cubbyholebar.com",
+  "venue": "Cubbyhole"
+ },
+ "www.ifccenter.com||ifc center": {
+  "ok": true,
+  "at": 1791846759,
+  "url": "https://www.ifccenter.com",
+  "venue": "IFC Center"
+ },
+ "filmforum.org||film forum": {
+  "ok": true,
+  "at": 1791846763,
+  "url": "https://filmforum.org",
+  "venue": "Film Forum"
+ },
+ "www.magnoliabakery.com||magnolia bakery": {
+  "ok": true,
+  "at": 1791846763,
+  "url": "https://www.magnoliabakery.com",
+  "venue": "Magnolia Bakery"
+ },
+ "roccos.nyc||pasticceria rocco": {
+  "ok": true,
+  "at": 1791846767,
+  "url": "https://roccos.nyc",
+  "venue": "Pasticceria Rocco"
+ },
+ "mollyscupcakes.com||molly\u2019s cupcakes": {
+  "ok": true,
+  "at": 1791846768,
+  "url": "https://mollyscupcakes.com",
+  "venue": "Molly\u2019s Cupcakes"
+ },
+ "us.venchi.com||venchi": {
+  "ok": true,
+  "at": 1791846769,
+  "url": "https://us.venchi.com",
+  "venue": "Venchi"
+ },
+ "www.birdiesnyc.com||birdie\u2019s": {
+  "ok": true,
+  "at": 1791846769,
+  "url": "https://www.birdiesnyc.com",
+  "venue": "Birdie\u2019s"
+ },
+ "vanleeuwenicecream.com||van leeuwen ice cream \u2014 hudson street": {
+  "ok": false,
+  "at": 1791846770,
+  "url": "https://vanleeuwenicecream.com",
+  "venue": "Van Leeuwen Ice Cream \u2014 Hudson Street"
+ },
+ "www.viacarota.com||via carota": {
+  "ok": true,
+  "at": 1791846770,
+  "url": "https://www.viacarota.com",
+  "venue": "Via Carota"
+ },
+ "www.isodinyc.com||i sodi": {
+  "ok": true,
+  "at": 1791846770,
+  "url": "https://www.isodinyc.com",
+  "venue": "I Sodi"
+ },
+ "www.buvettenyc.com||buvette": {
+  "ok": false,
+  "at": 1791846771,
+  "url": "https://www.buvettenyc.com",
+  "venue": "Buvette"
+ },
+ "www.donangie.com||don angie": {
+  "ok": true,
+  "at": 1791846771,
+  "url": "https://www.donangie.com",
+  "venue": "Don Angie"
+ },
+ "www.sansabinonyc.com||san sabino": {
+  "ok": true,
+  "at": 1791846771,
+  "url": "https://www.sansabinonyc.com",
+  "venue": "San Sabino"
+ },
+ "www.lartusi.com||l\u2019artusi": {
+  "ok": true,
+  "at": 1791846771,
+  "url": "https://www.lartusi.com",
+  "venue": "L\u2019Artusi"
+ },
+ "www.jejunoodlebar.com||jeju noodle bar": {
+  "ok": true,
+  "at": 1791846772,
+  "url": "https://www.jejunoodlebar.com",
+  "venue": "Jeju Noodle Bar"
+ },
+ "www.josephleonard.com||joseph leonard": {
+  "ok": true,
+  "at": 1791846772,
+  "url": "https://www.josephleonard.com",
+  "venue": "Joseph Leonard"
+ },
+ "www.cafecluny.com||caf\u00e9 cluny": {
+  "ok": true,
+  "at": 1791846772,
+  "url": "https://www.cafecluny.com",
+  "venue": "Caf\u00e9 Cluny"
+ },
+ "www.redfarmnyc.com||redfarm": {
+  "ok": true,
+  "at": 1791846773,
+  "url": "https://www.redfarmnyc.com",
+  "venue": "RedFarm"
+ },
+ "cornerbistrony.com||corner bistro": {
+  "ok": true,
+  "at": 1791846774,
+  "url": "https://cornerbistrony.com",
+  "venue": "Corner Bistro"
+ },
+ "www.waverlynyc.com||the waverly inn": {
+  "ok": true,
+  "at": 1791846774,
+  "url": "https://www.waverlynyc.com",
+  "venue": "The Waverly Inn"
+ },
+ "www.commerceinn.com||the commerce inn": {
+  "ok": false,
+  "at": 1791846774,
+  "url": "https://www.commerceinn.com",
+  "venue": "The Commerce Inn"
+ },
+ "www.naminori.com||nami nori": {
+  "ok": false,
+  "at": 1791846774,
+  "url": "https://www.naminori.com",
+  "venue": "Nami Nori"
+ },
+ "www.semmanyc.com||semma": {
+  "ok": false,
+  "at": 1791846775,
+  "url": "https://www.semmanyc.com",
+  "venue": "Semma"
+ },
+ "www.legigotnyc.com||le gigot": {
+  "ok": false,
+  "at": 1791846775,
+  "url": "https://www.legigotnyc.com",
+  "venue": "Le Gigot"
+ },
+ "lortel.org||lucille lortel theatre": {
+  "ok": true,
+  "at": 1791846775,
+  "url": "https://lortel.org",
+  "venue": "Lucille Lortel Theatre"
+ },
+ "cherrylanetheatre.org||cherry lane theatre": {
+  "ok": true,
+  "at": 1791846775,
+  "url": "https://cherrylanetheatre.org",
+  "venue": "Cherry Lane Theatre"
+ },
+ "www.greenwichhouse.org||greenwich house theater": {
+  "ok": true,
+  "at": 1791846776,
+  "url": "https://www.greenwichhouse.org",
+  "venue": "Greenwich House Theater"
+ },
+ "rattlestick.org||rattlestick theater": {
+  "ok": true,
+  "at": 1791846777,
+  "url": "https://rattlestick.org",
+  "venue": "Rattlestick Theater"
+ },
+ "www.harlemnights.nyc|/|harlem nights": {
+  "ok": false,
+  "at": 1791846777,
+  "url": "https://www.harlemnights.nyc/",
+  "venue": "Harlem Nights"
+ },
+ "harlemhops.com|/|harlem hops": {
+  "ok": true,
+  "at": 1791846778,
+  "url": "https://harlemhops.com/",
+  "venue": "Harlem Hops"
+ },
+ "www.thehoneywellnyc.com|/|the honey well": {
+  "ok": true,
+  "at": 1791846778,
+  "url": "https://www.thehoneywellnyc.com/",
+  "venue": "The Honey Well"
+ },
+ "www.harlempublic.com|/|harlem public": {
+  "ok": true,
+  "at": 1791846779,
+  "url": "https://www.harlempublic.com/",
+  "venue": "Harlem Public"
+ },
+ "www.atthewallace.com|/|at the wallace": {
+  "ok": true,
+  "at": 1791846779,
+  "url": "https://www.atthewallace.com/",
+  "venue": "At The Wallace"
+ },
+ "www.comedyinharlem.com|/|comedy in harlem": {
+  "ok": true,
+  "at": 1791846779,
+  "url": "https://www.comedyinharlem.com/",
+  "venue": "Comedy in Harlem"
+ },
+ "www.redroosterharlem.com|/comedy-night-harlem-nyc|ginny's supper club comedy night": {
+  "ok": true,
+  "at": 1791846780,
+  "url": "https://www.redroosterharlem.com/comedy-night-harlem-nyc",
+  "venue": "Ginny's Supper Club Comedy Night"
+ },
+ "www.sugarhillcreamery.com|/|sugar hill creamery": {
+  "ok": true,
+  "at": 1791846780,
+  "url": "https://www.sugarhillcreamery.com/",
+  "venue": "Sugar Hill Creamery"
+ },
+ "harlemshake.com|/|harlem shake": {
+  "ok": true,
+  "at": 1791846781,
+  "url": "https://harlemshake.com/",
+  "venue": "Harlem Shake"
+ },
+ "plateofcake.com|/|plate of cake": {
+  "ok": true,
+  "at": 1791846781,
+  "url": "https://plateofcake.com/",
+  "venue": "Plate of Cake"
+ },
+ "www.essiegreengalleries.com|/|essie green galleries": {
+  "ok": true,
+  "at": 1791846782,
+  "url": "https://www.essiegreengalleries.com/",
+  "venue": "Essie Green Galleries"
+ },
+ "www.ahlfoundation.org|/|ahl foundation gallery": {
+  "ok": true,
+  "at": 1791846783,
+  "url": "https://www.ahlfoundation.org/",
+  "venue": "AHL Foundation Gallery"
+ },
+ "www.cccadi.org|/|cccadi firehouse": {
+  "ok": false,
+  "at": 1791846783,
+  "url": "https://www.cccadi.org/",
+  "venue": "CCCADI Firehouse"
+ },
+ "www.nypl.org|/locations/schomburg|schomburg center for research in black culture": {
+  "ok": false,
+  "at": 1791846784,
+  "url": "https://www.nypl.org/locations/schomburg",
+  "venue": "Schomburg Center for Research in Black Culture"
+ },
+ "jmih.org|/|national jazz museum in harlem": {
+  "ok": true,
+  "at": 1791846784,
+  "url": "https://jmih.org/",
+  "venue": "National Jazz Museum in Harlem"
+ },
+ "www.sugarhillmuseum.org|/|sugar hill children\u2019s museum of art & storytelling": {
+  "ok": true,
+  "at": 1791846784,
+  "url": "https://www.sugarhillmuseum.org/",
+  "venue": "Sugar Hill Children\u2019s Museum of Art & Storytelling"
+ },
+ "www.nps.gov|/hagr/|hamilton grange national memorial": {
+  "ok": true,
+  "at": 1791846785,
+  "url": "https://www.nps.gov/hagr/",
+  "venue": "Hamilton Grange National Memorial"
+ },
+ "www.redroosterharlem.com|/|red rooster harlem": {
+  "ok": true,
+  "at": 1791846785,
+  "url": "https://www.redroosterharlem.com/",
+  "venue": "Red Rooster Harlem"
+ },
+ "sylviasrestaurant.com|/|sylvia\u2019s restaurant": {
+  "ok": true,
+  "at": 1791846785,
+  "url": "https://sylviasrestaurant.com/",
+  "venue": "Sylvia\u2019s Restaurant"
+ },
+ "amyruths.com|/|amy ruth\u2019s": {
+  "ok": true,
+  "at": 1791846785,
+  "url": "https://amyruths.com/",
+  "venue": "Amy Ruth\u2019s"
+ },
+ "www.maisonharlem.com|/|maison harlem": {
+  "ok": true,
+  "at": 1791846786,
+  "url": "https://www.maisonharlem.com/",
+  "venue": "Maison Harlem"
+ },
+ "lidoharlem.com|/|lido": {
+  "ok": true,
+  "at": 1791846786,
+  "url": "https://lidoharlem.com/",
+  "venue": "Lido"
+ },
+ "pontybistroharlem.com|/|ponty bistro": {
+  "ok": true,
+  "at": 1791846786,
+  "url": "https://pontybistroharlem.com/",
+  "venue": "Ponty Bistro"
+ },
+ "www.harlemstage.org|/|harlem stage": {
+  "ok": true,
+  "at": 1791846788,
+  "url": "https://www.harlemstage.org/",
+  "venue": "Harlem Stage"
+ },
+ "www.apollotheater.org|/|apollo stages at the victoria": {
+  "ok": true,
+  "at": 1791846789,
+  "url": "https://www.apollotheater.org/",
+  "venue": "Apollo Stages at The Victoria"
+ },
+ "www.cthnyc.org|/|classical theatre of harlem": {
+  "ok": true,
+  "at": 1791846789,
+  "url": "https://www.cthnyc.org/",
+  "venue": "Classical Theatre of Harlem"
+ },
+ "www.ccny.cuny.edu|/ldcpa|leonard davis center for the performing arts": {
+  "ok": false,
+  "at": 1791846789,
+  "url": "https://www.ccny.cuny.edu/ldcpa",
+  "venue": "Leonard Davis Center for the Performing Arts"
+ },
+ "dancetheatreofharlem.org|/|dance theatre of harlem": {
+  "ok": true,
+  "at": 1791846790,
+  "url": "https://dancetheatreofharlem.org/",
+  "venue": "Dance Theatre of Harlem"
+ },
+ "hsanyc.org|/venues/theater/|harlem school of the arts theatre": {
+  "ok": true,
+  "at": 1791846791,
+  "url": "https://hsanyc.org/venues/theater/",
+  "venue": "Harlem School of the Arts Theatre"
+ },
+ "maisonpremiere.com|/|maison premiere": {
+  "ok": true,
+  "at": 1791846791,
+  "url": "https://maisonpremiere.com/",
+  "venue": "Maison Premiere"
+ },
+ "freshkillsbar.com|/|fresh kills bar": {
+  "ok": true,
+  "at": 1791846792,
+  "url": "https://freshkillsbar.com/",
+  "venue": "Fresh Kills Bar"
+ },
+ "www.pokito.nyc|/|pokito": {
+  "ok": true,
+  "at": 1791846793,
+  "url": "https://www.pokito.nyc/",
+  "venue": "Pokito"
+ },
+ "www.barblondeau.com|/|bar blondeau": {
+  "ok": true,
+  "at": 1791846793,
+  "url": "https://www.barblondeau.com/",
+  "venue": "Bar Blondeau"
+ },
+ "www.mrmelobar.com|/|mr. melo bar": {
+  "ok": true,
+  "at": 1791846793,
+  "url": "https://www.mrmelobar.com/",
+  "venue": "Mr. Melo Bar"
+ },
+ "www.pleasetellme.nyc|/|please tell me": {
+  "ok": true,
+  "at": 1791846794,
+  "url": "https://www.pleasetellme.nyc/",
+  "venue": "Please Tell Me"
+ },
+ "nitehawkcinema.com|/williamsburg/|nitehawk cinema \u2014 williamsburg": {
+  "ok": true,
+  "at": 1791846795,
+  "url": "https://nitehawkcinema.com/williamsburg/",
+  "venue": "Nitehawk Cinema \u2014 Williamsburg"
+ },
+ "www.erisevolution.com|/|eris evolution": {
+  "ok": true,
+  "at": 1791846796,
+  "url": "https://www.erisevolution.com/",
+  "venue": "Eris Evolution"
+ },
+ "www.brooklyncc.com|/|brooklyn comedy collective \u2014 pig pen": {
+  "ok": true,
+  "at": 1791846796,
+  "url": "https://www.brooklyncc.com/",
+  "venue": "Brooklyn Comedy Collective \u2014 Pig Pen"
+ },
+ "www.bkarthaus.com|/|brooklyn art haus": {
+  "ok": true,
+  "at": 1791846796,
+  "url": "https://www.bkarthaus.com/",
+  "venue": "Brooklyn Art Haus"
+ },
+ "vanleeuwenicecream.com|/scoop-shops/|van leeuwen ice cream \u2014 williamsburg": {
+  "ok": true,
+  "at": 1791846796,
+  "url": "https://vanleeuwenicecream.com/scoop-shops/",
+  "venue": "Van Leeuwen Ice Cream \u2014 Williamsburg"
+ },
+ "lartedelgelato.com|/williamsburg/|l\u2019arte del gelato \u2014 williamsburg": {
+  "ok": true,
+  "at": 1791846797,
+  "url": "https://lartedelgelato.com/williamsburg/",
+  "venue": "L\u2019Arte del Gelato \u2014 Williamsburg"
+ },
+ "www.blendwilliamsburg.com|/|blend williamsburg": {
+  "ok": true,
+  "at": 1791846797,
+  "url": "https://www.blendwilliamsburg.com/",
+  "venue": "Blend Williamsburg"
+ },
+ "carvalhonewyork.com|/|carvalho": {
+  "ok": true,
+  "at": 1791846798,
+  "url": "https://carvalhonewyork.com/",
+  "venue": "Carvalho"
+ },
+ "www.theboiler191.com|/|the boiler": {
+  "ok": true,
+  "at": 1791846798,
+  "url": "https://www.theboiler191.com/",
+  "venue": "The Boiler"
+ },
+ "shtetlartgallery.com|/|shtetl art gallery": {
+  "ok": true,
+  "at": 1791846798,
+  "url": "https://shtetlartgallery.com/",
+  "venue": "Shtetl Art Gallery"
+ },
+ "www.williamsburgbiannual.org|/|williamsburg biannual": {
+  "ok": true,
+  "at": 1791846799,
+  "url": "https://www.williamsburgbiannual.org/",
+  "venue": "Williamsburg Biannual"
+ },
+ "www.cityreliquary.org|/|the city reliquary": {
+  "ok": true,
+  "at": 1791846799,
+  "url": "https://www.cityreliquary.org/",
+  "venue": "The City Reliquary"
+ },
+ "www.misinewyork.com|/|misi": {
+  "ok": true,
+  "at": 1791846799,
+  "url": "https://www.misinewyork.com/",
+  "venue": "Misi"
+ },
+ "www.lecrocodile.com|/|le crocodile": {
+  "ok": true,
+  "at": 1791846800,
+  "url": "https://www.lecrocodile.com/",
+  "venue": "Le Crocodile"
+ },
+ "www.laserwolfbrooklyn.com|/|laser wolf": {
+  "ok": true,
+  "at": 1791846800,
+  "url": "https://www.laserwolfbrooklyn.com/",
+  "venue": "Laser Wolf"
+ },
+ "www.fourhorsemenbk.com|/|the four horsemen": {
+  "ok": true,
+  "at": 1791846801,
+  "url": "https://www.fourhorsemenbk.com/",
+  "venue": "The Four Horsemen"
+ },
+ "www.kelloggsdinernyc.com|/|kellogg\u2019s diner": {
+  "ok": true,
+  "at": 1791846801,
+  "url": "https://www.kelloggsdinernyc.com/",
+  "venue": "Kellogg\u2019s Diner"
+ },
+ "www.bricktheater.com|/|the brick": {
+  "ok": true,
+  "at": 1791846803,
+  "url": "https://www.bricktheater.com/",
+  "venue": "The Brick"
+ },
+ "www.cprnyc.org|/|center for performance research": {
+  "ok": true,
+  "at": 1791846803,
+  "url": "https://www.cprnyc.org/",
+  "venue": "Center for Performance Research"
+ },
+ "www.williamsburgoperahouse.com|/|williamsburg opera house": {
+  "ok": true,
+  "at": 1791846803,
+  "url": "https://www.williamsburgoperahouse.com/",
+  "venue": "Williamsburg Opera House"
+ },
+ "www.starrbar.com|/|starr bar": {
+  "ok": true,
+  "at": 1791846804,
+  "url": "https://www.starrbar.com/",
+  "venue": "Starr Bar"
+ },
+ "www.jupiterdisco.com|/|jupiter disco": {
+  "ok": true,
+  "at": 1791846804,
+  "url": "https://www.jupiterdisco.com/",
+  "venue": "Jupiter Disco"
+ },
+ "www.keybar.com|/|keybar": {
+  "ok": true,
+  "at": 1791846805,
+  "url": "https://www.keybar.com/",
+  "venue": "Keybar"
+ },
+ "www.thirdrailbar.com|/|the third rail": {
+  "ok": true,
+  "at": 1791846805,
+  "url": "https://www.thirdrailbar.com/",
+  "venue": "The Third Rail"
+ },
+ "www.orion-bar.com|/|orion bar": {
+  "ok": true,
+  "at": 1791846806,
+  "url": "https://www.orion-bar.com/",
+  "venue": "Orion Bar"
+ },
+ "tradesmanbar.com|/|tradesman": {
+  "ok": true,
+  "at": 1791846806,
+  "url": "https://tradesmanbar.com/",
+  "venue": "Tradesman"
+ },
+ "www.jaywalker.nyc|/|jaywalker": {
+  "ok": true,
+  "at": 1791846806,
+  "url": "https://www.jaywalker.nyc/",
+  "venue": "Jaywalker"
+ },
+ "www.cobraclubbk.com|/|the cobra club": {
+  "ok": true,
+  "at": 1791846807,
+  "url": "https://www.cobraclubbk.com/",
+  "venue": "The Cobra Club"
+ },
+ "www.silobrooklyn.com|/|silo": {
+  "ok": true,
+  "at": 1791846808,
+  "url": "https://www.silobrooklyn.com/",
+  "venue": "SILO"
+ },
+ "syndicatedbk.com|/|syndicated": {
+  "ok": true,
+  "at": 1791846809,
+  "url": "https://syndicatedbk.com/",
+  "venue": "Syndicated"
+ },
+ "www.millenniumfilm.org|/|millennium film workshop": {
+  "ok": true,
+  "at": 1791846809,
+  "url": "https://www.millenniumfilm.org/",
+  "venue": "Millennium Film Workshop"
+ },
+ "www.bushwickfilmfestival.com|/|bushwick film festival": {
+  "ok": true,
+  "at": 1791846809,
+  "url": "https://www.bushwickfilmfestival.com/",
+  "venue": "Bushwick Film Festival"
+ },
+ "www.bushwickcomedy.com|/|bushwick comedy club": {
+  "ok": true,
+  "at": 1791846812,
+  "url": "https://www.bushwickcomedy.com/",
+  "venue": "Bushwick Comedy Club"
+ },
+ "tinycupboardbrooklyn.com|/|the tiny cupboard": {
+  "ok": true,
+  "at": 1791846813,
+  "url": "https://tinycupboardbrooklyn.com/",
+  "venue": "The Tiny Cupboard"
+ },
+ "www.bkmadecomedy.com|/|bk made comedy": {
+  "ok": true,
+  "at": 1791846813,
+  "url": "https://www.bkmadecomedy.com/",
+  "venue": "BK Made Comedy"
+ },
+ "www.bushwick-bakery.com|/|bushwick bakery": {
+  "ok": true,
+  "at": 1791846814,
+  "url": "https://www.bushwick-bakery.com/",
+  "venue": "Bushwick Bakery"
+ },
+ "myrtlebakery.com|/|l\u2019imprimerie": {
+  "ok": true,
+  "at": 1791846814,
+  "url": "https://myrtlebakery.com/",
+  "venue": "L\u2019Imprimerie"
+ },
+ "circospastryshop.com|/|circo\u2019s pastry shop": {
+  "ok": true,
+  "at": 1791846814,
+  "url": "https://circospastryshop.com/",
+  "venue": "Circo\u2019s Pastry Shop"
+ },
+ "www.amoseno.org|/|amos eno gallery": {
+  "ok": true,
+  "at": 1791846817,
+  "url": "https://www.amoseno.org/",
+  "venue": "Amos Eno Gallery"
+ },
+ "www.the-living-gallery.com|/|the living gallery": {
+  "ok": false,
+  "at": 1791846817,
+  "url": "http://www.the-living-gallery.com/",
+  "venue": "The Living Gallery"
+ },
+ "www.tigerstrikesasteroid.com|/|tiger strikes asteroid brooklyn": {
+  "ok": true,
+  "at": 1791846818,
+  "url": "https://www.tigerstrikesasteroid.com/",
+  "venue": "Tiger Strikes Asteroid Brooklyn"
+ },
+ "www.transmitter.nyc|/|transmitter": {
+  "ok": true,
+  "at": 1791846818,
+  "url": "https://www.transmitter.nyc/",
+  "venue": "Transmitter"
+ },
+ "www.underdonk.com|/|underdonk": {
+  "ok": true,
+  "at": 1791846818,
+  "url": "https://www.underdonk.com/",
+  "venue": "Underdonk"
+ },
+ "www.gallerysinclair.com|/|sinclair": {
+  "ok": true,
+  "at": 1791846819,
+  "url": "https://www.gallerysinclair.com/",
+  "venue": "SINCLAIR"
+ },
+ "bushwickgallery.com|/|bushwick gallery": {
+  "ok": true,
+  "at": 1791846819,
+  "url": "https://bushwickgallery.com/",
+  "venue": "Bushwick Gallery"
+ },
+ "www.otisbk.com|/|otis": {
+  "ok": true,
+  "at": 1791846819,
+  "url": "https://www.otisbk.com/",
+  "venue": "Otis"
+ },
+ "www.seawolfbk.com|/|sea wolf": {
+  "ok": true,
+  "at": 1791846819,
+  "url": "https://www.seawolfbk.com/",
+  "venue": "Sea Wolf"
+ },
+ "www.robertaspizza.com|/|roberta\u2019s": {
+  "ok": true,
+  "at": 1791846820,
+  "url": "https://www.robertaspizza.com/",
+  "venue": "Roberta\u2019s"
+ },
+ "www.klomklormnyc.com|/|klom klorm": {
+  "ok": true,
+  "at": 1791846820,
+  "url": "https://www.klomklormnyc.com/",
+  "venue": "Klom Klorm"
+ },
+ "www.donrique.com|/|don rique": {
+  "ok": true,
+  "at": 1791846820,
+  "url": "https://www.donrique.com/",
+  "venue": "Don Rique"
+ },
+ "www.eyvalnyc.com|/|eyval": {
+  "ok": true,
+  "at": 1791846823,
+  "url": "https://www.eyvalnyc.com/",
+  "venue": "Eyval"
+ },
+ "bunnaethiopia.net|/|bunna cafe": {
+  "ok": true,
+  "at": 1791846823,
+  "url": "https://bunnaethiopia.net/",
+  "venue": "Bunna Cafe"
+ },
+ "www.foreverthaibushwick.com|/|forever thai": {
+  "ok": true,
+  "at": 1791846824,
+  "url": "https://www.foreverthaibushwick.com/",
+  "venue": "Forever Thai"
+ },
+ "eimdeethai.com|/|eim dee": {
+  "ok": false,
+  "at": 1791846824,
+  "url": "https://eimdeethai.com/",
+  "venue": "Eim Dee"
+ },
+ "www.thebushwickstarr.org|/|the bushwick starr": {
+  "ok": true,
+  "at": 1791846825,
+  "url": "https://www.thebushwickstarr.org/",
+  "venue": "The Bushwick Starr"
+ },
+ "www.houseofyes.org|/|house of yes": {
+  "ok": true,
+  "at": 1791846825,
+  "url": "https://www.houseofyes.org/",
+  "venue": "House of Yes"
+ },
+ "www.elsewhere.club|/|elsewhere": {
+  "ok": true,
+  "at": 1791846825,
+  "url": "https://www.elsewhere.club/",
+  "venue": "Elsewhere"
+ },
+ "www.therockwellplace.com||the rockwell place": {
+  "ok": true,
+  "at": 1791846826,
+  "url": "https://www.therockwellplace.com",
+  "venue": "The Rockwell Place"
+ },
+ "www.fritznyc.com||fritz": {
+  "ok": true,
+  "at": 1791846826,
+  "url": "https://www.fritznyc.com",
+  "venue": "Fritz"
+ },
+ "www.fancyfreebk.com||fancyfree": {
+  "ok": true,
+  "at": 1791846826,
+  "url": "https://www.fancyfreebk.com",
+  "venue": "FancyFree"
+ },
+ "www.brooklynpublic.com||brooklyn public house": {
+  "ok": true,
+  "at": 1791846826,
+  "url": "https://www.brooklynpublic.com",
+  "venue": "Brooklyn Public House"
+ },
+ "www.blackforestbrooklyn.com||black forest brooklyn": {
+  "ok": true,
+  "at": 1791846827,
+  "url": "https://www.blackforestbrooklyn.com",
+  "venue": "Black Forest Brooklyn"
+ },
+ "www.bam.org||bam rose cinemas": {
+  "ok": false,
+  "at": 1791846827,
+  "url": "https://www.bam.org",
+  "venue": "BAM Rose Cinemas"
+ },
+ "dsk-brooklyn.com||dsk brooklyn": {
+  "ok": true,
+  "at": 1791846828,
+  "url": "https://dsk-brooklyn.com",
+  "venue": "DSK Brooklyn"
+ },
+ "thegoodbatch.com||the good batch": {
+  "ok": true,
+  "at": 1791846829,
+  "url": "https://thegoodbatch.com",
+  "venue": "The Good Batch"
+ },
+ "www.peteespie.com||petee's caf\u00e9": {
+  "ok": true,
+  "at": 1791846829,
+  "url": "https://www.peteespie.com",
+  "venue": "Petee's Caf\u00e9"
+ },
+ "www.thebrooklynsweetspot.com||brooklyn sweet spot": {
+  "ok": true,
+  "at": 1791846830,
+  "url": "https://www.thebrooklynsweetspot.com",
+  "venue": "Brooklyn Sweet Spot"
+ },
+ "bricartsmedia.org||bric house gallery": {
+  "ok": true,
+  "at": 1791846830,
+  "url": "https://bricartsmedia.org",
+  "venue": "BRIC House Gallery"
+ },
+ "urbanglass.org||urbanglass agnes varis art center": {
+  "ok": false,
+  "at": 1791846832,
+  "url": "https://urbanglass.org",
+  "venue": "UrbanGlass Agnes Varis Art Center"
+ },
+ "www.greenehousegallery.com||greene house gallery": {
+  "ok": true,
+  "at": 1791846832,
+  "url": "https://www.greenehousegallery.com",
+  "venue": "Greene House Gallery"
+ },
+ "mocada.org||museum of contemporary african diasporan arts": {
+  "ok": true,
+  "at": 1791846833,
+  "url": "https://mocada.org",
+  "venue": "Museum of Contemporary African Diasporan Arts"
+ },
+ "www.missadanyc.com||miss ada": {
+  "ok": true,
+  "at": 1791846833,
+  "url": "https://www.missadanyc.com",
+  "venue": "Miss Ada"
+ },
+ "www.theodoranyc.com||theodora": {
+  "ok": true,
+  "at": 1791846833,
+  "url": "https://www.theodoranyc.com",
+  "venue": "Theodora"
+ },
+ "coloniaverdenyc.com||colonia verde": {
+  "ok": true,
+  "at": 1791846834,
+  "url": "https://coloniaverdenyc.com",
+  "venue": "Colonia Verde"
+ },
+ "www.sailor.nyc||sailor": {
+  "ok": true,
+  "at": 1791846834,
+  "url": "https://www.sailor.nyc",
+  "venue": "Sailor"
+ },
+ "www.evelinabk.com||evelina": {
+  "ok": true,
+  "at": 1791846835,
+  "url": "https://www.evelinabk.com",
+  "venue": "Evelina"
+ },
+ "www.romansnyc.com||roman's": {
+  "ok": true,
+  "at": 1791846835,
+  "url": "https://www.romansnyc.com",
+  "venue": "Roman's"
+ },
+ "www.waltersbrooklyn.com||walter's": {
+  "ok": true,
+  "at": 1791846836,
+  "url": "https://www.waltersbrooklyn.com",
+  "venue": "Walter's"
+ },
+ "www.babacoolbk.com||baba cool": {
+  "ok": true,
+  "at": 1791846836,
+  "url": "https://www.babacoolbk.com",
+  "venue": "Baba Cool"
+ },
+ "formapasta.com||forma pasta factory": {
+  "ok": false,
+  "at": 1791846840,
+  "url": "https://formapasta.com",
+  "venue": "Forma Pasta Factory"
+ },
+ "www.bam.org||bam harvey theater": {
+  "ok": true,
+  "at": 1791846840,
+  "url": "https://www.bam.org",
+  "venue": "BAM Harvey Theater"
+ },
+ "www.bam.org||bam howard gilman opera house": {
+  "ok": false,
+  "at": 1791846841,
+  "url": "https://www.bam.org",
+  "venue": "BAM Howard Gilman Opera House"
+ },
+ "www.bam.org||bam fisher": {
+  "ok": false,
+  "at": 1791846841,
+  "url": "https://www.bam.org",
+  "venue": "BAM Fisher"
+ },
+ "tfana.org||polonsky shakespeare center": {
+  "ok": true,
+  "at": 1791846843,
+  "url": "https://tfana.org",
+  "venue": "Polonsky Shakespeare Center"
+ },
+ "651arts.org||651 arts": {
+  "ok": true,
+  "at": 1791846843,
+  "url": "https://651arts.org",
+  "venue": "651 ARTS"
+ },
+ "markmorrisdancegroup.org||mark morris dance center": {
+  "ok": true,
+  "at": 1791846843,
+  "url": "https://markmorrisdancegroup.org",
+  "venue": "Mark Morris Dance Center"
+ },
+ "bricartsmedia.org||bric house": {
+  "ok": true,
+  "at": 1791846844,
+  "url": "https://bricartsmedia.org",
+  "venue": "BRIC House"
+ },
+ "www.thecanarybk.com|/|the canary": {
+  "ok": true,
+  "at": 1791846844,
+  "url": "https://www.thecanarybk.com/",
+  "venue": "The Canary"
+ },
+ "www.drinkbk.com|/|drink lounge": {
+  "ok": true,
+  "at": 1791846844,
+  "url": "https://www.drinkbk.com/",
+  "venue": "Drink Lounge"
+ },
+ "kissakissa.us|/|kissa kissa": {
+  "ok": true,
+  "at": 1791846845,
+  "url": "https://kissakissa.us/",
+  "venue": "Kissa Kissa"
+ },
+ "www.fnlbk.com|/|friends and lovers": {
+  "ok": true,
+  "at": 1791846845,
+  "url": "https://www.fnlbk.com/",
+  "venue": "Friends and Lovers"
+ },
+ "www.barbayeux.com|/|bar bayeux": {
+  "ok": true,
+  "at": 1791846845,
+  "url": "https://www.barbayeux.com/",
+  "venue": "Bar Bayeux"
+ },
+ "www.rialtogrande.com|/|rialto grande": {
+  "ok": true,
+  "at": 1791846846,
+  "url": "https://www.rialtogrande.com/",
+  "venue": "Rialto Grande"
+ },
+ "franklinparkbrooklyn.com|/|franklin park": {
+  "ok": false,
+  "at": 1791846846,
+  "url": "https://franklinparkbrooklyn.com/",
+  "venue": "Franklin Park"
+ },
+ "www.whoopsiedaisybk.com|/|whoopsie daisy": {
+  "ok": true,
+  "at": 1791846846,
+  "url": "https://www.whoopsiedaisybk.com/",
+  "venue": "Whoopsie Daisy"
+ },
+ "www.covenhovennyc.com|/|covenhoven": {
+  "ok": true,
+  "at": 1791846847,
+  "url": "https://www.covenhovennyc.com/",
+  "venue": "Covenhoven"
+ },
+ "www.kingtaibar.com|/|king tai": {
+  "ok": true,
+  "at": 1791846847,
+  "url": "https://www.kingtaibar.com/",
+  "venue": "King Tai"
+ },
+ "sweetexpressionsch.com|/|sweet expressions": {
+  "ok": true,
+  "at": 1791846847,
+  "url": "https://sweetexpressionsch.com/",
+  "venue": "Sweet Expressions"
+ },
+ "www.brooklynbell.com|/the-local/|brooklyn bell\u2019s the local": {
+  "ok": true,
+  "at": 1791846848,
+  "url": "https://www.brooklynbell.com/the-local/",
+  "venue": "Brooklyn Bell\u2019s The Local"
+ },
+ "www.lisbonata.com|/|lisbonata": {
+  "ok": true,
+  "at": 1791846848,
+  "url": "https://www.lisbonata.com/",
+  "venue": "Lisbonata"
+ },
+ "www.kingstonbakeshop.com|/|kingston bake shop": {
+  "ok": true,
+  "at": 1791846849,
+  "url": "https://www.kingstonbakeshop.com/",
+  "venue": "Kingston Bake Shop"
+ },
+ "fivemyles.org|/|fivemyles": {
+  "ok": true,
+  "at": 1791846850,
+  "url": "https://fivemyles.org/",
+  "venue": "FiveMyles"
+ },
+ "www.brooklynmuseum.org|/|brooklyn museum": {
+  "ok": false,
+  "at": 1791846850,
+  "url": "https://www.brooklynmuseum.org/",
+  "venue": "Brooklyn Museum"
+ },
+ "www.brooklynkids.org|/|brooklyn children\u2019s museum": {
+  "ok": true,
+  "at": 1791846850,
+  "url": "https://www.brooklynkids.org/",
+  "venue": "Brooklyn Children\u2019s Museum"
+ },
+ "www.weeksvillesociety.org|/|weeksville heritage center": {
+  "ok": true,
+  "at": 1791846851,
+  "url": "https://www.weeksvillesociety.org/",
+  "venue": "Weeksville Heritage Center"
+ },
+ "www.ardenbk.com|/|arden": {
+  "ok": true,
+  "at": 1791846851,
+  "url": "https://www.ardenbk.com/",
+  "venue": "Arden"
+ },
+ "agiscounter.com|/|agi\u2019s counter": {
+  "ok": true,
+  "at": 1791846851,
+  "url": "https://agiscounter.com/",
+  "venue": "Agi\u2019s Counter"
+ },
+ "www.ruedixbrooklyn.com|/|cafe rue dix": {
+  "ok": true,
+  "at": 1791846852,
+  "url": "https://www.ruedixbrooklyn.com/",
+  "venue": "Cafe Rue Dix"
+ },
+ "www.rasplantbased.com|/|ras plant based": {
+  "ok": true,
+  "at": 1791846852,
+  "url": "https://www.rasplantbased.com/",
+  "venue": "RAS Plant Based"
+ },
+ "guerosbrooklyn.com|/|gueros": {
+  "ok": false,
+  "at": 1791846856,
+  "url": "https://guerosbrooklyn.com/",
+  "venue": "Gueros"
+ },
+ "chavelasnyc.com|/|chavela\u2019s": {
+  "ok": true,
+  "at": 1791846858,
+  "url": "https://chavelasnyc.com/",
+  "venue": "Chavela\u2019s"
+ },
+ "www.colinacuervo.com|/|colina cuervo": {
+  "ok": true,
+  "at": 1791846858,
+  "url": "https://www.colinacuervo.com/",
+  "venue": "Colina Cuervo"
+ },
+ "www.lakoucafe.com|/|lakou cafe": {
+  "ok": true,
+  "at": 1791846859,
+  "url": "https://www.lakoucafe.com/",
+  "venue": "Lakou Cafe"
+ },
+ "www.brooklynsuya.com|/|brooklyn suya": {
+  "ok": true,
+  "at": 1791846859,
+  "url": "https://www.brooklynsuya.com/",
+  "venue": "Brooklyn Suya"
+ },
+ "savvybistro.com|/|savvy bistro and bar": {
+  "ok": true,
+  "at": 1791846859,
+  "url": "https://savvybistro.com/",
+  "venue": "Savvy Bistro and Bar"
+ },
+ "www.warude.com|/|warude": {
+  "ok": true,
+  "at": 1791846860,
+  "url": "https://www.warude.com/",
+  "venue": "WARUDE"
+ },
+ "www.bottegasocialclub.com|/|bottega social club": {
+  "ok": true,
+  "at": 1791846860,
+  "url": "https://www.bottegasocialclub.com/",
+  "venue": "Bottega Social Club"
+ },
+ "crownhilltheatre.com|/|crown hill theatre": {
+  "ok": true,
+  "at": 1791846861,
+  "url": "https://crownhilltheatre.com/",
+  "venue": "Crown Hill Theatre"
+ },
+ "www.thesenecanyc.com|/|the seneca": {
+  "ok": false,
+  "at": 1791846861,
+  "url": "https://www.thesenecanyc.com/",
+  "venue": "The Seneca"
+ },
+ "coyotebohemionyc.com|/|coyote bohemio": {
+  "ok": true,
+  "at": 1791846861,
+  "url": "https://coyotebohemionyc.com/",
+  "venue": "Coyote Bohemio"
+ },
+ "district385nyc.com|/|district 385": {
+  "ok": true,
+  "at": 1791846862,
+  "url": "https://district385nyc.com/",
+  "venue": "District 385"
+ },
+ "www.barfreda.com|/|bar freda": {
+  "ok": true,
+  "at": 1791846863,
+  "url": "https://www.barfreda.com/",
+  "venue": "Bar Freda"
+ },
+ "www.sundownbar.com|/|cassette": {
+  "ok": true,
+  "at": 1791846863,
+  "url": "https://www.sundownbar.com/",
+  "venue": "Cassette"
+ },
+ "www.dadabar.nyc|/|dada cafe": {
+  "ok": true,
+  "at": 1791846864,
+  "url": "https://www.dadabar.nyc/",
+  "venue": "DADA Cafe"
+ },
+ "www.aftermathnyc.com|/|aftermath nyc": {
+  "ok": true,
+  "at": 1791846864,
+  "url": "https://www.aftermathnyc.com/",
+  "venue": "Aftermath NYC"
+ },
+ "www.thedeepend.nyc|/|the deep end": {
+  "ok": true,
+  "at": 1791846865,
+  "url": "https://www.thedeepend.nyc/",
+  "venue": "The Deep End"
+ },
+ "www.lowcinema.com|/|low cinema": {
+  "ok": true,
+  "at": 1791846865,
+  "url": "https://www.lowcinema.com/",
+  "venue": "Low Cinema"
+ },
+ "www.rudysbakeryandcafe.com|/|rudy's bakery and cafe": {
+  "ok": false,
+  "at": 1791846866,
+  "url": "https://www.rudysbakeryandcafe.com/",
+  "venue": "Rudy's Bakery and Cafe"
+ },
+ "www.rolosnyc.com|/|rolo's": {
+  "ok": true,
+  "at": 1791846866,
+  "url": "https://www.rolosnyc.com/",
+  "venue": "Rolo's"
+ },
+ "www.lorimoto.com|/|lorimoto gallery": {
+  "ok": true,
+  "at": 1791846866,
+  "url": "https://www.lorimoto.com/",
+  "venue": "Lorimoto Gallery"
+ },
+ "www.stephenstreetgallery.com|/|stephen street gallery": {
+  "ok": true,
+  "at": 1791846867,
+  "url": "https://www.stephenstreetgallery.com/",
+  "venue": "Stephen Street Gallery"
+ },
+ "www.ridgewoodartinstitute.org|/|ridgewood art institute": {
+  "ok": true,
+  "at": 1791846867,
+  "url": "https://www.ridgewoodartinstitute.org/",
+  "venue": "Ridgewood Art Institute"
+ },
+ "onderdonkhouse.org|/|vander ende\u2013onderdonk house": {
+  "ok": true,
+  "at": 1791846867,
+  "url": "https://onderdonkhouse.org/",
+  "venue": "Vander Ende\u2013Onderdonk House"
+ },
+ "pizzeriapanina.com|/|pizzeria panina": {
+  "ok": true,
+  "at": 1791846868,
+  "url": "https://pizzeriapanina.com/",
+  "venue": "Pizzeria Panina"
+ },
+ "www.ecbny.com|/|ecb": {
+  "ok": true,
+  "at": 1791846868,
+  "url": "https://www.ecbny.com/",
+  "venue": "ECB"
+ },
+ "www.juliasridgewood.com|/|julia's": {
+  "ok": true,
+  "at": 1791846869,
+  "url": "https://www.juliasridgewood.com/",
+  "venue": "Julia's"
+ },
+ "stonecircletheatre.org|/|stone circle theatre": {
+  "ok": true,
+  "at": 1791846869,
+  "url": "https://stonecircletheatre.org/",
+  "venue": "Stone Circle Theatre"
+ },
+ "www.footlightunderground.com|/|footlight underground at the windjammer": {
+  "ok": true,
+  "at": 1791846871,
+  "url": "https://www.footlightunderground.com/",
+  "venue": "Footlight Underground at the Windjammer"
+ },
+ "www.bohemianhall.com|/|bohemian hall & beer garden": {
+  "ok": true,
+  "at": 1791846872,
+  "url": "https://www.bohemianhall.com/",
+  "venue": "Bohemian Hall & Beer Garden"
+ },
+ "mosaicastoria.com|/|mosaic": {
+  "ok": true,
+  "at": 1791846873,
+  "url": "https://mosaicastoria.com/",
+  "venue": "Mosaic"
+ },
+ "www.tlwcocktailbar.com|/|the last word": {
+  "ok": true,
+  "at": 1791846873,
+  "url": "https://www.tlwcocktailbar.com/",
+  "venue": "The Last Word"
+ },
+ "www.judyandpunch.com|/|judy & punch": {
+  "ok": true,
+  "at": 1791846874,
+  "url": "https://www.judyandpunch.com/",
+  "venue": "Judy & Punch"
+ },
+ "www.thebonnie.com|/|the bonnie": {
+  "ok": true,
+  "at": 1791846874,
+  "url": "https://www.thebonnie.com/",
+  "venue": "The Bonnie"
+ },
+ "dalyspubnyc.com|/|daly's pub": {
+  "ok": false,
+  "at": 1791846874,
+  "url": "https://dalyspubnyc.com/",
+  "venue": "Daly's Pub"
+ },
+ "movingimage.org|/|museum of the moving image": {
+  "ok": true,
+  "at": 1791846875,
+  "url": "https://movingimage.org/",
+  "venue": "Museum of the Moving Image"
+ },
+ "qedastoria.com|/|q.e.d. astoria": {
+  "ok": true,
+  "at": 1791846875,
+  "url": "https://qedastoria.com/",
+  "venue": "Q.E.D. Astoria"
+ },
+ "grove34.com|/|grove 34": {
+  "ok": true,
+  "at": 1791846875,
+  "url": "https://grove34.com/",
+  "venue": "Grove 34"
+ },
+ "thelocalbar4104.wixsite.com|/website|the local bar": {
+  "ok": true,
+  "at": 1791846876,
+  "url": "https://thelocalbar4104.wixsite.com/website",
+  "venue": "The Local Bar"
+ },
+ "aidasparkside.com|/|aida's parkside gelato": {
+  "ok": true,
+  "at": 1791846876,
+  "url": "https://aidasparkside.com/",
+  "venue": "Aida's Parkside Gelato"
+ },
+ "omoniacafe.com|/|omonia cafe": {
+  "ok": true,
+  "at": 1791846876,
+  "url": "https://omoniacafe.com/",
+  "venue": "Omonia Cafe"
+ },
+ "www.paris-oven.com|/|paris oven bakery": {
+  "ok": true,
+  "at": 1791846878,
+  "url": "https://www.paris-oven.com/",
+  "venue": "Paris Oven Bakery"
+ },
+ "www.astoriaart.com|/|astoria art center": {
+  "ok": true,
+  "at": 1791846878,
+  "url": "https://www.astoriaart.com/",
+  "venue": "Astoria Art Center"
+ },
+ "www.socratessculpturepark.org|/|socrates sculpture park": {
+  "ok": true,
+  "at": 1791846879,
+  "url": "https://www.socratessculpturepark.org/",
+  "venue": "Socrates Sculpture Park"
+ },
+ "www.ramronyc.com|/|ramro": {
+  "ok": true,
+  "at": 1791846879,
+  "url": "https://www.ramronyc.com/",
+  "venue": "Ramro"
+ },
+ "www.tavernakyclades.com|/astoria/|taverna kyclades": {
+  "ok": true,
+  "at": 1791846880,
+  "url": "https://www.tavernakyclades.com/astoria/",
+  "venue": "Taverna Kyclades"
+ },
+ "vestavino.com|/|vesta trattoria & wine bar": {
+  "ok": true,
+  "at": 1791846881,
+  "url": "https://vestavino.com/",
+  "venue": "Vesta Trattoria & Wine Bar"
+ },
+ "www.vitevinosteria.com|/|vite vinosteria": {
+  "ok": true,
+  "at": 1791846881,
+  "url": "https://www.vitevinosteria.com/",
+  "venue": "Vite Vinosteria"
+ },
+ "www.zenastoria.net|/|zen astoria": {
+  "ok": true,
+  "at": 1791846882,
+  "url": "https://www.zenastoria.net/",
+  "venue": "Zen Astoria"
+ },
+ "www.queensroomnyc.com|/|queen's room": {
+  "ok": true,
+  "at": 1791846882,
+  "url": "https://www.queensroomnyc.com/",
+  "venue": "Queen's Room"
+ },
+ "viatrenta.com|/|via trenta osteria & wine bar": {
+  "ok": true,
+  "at": 1791846882,
+  "url": "https://viatrenta.com/",
+  "venue": "Via Trenta Osteria & Wine Bar"
+ },
+ "www.macoletta.com|/|macoletta": {
+  "ok": true,
+  "at": 1791846883,
+  "url": "https://www.macoletta.com/",
+  "venue": "Macoletta"
+ },
+ "www.greekculturalcenter.org|/theatre|astoria playhouse at greek cultural center": {
+  "ok": true,
+  "at": 1791846884,
+  "url": "https://www.greekculturalcenter.org/theatre",
+  "venue": "Astoria Playhouse at Greek Cultural Center"
+ },
+ "thespistheater.com|/|thespis theater": {
+  "ok": true,
+  "at": 1791846886,
+  "url": "https://thespistheater.com/",
+  "venue": "THESPIS Theater"
+ },
+ "www.wildheartpas.com|/|wildheart performing arts studio": {
+  "ok": true,
+  "at": 1791846886,
+  "url": "https://www.wildheartpas.com/",
+  "venue": "WildHeart Performing Arts Studio"
+ },
+ "www.arthouseastoria.org|/|art house astoria": {
+  "ok": true,
+  "at": 1791846886,
+  "url": "https://www.arthouseastoria.org/",
+  "venue": "Art House Astoria"
+ },
+ "www.dutchkillsbar.com|/|dutch kills bar": {
+  "ok": true,
+  "at": 1791846887,
+  "url": "https://www.dutchkillsbar.com/",
+  "venue": "Dutch Kills Bar"
+ },
+ "www.dutchkillsbar.com|/|debbie's at dutch kills bar": {
+  "ok": true,
+  "at": 1791846887,
+  "url": "https://www.dutchkillsbar.com/",
+  "venue": "Debbie's at Dutch Kills Bar"
+ },
+ "www.licbar.com|/|lic bar": {
+  "ok": true,
+  "at": 1791846888,
+  "url": "https://www.licbar.com/",
+  "venue": "LIC Bar"
+ },
+ "www.ordersweetleafcoffee.com|/|sweetleaf coffee & cocktail bar": {
+  "ok": true,
+  "at": 1791846888,
+  "url": "https://www.ordersweetleafcoffee.com/",
+  "venue": "Sweetleaf Coffee & Cocktail Bar"
+ },
+ "www.lostinparadiserooftop.com|/|lost in paradise rooftop": {
+  "ok": true,
+  "at": 1791846888,
+  "url": "https://www.lostinparadiserooftop.com/",
+  "venue": "Lost in Paradise Rooftop"
+ },
+ "partake.nyc|/|partake nyc": {
+  "ok": true,
+  "at": 1791846889,
+  "url": "https://partake.nyc/",
+  "venue": "Partake NYC"
+ },
+ "www.culturelablic.org|/|culture lab lic": {
+  "ok": true,
+  "at": 1791846889,
+  "url": "https://www.culturelablic.org/",
+  "venue": "Culture Lab LIC"
+ },
+ "cannellepatisserie.com|/|cannelle patisserie": {
+  "ok": true,
+  "at": 1791846891,
+  "url": "https://cannellepatisserie.com/",
+  "venue": "Cannelle Patisserie"
+ },
+ "www.somedaysbakery.com|/|somedays bakery": {
+  "ok": true,
+  "at": 1791846891,
+  "url": "https://www.somedaysbakery.com/",
+  "venue": "Somedays Bakery"
+ },
+ "www.momaps1.org|/|moma ps1": {
+  "ok": true,
+  "at": 1791846891,
+  "url": "https://www.momaps1.org/",
+  "venue": "MoMA PS1"
+ },
+ "www.sculpture-center.org|/|sculpturecenter": {
+  "ok": true,
+  "at": 1791846892,
+  "url": "https://www.sculpture-center.org/",
+  "venue": "SculptureCenter"
+ },
+ "www.fluxfactory.org|/|flux factory": {
+  "ok": true,
+  "at": 1791846893,
+  "url": "https://www.fluxfactory.org/",
+  "venue": "Flux Factory"
+ },
+ "www.noguchi.org|/|the noguchi museum": {
+  "ok": true,
+  "at": 1791846894,
+  "url": "https://www.noguchi.org/",
+  "venue": "The Noguchi Museum"
+ },
+ "www.laguardiawagnerarchive.lagcc.cuny.edu|/|laguardia and wagner archives": {
+  "ok": true,
+  "at": 1791846894,
+  "url": "https://www.laguardiawagnerarchive.lagcc.cuny.edu/",
+  "venue": "LaGuardia and Wagner Archives"
+ },
+ "casaenriquelic.com|/|casa enrique": {
+  "ok": true,
+  "at": 1791846894,
+  "url": "https://casaenriquelic.com/",
+  "venue": "Casa Enrique"
+ },
+ "www.jorany.com|/|jora restaurant & bar": {
+  "ok": true,
+  "at": 1791846894,
+  "url": "https://www.jorany.com/",
+  "venue": "Jora Restaurant & Bar"
+ },
+ "www.americanbrasslic.com|/|american brass": {
+  "ok": true,
+  "at": 1791846895,
+  "url": "https://www.americanbrasslic.com/",
+  "venue": "American Brass"
+ },
+ "www.maiellalic.com|/|maiella": {
+  "ok": true,
+  "at": 1791846895,
+  "url": "https://www.maiellalic.com/",
+  "venue": "Maiella"
+ },
+ "www.ilfalcolic.com|/|il falco": {
+  "ok": true,
+  "at": 1791846895,
+  "url": "https://www.ilfalcolic.com/",
+  "venue": "Il Falco"
+ },
+ "www.beebesnyc.com|/|beebe's": {
+  "ok": true,
+  "at": 1791846895,
+  "url": "https://www.beebesnyc.com/",
+  "venue": "Beebe's"
+ },
+ "ohcalcuttanyc.com|/|oh! calcutta": {
+  "ok": true,
+  "at": 1791846896,
+  "url": "https://ohcalcuttanyc.com/",
+  "venue": "Oh! Calcutta"
+ },
+ "www.trazeus.com|/|traze": {
+  "ok": true,
+  "at": 1791846896,
+  "url": "https://www.trazeus.com/",
+  "venue": "Traze"
+ },
+ "www.onthe7lic.com|/|on the 7": {
+  "ok": false,
+  "at": 1791846896,
+  "url": "https://www.onthe7lic.com/",
+  "venue": "On the 7"
+ },
+ "www.3amtheatre.com|/|3am theatre": {
+  "ok": true,
+  "at": 1791846898,
+  "url": "https://www.3amtheatre.com/",
+  "venue": "3AM Theatre"
+ },
+ "www.lpac.nyc|/|laguardia performing arts center": {
+  "ok": false,
+  "at": 1791846898,
+  "url": "https://www.lpac.nyc/",
+  "venue": "LaGuardia Performing Arts Center"
+ },
+ "www.secrettheatre.com|/|the secret theatre": {
+  "ok": true,
+  "at": 1791846899,
+  "url": "https://www.secrettheatre.com/",
+  "venue": "The Secret Theatre"
+ },
+ "www.thequeensboro.com|/|the queensboro": {
+  "ok": true,
+  "at": 1791846899,
+  "url": "https://www.thequeensboro.com/",
+  "venue": "The Queensboro"
+ },
+ "www.espresso77.com|/|espresso 77": {
+  "ok": true,
+  "at": 1791846899,
+  "url": "https://www.espresso77.com/",
+  "venue": "Espresso 77"
+ },
+ "www.truecolorsbar.com|/|true colors bar": {
+  "ok": true,
+  "at": 1791846900,
+  "url": "https://www.truecolorsbar.com/",
+  "venue": "True Colors Bar"
+ },
+ "jahnsrestaurant.com|/|jahn's": {
+  "ok": true,
+  "at": 1791846902,
+  "url": "https://jahnsrestaurant.com/",
+  "venue": "Jahn's"
+ },
+ "www.mayassnackbar.com|/|maya's snack bar": {
+  "ok": true,
+  "at": 1791846902,
+  "url": "https://www.mayassnackbar.com/",
+  "venue": "Maya's Snack Bar"
+ },
+ "t-swirlcrepe.com|/|t-swirl cr\u00eape": {
+  "ok": true,
+  "at": 1791846903,
+  "url": "https://t-swirlcrepe.com/",
+  "venue": "T-Swirl Cr\u00eape"
+ },
+ "www.espresso77.com|/art|gallery 77 at espresso 77": {
+  "ok": true,
+  "at": 1791846904,
+  "url": "https://www.espresso77.com/art",
+  "venue": "Gallery 77 at Espresso 77"
+ },
+ "www.artretailtherapy.com|/|art retail therapy": {
+  "ok": true,
+  "at": 1791846904,
+  "url": "https://www.artretailtherapy.com/",
+  "venue": "Art Retail Therapy"
+ },
+ "www.thearepalady.com|/|arepa lady": {
+  "ok": false,
+  "at": 1791846904,
+  "url": "https://www.thearepalady.com/",
+  "venue": "Arepa Lady"
+ },
+ "himalayanyak.us|/|himalayan yak": {
+  "ok": true,
+  "at": 1791846905,
+  "url": "https://himalayanyak.us/",
+  "venue": "Himalayan Yak"
+ },
+ "www.bhanchhagharny.com|/|nepali bhanchha ghar": {
+  "ok": true,
+  "at": 1791846905,
+  "url": "https://www.bhanchhagharny.com/",
+  "venue": "Nepali Bhanchha Ghar"
+ },
+ "www.fukunyc.com|/|izakaya fuku": {
+  "ok": true,
+  "at": 1791846906,
+  "url": "https://www.fukunyc.com/",
+  "venue": "Izakaya Fuku"
+ },
+ "angelindianrestaurantnyc.com|/|angel indian restaurant": {
+  "ok": true,
+  "at": 1791846907,
+  "url": "https://angelindianrestaurantnyc.com/",
+  "venue": "Angel Indian Restaurant"
+ },
+ "delhiheights.us|/|namaste tasi delek": {
+  "ok": false,
+  "at": 1791846908,
+  "url": "https://delhiheights.us/",
+  "venue": "Namaste Tasi Delek"
+ },
+ "montiellecafe.com|/|montielle cafe & restaurant": {
+  "ok": true,
+  "at": 1791846910,
+  "url": "https://montiellecafe.com/",
+  "venue": "Montielle Cafe & Restaurant"
+ },
+ "www.unclepetersrestaurant.com|/|uncle peter's": {
+  "ok": true,
+  "at": 1791846910,
+  "url": "https://www.unclepetersrestaurant.com/",
+  "venue": "Uncle Peter's"
+ },
+ "kafrasbakery.com|/|kafras bakery": {
+  "ok": true,
+  "at": 1791846911,
+  "url": "https://kafrasbakery.com/",
+  "venue": "Kafras Bakery"
+ },
+ "talaveracantina.com|/|talavera cantina": {
+  "ok": true,
+  "at": 1791846911,
+  "url": "https://talaveracantina.com/",
+  "venue": "Talavera Cantina"
+ },
+ "47bruckner.com|/|bar 47": {
+  "ok": false,
+  "at": 1791846911,
+  "url": "https://47bruckner.com/",
+  "venue": "Bar 47"
+ },
+ "charliesbarkitchen.com|/|charlies bar & kitchen": {
+  "ok": true,
+  "at": 1791846911,
+  "url": "https://charliesbarkitchen.com/",
+  "venue": "Charlies Bar & Kitchen"
+ },
+ "sobrogarden.com|/|sobro garden": {
+  "ok": true,
+  "at": 1791846912,
+  "url": "https://sobrogarden.com/",
+  "venue": "SoBro Garden"
+ },
+ "maisonetta.squarespace.com|/|maisonetta": {
+  "ok": true,
+  "at": 1791846913,
+  "url": "https://maisonetta.squarespace.com/",
+  "venue": "Maisonetta"
+ },
+ "www.ininebistro.com|/|inine bistro": {
+  "ok": true,
+  "at": 1791846913,
+  "url": "https://www.ininebistro.com/",
+  "venue": "iNine Bistro"
+ },
+ "nourishcafe.nyc|/|nourish cafe": {
+  "ok": false,
+  "at": 1791846917,
+  "url": "https://nourishcafe.nyc/",
+  "venue": "Nourish Cafe"
+ },
+ "hudsonbbq.com|/|hudson smokehouse": {
+  "ok": false,
+  "at": 1791846917,
+  "url": "https://hudsonbbq.com/",
+  "venue": "Hudson Smokehouse"
+ },
+ "www.bxeatery.com|/|bx eatery": {
+  "ok": false,
+  "at": 1791846918,
+  "url": "https://www.bxeatery.com/",
+  "venue": "BX Eatery"
+ },
+ "www.piopio.shop|/pio-4-mott-haven|pio pio 4 mott haven": {
+  "ok": true,
+  "at": 1791846918,
+  "url": "https://www.piopio.shop/pio-4-mott-haven",
+  "venue": "Pio Pio 4 Mott Haven"
+ },
+ "www.mottleykitchen.com|/|mottley kitchen": {
+  "ok": true,
+  "at": 1791846919,
+  "url": "https://www.mottleykitchen.com/",
+  "venue": "Mottley Kitchen"
+ },
+ "www.valenciabakery.net|/|valencia bakery": {
+  "ok": true,
+  "at": 1791846921,
+  "url": "https://www.valenciabakery.net/",
+  "venue": "Valencia Bakery"
+ },
+ "www.bxcm.org|/|bronx children's museum": {
+  "ok": true,
+  "at": 1791846922,
+  "url": "https://www.bxcm.org/",
+  "venue": "Bronx Children's Museum"
+ },
+ "thhm.org|/|the culture lab at the hip hop museum": {
+  "ok": true,
+  "at": 1791846922,
+  "url": "https://thhm.org/",
+  "venue": "The Culture Lab at The Hip Hop Museum"
+ },
+ "www.idstudiotheater.org|/|id studio theater": {
+  "ok": true,
+  "at": 1791846923,
+  "url": "https://www.idstudiotheater.org/",
+  "venue": "ID Studio Theater"
+ },
+ "www.pasqualesrigoletto.com|/|pasquale\u2019s rigoletto": {
+  "ok": true,
+  "at": 1791846923,
+  "url": "https://www.pasqualesrigoletto.com/",
+  "venue": "Pasquale\u2019s Rigoletto"
+ },
+ "zeroottonove.com|/|zero otto nove": {
+  "ok": true,
+  "at": 1791846924,
+  "url": "https://zeroottonove.com/",
+  "venue": "Zero Otto Nove"
+ },
+ "morronepastryshop.com|/|morrone pastry shop & caf\u00e9": {
+  "ok": true,
+  "at": 1791846925,
+  "url": "https://morronepastryshop.com/",
+  "venue": "Morrone Pastry Shop & Caf\u00e9"
+ },
+ "clintonhallny.com|/bronx/|clinton hall bx": {
+  "ok": true,
+  "at": 1791846925,
+  "url": "https://clintonhallny.com/bronx/",
+  "venue": "Clinton Hall BX"
+ },
+ "www.howlatthemoonbx.com|/|howl at the moon": {
+  "ok": true,
+  "at": 1791846925,
+  "url": "https://www.howlatthemoonbx.com/",
+  "venue": "Howl at the Moon"
+ },
+ "www.jollytinkers.com|/|jolly tinker": {
+  "ok": true,
+  "at": 1791846926,
+  "url": "https://www.jollytinkers.com/",
+  "venue": "Jolly Tinker"
+ },
+ "www.fordham.edu|/academics/departments/classics/|fordham museum of greek, etruscan and roman art": {
+  "ok": true,
+  "at": 1791846926,
+  "url": "https://www.fordham.edu/academics/departments/classics/",
+  "venue": "Fordham Museum of Greek, Etruscan and Roman Art"
+ },
+ "www.fordham.edu|/academics/centers-and-institutes/institute-of-international-humanitarian-affairs/refuge-gallery/|refuge gallery": {
+  "ok": true,
+  "at": 1791846927,
+  "url": "https://www.fordham.edu/academics/centers-and-institutes/institute-of-international-humanitarian-affairs/refuge-gallery/",
+  "venue": "Refuge Gallery"
+ },
+ "www.fordham.edu|/academics/departments/music/events/|leonard theatre": {
+  "ok": true,
+  "at": 1791846928,
+  "url": "https://www.fordham.edu/academics/departments/music/events/",
+  "venue": "Leonard Theatre"
+ },
+ "northstarcafe.nyc|/|north star cafe": {
+  "ok": true,
+  "at": 1791846928,
+  "url": "https://northstarcafe.nyc/",
+  "venue": "North Star Cafe"
+ },
+ "www.boboscrabshack.com|/|bobo's crab shack": {
+  "ok": true,
+  "at": 1791846929,
+  "url": "https://www.boboscrabshack.com/",
+  "venue": "Bobo's Crab Shack"
+ },
+ "www.zhongzhong.us|/|zhongzhong noodles": {
+  "ok": true,
+  "at": 1791846929,
+  "url": "https://www.zhongzhong.us/",
+  "venue": "Zhongzhong Noodles"
+ },
+ "estrellitapoblana.nyc|/estrellita-poblana-iii/|estrellita poblana iii": {
+  "ok": false,
+  "at": 1791846934,
+  "url": "https://estrellitapoblana.nyc/estrellita-poblana-iii/",
+  "venue": "Estrellita Poblana III"
+ },
+ "www.famosapizza.com|/|famosa pizza": {
+  "ok": true,
+  "at": 1791846935,
+  "url": "https://www.famosapizza.com/",
+  "venue": "Famosa Pizza"
+ },
+ "www.ilovecapy.com|/en-us/pages/ubicaciones|pasteles capy": {
+  "ok": true,
+  "at": 1791846935,
+  "url": "https://www.ilovecapy.com/en-us/pages/ubicaciones",
+  "venue": "Pasteles Capy"
+ },
+ "www.anbealbochtcafe.com|/|an beal bocht cafe": {
+  "ok": true,
+  "at": 1791846935,
+  "url": "https://www.anbealbochtcafe.com/",
+  "venue": "An Beal Bocht Cafe"
+ },
+ "www.blackstonebargrill.com|/|blackstone bar & grill": {
+  "ok": true,
+  "at": 1791846936,
+  "url": "https://www.blackstonebargrill.com/",
+  "venue": "Blackstone Bar & Grill"
+ },
+ "www.jakessteakhouse.com|/bronx|jake's steakhouse": {
+  "ok": true,
+  "at": 1791846937,
+  "url": "https://www.jakessteakhouse.com/bronx",
+  "venue": "Jake's Steakhouse"
+ },
+ "www.curlysicecream.com|/|curly's homemade ice cream": {
+  "ok": true,
+  "at": 1791846937,
+  "url": "https://www.curlysicecream.com/",
+  "venue": "Curly's Homemade Ice Cream"
+ },
+ "iscream.nyc|/|iscream": {
+  "ok": true,
+  "at": 1791846938,
+  "url": "https://iscream.nyc/",
+  "venue": "iScream"
+ },
+ "www.wavehill.org|/|glyndor gallery at wave hill": {
+  "ok": true,
+  "at": 1791846938,
+  "url": "https://www.wavehill.org/",
+  "venue": "Glyndor Gallery at Wave Hill"
+ },
+ "derfner.org|/|derfner judaica museum + art collection": {
+  "ok": true,
+  "at": 1791846938,
+  "url": "https://derfner.org/",
+  "venue": "Derfner Judaica Museum + Art Collection"
+ },
+ "liebmansdeli.com|/|liebman's delicatessen": {
+  "ok": true,
+  "at": 1791846940,
+  "url": "https://liebmansdeli.com/",
+  "venue": "Liebman's Delicatessen"
+ },
+ "www.tobalanyc.com|/|tobal\u00e1": {
+  "ok": true,
+  "at": 1791846940,
+  "url": "https://www.tobalanyc.com/",
+  "venue": "Tobal\u00e1"
+ },
+ "arnaudsriverdale.com|/|arnaud's steak & seafood": {
+  "ok": true,
+  "at": 1791846941,
+  "url": "https://arnaudsriverdale.com/",
+  "venue": "Arnaud's Steak & Seafood"
+ },
+ "www.riverdalecornercafe.com|/|the corner cafe": {
+  "ok": true,
+  "at": 1791846941,
+  "url": "https://www.riverdalecornercafe.com/",
+  "venue": "The Corner Cafe"
+ },
+ "www.riverdalesteakhouse.com|/|riverdale steak house": {
+  "ok": true,
+  "at": 1791846941,
+  "url": "https://www.riverdalesteakhouse.com/",
+  "venue": "Riverdale Steak House"
+ },
+ "metateriverdalerestaurant.com|/|metate restaurant": {
+  "ok": true,
+  "at": 1791846942,
+  "url": "https://metateriverdalerestaurant.com/",
+  "venue": "Metate Restaurant"
+ },
+ "riverdaley.org|/performing-arts/|riverdale y performing arts center": {
+  "ok": true,
+  "at": 1791846942,
+  "url": "https://riverdaley.org/performing-arts/",
+  "venue": "Riverdale Y Performing Arts Center"
+ },
+ "www.riverdaletheatre.org|/|riverdale children's theatre": {
+  "ok": true,
+  "at": 1791846943,
+  "url": "https://www.riverdaletheatre.org/",
+  "venue": "Riverdale Children's Theatre"
+ },
+ "www.bootsbarnyc.com|/|boots bar": {
+  "ok": true,
+  "at": 1791846943,
+  "url": "https://www.bootsbarnyc.com/",
+  "venue": "Boots Bar"
+ },
+ "www.empirebeergarden.com|/|empire beer garden": {
+  "ok": true,
+  "at": 1791846943,
+  "url": "https://www.empirebeergarden.com/",
+  "venue": "Empire Beer Garden"
+ },
+ "www.enotecamaria.com|/|enoteca maria": {
+  "ok": false,
+  "at": 1791846947,
+  "url": "https://www.enotecamaria.com/",
+  "venue": "Enoteca Maria"
+ },
+ "www.pier76si.com|/|pier 76 italian restaurant": {
+  "ok": true,
+  "at": 1791846947,
+  "url": "https://www.pier76si.com/",
+  "venue": "Pier 76 Italian Restaurant"
+ },
+ "besonyc.com|/|beso": {
+  "ok": true,
+  "at": 1791846948,
+  "url": "https://besonyc.com/",
+  "venue": "Beso"
+ },
+ "bakecultureusa.com|/|bake culture": {
+  "ok": true,
+  "at": 1791846948,
+  "url": "https://bakecultureusa.com/",
+  "venue": "Bake Culture"
+ },
+ "lighthousemuseum.org|/|national lighthouse museum": {
+  "ok": true,
+  "at": 1791846948,
+  "url": "https://lighthousemuseum.org/",
+  "venue": "National Lighthouse Museum"
+ },
+ "stgeorgetheatre.com|/|st. george theatre": {
+  "ok": false,
+  "at": 1791846952,
+  "url": "https://stgeorgetheatre.com/",
+  "venue": "St. George Theatre"
+ },
+ "www.empireoutlets.nyc|/stores/staten-island-play-house/|staten island playhouse": {
+  "ok": true,
+  "at": 1791846953,
+  "url": "https://www.empireoutlets.nyc/stores/staten-island-play-house/",
+  "venue": "Staten Island Playhouse"
+ },
+ "www.thehopshoppe.com|/|the hop shoppe": {
+  "ok": true,
+  "at": 1791846953,
+  "url": "https://www.thehopshoppe.com/",
+  "venue": "The Hop Shoppe"
+ },
+ "www.thecoupenyc.com|/|the coupe": {
+  "ok": true,
+  "at": 1791846954,
+  "url": "https://www.thecoupenyc.com/",
+  "venue": "The Coupe"
+ },
+ "www.lakruwanarestaurant.com|/|lakruwana": {
+  "ok": true,
+  "at": 1791846954,
+  "url": "https://www.lakruwanarestaurant.com/",
+  "venue": "Lakruwana"
+ },
+ "www.shawnaeshouse.com|/|shaw-nae\u2019s house": {
+  "ok": true,
+  "at": 1791846954,
+  "url": "https://www.shawnaeshouse.com/",
+  "venue": "Shaw-nae\u2019s House"
+ },
+ "www.bluepearlnyc.com|/|blue pearl": {
+  "ok": true,
+  "at": 1791846955,
+  "url": "https://www.bluepearlnyc.com/",
+  "venue": "Blue Pearl"
+ },
+ "www.pastavinosi.com|/|pastavino": {
+  "ok": true,
+  "at": 1791846955,
+  "url": "https://www.pastavinosi.com/",
+  "venue": "Pastavino"
+ },
+ "seppepizzabar.com|/|seppe pizza bar": {
+  "ok": true,
+  "at": 1791846956,
+  "url": "https://seppepizzabar.com/",
+  "venue": "Seppe Pizza Bar"
+ },
+ "tavernaonthebay.com|/|taverna on the bay": {
+  "ok": false,
+  "at": 1791846960,
+  "url": "https://tavernaonthebay.com/",
+  "venue": "Taverna on the Bay"
+ },
+ "jerrys637dinerny.com|/|jerry\u2019s 637 diner": {
+  "ok": false,
+  "at": 1791846960,
+  "url": "https://jerrys637dinerny.com/",
+  "venue": "Jerry\u2019s 637 Diner"
+ },
+ "flagshipbrewery.nyc|/|flagship brewing co.": {
+  "ok": true,
+  "at": 1791846960,
+  "url": "https://flagshipbrewery.nyc/",
+  "venue": "Flagship Brewing Co."
+ },
+ "www.etgstores.com|/about|every thing goes book cafe & neighborhood stage": {
+  "ok": false,
+  "at": 1791846961,
+  "url": "https://www.etgstores.com/about",
+  "venue": "Every Thing Goes Book Cafe & Neighborhood Stage"
+ },
+ "coylecavern.com|/|coyle cavern": {
+  "ok": true,
+  "at": 1791846961,
+  "url": "https://coylecavern.com/",
+  "venue": "Coyle Cavern"
+ },
+ "laceysbridgetavern.com|/|lacey\u2019s bridge tavern": {
+  "ok": true,
+  "at": 1791846962,
+  "url": "https://laceysbridgetavern.com/",
+  "venue": "Lacey\u2019s Bridge Tavern"
+ },
+ "deninossi.com|/|denino\u2019s pizzeria & tavern": {
+  "ok": true,
+  "at": 1791846964,
+  "url": "https://deninossi.com/",
+  "venue": "Denino\u2019s Pizzeria & Tavern"
+ },
+ "www.labottigliarestaurant.com|/|la bottiglia restaurant": {
+  "ok": false,
+  "at": 1791846964,
+  "url": "https://www.labottigliarestaurant.com/",
+  "venue": "La Bottiglia Restaurant"
+ },
+ "miasrostiseria.com|/|mia\u2019s rostiseria y parrilladas": {
+  "ok": true,
+  "at": 1791846964,
+  "url": "https://miasrostiseria.com/",
+  "venue": "Mia\u2019s Rostiseria y Parrilladas"
+ },
+ "eatlospotrillos.com|/|los potrillos": {
+  "ok": true,
+  "at": 1791846965,
+  "url": "https://eatlospotrillos.com/",
+  "venue": "Los Potrillos"
+ },
+ "ginosteaksny.com|/|gino\u2019s cheesesteaks": {
+  "ok": true,
+  "at": 1791846965,
+  "url": "https://ginosteaksny.com/",
+  "venue": "Gino\u2019s Cheesesteaks"
+ },
+ "ralphsices.com|/locations/port-richmond/|ralph\u2019s famous italian ices": {
+  "ok": true,
+  "at": 1791846965,
+  "url": "https://ralphsices.com/locations/port-richmond/",
+  "venue": "Ralph\u2019s Famous Italian Ices"
+ },
+ "cervosnyc.com||cervo\u2019s": {
+  "ok": true,
+  "at": 1791846966,
+  "url": "https://cervosnyc.com",
+  "venue": "Cervo\u2019s"
+ },
+ "unapizza.com||una pizza napoletana": {
+  "ok": true,
+  "at": 1791846966,
+  "url": "https://unapizza.com",
+  "venue": "Una Pizza Napoletana"
+ },
+ "www.bufonnyc.com||buf\u00f3n": {
+  "ok": true,
+  "at": 1791846966,
+  "url": "https://www.bufonnyc.com",
+  "venue": "Buf\u00f3n"
+ },
+ "wildair.nyc||wildair": {
+  "ok": true,
+  "at": 1791846967,
+  "url": "https://wildair.nyc",
+  "venue": "Wildair"
+ },
+ "www.kisaus.com||kisa": {
+  "ok": true,
+  "at": 1791846967,
+  "url": "https://www.kisaus.com",
+  "venue": "Kisa"
+ },
+ "katzsdelicatessen.com||katz\u2019s delicatessen": {
+  "ok": true,
+  "at": 1791846968,
+  "url": "https://katzsdelicatessen.com",
+  "venue": "Katz\u2019s Delicatessen"
+ },
+ "www.thetenbells.com||the ten bells": {
+  "ok": false,
+  "at": 1791846968,
+  "url": "https://www.thetenbells.com",
+  "venue": "The Ten Bells"
+ },
+ "nineorchard.com||swan room": {
+  "ok": true,
+  "at": 1791846969,
+  "url": "https://nineorchard.com",
+  "venue": "Swan Room"
+ },
+ "www.mrpurplenyc.com||mr. purple": {
+  "ok": true,
+  "at": 1791846969,
+  "url": "https://www.mrpurplenyc.com",
+  "venue": "Mr. Purple"
+ },
+ "theboxnyc.com||the box": {
+  "ok": true,
+  "at": 1791846971,
+  "url": "https://theboxnyc.com",
+  "venue": "The Box"
+ },
+ "www.julia-jeans.com||julia jean\u2019s ice cream": {
+  "ok": true,
+  "at": 1791846972,
+  "url": "https://www.julia-jeans.com",
+  "venue": "Julia Jean\u2019s Ice Cream"
+ },
+ "economycandy.com||economy candy": {
+  "ok": true,
+  "at": 1791846974,
+  "url": "https://economycandy.com",
+  "venue": "Economy Candy"
+ },
+ "www.tera.nyc|/les|t\u00e9 company at tera": {
+  "ok": true,
+  "at": 1791846974,
+  "url": "https://www.tera.nyc/les",
+  "venue": "T\u00e9 Company at Tera"
+ },
+ "www.bridgetdonahue.nyc||bridget donahue": {
+  "ok": false,
+  "at": 1791846974,
+  "url": "https://www.bridgetdonahue.nyc",
+  "venue": "Bridget Donahue"
+ },
+ "www.nathaliekarg.com||nathalie karg gallery": {
+  "ok": true,
+  "at": 1791846975,
+  "url": "https://www.nathaliekarg.com",
+  "venue": "Nathalie Karg Gallery"
+ },
+ "miguelabreugallery.com||miguel abreu gallery": {
+  "ok": false,
+  "at": 1791846975,
+  "url": "https://miguelabreugallery.com",
+  "venue": "Miguel Abreu Gallery"
+ },
+ "www.perrotin.com||perrotin new york": {
+  "ok": true,
+  "at": 1791846977,
+  "url": "https://www.perrotin.com",
+  "venue": "Perrotin New York"
+ },
+ "marcstraus.com||marc straus gallery": {
+  "ok": true,
+  "at": 1791846978,
+  "url": "https://marcstraus.com",
+  "venue": "Marc Straus Gallery"
+ },
+ "participantinc.org||participant inc.": {
+  "ok": true,
+  "at": 1791846979,
+  "url": "https://participantinc.org",
+  "venue": "Participant Inc."
+ },
+ "dixonplace.org||dixon place": {
+  "ok": true,
+  "at": 1791846980,
+  "url": "https://dixonplace.org",
+  "venue": "Dixon Place"
+ },
+ "moscot.com||moscot lower east side": {
+  "ok": false,
+  "at": 1791846982,
+  "url": "https://moscot.com",
+  "venue": "Moscot Lower East Side"
+ },
+ "www.ptknitwear.com||p&t knitwear": {
+  "ok": true,
+  "at": 1791846983,
+  "url": "https://www.ptknitwear.com",
+  "venue": "P&T Knitwear"
+ },
+ "www.sweetpicklebooks.com||sweet pickle books": {
+  "ok": true,
+  "at": 1791846985,
+  "url": "https://www.sweetpicklebooks.com",
+  "venue": "Sweet Pickle Books"
+ },
+ "hesterstreetfair.com||hester street fair": {
+  "ok": true,
+  "at": 1791846986,
+  "url": "https://hesterstreetfair.com",
+  "venue": "Hester Street Fair"
+ },
+ "www.claudnyc.com||claud": {
+  "ok": true,
+  "at": 1791846986,
+  "url": "https://www.claudnyc.com",
+  "venue": "Claud"
+ },
+ "www.nowonusa.com||nowon": {
+  "ok": true,
+  "at": 1791846987,
+  "url": "https://www.nowonusa.com",
+  "venue": "Nowon"
+ },
+ "www.superiorityburger.com||superiority burger": {
+  "ok": true,
+  "at": 1791846988,
+  "url": "https://www.superiorityburger.com",
+  "venue": "Superiority Burger"
+ },
+ "www.cafemogador.com||cafe mogador": {
+  "ok": true,
+  "at": 1791846989,
+  "url": "https://www.cafemogador.com",
+  "venue": "Cafe Mogador"
+ },
+ "veselka.com||veselka": {
+  "ok": true,
+  "at": 1791846990,
+  "url": "https://veselka.com",
+  "venue": "Veselka"
+ },
+ "www.pdtnyc.com||pdt (please don't tell)": {
+  "ok": true,
+  "at": 1791846990,
+  "url": "https://www.pdtnyc.com",
+  "venue": "PDT (Please Don't Tell)"
+ },
+ "www.amoryamargo.com||amor y amargo": {
+  "ok": true,
+  "at": 1791846991,
+  "url": "https://www.amoryamargo.com",
+  "venue": "Amor y Amargo"
+ },
+ "www.deathandcompany.com||death & company": {
+  "ok": true,
+  "at": 1791846991,
+  "url": "https://www.deathandcompany.com",
+  "venue": "Death & Company"
+ },
+ "clubcummingnyc.com||club cumming": {
+  "ok": true,
+  "at": 1791846991,
+  "url": "https://clubcummingnyc.com",
+  "venue": "Club Cumming"
+ },
+ "www.websterhall.com||webster hall": {
+  "ok": true,
+  "at": 1791846992,
+  "url": "https://www.websterhall.com",
+  "venue": "Webster Hall"
+ },
+ "www.anthologyfilmarchives.org||anthology film archives": {
+  "ok": true,
+  "at": 1791846992,
+  "url": "https://www.anthologyfilmarchives.org",
+  "venue": "Anthology Film Archives"
+ },
+ "newyorkcomedyclub.com|/locations/east-village/|new york comedy club \u2014 east village": {
+  "ok": true,
+  "at": 1791846993,
+  "url": "https://newyorkcomedyclub.com/locations/East-Village/",
+  "venue": "New York Comedy Club \u2014 East Village"
+ },
+ "topsecretcomedyclub.com||top secret comedy club": {
+  "ok": true,
+  "at": 1791846994,
+  "url": "https://topsecretcomedyclub.com",
+  "venue": "Top Secret Comedy Club"
+ },
+ "dessertclubnyc.com||dessert club chikalicious": {
+  "ok": false,
+  "at": 1791846995,
+  "url": "https://dessertclubnyc.com",
+  "venue": "Dessert Club ChikaLicious"
+ },
+ "www.tribes.org||a gathering of the tribes": {
+  "ok": true,
+  "at": 1791846995,
+  "url": "https://www.tribes.org",
+  "venue": "A Gathering of the Tribes"
+ },
+ "desnivelgallery.squarespace.com||desnivel gallery": {
+  "ok": true,
+  "at": 1791846996,
+  "url": "https://desnivelgallery.squarespace.com",
+  "venue": "Desnivel Gallery"
+ },
+ "www.standardhotels.com|/new-york/properties/east-village|cuna bar & lounge": {
+  "ok": false,
+  "at": 1791846996,
+  "url": "https://www.standardhotels.com/new-york/properties/east-village",
+  "venue": "Cuna Bar & Lounge"
+ },
+ "moxyeastvillage.com||the ready cantina": {
+  "ok": true,
+  "at": 1791846997,
+  "url": "https://moxyeastvillage.com",
+  "venue": "The Ready Cantina"
+ },
+ "merchantshouse.org||merchant's house museum": {
+  "ok": true,
+  "at": 1791846999,
+  "url": "https://merchantshouse.org",
+  "venue": "Merchant's House Museum"
+ },
+ "www.eastvillagebookshop.com||east village bookshop": {
+  "ok": true,
+  "at": 1791847000,
+  "url": "https://www.eastvillagebookshop.com",
+  "venue": "East Village Bookshop"
+ },
+ "bookclubbar.com||book club bar": {
+  "ok": true,
+  "at": 1791847000,
+  "url": "https://bookclubbar.com",
+  "venue": "Book Club Bar"
+ },
+ "enchantments.nyc||enchantments": {
+  "ok": true,
+  "at": 1791847001,
+  "url": "https://enchantments.nyc",
+  "venue": "Enchantments"
+ },
+ "www.metropolisvintage.com||metropolis vintage": {
+  "ok": true,
+  "at": 1791847002,
+  "url": "https://www.metropolisvintage.com",
+  "venue": "Metropolis Vintage"
+ },
+ "www.teadrunk.com||tea drunk": {
+  "ok": true,
+  "at": 1791847002,
+  "url": "https://www.teadrunk.com",
+  "venue": "Tea Drunk"
+ },
+ "www.chaannyc.com||cha-an": {
+  "ok": false,
+  "at": 1791847002,
+  "url": "https://www.chaannyc.com",
+  "venue": "Cha-An"
+ },
+ "www.nytw.org||new york theatre workshop": {
+  "ok": true,
+  "at": 1791847003,
+  "url": "https://www.nytw.org",
+  "venue": "New York Theatre Workshop"
+ },
+ "www.bangkoksupperclub.com||bangkok supper club": {
+  "ok": false,
+  "at": 1791847003,
+  "url": "https://www.bangkoksupperclub.com",
+  "venue": "Bangkok Supper Club"
+ },
+ "barpisellino.com||bar pisellino": {
+  "ok": true,
+  "at": 1791847004,
+  "url": "https://barpisellino.com",
+  "venue": "Bar Pisellino"
+ },
+ "www.littlebranch.com||little branch": {
+  "ok": false,
+  "at": 1791847004,
+  "url": "https://www.littlebranch.com",
+  "venue": "Little Branch"
+ },
+ "www.piecesbar.com||pieces": {
+  "ok": true,
+  "at": 1791847005,
+  "url": "https://www.piecesbar.com",
+  "venue": "Pieces"
+ },
+ "www.villagevanguard.com||village vanguard": {
+  "ok": true,
+  "at": 1791847007,
+  "url": "https://www.villagevanguard.com",
+  "venue": "Village Vanguard"
+ },
+ "www.smallslive.com||smalls jazz club": {
+  "ok": true,
+  "at": 1791847007,
+  "url": "https://www.smallslive.com",
+  "venue": "Smalls Jazz Club"
+ },
+ "www.mezzrow.com||mezzrow": {
+  "ok": false,
+  "at": 1791847008,
+  "url": "https://www.mezzrow.com",
+  "venue": "Mezzrow"
+ },
+ "www.jkhotelgroup.com|/west-village|san vicente west village": {
+  "ok": true,
+  "at": 1791847008,
+  "url": "https://www.jkhotelgroup.com/west-village",
+  "venue": "San Vicente West Village"
+ },
+ "whitecolumns.org||white columns": {
+  "ok": true,
+  "at": 1791847009,
+  "url": "https://whitecolumns.org",
+  "venue": "White Columns"
+ },
+ "westbeth.org|/about/westbeth-gallery/|westbeth gallery": {
+  "ok": true,
+  "at": 1791847010,
+  "url": "https://westbeth.org/about/westbeth-gallery/",
+  "venue": "Westbeth Gallery"
+ },
+ "whitney.org||whitney museum of american art": {
+  "ok": true,
+  "at": 1791847010,
+  "url": "https://whitney.org",
+  "venue": "Whitney Museum of American Art"
+ },
+ "teaandsympathy.com||tea & sympathy shop": {
+  "ok": true,
+  "at": 1791847011,
+  "url": "https://teaandsympathy.com",
+  "venue": "Tea & Sympathy Shop"
+ },
+ "tecompanytea.mom||t\u00e9 company": {
+  "ok": false,
+  "at": 1791847012,
+  "url": "https://tecompanytea.mom",
+  "venue": "T\u00e9 Company"
+ },
+ "bosieteaparlor.com||bosie tea parlor": {
+  "ok": true,
+  "at": 1791847012,
+  "url": "https://bosieteaparlor.com",
+  "venue": "Bosie Tea Parlor"
+ },
+ "www.ootbtheatrics.com||theatre 154": {
+  "ok": false,
+  "at": 1791847013,
+  "url": "https://www.ootbtheatrics.com",
+  "venue": "Theatre 154"
+ },
+ "sugarmonklounge.com||sugar monk": {
+  "ok": true,
+  "at": 1791847013,
+  "url": "https://sugarmonklounge.com",
+  "venue": "Sugar Monk"
+ },
+ "www.marriott.com|/en-us/hotels/nyclh-aloft-harlem/dining/|w xyz bar at aloft harlem": {
+  "ok": true,
+  "at": 1791847014,
+  "url": "https://www.marriott.com/en-us/hotels/nyclh-aloft-harlem/dining/",
+  "venue": "W XYZ Bar at Aloft Harlem"
+ },
+ "www.shrinenyc.com||shrine world music venue": {
+  "ok": true,
+  "at": 1791847015,
+  "url": "https://www.shrinenyc.com",
+  "venue": "Shrine World Music Venue"
+ },
+ "www.silvana-nyc.com||silvana": {
+  "ok": true,
+  "at": 1791847015,
+  "url": "https://www.silvana-nyc.com",
+  "venue": "Silvana"
+ },
+ "www.comedyinharlem.com||comedy in harlem": {
+  "ok": true,
+  "at": 1791847016,
+  "url": "https://www.comedyinharlem.com",
+  "venue": "Comedy In Harlem"
+ },
+ "www.melbasrestaurant.com||melba\u2019s restaurant": {
+  "ok": true,
+  "at": 1791847016,
+  "url": "https://www.melbasrestaurant.com",
+  "venue": "Melba\u2019s Restaurant"
+ },
+ "www.theedgeharlem.com||the edge harlem": {
+  "ok": true,
+  "at": 1791847016,
+  "url": "https://www.theedgeharlem.com",
+  "venue": "The Edge Harlem"
+ },
+ "www.vinateria-nyc.com||vinater\u00eda": {
+  "ok": false,
+  "at": 1791847017,
+  "url": "https://www.vinateria-nyc.com",
+  "venue": "Vinater\u00eda"
+ },
+ "www.redroosterharlem.com|/ginnys|ginny\u2019s supper club": {
+  "ok": false,
+  "at": 1791847017,
+  "url": "https://www.redroosterharlem.com/ginnys",
+  "venue": "Ginny\u2019s Supper Club"
+ },
+ "levainbakery.com||levain bakery harlem": {
+  "ok": true,
+  "at": 1791847018,
+  "url": "https://levainbakery.com",
+  "venue": "Levain Bakery Harlem"
+ },
+ "www.patisseriedesambassades.com||patisserie des ambassades": {
+  "ok": false,
+  "at": 1791847018,
+  "url": "https://www.patisseriedesambassades.com",
+  "venue": "Patisserie des Ambassades"
+ },
+ "www.studiomuseum.org||studio museum in harlem": {
+  "ok": true,
+  "at": 1791847018,
+  "url": "https://www.studiomuseum.org",
+  "venue": "Studio Museum in Harlem"
+ }
+}

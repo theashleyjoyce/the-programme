@@ -152,8 +152,11 @@ Rules:
   what the app cites on the page, so an invented citation is worse than none.
 - good_for_groups and has_private_space: only set true or false when a source
   actually says so. Otherwise null. A wrong "yes" ruins someone's birthday.
-- website must be the venue's own domain. A Yelp, JamBase, Instagram or
-  Eventbrite page is not a website; leave it null instead.
+- website must be the venue's own domain. A booking or listing page is NOT a
+  website: not Yelp, JamBase, Instagram, Facebook, Eventbrite, OpenTable,
+  Resy, Tock, SevenRooms, Ticketmaster, AXS, DICE, Google Maps or a Linktree.
+  Leave it null rather than substituting one of those. A link that opens the
+  wrong restaurant is worse than no link at all.
 - lat and lon only when you are confident of the address. A map on the wrong
   block is worse than no map, and null simply means no map is drawn.
 - Return up to 40 across all categories. Real ones only.

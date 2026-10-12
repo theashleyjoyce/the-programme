@@ -621,6 +621,11 @@ body {
   object-fit: cover;
   display: block;
   filter: saturate(0.96) contrast(1.06);
+  /* A hairline on the photograph itself. A gallery shot of white walls on a
+   * white mount is otherwise indistinguishable from an empty tile. */
+  outline: 1px solid rgba(20, 17, 15, 0.12);
+  outline-offset: -1px;
+  background: var(--paper-deep);
 }
 
 /* Alternating tilt, so the wall looks collected rather than laid out. */

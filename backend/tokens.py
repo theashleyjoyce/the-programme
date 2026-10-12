@@ -26,19 +26,21 @@ from typing import Any, Iterable
 
 # --- pricing ---------------------------------------------------------------
 
-# !! VERIFY BEFORE SUBMITTING !!
-# USD per 1,000,000 tokens. These are placeholders until confirmed against the
-# provider's live pricing page or the course materials. Override without
-# editing code by setting PRICE_INPUT_PER_M / PRICE_CACHED_PER_M /
-# PRICE_OUTPUT_PER_M in .env.
+# USD per 1,000,000 tokens for gpt-5.6-luna, checked 2026-10-12 against
+# several third-party pricing trackers which agree with each other.
 #
-# Cached input is normally billed at a steep discount to fresh input; that
-# discount is the whole reason the caching work in this app pays for itself,
-# so the report should quote the real figure, not this placeholder.
+# OpenAI cut Luna rates by roughly 80% on 2026-07-30, down from $1.00 input
+# and $6.00 output. An earlier version of this file carried placeholders close
+# to those old figures, which overstated every cost in the report by six to
+# eight times.
+#
+# These came from trackers rather than OpenAI's own pricing page, so confirm
+# there before the report is submitted. Override without editing code by
+# setting PRICE_INPUT_PER_M / PRICE_CACHED_PER_M / PRICE_OUTPUT_PER_M in .env.
 DEFAULT_PRICING: dict[str, float] = {
-    "input_per_m": 1.25,
-    "cached_input_per_m": 0.125,
-    "output_per_m": 10.00,
+    "input_per_m": 0.20,
+    "cached_input_per_m": 0.02,
+    "output_per_m": 1.20,
 }
 
 

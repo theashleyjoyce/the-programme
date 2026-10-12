@@ -12,7 +12,7 @@
     "contrast": 47.6,
     "brightness": 170.2,
     "saturation": 81.8,
-    "quality": 68.0
+    "quality": 53.6
   },
   "spaghetti-2.jpg": {
     "slot": "spaghetti",
@@ -27,7 +27,7 @@
     "contrast": 53.6,
     "brightness": 177.1,
     "saturation": 142.0,
-    "quality": 89.1
+    "quality": 67.3
   },
   "spaghetti-3.jpg": {
     "slot": "spaghetti",
@@ -133,7 +133,7 @@
     "contrast": 45.2,
     "brightness": 205.3,
     "saturation": 29.5,
-    "quality": 42.8,
+    "quality": 15.1,
     "pinned": true
   },
   "cocktail-2.jpg": {
@@ -149,7 +149,7 @@
     "contrast": 52.3,
     "brightness": 202.5,
     "saturation": 13.7,
-    "quality": 46.0
+    "quality": 14.6
   },
   "cocktail-3.jpg": {
     "slot": "cocktail",
@@ -270,7 +270,7 @@
     "contrast": 57.6,
     "brightness": 199.1,
     "saturation": 12.4,
-    "quality": 52.0
+    "quality": 18.3
   },
   "gallery-3.jpg": {
     "slot": "gallery",
@@ -585,6 +585,6 @@
     "contrast": 51.9,
     "brightness": 158.3,
     "saturation": 53.0,
-    "quality": 65.1
+    "quality": 58.6
   }
 }

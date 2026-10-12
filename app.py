@@ -168,7 +168,7 @@ def _error_page(title: str, detail: str) -> str:
 
 
 FORM_FIELDS = ("vibe", "date", "borough", "neighborhood", "party_size",
-               "budget", "occasion", "roam", "suggested")
+               "budget", "occasion", "roam", "suggested", "costs")
 FORM_LISTS = ("venue_sizes", "settings", "wants")
 
 
@@ -310,12 +310,17 @@ async def plan(request: Request):
             status=500,
         )
 
+    # ?costs=1 adds the token and spend panels. Off for readers, on for the
+    # tokenomics screenshots.
+    show_costs = (form.get("costs") or request.query_params.get("costs") or "") == "1"
+
     page = render_night(
         result["night"],
         brief=result["brief"],
         usage=result["usage"].as_dict(),
         dataset=result["dataset"],
         budget=result["budget"],
+        show_costs=show_costs,
     )
 
     plan_id = uuid.uuid4().hex[:12]

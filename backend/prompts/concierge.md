@@ -25,6 +25,36 @@ Today is {{TODAY}}. New York City.
 - **avoid** captures stated dislikes in their words: "no techno", "not a dive",
   "nowhere with a line".
 
+- **style** is the most easily lost field and the one that makes two similar
+  requests different. It holds the descriptive words that say what KIND of
+  place they want, as opposed to what kind of stop.
+
+  "high end dinner and techno dancing" is dinner and club structurally, which
+  is the same as "dinner and dancing". What separates them is `style`:
+  ["high end", "techno"]. Drop those words and the two requests become the
+  same request, and the person who was specific gets the generic answer.
+
+  Take the words they used. Do not invent synonyms, do not expand "techno"
+  into a list of genres. Lowercase.
+
+  Examples:
+    "natural wine then a dive bar"      -> ["natural wine", "dive"]
+    "omakase, then jazz"                -> ["omakase", "jazz"]
+    "a speakeasy with vinyl"            -> ["speakeasy", "vinyl"]
+    "something cheap and loud"          -> ["cheap", "loud"]
+    "dinner and dancing"                -> []    (nothing descriptive said)
+
+## Budget language
+
+Map price words onto `budget` rather than leaving it null:
+
+  "cheap", "under $40", "on a budget", "student"   -> under_40
+  "mid-range", "nothing crazy", "reasonable"       -> 40_to_90
+  "high end", "nice", "fancy", "a treat", "splurge", "celebrating properly"
+                                                    -> 90_to_200
+  "money no object", "whatever it costs"           -> no_limit
+  "free"                                            -> free
+
 ## Reading what they are asking FOR
 
 `wants` is the most important field and the easiest to leave empty by mistake.

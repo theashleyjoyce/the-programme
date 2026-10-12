@@ -35,6 +35,7 @@ from planner import build_night, catalogue
 from openai import AuthenticationError, OpenAI
 from pydantic import ValidationError
 from models import Source  # noqa: E402
+from linkcheck import verify
 from sanitize import filter_booking_urls, wrap_untrusted
 from sources import dataset_status, find_rooms, lookup_venue, search_events
 from tokens import Usage
@@ -272,6 +273,23 @@ Avoid: {", ".join(brief.avoid) or "nothing stated"}
     return night, usage, issues
 
 
+def _host(url: str | None) -> str:
+    from urllib.parse import urlparse
+    try:
+        host = urlparse(str(url)).netloc.lower().removeprefix("www.")
+    except ValueError:
+        return ""
+    parts = host.split(".")
+    return ".".join(parts[-2:]) if len(parts) >= 2 else host
+
+
+def _same_site(a: str | None, b: str | None) -> bool:
+    """Same registrable domain. Used to decide whether a booking link is one
+    we can account for, rather than one the model remembered."""
+    ha, hb = _host(a), _host(b)
+    return bool(ha) and ha == hb
+
+
 def repair_draft(draft: NightDraft) -> tuple[Night, list[str]]:
     """Fix what we can from our own data, drop what we cannot, then validate.
 
@@ -301,6 +319,34 @@ def repair_draft(draft: NightDraft) -> tuple[Night, list[str]]:
                 # promise, so an invented one would be worse than reclassifying.
                 stop.kind = StopKind.LATE
                 notes.append(f"{stop.name}: no known room size, listed as late rather than a show")
+
+        # A booking link the model produced from memory is not a link, it is
+        # a guess. It resolves, which is why nothing downstream complained,
+        # but nothing confirms it opens the right venue -- and the user does
+        # not find out until they arrive somewhere else.
+        #
+        # So a link survives only if we can account for where it came from:
+        #   1. our own dataset's verified site for that venue, or
+        #   2. a page the model actually cited as a source for this stop.
+        # Anything else is dropped and the card shows no button.
+        if stop.booking_url:
+            trusted = None
+            if venue is not None and getattr(venue, "source_url", None):
+                trusted = venue.source_url
+            cited = {str(src.url) for src in stop.sources if src.url}
+            if trusted and _same_site(stop.booking_url, trusted):
+                stop.booking_url = trusted
+            elif any(_same_site(stop.booking_url, c) for c in cited):
+                # Cited, but a citation is not proof the page opens this venue.
+                if not verify(stop.booking_url, stop.name, allow_fetch=False):
+                    notes.append(f"{stop.name}: booking link not yet verified, hidden")
+                    stop.booking_url = stop.booking_label = None
+            else:
+                notes.append(
+                    f"{stop.name}: dropped a booking link the model supplied "
+                    f"but did not cite ({_host(stop.booking_url)})")
+                stop.booking_url = None
+                stop.booking_label = None
 
         # Sourcing is a security property, not a formatting one. A stop we
         # cannot attribute is dropped.

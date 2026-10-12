@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{background:#14110F;margin:0}
+body{padding:2rem 2.4rem;font-family:ui-monospace,Menlo,monospace;
+font-size:15px;line-height:1.55;color:#EDE7DF;width:max-content;min-width:100%}
+.bar{color:#8A8077;font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+border-bottom:1px solid #322D28;padding-bottom:.8rem;margin-bottom:1.2rem}
+pre{margin:0;white-space:pre} b{font-weight:700}
+</style></head><body><div class="bar">$ python test_guardrails.py</div><pre>
+<b>1. Prompt injection in third-party listing text</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  instruction override is detected and redacted
+        <span style="color:#8A8077">flags=[&#x27;instruction_override&#x27;, &#x27;ranking_manipulation&#x27;]</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  zero-width characters are stripped before anything reads the text
+  <span style="color:#5FD38A">PASS</span></b>  exfiltration attempts are caught
+  <span style="color:#5FD38A">PASS</span></b>  fake system tags are caught
+  <span style="color:#5FD38A">PASS</span></b>  untrusted text is wrapped in a data envelope, never concatenated raw
+  <span style="color:#5FD38A">PASS</span></b>  clean text passes through untouched
+
+<b>2. Booking links — the attack that costs real money</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a real ticketing domain: trusted
+        <span style="color:#8A8077">https://resy.com/cities/ny  -&gt;  resy.com</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  the venue&#x27;s own site: venue
+        <span style="color:#8A8077">https://calendar.houseofyes.org/e/x  -&gt;  houseofyes.org</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  lookalike domain: blocked
+        <span style="color:#8A8077">https://resy.com.secure-booking.io/pay  -&gt;  impersonates resy.com</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  brand impersonation: blocked
+        <span style="color:#8A8077">https://ticketmaster-tickets.ru/buy  -&gt;  impersonates ticketmaster.com</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  not https: blocked
+        <span style="color:#8A8077">http://resy.com/foo  -&gt;  not https (http)</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  not a web URL: blocked
+        <span style="color:#8A8077">javascript:alert(1)  -&gt;  not https (javascript)</span></b>
+
+<b>3. Invented venues and unsourced claims</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a stop with no source is rejected
+        <span style="color:#8A8077">Value error, Stops without a source are not allowed: The Velve</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  an invented venue is dropped, the plan survives
+        <span style="color:#8A8077">kept [&#x27;Bossa Nova Civic Club&#x27;]</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a real venue has its missing facts filled from our own data, not guessed
+        <span style="color:#8A8077">size=VenueSize.INTIMATE coords=True</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a booking link the model invented but did not cite is dropped
+        <span style="color:#8A8077">a remembered Resy URL resolves, but opens a different restaurant</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a cited AND verified booking link survives
+        <span style="color:#8A8077">cited by the model, and the page confirmed to name the venue</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a cited but UNVERIFIED booking link is still hidden
+        <span style="color:#8A8077">a citation is not proof the page opens the right venue</span></b>
+
+<b>4. Overspending and runaway loops</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a call that would cross the cap is refused BEFORE it is sent
+        <span style="color:#8A8077">Budget stop: $7.56 of $7.57 already spent. A further ~$0.080 would</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  one request cannot exceed its own call limit
+        <span style="color:#8A8077">stopped after 6 calls, limit 6</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  the ledger persists to disk, so restarting does not reset the cap
+
+<b>5. Promises the app must not make</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a room with unknown capacity is never offered for a group
+        <span style="color:#8A8077">40 rooms offered, all with a known capacity</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  a ticketed venue says so rather than implying you can walk in
+        <span style="color:#8A8077">1 ticketed stop(s) carried a warning</span></b>
+
+<b>6. Account security</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  the password never appears in the database as text
+  <span style="color:#5FD38A">PASS</span></b>  a wrong password is rejected
+  <span style="color:#5FD38A">PASS</span></b>  an unknown account does not error differently from a wrong password
+  <span style="color:#5FD38A">PASS</span></b>  a session resolves to its user
+  <span style="color:#5FD38A">PASS</span></b>  logging out actually revokes the session server-side
+  <span style="color:#5FD38A">PASS</span></b>  reserved username is rejected
+  <span style="color:#5FD38A">PASS</span></b>  too short is rejected
+  <span style="color:#5FD38A">PASS</span></b>  illegal characters is rejected
+  <span style="color:#5FD38A">PASS</span></b>  a short password is rejected
+
+<b>7. Untrusted text reaching the page</span></b>
+<span style="color:#8A8077">──────────────────────────────────────────────────────────────────────────</span></b>
+  <span style="color:#5FD38A">PASS</span></b>  markup in a venue name is escaped, not rendered
+  <span style="color:#5FD38A">PASS</span></b>  quotes are escaped so they cannot break out of an attribute
+
+<b>──────────────────────────────────────────────────────────────────────────</span></b>
+<span style="color:#5FD38A"><b>  34 passed, 0 failed</span></b>
+<b>──────────────────────────────────────────────────────────────────────────</span></b>
+
+</pre></body></html>

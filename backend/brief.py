@@ -75,6 +75,17 @@ class Brief(BaseModel):
     wants: list[StopKind] = Field(default_factory=list)
     avoid: list[str] = Field(default_factory=list, description="Named dislikes: 'no techno', 'not a dive'")
 
+    style: list[str] = Field(
+        default_factory=list,
+        description=(
+            "The descriptive words that say what KIND of place, not what kind "
+            "of stop. 'techno', 'natural wine', 'jazz', 'dive', 'speakeasy', "
+            "'omakase', 'rooftop', 'burlesque', 'vinyl'. Lowercase, their own "
+            "words, no synonyms invented. This is what makes one request "
+            "different from another once the structure matches."
+        ),
+    )
+
     roam: bool = Field(
         default=False,
         description=(
