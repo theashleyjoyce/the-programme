@@ -1,0 +1,42 @@
+{
+ "Smalls Jazz Club": {
+  "why": "Down a staircase, the room puts you close to the musicians and keeps the focus on the music. Late sets are part of the appeal.",
+  "order_this": "A late-night set",
+  "source_name": "The Programme"
+ },
+ "Purgatory": {
+  "why": "Check the calendar for local bands, DJ nights, and offbeat bookings in a scruffy Bushwick room with a DIY feel.",
+  "order_this": "Whatever\u2019s on the late-night calendar",
+  "source_name": "The Programme"
+ },
+ "Rockwood Music Hall": {
+  "why": "Three rooms keep the shows intimate, with a steady calendar of singer-songwriters, bands, and touring acts. Room 1 is the close-up experience.",
+  "order_this": "A Room 1 show",
+  "source_name": "The Programme"
+ },
+ "Village Vanguard": {
+  "why": "The low-ceilinged basement and triangular room put every table close to the band, while the calendar stays focused on serious jazz.",
+  "order_this": "A weeknight set in the main room",
+  "source_name": "The Programme"
+ },
+ "Our Wicked Lady": {
+  "why": "Catch a band downstairs, then head upstairs for DJs and the rooftop. The programming leans punk, indie, and DIY without feeling stuck in one lane.",
+  "order_this": "A show followed by the rooftop",
+  "source_name": "The Programme"
+ },
+ "C'mon Everybody": {
+  "why": "Live shows, DJ nights, and dance parties share the calendar, giving the room an easygoing alternative to a more polished club night.",
+  "order_this": "A dance party",
+  "source_name": "The Programme"
+ },
+ "Bossa Nova Civic Club": {
+  "why": "Low ceilings, a serious sound system, and a DJ-first calendar make this a reliable late-night stop for techno and electronic music.",
+  "order_this": "A late DJ set",
+  "source_name": "The Programme"
+ },
+ "Nublu": {
+  "why": "The dark, intimate room favors adventurous programming, moving between global sounds, jazz, funk, and electronic sets.",
+  "order_this": "A live set followed by DJs",
+  "source_name": "The Programme"
+ }
+}

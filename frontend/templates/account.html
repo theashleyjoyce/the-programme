@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} — The Programme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/night.css?v={{CSS_V}}">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead__home" href="/">The Programme</a>
+  <nav class="masthead__nav">{{NAV}}</nav>
+</header>
+
+<section class="account">
+  <p class="hero__kicker">{{KICKER}}</p>
+  <h2 class="account__title">{{TITLE}}</h2>
+  <p class="account__blurb">{{BLURB}}</p>
+
+  {{ERROR}}
+
+  <form method="post" action="{{ACTION}}" class="account__form" autocomplete="on">
+    {{FIELDS}}
+    <button type="submit" class="submit">{{CTA}}</button>
+  </form>
+
+  <p class="account__alt">{{ALT}}</p>
+</section>
+
+</body>
+</html>

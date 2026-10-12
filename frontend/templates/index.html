@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Programme — New York</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/night.css?v={{CSS_V}}">
+</head>
+<body>
+
+<header class="masthead">
+  <h1 class="masthead__title">The Programme</h1>
+  <nav class="masthead__nav"><a href="/about">About</a><a href="/login">Log in</a><a href="/signup">Sign up</a></nav>
+</header>
+
+<form class="search" method="get" action="/working" id="planner" target="_blank">
+
+  {{COLLAGE}}
+
+  <p class="search__kicker">New York, Your Way</p>
+  <h2 class="search__question">What&rsquo;s your vibe?</h2>
+
+  <div class="vibe">
+    <div class="vibe__row">
+      <textarea class="vibe__input" name="vibe" id="vibe" rows="2"
+        placeholder="loud and a little sweaty, somewhere we can actually dance&hellip;"></textarea>
+      <button type="submit" class="vibe__go" id="vibego">Take me there</button>
+    </div>
+    <p class="vibe__hint">Describe your vibe and we will plan your night. Press enter to go, or narrow it down below.</p>
+  </div>
+
+  <div class="seeds">
+    <button type="button" class="seed" data-vibe="somewhere I can hear a conversation, good wine, not a scene">quiet and good</button>
+    <button type="button" class="seed" data-vibe="loud, late, dancing, I want to disappear into a crowd">lost in a crowd</button>
+    <button type="button" class="seed" data-vibe="a gallery opening then dinner, something I haven't done before">art first</button>
+    <button type="button" class="seed" data-vibe="it's my birthday, there are eight of us, we need a table and then somewhere to dance">birthday, eight of us</button>
+    <button type="button" class="seed" data-vibe="surprise me, somewhere I'd never think to go">surprise me</button>
+  </div>
+
+  <div class="controls">
+
+    <div class="field">
+      <label class="field__label" for="date">Date</label>
+      <input type="date" id="date" name="date">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="borough">Borough</label>
+      <select id="borough" name="borough">
+        <option value="">Anywhere</option>
+        <option>Manhattan</option>
+        <option>Brooklyn</option>
+        <option>Queens</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="neighborhood">Neighborhood</label>
+      <select id="neighborhood" name="neighborhood">
+        <option value="">Anywhere</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="party_size">How many</label>
+      <input type="number" id="party_size" name="party_size" min="1" max="60" placeholder="2">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="budget">Budget, per person</label>
+      <select id="budget" name="budget">
+        <option value="">No preference</option>
+        <option value="free">Free</option>
+        <option value="under_40">Under $40</option>
+        <option value="40_to_90">$40&ndash;90</option>
+        <option value="90_to_200">$90&ndash;200</option>
+        <option value="no_limit">No limit</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="occasion">Occasion</label>
+      <select id="occasion" name="occasion">
+        <option value="">Just going out</option>
+        <option value="date">A date</option>
+        <option value="birthday">A birthday</option>
+        <option value="celebration">Celebrating something</option>
+        <option value="friends_visiting">Friends in town</option>
+        <option value="solo">On my own</option>
+        <option value="work">Work people</option>
+      </select>
+    </div>
+
+    <div class="field" style="grid-column: 1 / -1;">
+      <span class="field__label">How big a room</span>
+      <div class="toggles">
+        <label class="toggle"><input type="checkbox" name="venue_sizes" value="intimate"><span>Intimate &middot; under 150</span></label>
+        <label class="toggle"><input type="checkbox" name="venue_sizes" value="midsize"><span>Midsize &middot; 150&ndash;700</span></label>
+        <label class="toggle"><input type="checkbox" name="venue_sizes" value="large"><span>Large &middot; 700&ndash;3k</span></label>
+        <label class="toggle"><input type="checkbox" name="venue_sizes" value="massive"><span>Massive &middot; 3k+</span></label>
+      </div>
+    </div>
+
+    <div class="field" style="grid-column: 1 / -1;">
+      <span class="field__label">Indoors or out</span>
+      <div class="toggles">
+        <label class="toggle"><input type="checkbox" name="settings" value="indoor"><span>Indoor</span></label>
+        <label class="toggle"><input type="checkbox" name="settings" value="outdoor"><span>Outdoor</span></label>
+        <label class="toggle"><input type="checkbox" name="settings" value="rooftop"><span>Rooftop</span></label>
+        <label class="toggle"><input type="checkbox" name="settings" value="convertible"><span>Both</span></label>
+      </div>
+    </div>
+
+    <div class="field" style="grid-column: 1 / -1;">
+      <span class="field__label">What you&rsquo;re up for</span>
+      <div class="toggles">
+        <label class="toggle"><input type="checkbox" name="wants" value="dinner"><span>Dinner</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="drinks"><span>Drinks</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="hotel_bar"><span>Hotel bar</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="club"><span>Club</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="show"><span>Live music</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="gallery"><span>Gallery</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="museum"><span>Museum</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="theatre"><span>Theatre</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="screening"><span>Film</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="late"><span>Late night</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="dessert"><span>Sweet treat</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="tea"><span>Tea</span></label>
+        <label class="toggle"><input type="checkbox" name="wants" value="shopping"><span>Shopping</span></label>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="submit-row">
+    <button type="submit" class="submit" id="go">Plan the night</button>
+    <span class="submit-note" id="note"></span>
+  </div>
+
+  <p class="collage-credit">{{COLLAGE_CREDIT}}</p>
+
+</form>
+
+<script>
+  // Seed chips fill the vibe field rather than submitting, so the user can
+  // still edit before planning.
+  document.querySelectorAll('.seed').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = document.getElementById('vibe');
+      v.value = b.dataset.vibe;
+      v.focus();
+    });
+  });
+
+  // Neighborhood options depend on borough. Populated from the real dataset.
+  var HOODS = {{HOODS_JSON}};
+  var borough = document.getElementById('borough');
+  var hood = document.getElementById('neighborhood');
+  function fillHoods() {
+    var list = borough.value ? (HOODS[borough.value] || []) : Object.values(HOODS).flat().sort();
+    hood.innerHTML = '<option value="">Anywhere</option>';
+    list.forEach(function (n) {
+      var o = document.createElement('option');
+      o.value = o.textContent = n;
+      hood.appendChild(o);
+    });
+  }
+  borough.addEventListener('change', fillHoods);
+  fillHoods();
+
+  // Prefill from the query string so "Refine this" returns you to the form
+  // exactly as you left it, rather than to a blank page.
+  (function prefill() {
+    var q = new URLSearchParams(window.location.search);
+    if (!q.toString()) { return; }
+    var single = ['vibe', 'date', 'neighborhood', 'party_size', 'budget', 'occasion'];
+    single.forEach(function (k) {
+      var el = document.getElementById(k) || document.querySelector('[name="' + k + '"]');
+      if (el && q.get(k)) { el.value = q.get(k); }
+    });
+    if (q.get('borough')) {
+      borough.value = q.get('borough');
+      fillHoods();
+      if (q.get('neighborhood')) { hood.value = q.get('neighborhood'); }
+    }
+    ['venue_sizes', 'settings', 'wants'].forEach(function (k) {
+      var chosen = q.getAll(k);
+      document.querySelectorAll('[name="' + k + '"]').forEach(function (box) {
+        box.checked = chosen.indexOf(box.value) !== -1;
+      });
+    });
+  })();
+
+  // Default the date to today so an empty form still plans something.
+  var d = document.getElementById('date');
+  if (!d.value) { d.value = new Date().toISOString().slice(0, 10); }
+
+  // Enter sends, shift+enter makes a new line. Someone who types a vibe and
+  // does not scroll would otherwise never find the button, which sits below
+  // every filter.
+  document.getElementById('vibe').addEventListener('keydown', function (ev) {
+    if (ev.key === 'Enter' && !ev.shiftKey) {
+      ev.preventDefault();
+      document.getElementById('planner').requestSubmit();
+    }
+  });
+
+  document.getElementById('planner').addEventListener('submit', function () {
+    var go = document.getElementById('go');
+    go.disabled = true;
+    go.textContent = 'Working…';
+    document.getElementById('note').textContent = 'Reading listings, checking room sizes, sequencing the night…';
+  });
+</script>
+
+</body>
+</html>

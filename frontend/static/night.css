@@ -1,0 +1,1307 @@
+/* The Programme — editorial design system.
+ *
+ * References: Vogue (Didone display, air, restraint), The Infatuation (voice,
+ * the opinionated card), Condé Nast Traveler (immersion), Seated (clean
+ * execution in the events category).
+ *
+ * The rule the whole system follows: this is a PAGE, not a transcript. No
+ * bubbles, no avatars, no "assistant is typing". A night you would screenshot.
+ */
+
+:root {
+  --paper:      #FBF9F6;
+  --paper-deep: #F2EDE6;
+  --ink:        #14110F;
+  --ink-soft:   #4A433E;
+  --ink-mute:   #8A807790;
+  --rule:       #E4DCD2;
+  --accent:     #B8402C;   /* editorial red: CTAs, numerals, kickers */
+  --accent-ink: #7E2A1C;
+
+  --display: "Bodoni Moda", "Didot", "Playfair Display", Georgia, serif;
+  --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --measure: 34rem;        /* readable column */
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.6rem var(--gutter) 1.1rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.masthead__title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.masthead__meta {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* ---------- hero ---------- */
+
+.hero { padding: clamp(3rem, 9vw, 6.5rem) var(--gutter) clamp(2rem, 5vw, 3.5rem); max-width: 60rem; }
+
+.hero__kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.4rem;
+  font-weight: 600;
+}
+
+.hero__headline {
+  font-family: var(--display);
+  font-weight: 500;
+  /* Didone wants to be big. Small high-contrast serif just looks broken. */
+  font-size: clamp(2.6rem, 7.5vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.5rem;
+  text-wrap: balance;
+}
+
+.hero__dek {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 2.2rem;
+}
+
+.hero__constraints {
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  max-width: var(--measure);
+}
+
+/* ---------- weather note ---------- */
+
+.advisory {
+  margin: 0 var(--gutter) 2.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid var(--accent);
+  background: var(--paper-deep);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  max-width: 42rem;
+}
+.advisory strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- the night ---------- */
+
+.night { padding: 0 var(--gutter) 4rem; }
+
+.stop {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 0 clamp(1.25rem, 3vw, 2.5rem);
+  padding: clamp(2rem, 4vw, 3rem) 0;
+  border-top: 1px solid var(--rule);
+}
+.stop:first-child { border-top: 1px solid var(--ink); }
+
+.stop__index {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.stop__time {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.stop__kicker {
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.stop__name {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(1.75rem, 4vw, 2.6rem);
+  line-height: 1.08;
+  margin: 0 0 0.9rem;
+  letter-spacing: -0.01em;
+}
+
+.stop__figure { margin: 0 0 1.3rem; }
+.stop__figure img {
+  width: 100%;
+  height: clamp(13rem, 30vw, 21rem);
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.92) contrast(1.03);
+}
+.stop__caption {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 0.6rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+
+/* The room chips — this is the differentiator, so it gets real estate. */
+.chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0 0 1.1rem; }
+.chip {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.33rem 0.7rem;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  background: #fff;
+  white-space: nowrap;
+}
+.chip--room { border-color: var(--ink); color: var(--ink); font-weight: 600; }
+.chip--outdoor { border-color: var(--accent); color: var(--accent-ink); }
+
+.stop__why {
+  font-size: 1.04rem;
+  line-height: 1.68;
+  max-width: var(--measure);
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.stop__feels {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 1.4rem;
+}
+
+.stop__actions { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+
+.book {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 0.74rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.15s ease;
+}
+.book:hover { background: var(--accent); }
+
+/* Shown when the allowlist stripped a link. The user must know why there is
+ * no button, rather than seeing an unexplained gap. */
+.book--blocked {
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  border: 1px dashed var(--accent);
+  padding: 0.7rem 1.1rem;
+}
+
+.stop__price { font-size: 0.8rem; color: var(--ink-soft); letter-spacing: 0.06em; }
+
+.stop__sources {
+  margin-top: 1.1rem;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.stop__sources a { color: var(--ink-soft); text-underline-offset: 2px; }
+
+/* travel connector */
+.travel {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.3rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.travel::before {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ---------- colophon ---------- */
+
+.colophon {
+  border-top: 1px solid var(--ink);
+  padding: 2.2rem var(--gutter) 4rem;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.6rem 2.5rem;
+}
+.colophon h4 {
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 0.55rem;
+  font-weight: 600;
+}
+.colophon p { margin: 0 0 0.3rem; }
+.colophon__figure { font-variant-numeric: tabular-nums; color: var(--ink); }
+
+@media (max-width: 640px) {
+  .stop { grid-template-columns: 2.6rem minmax(0, 1fr); }
+  .travel { grid-column: 1 / -1; }
+  body { font-size: 16px; }
+}
+
+@media print {
+  .book { border: 1px solid var(--ink); background: none; color: var(--ink); }
+  .stop { break-inside: avoid; }
+}
+
+/* ======================================================================
+ * THE SEARCH SURFACE — the front door.
+ * Same editorial register as the output page: this is a magazine's
+ * contents page, not a form. Big question, quiet controls.
+ * ==================================================================== */
+
+/* The form spans the page so the collage can right-align to the viewport
+ * edge. The reading column is constrained on the children instead -- an
+ * earlier version capped .search itself, which trapped the collage in the
+ * middle of a wide screen and sat it on top of the headline. */
+.search {
+  min-height: calc(100vh - 4.6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2.5rem, 7vw, 5rem) var(--gutter);
+  max-width: 100rem;
+}
+
+.search__kicker,
+.search__question,
+.vibe,
+.seeds,
+.submit-row { max-width: 46rem; }
+
+.controls { max-width: 62rem; }
+
+.search__kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 1.2rem;
+}
+
+.search__question {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2.8rem, 8vw, 5.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  margin: 0 0 2rem;
+}
+
+/* The vibe field. A ruled line, not a boxed input. */
+.vibe {
+  position: relative;
+  max-width: 46rem;
+  margin-bottom: 2.6rem;
+}
+
+.vibe__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--ink);
+  background: transparent;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.25rem, 3vw, 1.9rem);
+  line-height: 1.4;
+  color: var(--ink);
+  padding: 0.5rem 0 0.9rem;
+  resize: none;
+  outline: none;
+}
+.vibe__input::placeholder { color: var(--ink-mute); }
+.vibe__input:focus { border-bottom-color: var(--accent); }
+
+.vibe__hint {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-top: 0.7rem;
+}
+
+/* Suggestion chips — discovery, and a cure for the blank page. */
+.seeds { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.8rem; }
+.seed {
+  font-size: 0.8rem;
+  font-family: var(--body);
+  padding: 0.5rem 0.95rem;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.14s ease;
+  font-style: italic;
+}
+.seed:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ---- the controls ---- */
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  gap: 1.5rem 1.8rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.field { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.field__label {
+  font-size: 0.64rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.field select,
+.field input[type="date"],
+.field input[type="number"] {
+  font-family: var(--body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.4rem 0 0.5rem;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%),
+                    linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+  background-position: calc(100% - 9px) calc(50% + 2px), calc(100% - 4px) calc(50% + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.field input[type="date"], .field input[type="number"] { background-image: none; }
+.field select:focus, .field input:focus { border-bottom-color: var(--accent); }
+
+/* Multi-select as toggles — a 4-option list reads better than a <select>. */
+.toggles { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.toggle { position: relative; }
+.toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+.toggle span {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.38rem 0.7rem;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.14s ease;
+  user-select: none;
+}
+.toggle input:checked + span {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+.toggle input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.submit-row {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 2.8rem;
+  flex-wrap: wrap;
+}
+
+.submit {
+  font-family: var(--body);
+  font-size: 0.76rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border: none;
+  padding: 1rem 2.4rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.submit:hover { background: var(--accent); }
+.submit:disabled { opacity: 0.45; cursor: progress; }
+
+.submit-note { font-size: 0.78rem; color: var(--ink-soft); }
+
+/* ---- the concierge's follow-up questions ---- */
+
+.followup {
+  margin-top: 2rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--accent);
+  max-width: 42rem;
+}
+.followup p {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 0 0.9rem;
+  color: var(--ink);
+}
+.followup input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--ink-mute);
+  background: transparent;
+  font-family: var(--body);
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  outline: none;
+}
+.followup input:focus { border-bottom-color: var(--accent); }
+
+/* ---- working state ---- */
+
+.working { padding: clamp(3rem, 9vw, 6rem) var(--gutter); }
+.working__line {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  color: var(--ink-soft);
+  margin: 0 0 0.7rem;
+  opacity: 0;
+  animation: rise 0.5s ease forwards;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.error {
+  margin: 2rem var(--gutter);
+  padding: 1.2rem 1.4rem;
+  border-left: 2px solid var(--accent);
+  background: var(--paper-deep);
+  max-width: 42rem;
+  font-size: 0.92rem;
+}
+.error strong { display: block; margin-bottom: 0.4rem; }
+
+/* The chat reply: one sentence, venues linked to their cards. */
+.summary {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.6vw, 2.4rem);
+  line-height: 1.38;
+  letter-spacing: -0.005em;
+  max-width: 46rem;
+  margin: 0 0 2.2rem;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.summary__link {
+  color: var(--ink);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 100% 1px;
+  background-position: 0 92%;
+  background-repeat: no-repeat;
+  transition: background-size 0.18s ease, color 0.18s ease;
+}
+.summary__link:hover { color: var(--accent); background-size: 100% 2px; }
+
+/* ======================================================================
+ * MASTHEAD MOSAIC — top right of the search page.
+ * A packed grid: tiles sit tight against each other with a hairline gap and
+ * never overlap. Varied spans keep it from reading as a stock photo grid.
+ * Decorative, so aria-hidden.
+ * ==================================================================== */
+
+.search { position: relative; }
+
+.collage {
+  position: absolute;
+  top: clamp(0.5rem, 2vw, 1.5rem);
+  right: var(--gutter);
+  width: clamp(18rem, 36vw, 34rem);
+  height: clamp(22rem, 44vw, 38rem);
+  pointer-events: none;
+  z-index: 0;
+
+  display: grid;
+  /* Four columns, five rows. The areas below pack eight tiles of three
+   * different sizes into it with no gaps and no overlaps. */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "a a b b"
+    "a a c d"
+    "e f c d"
+    "e f g g"
+    "h h g g";
+  /* Room for each print to tilt inside its own cell without reaching into
+   * the next one. */
+  gap: 10px;
+}
+
+/* Each tile is a print mounted on the page: a white border, a soft shadow so
+ * it sits above the paper, and a degree or two of tilt. The scale keeps the
+ * rotated corners inside the grid cell, so prints stay tight against each
+ * other without ever overlapping. */
+.collage__tile {
+  margin: 0;
+  background: #fff;
+  padding: 5px 5px 16px;          /* deeper bottom edge, like a photo print */
+  box-shadow: 0 2px 6px rgba(20, 17, 15, 0.13), 0 8px 18px rgba(20, 17, 15, 0.07);
+  opacity: 0;
+  animation: tile-in 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+  transform: rotate(var(--tilt, 0deg)) scale(0.95);
+  transform-origin: center;
+}
+.collage__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.96) contrast(1.06);
+}
+
+/* Alternating tilt, so the wall looks collected rather than laid out. */
+.collage__tile--1 { --tilt: -1.6deg; }
+.collage__tile--2 { --tilt:  2deg; }
+.collage__tile--3 { --tilt: -2.2deg; }
+.collage__tile--4 { --tilt:  1.4deg; }
+.collage__tile--5 { --tilt:  2.4deg; }
+.collage__tile--6 { --tilt: -1.2deg; }
+.collage__tile--7 { --tilt:  1.8deg; }
+.collage__tile--8 { --tilt: -2.4deg; }
+
+.collage__tile {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+}
+.collage__tile img { flex: 1 1 auto; min-height: 0; }
+
+.collage__tile--1 { grid-area: a; animation-delay: 0.05s; }
+.collage__tile--2 { grid-area: b; animation-delay: 0.11s; }
+.collage__tile--3 { grid-area: c; animation-delay: 0.17s; }
+.collage__tile--4 { grid-area: d; animation-delay: 0.23s; }
+.collage__tile--5 { grid-area: e; animation-delay: 0.29s; }
+.collage__tile--6 { grid-area: f; animation-delay: 0.35s; }
+.collage__tile--7 { grid-area: g; animation-delay: 0.41s; }
+.collage__tile--8 { grid-area: h; animation-delay: 0.47s; }
+
+/* Animate `translate`, a separate property from `transform`, so a tile keeps
+ * any transform of its own while rising into place. An earlier version
+ * animated transform with only a `from` keyframe, which meant the implicit
+ * `to` was the tile's own style (opacity: 0) and the whole thing rendered
+ * invisibly. */
+@keyframes tile-in {
+  from { opacity: 0; translate: 0 10px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+
+/* The mosaic owns the right of the page, the form owns the left. Capping the
+ * reading column short of the mosaic's left edge is what keeps the two from
+ * ever colliding. */
+@media (min-width: 1000px) {
+  .search__kicker,
+  .search__question,
+  .vibe,
+  .seeds,
+  .submit-row { max-width: min(46rem, 54vw); }
+  .controls { max-width: min(62rem, 58vw); }
+}
+@media (min-width: 1000px) and (max-width: 1240px) {
+  .collage { width: clamp(15rem, 30vw, 20rem); }
+}
+
+/* Below the breakpoint the mosaic becomes a strip above the form, so it still
+ * sets the tone without fighting for horizontal space. */
+@media (max-width: 999px) {
+  .collage {
+    position: static;
+    width: 100%;
+    height: 9rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b c d";
+    margin: 0 0 2rem;
+  }
+  .collage__tile--5,
+  .collage__tile--6,
+  .collage__tile--7,
+  .collage__tile--8 { display: none; }
+}
+
+@media (max-width: 560px) {
+  .collage {
+    height: 6.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c";
+  }
+  .collage__tile--4 { display: none; }
+}
+
+/* Prints lie flat in the narrow strip: a tilted row of photos reads as a
+ * mistake when there are only three of them. */
+@media (max-width: 999px) {
+  .collage__tile { --tilt: 0deg; transform: none; padding: 4px 4px 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collage__tile { animation: none; opacity: 1; }
+}
+
+.collage-credit {
+  font-size: 0.68rem;
+  color: var(--ink-mute);
+  margin-top: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+/* ---- masthead navigation on a results page ---- */
+
+.masthead__home {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+.masthead__home:hover { color: var(--accent); }
+
+.masthead__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.masthead__nav a,
+.masthead__print {
+  font-family: var(--body);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: color 0.14s ease, border-color 0.14s ease;
+}
+.masthead__nav a:hover,
+.masthead__print:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* A second way back, at the end of the page, so a reader who has scrolled the
+ * whole night does not have to scroll up again to act on it. */
+.footer-actions {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  padding: 0 var(--gutter) 3.5rem;
+  margin-top: -1.5rem;
+}
+.footer-actions a {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.85rem 1.7rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  transition: all 0.15s ease;
+}
+.footer-actions a:hover { background: var(--ink); color: var(--paper); }
+.footer-actions a.primary { background: var(--ink); color: var(--paper); }
+.footer-actions a.primary:hover { background: var(--accent); border-color: var(--accent); }
+
+@media (max-width: 560px) {
+  .masthead { flex-wrap: wrap; gap: 0.6rem; }
+  .masthead__nav { gap: 1rem; width: 100%; }
+}
+@media print {
+  .masthead__nav, .footer-actions { display: none; }
+}
+
+/* ---- stop aside: where it is, and how to get there ---- */
+
+/* The card gains a third column on wide screens. Below that the aside drops
+ * under the copy, because a 200px map beside a 200px paragraph is useless. */
+@media (min-width: 900px) {
+  .stop { grid-template-columns: 4.5rem minmax(0, 1fr) 15.5rem; }
+  .stop__aside { grid-column: 3; }
+  .travel { grid-column: 2 / -1; }
+}
+@media (max-width: 899px) {
+  .stop__aside { grid-column: 2; margin-top: 1.5rem; }
+}
+
+.stop__aside { align-self: start; }
+
+.stop__map {
+  position: relative;
+  border: 1px solid var(--rule);
+  background: var(--paper-deep);
+  margin-bottom: 1rem;
+}
+.stop__map iframe {
+  width: 100%;
+  height: 11rem;
+  border: 0;
+  display: block;
+  /* Desaturate so the map sits under the photography rather than competing
+   * with it. Full colour on hover for when someone is actually reading it. */
+  filter: grayscale(0.55) contrast(0.95);
+  transition: filter 0.2s ease;
+}
+.stop__map:hover iframe { filter: none; }
+
+.stop__maplink {
+  display: block;
+  padding: 0.5rem 0.65rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  background: #fff;
+}
+.stop__maplink:hover { color: var(--accent); }
+
+.stop__transit h5 {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+}
+.stop__transit ul { list-style: none; margin: 0; padding: 0; }
+.stop__transit li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 0.5rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.78rem;
+}
+.stop__transit li:first-child { border-top: none; }
+
+.stop__station { color: var(--ink); }
+.stop__walk { color: var(--ink-soft); font-size: 0.72rem; white-space: nowrap; }
+.stop__routes { grid-column: 1 / -1; display: flex; gap: 0.25rem; flex-wrap: wrap; }
+
+/* Subway bullets. Not the MTA's official colours, deliberately: this is a
+ * neutral mark, not a claim to be an MTA product. */
+.bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.stop__ada { margin-left: 0.3rem; color: var(--ink-soft); font-size: 0.8em; }
+
+@media print {
+  .stop__map iframe { display: none; }
+  .stop__maplink { display: none; }
+}
+
+/* ---- working state ---- */
+
+.working {
+  padding: clamp(3rem, 10vw, 7rem) var(--gutter);
+  max-width: 46rem;
+}
+
+.working__vibe {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  line-height: 1.35;
+  margin: 0 0 2.8rem;
+  color: var(--ink);
+}
+
+.stages { list-style: none; margin: 0 0 2rem; padding: 0; }
+.stages li {
+  font-size: 0.95rem;
+  color: var(--ink-mute);
+  padding: 0.7rem 0 0.7rem 2rem;
+  position: relative;
+  border-top: 1px solid var(--rule);
+  transition: color 0.25s ease;
+}
+.stages li:first-child { border-top: none; }
+
+/* A ring that fills as each stage is reached. */
+.stages li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--ink-mute);
+  background: transparent;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+.stages li.is-active { color: var(--ink); }
+.stages li.is-active::before { border-color: var(--accent); background: var(--accent); }
+.stages li.is-done { color: var(--ink-soft); }
+.stages li.is-done::before { border-color: var(--ink-soft); background: var(--ink-soft); }
+
+/* The active line breathes, so the page never looks frozen. */
+.stages li.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 1.05rem;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  animation: pulse 1.4s ease-out infinite;
+}
+@keyframes pulse {
+  from { transform: scale(1); opacity: 0.7; }
+  to   { transform: scale(2.6); opacity: 0; }
+}
+
+.working__note { font-size: 0.85rem; color: var(--ink-soft); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stages li.is-active::after { animation: none; opacity: 0; }
+}
+
+/* ---- the venue's own photograph, when there is an appropriate one ---- */
+
+.stop__photo { margin: 0 0 1rem; }
+.stop__photo img {
+  width: 100%;
+  height: 9.5rem;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--rule);
+  filter: saturate(0.95) contrast(1.03);
+}
+.stop__photo figcaption {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding-top: 0.4rem;
+}
+.stop__photo figcaption a { color: var(--ink-mute); text-underline-offset: 2px; }
+.stop__photo figcaption a:hover { color: var(--accent); }
+
+/* ---- inline submit on the vibe field ---- */
+
+/* The bottom button sits below every filter, so a visitor who types a vibe
+ * and does not scroll would never find it. This puts a way forward on the
+ * field itself. */
+.vibe__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--ink);
+}
+.vibe__row:focus-within { border-bottom-color: var(--accent); }
+
+/* The rule now lives on the row, not the textarea. */
+.vibe__input {
+  border-bottom: none !important;
+  flex: 1 1 auto;
+}
+
+.vibe__go {
+  flex: 0 0 auto;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.vibe__go:hover { background: var(--accent); border-color: var(--accent); }
+.vibe__go:active { transform: translateY(1px); }
+.vibe__go:disabled { opacity: 0.45; cursor: progress; }
+.vibe__go:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* On a narrow screen the button drops under the field rather than squeezing
+ * the text box down to nothing. */
+@media (max-width: 620px) {
+  .vibe__row { flex-direction: column; align-items: stretch; gap: 0.9rem; }
+  .vibe__go { margin-bottom: 0.75rem; width: 100%; padding: 0.85rem 1rem; }
+}
+
+/* ======================================================================
+ * ACCOUNT PAGES
+ * ==================================================================== */
+
+.account {
+  padding: clamp(3rem, 9vw, 6rem) var(--gutter);
+  max-width: 34rem;
+}
+
+.account__title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.1rem;
+}
+
+.account__blurb {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0 0 2.4rem;
+}
+
+.account__form { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.account__field { display: flex; flex-direction: column; gap: 0.45rem; }
+.account__field label {
+  font-size: 0.64rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.account__field input[type="text"],
+.account__field input[type="email"],
+.account__field input[type="password"] {
+  font-family: var(--body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ink);
+  padding: 0.5rem 0 0.6rem;
+  outline: none;
+}
+.account__field input:focus { border-bottom-color: var(--accent); }
+.account__note { font-size: 0.74rem; color: var(--ink-mute); }
+
+/* The newsletter opt-in. Unchecked by default: an opt-in that arrives
+ * pre-ticked is not consent. */
+.account__check {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  padding: 1.1rem 0 0;
+  border-top: 1px solid var(--rule);
+}
+.account__check input { margin-top: 0.25rem; accent-color: var(--accent); }
+.account__check span { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
+.account__check strong { color: var(--ink); font-weight: 600; }
+
+.account__alt { margin-top: 2rem; font-size: 0.88rem; color: var(--ink-soft); }
+.account__alt a { color: var(--ink); text-underline-offset: 3px; }
+.account__alt a:hover { color: var(--accent); }
+
+.account__error {
+  padding: 0.9rem 1.1rem;
+  border-left: 2px solid var(--accent);
+  background: var(--paper-deep);
+  font-size: 0.9rem;
+  margin-bottom: 1.8rem;
+}
+
+/* ---- saved nights ---- */
+
+.saved { padding: clamp(2.5rem, 7vw, 5rem) var(--gutter); max-width: 58rem; }
+
+.saved__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--ink);
+  margin-bottom: 0.5rem;
+}
+.saved__title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+.saved__count { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); }
+
+.saved__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.6rem 1.5rem;
+  align-items: start;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.saved__summary {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--ink);
+}
+.saved__summary a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0 1px; background-position: 0 95%; background-repeat: no-repeat; transition: background-size 0.2s ease; }
+.saved__summary a:hover { background-size: 100% 1px; }
+.saved__meta { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+.saved__actions { display: flex; gap: 0.6rem; align-items: center; }
+.saved__actions button {
+  font-family: var(--body);
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+.saved__actions button:hover { border-color: var(--ink); color: var(--ink); }
+.saved__actions button.went { border-color: var(--accent); color: var(--accent-ink); }
+.saved__actions button.is-on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.saved__empty {
+  padding: 3rem 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+/* Save control on a results page. */
+.save-night {
+  font-family: var(--body);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.85rem 1.7rem;
+  border: 1px solid var(--ink);
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.save-night:hover { background: var(--ink); color: var(--paper); }
+.save-night.is-saved { background: var(--ink); color: var(--paper); }
+
+/* ---- about ---- */
+
+.about { padding: clamp(3rem, 8vw, 5.5rem) var(--gutter); max-width: 42rem; }
+
+.about__title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6.5vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.3rem;
+}
+.about__lead {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0 0 3rem;
+}
+.about__block { padding: 2rem 0; border-top: 1px solid var(--rule); }
+.about__block h3 {
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+.about__block p { margin: 0 0 1rem; line-height: 1.7; }
+.about__block p:last-child { margin-bottom: 0; }
+.about__block strong { font-weight: 600; }
+.about__block em { font-style: italic; font-family: var(--display); }
+
+.about__list { list-style: none; margin: 0 0 1rem; padding: 0; }
+.about__list li {
+  padding: 0.7rem 0 0.7rem 1.1rem;
+  border-top: 1px solid var(--rule);
+  position: relative;
+  line-height: 1.6;
+}
+.about__list li:first-child { border-top: none; }
+.about__list li::before {
+  content: "";
+  position: absolute; left: 0; top: 1.25rem;
+  width: 4px; height: 4px; border-radius: 50%; background: var(--accent);
+}
+.about__note { font-size: 0.85rem; color: var(--ink-soft); }
+
+.about__sig {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ink);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* The second lead paragraph sits quieter than the first, so the opening line
+ * still lands as the statement and this reads as the breath after it. */
+.about__lead--second {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: var(--ink-soft);
+  margin-top: -1.6rem;
+  margin-bottom: 3rem;
+}
+
+/* The line that says whose city this is. Set like a masthead rule, not body
+ * copy, so it reads as a statement rather than another sentence. */
+.about__stamp {
+  font-family: var(--body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 3rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  display: inline-block;
+}
+
+/* ---- About, centred ----
+ * The column sits in the middle of the page instead of against the left edge.
+ * Running text stays flush left inside it, because centred body copy gives the
+ * eye no fixed point to return to on each new line. The title block is centred,
+ * since a few short lines read as a masthead rather than as reading matter. */
+
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 44rem;
+}
+
+.about > .hero__kicker,
+.about__title,
+.about__lead,
+.about__lead--second,
+.about__stamp {
+  text-align: center;
+}
+
+.about > .hero__kicker { letter-spacing: 0.3em; }
+
+.about__lead,
+.about__lead--second {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32rem;
+}
+
+.about__stamp {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+}
+
+/* Section headings centre with their rule; the prose under them stays left. */
+.about__block { text-align: left; }
+.about__block h3 { text-align: center; letter-spacing: 0.26em; }
+
+.about__sig { text-align: center; }
+
+@media (max-width: 560px) {
+  .about__lead, .about__lead--second { max-width: none; }
+}
