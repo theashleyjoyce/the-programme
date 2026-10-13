@@ -105,8 +105,8 @@ PER REQUEST ───────────┼──────────�
 <h2>5. Tokenomics</h2>
 <p>Every figure below comes from `output/spend_ledger.json`, which records each model call the project has ever made, including the ones made while building the dataset. Nothing here is estimated except where it says so.</p>
 <div class="fig">
-<div><span class="n">180</span><span class="l">model calls, all time</span></div>
-<div><span class="n">$1.27</span><span class="l">total spend</span></div>
+<div><span class="n">205</span><span class="l">model calls, all time</span></div>
+<div><span class="n">$1.72</span><span class="l">total spend</span></div>
 <div><span class="n">82%</span><span class="l">prompt cache hit</span></div>
 <div><span class="n">$0.0002</span><span class="l">per plan, cached path</span></div>
 </div>
@@ -120,8 +120,8 @@ PER REQUEST ───────────┼──────────�
 <h3>At scale</h3>
 <p>Assuming 4 plans per user per month, on the cached path:</p>
 <table><tr><th>Users</th><th>Per month</th><th>Per year</th></tr><tr><td>one user</td><td>$0.0010</td><td>$0.01</td></tr><tr><td>100 users</td><td>$0.10</td><td>$1.20</td></tr><tr><td>10,000 users</td><td>$9.99</td><td>$119.93</td></tr></table>
-<p class="muted">Corpus building is a separate, one-off cost: 64 calls,
-$1.04 to date, shared across every plan ever served.</p>
+<p class="muted">Corpus building is a separate, one-off cost: 89 calls,
+$1.49 to date, shared across every plan ever served.</p>
 <h3>What we did to cut cost</h3>
 <ol><li><strong>Move the expensive agents offline.</strong> The Scout, Researcher and Writer run on a refresh, not per visitor. Their cost is paid once and amortised across every plan ever served.</li><li><strong>Do not use a model for work that is not language work.</strong> Filtering and sequencing became ordinary Python. This removed roughly 2,000 output tokens from every single request.</li><li><strong>Skip the Concierge when the form already says it.</strong> A complete set of filters is an unambiguous request. Re-reading it with a model is a round trip that buys nothing.</li><li><strong>Keep the one remaining prompt stable so it caches.</strong> The Concierge instructions do not change between requests, so they are served from the provider&#x27;s prompt cache.</li><li><strong>Reach for web search only when the corpus cannot answer.</strong> Search is the single most expensive thing the app can do, in both money and latency. It is a fallback, not a default.</li></ol>
 <h3>Did it make the app worse?</h3>
@@ -149,8 +149,8 @@ $1.04 to date, shared across every plan ever served.</p>
 <table><tr><th>What</th><th>Figure</th><th>Source</th></tr>
 <tr><td>Time to a plan</td><td>~1.7 s</td><td>Timed in-app, recorded per request</td></tr>
 <tr><td>Cost per plan</td><td>$0.0002</td><td>Spend ledger, 67 runs</td></tr>
-<tr><td>Venues covered</td><td>1,532</td><td>The committed dataset</td></tr>
-<tr><td>Neighbourhoods</td><td>59</td><td>All five boroughs</td></tr>
+<tr><td>Venues covered</td><td>2,173</td><td>The committed dataset</td></tr>
+<tr><td>Neighbourhoods</td><td>84</td><td>All five boroughs</td></tr>
 <tr><td>Kinds of evening</td><td>13</td><td>Dinner through to late-night dessert</td></tr>
 <tr><td>Guardrails passing</td><td>34</td><td><code>test_guardrails.py</code></td></tr></table>
 <div class="todo"><strong>To add:</strong> the time a real person takes to plan a
@@ -166,7 +166,7 @@ else.</p>
 
 <h2>8. Limits and next steps</h2>
 <h3>What does not work yet</h3>
-<ul><li><strong>Opening hours are not checked.</strong> The planner assigns times from a table of typical hours. It does not know that a restaurant closes on Mondays. OpenStreetMap returns an `opening_hours` field free alongside the geocoding we already do, and collecting it is the single most valuable next piece of work.</li><li><strong>No event calendar.</strong> The app knows venues, not what is on at them tonight. For a ticketed room it can only say &quot;check what is on&quot;, which is honest but thin. A Ticketmaster Discovery feed would close most of this.</li><li><strong>Coverage is uneven.</strong> 507 of 1532 venues have coordinates, so the rest show no map and no walking time. OpenStreetMap&#x27;s coverage of small businesses is patchy, and worst in the outer boroughs.</li><li><strong>Some kinds of night are thinly covered.</strong> Comedy, karaoke, games, markets and parks were added late, so the corpus holds far fewer of them than it does restaurants and bars. The planner refuses to offer a venue that does not say it is that kind of place, so these simply return fewer options rather than wrong ones.</li><li><strong>Genre tagging is thin.</strong> Cuisine resolves for most restaurants, but genre only for some venues, and no venue is tagged `techno` because the source descriptions rarely name subgenres. A request for techno currently ranks electronic rooms above cabaret bars, which is better than nothing but not what was asked.</li><li><strong>Nothing re-checks whether a venue still exists.</strong> A venue that closed or changed name stays in the corpus. One entry, The Brooklyn Monarch, appears to have rebranded; nothing in the system would catch that.</li><li><strong>No real user has tried it yet.</strong> The strongest evidence this project could have is someone other than its author using it to plan a night and reporting back. That has not happened.</li></ul>
+<ul><li><strong>Opening hours are not checked.</strong> The planner assigns times from a table of typical hours. It does not know that a restaurant closes on Mondays. OpenStreetMap returns an `opening_hours` field free alongside the geocoding we already do, and collecting it is the single most valuable next piece of work.</li><li><strong>No event calendar.</strong> The app knows venues, not what is on at them tonight. For a ticketed room it can only say &quot;check what is on&quot;, which is honest but thin. A Ticketmaster Discovery feed would close most of this.</li><li><strong>Coverage is uneven.</strong> 507 of 2173 venues have coordinates, so the rest show no map and no walking time. OpenStreetMap&#x27;s coverage of small businesses is patchy, and worst in the outer boroughs.</li><li><strong>Some kinds of night are thinly covered.</strong> Comedy, karaoke, games, markets and parks were added late, so the corpus holds far fewer of them than it does restaurants and bars. The planner refuses to offer a venue that does not say it is that kind of place, so these simply return fewer options rather than wrong ones.</li><li><strong>Genre tagging is thin.</strong> Cuisine resolves for most restaurants, but genre only for some venues, and no venue is tagged `techno` because the source descriptions rarely name subgenres. A request for techno currently ranks electronic rooms above cabaret bars, which is better than nothing but not what was asked.</li><li><strong>Nothing re-checks whether a venue still exists.</strong> A venue that closed or changed name stays in the corpus. One entry, The Brooklyn Monarch, appears to have rebranded; nothing in the system would catch that.</li><li><strong>No real user has tried it yet.</strong> The strongest evidence this project could have is someone other than its author using it to plan a night and reporting back. That has not happened.</li></ul>
 <h3>What I would build next</h3>
 <ol><li>Collect opening hours and refuse to place a stop at a closed venue.</li><li>Add an events feed so a ticketed room can say what is actually on.</li><li>Finish geocoding, and re-check venues on a schedule so closures surface.</li><li>Richer genre tagging, so a request for techno finds a techno room.</li><li>Put it in front of five people and watch where they get stuck.</li></ol>
 

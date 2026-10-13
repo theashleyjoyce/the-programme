@@ -29,7 +29,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "backend"))
 
 from budget import BudgetExceeded, check_before_call, record  # noqa: E402
 from config import DATA_DIR, model_config  # noqa: E402
-from tokens import Usage  # noqa: E402
+from tokens import Usage, pricing  # noqa: E402
+
+_p = pricing()
 from openai import OpenAI                  # noqa: E402
 
 CANDIDATES = DATA_DIR / "candidate_venues.json"
@@ -219,7 +221,7 @@ def main() -> int:
     if args.plan:
         # Measured on a real run: ~38k input / ~1.4k out per call, which is
         # ~$0.06. One call per neighborhood, all categories at once.
-        est = len(hoods) * 0.075
+        est = len(hoods) * (38_000 / 1e6 * _p['input_per_m'] + 2_500 / 1e6 * _p['output_per_m'])
         print(f"{len(hoods)} neighborhoods, one call each, all {len(CATEGORIES)} categories")
         print(f"Estimated discovery cost: ${est:.2f}  (~25-40 venues each)")
         return 0
@@ -266,7 +268,7 @@ def main() -> int:
         print(f"  {hood:20} +{fresh:2}  {spread}")
         CANDIDATES.write_text(json.dumps(store, indent=2) + "\n", encoding="utf-8")
 
-    cost = tin / 1e6 * 1.25 + tout / 1e6 * 10
+    cost = tin / 1e6 * _p['input_per_m'] + tout / 1e6 * _p['output_per_m']
     print(f"\nAdded {added} candidates. {len(store['venues'])} total in {CANDIDATES.name}")
     print(f"Tokens: {tin:,} in / {tout:,} out  (~${cost:.2f})")
     return 0

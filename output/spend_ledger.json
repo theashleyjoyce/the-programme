@@ -1639,9 +1639,279 @@
       "cached_input_tokens": 5587,
       "output_tokens": 4228,
       "cost_usd": 0.018585
+    },
+    {
+      "at": "2026-10-13T00:05:35+00:00",
+      "label": "discover:Ditmas Park",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 68254,
+      "cached_input_tokens": 5587,
+      "output_tokens": 3996,
+      "cost_usd": 0.018558
+    },
+    {
+      "at": "2026-10-13T00:06:57+00:00",
+      "label": "discover:Financial District",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 63652,
+      "cached_input_tokens": 0,
+      "output_tokens": 6468,
+      "cost_usd": 0.020492
+    },
+    {
+      "at": "2026-10-13T00:07:47+00:00",
+      "label": "discover:Flatbush",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 50765,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4545,
+      "cost_usd": 0.015719
+    },
+    {
+      "at": "2026-10-13T00:09:09+00:00",
+      "label": "discover:Flushing",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 77596,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5437,
+      "cost_usd": 0.022155
+    },
+    {
+      "at": "2026-10-13T00:09:56+00:00",
+      "label": "discover:Forest Hills",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 59704,
+      "cached_input_tokens": 5587,
+      "output_tokens": 3879,
+      "cost_usd": 0.016707
+    },
+    {
+      "at": "2026-10-13T00:10:43+00:00",
+      "label": "discover:Gowanus",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 61936,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4813,
+      "cost_usd": 0.018275
+    },
+    {
+      "at": "2026-10-13T00:11:42+00:00",
+      "label": "discover:Gramercy",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 59168,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4839,
+      "cost_usd": 0.017752
+    },
+    {
+      "at": "2026-10-13T00:12:51+00:00",
+      "label": "discover:Greenpoint",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 49436,
+      "cached_input_tokens": 5587,
+      "output_tokens": 6049,
+      "cost_usd": 0.017258
+    },
+    {
+      "at": "2026-10-13T00:13:55+00:00",
+      "label": "discover:Inwood",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 57740,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5327,
+      "cost_usd": 0.018052
+    },
+    {
+      "at": "2026-10-13T00:15:23+00:00",
+      "label": "discover:Meatpacking District",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 65705,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5238,
+      "cost_usd": 0.019538
+    },
+    {
+      "at": "2026-10-13T00:16:17+00:00",
+      "label": "discover:NoHo",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 41682,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5256,
+      "cost_usd": 0.014755
+    },
+    {
+      "at": "2026-10-13T00:18:03+00:00",
+      "label": "discover:Nolita",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 83609,
+      "cached_input_tokens": 5587,
+      "output_tokens": 6895,
+      "cost_usd": 0.025108
+    },
+    {
+      "at": "2026-10-13T00:19:30+00:00",
+      "label": "discover:Park Slope",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 69700,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5522,
+      "cost_usd": 0.020678
+    },
+    {
+      "at": "2026-10-13T00:20:24+00:00",
+      "label": "discover:Prospect Heights",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 53514,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5877,
+      "cost_usd": 0.017867
+    },
+    {
+      "at": "2026-10-13T00:21:30+00:00",
+      "label": "discover:Red Hook",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 55609,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4673,
+      "cost_usd": 0.016841
+    },
+    {
+      "at": "2026-10-13T00:22:14+00:00",
+      "label": "discover:Sunnyside",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 34218,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4800,
+      "cost_usd": 0.012715
+    },
+    {
+      "at": "2026-10-13T00:23:12+00:00",
+      "label": "discover:Sunset Park",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 52629,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4888,
+      "cost_usd": 0.016503
+    },
+    {
+      "at": "2026-10-13T00:24:17+00:00",
+      "label": "discover:Washington Heights",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 55647,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4579,
+      "cost_usd": 0.016736
+    },
+    {
+      "at": "2026-10-13T00:26:03+00:00",
+      "label": "discover:Woodside",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 85669,
+      "cached_input_tokens": 5587,
+      "output_tokens": 7242,
+      "cost_usd": 0.025936
+    },
+    {
+      "at": "2026-10-13T00:27:23+00:00",
+      "label": "discover:Concourse",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 75886,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4062,
+      "cost_usd": 0.020163
+    },
+    {
+      "at": "2026-10-13T00:28:18+00:00",
+      "label": "discover:City Island",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 50837,
+      "cached_input_tokens": 5587,
+      "output_tokens": 3556,
+      "cost_usd": 0.014546
+    },
+    {
+      "at": "2026-10-13T00:28:54+00:00",
+      "label": "discover:New Brighton",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 40135,
+      "cached_input_tokens": 5587,
+      "output_tokens": 2977,
+      "cost_usd": 0.011711
+    },
+    {
+      "at": "2026-10-13T00:29:59+00:00",
+      "label": "discover:Rockaway Beach",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 56470,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4217,
+      "cost_usd": 0.016466
+    },
+    {
+      "at": "2026-10-13T00:31:01+00:00",
+      "label": "discover:Hunts Point",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 56877,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4360,
+      "cost_usd": 0.016719
+    },
+    {
+      "at": "2026-10-13T00:32:04+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2273,
+      "cached_input_tokens": 0,
+      "output_tokens": 68,
+      "cost_usd": 0.000536
+    },
+    {
+      "at": "2026-10-13T00:32:06+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 957,
+      "cached_input_tokens": 0,
+      "output_tokens": 75,
+      "cost_usd": 0.000281
+    },
+    {
+      "at": "2026-10-13T00:32:07+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2270,
+      "output_tokens": 68,
+      "cost_usd": 0.000128
+    },
+    {
+      "at": "2026-10-13T00:32:10+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1002,
+      "cached_input_tokens": 0,
+      "output_tokens": 119,
+      "cost_usd": 0.000343
+    },
+    {
+      "at": "2026-10-13T00:32:12+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2270,
+      "output_tokens": 68,
+      "cost_usd": 0.000128
+    },
+    {
+      "at": "2026-10-13T00:32:16+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 214,
+      "cost_usd": 0.000448
     }
   ],
-  "total_usd": 1.285674,
+  "total_usd": 1.718788,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,
