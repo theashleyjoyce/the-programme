@@ -70,12 +70,34 @@ app = FastAPI(title="The Programme", docs_url=None, redoc_url=None)
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 
+# A neighbourhood needs at least this many venues to be worth offering. One
+# venue behind a menu item is a dead end: you pick it and get nothing back.
+MIN_VENUES_PER_NEIGHBORHOOD = 3
+
+
 def neighborhoods_by_borough() -> dict[str, list[str]]:
-    grouped: dict[str, set[str]] = defaultdict(set)
-    for venue in venues().values():
-        if venue.borough and venue.neighborhood:
-            grouped[venue.borough].add(venue.neighborhood)
-    return {b: sorted(n) for b, n in sorted(grouped.items())}
+    """Every neighbourhood we can actually plan in, grouped by borough.
+
+    Built from the whole catalogue, not from the original music-venue file.
+    Reading only the latter meant the menu offered 45 venues' worth of
+    neighbourhoods while the app held 1,300, so places like Downtown Brooklyn
+    had thirty venues and no way to ask for them.
+    """
+    from collections import Counter
+
+    from planner import catalogue
+
+    counts: dict[str, Counter] = defaultdict(Counter)
+    for row in catalogue():
+        borough, hood = row.get("borough"), row.get("neighborhood")
+        if borough and hood:
+            counts[borough][hood] += 1
+
+    return {
+        borough: sorted(h for h, n in hoods.items()
+                        if n >= MIN_VENUES_PER_NEIGHBORHOOD)
+        for borough, hoods in sorted(counts.items())
+    }
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -110,6 +132,8 @@ def health() -> dict:
 _WANT_WORDS = {
     "dinner": "dinner", "drinks": "drinks", "show": "live music",
     "club": "a dance floor", "hotel_bar": "a hotel bar", "tea": "tea",
+    "comedy": "comedy", "karaoke": "karaoke", "games": "somewhere to play",
+    "market": "a market", "park": "somewhere outdoors",
     "shopping": "somewhere to shop",
     "gallery": "a gallery", "museum": "a museum", "theatre": "theatre",
     "screening": "a film", "late": "somewhere late", "dessert": "a sweet treat",
@@ -125,6 +149,44 @@ _SETTING_WORDS = {
 }
 
 
+def _phrase_from_raw_filters(payload: dict) -> str:
+    """The same sentence /plan builds, from raw form strings.
+
+    The working page has the query parameters, not the parsed Brief, so this
+    converts them first rather than duplicating the wording in two places
+    that could drift apart.
+    """
+    from brief import Budget, Occasion
+    from models import Setting, StopKind, VenueSize
+
+    def enums(key, cls):
+        out = []
+        for raw in payload.get(key) or []:
+            try:
+                out.append(cls(raw))
+            except ValueError:
+                continue
+        return out
+
+    pre: dict = {
+        "wants": enums("wants", StopKind),
+        "venue_sizes": enums("venue_sizes", VenueSize),
+        "settings": enums("settings", Setting),
+    }
+    if (party := (payload.get("party_size") or "").strip()).isdigit():
+        pre["party_size"] = int(party)
+    for key, cls in (("budget", Budget), ("occasion", Occasion)):
+        if raw := (payload.get(key) or "").strip():
+            try:
+                pre[key] = cls(raw)
+            except ValueError:
+                pass
+    if (payload.get("roam") or "").strip():
+        pre["roam"] = True
+
+    return _vibe_from_filters(pre)
+
+
 def _vibe_from_filters(prefilled: dict) -> str:
     """Turn ticked filters into a sentence the Editor can work from."""
     parts: list[str] = []
@@ -136,8 +198,10 @@ def _vibe_from_filters(prefilled: dict) -> str:
 
     if sizes := [_SIZE_WORDS.get(v.value, v.value) for v in prefilled.get("venue_sizes", [])]:
         parts.append(sizes[0])
+    # A park is already outdoors; saying both reads as a stutter.
     if settings := [_SETTING_WORDS.get(v.value, v.value) for v in prefilled.get("settings", [])]:
-        parts.append(settings[0])
+        if not any(p.strip() == settings[0] or settings[0] in p for p in parts):
+            parts.append(settings[0])
 
     if prefilled.get("roam"):
         parts.append("happy to range across the city")
@@ -216,10 +280,15 @@ def working(request: Request) -> str:
     for k in FORM_LISTS:
         payload[k] = q.getlist(k)
 
+    # What the page says it is planning must be what it IS planning, and in
+    # the same order of precedence /plan uses: typed words, then the filters,
+    # then the suggestion that was on screen. Reaching straight for the
+    # suggestion meant someone who ticked Museum and Sweet treat was told we
+    # were finding them somewhere with a piano and no cover.
     vibe = (payload.get("vibe") or "").strip()
-    # Show the suggestion on the working page too, so the night they are
-    # waiting for is the one they saw.
-    shown = vibe or (payload.get("suggested") or "").strip() or "whatever you picked"
+    shown = vibe or _phrase_from_raw_filters(payload) \
+        or (payload.get("suggested") or "").strip() \
+        or "whatever you picked"
 
     return (
         (TEMPLATES / "working.html").read_text(encoding="utf-8")

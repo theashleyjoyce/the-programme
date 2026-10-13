@@ -131,6 +131,20 @@ links on unrecognised domains are stripped rather than shown.
 
 ---
 
+## Before submitting
+
+```bash
+python scripts/build_report.py     # regenerate report.html from live data
+python scripts/build_slides.py     # regenerate slides.html
+python scripts/check_accuracy.py   # verify both match the app
+```
+
+Both documents are generated, so every figure in them comes from the ledger,
+the dataset and the guardrail suite at build time rather than being typed in.
+`check_accuracy.py` fails loudly if anything has drifted.
+
+---
+
 ## Accounts
 
 Optional. An account saves the nights you plan and lets you opt in to the

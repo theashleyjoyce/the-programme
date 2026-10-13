@@ -103,7 +103,7 @@ WHATS_NEW_CLAIMS = [
      treat after. Different kinds of activity, in a sensible order, timed so
      one finishes before the next begins, close enough together to walk, and
      chosen to match a single stated vibe rather than assembled from separate
-     searches. Thirteen kinds of evening can appear in one plan.
+     searches. {kinds} kinds of evening can appear in one plan.
 
      Nobody else crosses categories. A nightlife app will not book your dinner.
      A restaurant guide does not know what is on at the venue round the corner.
@@ -309,6 +309,11 @@ LIMITS = [
      """{mapped} of {venues} venues have coordinates, so the rest show no map
      and no walking time. OpenStreetMap's coverage of small businesses is
      patchy, and worst in the outer boroughs."""),
+    ("Some kinds of night are thinly covered.",
+     """Comedy, karaoke, games, markets and parks were added late, so the
+     corpus holds far fewer of them than it does restaurants and bars. The
+     planner refuses to offer a venue that does not say it is that kind of
+     place, so these simply return fewer options rather than wrong ones."""),
     ("Genre tagging is thin.",
      """Cuisine resolves for most restaurants, but genre only for some venues,
      and no venue is tagged `techno` because the source descriptions rarely

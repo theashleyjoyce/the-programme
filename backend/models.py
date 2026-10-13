@@ -99,6 +99,11 @@ class StopKind(str, Enum):
     MUSEUM = "museum"        # late hours, member evening
     THEATRE = "theatre"      # play, dance, performance
     SCREENING = "screening"  # repertory film
+    COMEDY = "comedy"        # stand-up, improv, a club with a line-up
+    KARAOKE = "karaoke"      # private rooms or a bar with a book
+    GAMES = "games"          # bowling, arcade bars, pool, darts
+    MARKET = "market"        # night markets, food halls, Smorgasburg
+    PARK = "park"            # a park, a pier, a garden, a waterfront
     ACTIVITY = "activity"
 
 

@@ -1333,9 +1333,315 @@
       "cached_input_tokens": 0,
       "output_tokens": 231,
       "cost_usd": 0.00051
+    },
+    {
+      "at": "2026-10-12T23:51:14+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 968,
+      "cached_input_tokens": 0,
+      "output_tokens": 268,
+      "cost_usd": 0.000515
+    },
+    {
+      "at": "2026-10-12T23:54:41+00:00",
+      "label": "discover:Bay Ridge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 73004,
+      "cached_input_tokens": 0,
+      "output_tokens": 4088,
+      "cost_usd": 0.019506
+    },
+    {
+      "at": "2026-10-12T23:55:43+00:00",
+      "label": "discover:Bedford-Stuyvesant",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 42436,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5303,
+      "cost_usd": 0.014963
+    },
+    {
+      "at": "2026-10-12T23:56:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2266,
+      "cached_input_tokens": 0,
+      "output_tokens": 82,
+      "cost_usd": 0.000552
+    },
+    {
+      "at": "2026-10-12T23:56:35+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1014,
+      "cached_input_tokens": 0,
+      "output_tokens": 240,
+      "cost_usd": 0.000491
+    },
+    {
+      "at": "2026-10-12T23:57:15+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1217,
+      "cached_input_tokens": 0,
+      "output_tokens": 162,
+      "cost_usd": 0.000438
+    },
+    {
+      "at": "2026-10-12T23:57:19+00:00",
+      "label": "discover:Boerum Hill",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 83937,
+      "cached_input_tokens": 5587,
+      "output_tokens": 5155,
+      "cost_usd": 0.023085
+    },
+    {
+      "at": "2026-10-12T23:57:19+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 223,
+      "cost_usd": 0.000292
+    },
+    {
+      "at": "2026-10-12T23:57:23+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 224,
+      "cost_usd": 0.000294
+    },
+    {
+      "at": "2026-10-12T23:57:27+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 268,
+      "cost_usd": 0.000346
+    },
+    {
+      "at": "2026-10-12T23:57:30+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 243,
+      "cost_usd": 0.000316
+    },
+    {
+      "at": "2026-10-12T23:57:35+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 327,
+      "cost_usd": 0.000417
+    },
+    {
+      "at": "2026-10-12T23:57:38+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 225,
+      "cost_usd": 0.000295
+    },
+    {
+      "at": "2026-10-12T23:57:41+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 208,
+      "cost_usd": 0.000274
+    },
+    {
+      "at": "2026-10-12T23:57:46+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 416,
+      "cost_usd": 0.000524
+    },
+    {
+      "at": "2026-10-12T23:57:50+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 333,
+      "cost_usd": 0.000424
+    },
+    {
+      "at": "2026-10-12T23:57:54+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 298,
+      "cost_usd": 0.000382
+    },
+    {
+      "at": "2026-10-12T23:57:58+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 280,
+      "cost_usd": 0.000361
+    },
+    {
+      "at": "2026-10-12T23:58:03+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1214,
+      "output_tokens": 367,
+      "cost_usd": 0.000465
+    },
+    {
+      "at": "2026-10-12T23:58:11+00:00",
+      "label": "discover:Brooklyn Heights",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 44232,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4623,
+      "cost_usd": 0.014506
+    },
+    {
+      "at": "2026-10-12T23:58:23+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1219,
+      "cached_input_tokens": 0,
+      "output_tokens": 257,
+      "cost_usd": 0.000552
+    },
+    {
+      "at": "2026-10-12T23:58:36+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1218,
+      "cached_input_tokens": 0,
+      "output_tokens": 205,
+      "cost_usd": 0.00049
+    },
+    {
+      "at": "2026-10-12T23:58:55+00:00",
+      "label": "discover:Carroll Gardens",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 42102,
+      "cached_input_tokens": 5587,
+      "output_tokens": 3493,
+      "cost_usd": 0.012724
+    },
+    {
+      "at": "2026-10-12T23:59:04+00:00",
+      "label": "refine",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 1215,
+      "output_tokens": 353,
+      "cost_usd": 0.000449
+    },
+    {
+      "at": "2026-10-12T23:59:14+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2278,
+      "cached_input_tokens": 0,
+      "output_tokens": 82,
+      "cost_usd": 0.000554
+    },
+    {
+      "at": "2026-10-12T23:59:18+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 967,
+      "cached_input_tokens": 0,
+      "output_tokens": 213,
+      "cost_usd": 0.000449
+    },
+    {
+      "at": "2026-10-12T23:59:56+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 15,
+      "cached_input_tokens": 2260,
+      "output_tokens": 77,
+      "cost_usd": 0.000141
+    },
+    {
+      "at": "2026-10-13T00:00:01+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 957,
+      "cached_input_tokens": 0,
+      "output_tokens": 384,
+      "cost_usd": 0.000652
+    },
+    {
+      "at": "2026-10-13T00:00:15+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2260,
+      "output_tokens": 76,
+      "cost_usd": 0.00014
+    },
+    {
+      "at": "2026-10-13T00:00:21+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 961,
+      "cached_input_tokens": 0,
+      "output_tokens": 400,
+      "cost_usd": 0.000672
+    },
+    {
+      "at": "2026-10-13T00:00:30+00:00",
+      "label": "discover:Chinatown",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 78459,
+      "cached_input_tokens": 5587,
+      "output_tokens": 6681,
+      "cost_usd": 0.023821
+    },
+    {
+      "at": "2026-10-13T00:02:36+00:00",
+      "label": "discover:Clinton Hill",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 103561,
+      "cached_input_tokens": 5587,
+      "output_tokens": 6209,
+      "cost_usd": 0.028275
+    },
+    {
+      "at": "2026-10-13T00:03:25+00:00",
+      "label": "discover:Cobble Hill",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 40410,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4037,
+      "cost_usd": 0.013038
+    },
+    {
+      "at": "2026-10-13T00:04:26+00:00",
+      "label": "discover:Coney Island",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 66998,
+      "cached_input_tokens": 5587,
+      "output_tokens": 4228,
+      "cost_usd": 0.018585
     }
   ],
-  "total_usd": 1.106686,
+  "total_usd": 1.285674,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,

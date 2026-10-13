@@ -1461,3 +1461,25 @@ body {
   .chat__go { width: 100%; margin-bottom: 0.6rem; }
 }
 @media print { .chat { display: none; } }
+
+/* While a change is being worked out. Three seconds of nothing reads as a
+ * broken button, so the row shows it is busy. */
+.chat__form.is-working { border-bottom-color: var(--accent); }
+.chat__form.is-working .chat__input { color: var(--ink-mute); }
+.chat__form.is-working::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px; width: 30%;
+  background: var(--accent);
+  animation: chat-sweep 1.1s ease-in-out infinite;
+}
+.chat__form { position: relative; }
+@keyframes chat-sweep {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(233%); }
+  100% { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chat__form.is-working::after { animation: none; width: 100%; opacity: .4; }
+}

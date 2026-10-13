@@ -25145,6 +25145,4124 @@
       "still_open": true,
       "cuisine": [],
       "genre": []
+    },
+    {
+      "name": "Tanoreen",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Palestinian and Middle Eastern home cooking, mezze, grilled meats, and knafeh.",
+      "price_band": "$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://www.tanoreen.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY",
+        "The New York Times",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ubani",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Georgian restaurant serving khachapuri, khinkali, and Georgian cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://ubani.us/bay-ridge",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ruzana",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Palestinian restaurant known for hummus, shawarma, and fresh pita.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Laila Bay Ridge",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Syrian restaurant serving mezze, grilled meats, and regional specialties.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Karam",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Lebanese restaurant serving shawarma, za\u2019atar pies, and lahmajeen.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://karamny.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Roots Italian",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Italian restaurant with large-format dishes and a festive dining room.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Shout NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Gino's of Bay Ridge",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Old-school Italian restaurant and pizzeria with a large dining room.",
+      "price_band": "$$",
+      "good_for_groups": true,
+      "has_private_space": true,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Shout NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Beets and Carrots",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Farm-to-table restaurant focused on American vegetarian and vegan dishes.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Greenhouse Cafe",
+      "category": "restaurant",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Long-running neighborhood restaurant serving Italian-American food and cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.greenhousecafe.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Bridge Parents",
+        "The Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Windy City Ale House",
+      "category": "bar",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Hockey bar with beer, pub food, and broadcasts of local and NHL games.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.windycityalehouse.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Destination Bay Ridge"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Wicked Monk",
+      "category": "bar",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Late-night Irish-themed restaurant and bar with live music.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.wickedmonk.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Paper",
+        "Destination Bay Ridge"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Three Jolly Pigeons",
+      "category": "bar",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Old-school neighborhood bar known for live music and a classic pub atmosphere.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "PC's Bar & Grill",
+      "category": "bar",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Long-running local bar that hosts occasional R Line Comedy showcases.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "R Line Comedy",
+        "Eventbrite"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Alpine Cinemas",
+      "category": "cinema",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Independent neighborhood movie theater showing current releases and open-caption screenings.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.alpinecinemas.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mike's Donuts",
+      "category": "dessert",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Family-run donut shop making fresh donuts and pastries on site.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.mikesdonuts.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Brooklyn Paper",
+        "Brooklyn Bridge Parents"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Little Cupcake Bakeshop",
+      "category": "dessert",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Bakery and cafe serving cupcakes, cakes, pies, and other desserts.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.littlecupcakebakeshop.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Stand4 Gallery & Community Art Center",
+      "category": "gallery",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Artist-run gallery presenting exhibitions, talks, workshops, and community art projects.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://stand4gallery.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Radio Free Bay Ridge",
+        "The Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Underland Gallery",
+      "category": "gallery",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Artist-run space hosting exhibitions, live performances, and recurring art events.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.underlandgallery.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Radio Free Bay Ridge"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Polizzi Fine Art",
+      "category": "gallery",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Fine-art gallery representing modern and contemporary artists.",
+      "price_band": null,
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.polizzifineart.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Apartments.com",
+        "The Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Duality Industries",
+      "category": "gallery",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Multidisciplinary artist-run gallery presenting exhibitions and artist projects.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://dualityindustries.art/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Harbor Defense Museum",
+      "category": "museum",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Free military museum covering Fort Hamilton and New York harbor defenses.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.harbordefensemuseum.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The New York Times"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The BookMark Shoppe",
+      "category": "shopping",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Independent bookstore hosting author events, book clubs, and writing workshops.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://bookmarkshoppe.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Bridge Parents",
+        "Soldano Local Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bay Ridge Greenmarket",
+      "category": "shopping",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Seasonal Saturday farmers market with regional produce, baked goods, and prepared foods.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://grownyc.org/locations/bay-ridge-greenmarket/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "GrowNYC",
+        "Soldano Local Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Brew Caf\u00e9",
+      "category": "tea",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood cafe serving coffee, specialty teas, pastries, and light food.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.brooklynbrewcafe.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Best of Brooklyn",
+        "Local Bay Ridge guides"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bay Ridge Ballet",
+      "category": "theatre",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "one_line": "Dance studio offering classes, recitals, informal showings, and performance rentals.",
+      "price_band": null,
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.bayridgeballet.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Dance/NYC"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bar Laika",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Wine and cocktail bar operated by e-flux with a sunny room and sidewalk seating.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Holler",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Queer-leaning bar serving New Orleans-inspired drinks and food.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Cookie's",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Cash-only neighborhood bar with frozen drinks, movies, and a backyard.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Barb's",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood tavern and cocktail bar with grilled cheese at 380A Marcus Garvey Boulevard.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.bedstuybarbs.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Cocktail Bedstuy",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Craft cocktail and wine bar with recurring Afro-fusion pop-up dinners.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cocktailbedstuy.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Coyote Club",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Western-themed bar with beer-and-shot specials, pinball, photo booth, and DJs.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Do or Dive",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Casual neighborhood dive bar with a backyard and inexpensive drinks.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bar Lun\u00c0tico",
+      "category": "bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Restaurant and bar presenting live global music nightly.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.barlunatico.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "Visit Brooklyn",
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "C\u2019mon Everybody",
+      "category": "club",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Queer-owned bar and live-arts venue hosting drag shows, DJs, and dance parties.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cmoneverybody.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Fan-Fan Doughnuts",
+      "category": "dessert",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Small-batch bakery known for yeast-raised doughnuts and filled seasonal flavors.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.fan-fandoughnuts.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Kolache",
+      "category": "dessert",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Scratch bakery specializing in Texas-style sweet and savory kolaches.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.brooklynkolache.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The New York Times",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Abu\u2019s Homestyle Bakery",
+      "category": "dessert",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Long-running bakery known for bean pies and other baked goods.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Welancora Gallery",
+      "category": "gallery",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Contemporary gallery presenting intergenerational artists, exhibitions, and opening receptions.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.welancoragallery.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Artforum",
+        "WAGMAG",
+        "ADAA"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ivy\u2019s Projects",
+      "category": "gallery",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Temporary gallery space for exhibitions, artist talks, and emerging artists.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.welancoragallery.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "WAGMAG"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Richard Beavers Gallery",
+      "category": "gallery",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Gallery focused on contemporary artists of the African diaspora.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.richardbeaversgallery.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Black-Owned Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Pour Decisions BK",
+      "category": "hotel_bar",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Hotel sports bar and rooftop serving cocktails, beer, food, and weekly events.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.thebedstuyhotel.com/restaurant",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Little Grenjai",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Thai-American diner serving noodles, crudos, spicy vegetables, and a weekend burger.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.littlegrenjai.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Grub Street",
+        "Gothamist",
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Peaches",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Southern restaurant serving fried chicken, shrimp and grits, brunch, and dinner.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Cond\u00e9 Nast Traveler",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Saraghina",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Italian restaurant and pizzeria with a bakery and aperitivo-focused caf\u00e9 nearby.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.saraghina.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Cond\u00e9 Nast Traveler",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Chez Oskar",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "French-Caribbean restaurant with seasonal dishes and weekend brunch.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Hart\u2019s",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Mediterranean restaurant serving small plates, natural wine, and dinner.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Fly",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Dinner restaurant known for roasted chicken, Mediterranean plates, and natural wine.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Warude",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Casual restaurant combining Japanese dishes with Mexican flavors.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "A&A Bake Doubles and Roti",
+      "category": "restaurant",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Trinidadian takeout counter serving doubles, roti, and aloo pie.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "Eater NY",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "BLK MKT Vintage",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Vintage and antique shop focused on Black history, collectibles, clothing, and records.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.blkmktvintage.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Burly",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Independent used bookstore with a curated selection and neighborhood events.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Harold and Maude",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Vintage clothing shop specializing in curated secondhand finds.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lagoon",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Boutique carrying clothing and goods from local designers.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Black Star Vinyl",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Black-owned record shop selling new and vintage vinyl, books, magazines, and coffee.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.blackstarvinyl.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Gladys Books & Wine",
+      "category": "shopping",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Bookstore, coffee shop, wine bar, and event space centered on Black queer literature.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.gladysbooksandwine.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Tea",
+      "category": "tea",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Black-owned tea room serving loose-leaf tea, matcha, coffee, and light bites.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://brooklyntea.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Billie Holiday Theatre",
+      "category": "theatre",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Historic theater presenting Black theater, music, dance, and cultural programming.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://thebillieholidaytheatre.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Visit Brooklyn",
+        "New York Nightlife"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bed-Stuy Art House",
+      "category": "theatre",
+      "neighborhood": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "one_line": "Performance space presenting theater, live music, and multidisciplinary cultural events.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.bedstuyarthouse.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Local arts listings"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Rucola",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Rustic Northern Italian restaurant with seasonal food, wine, and cocktails.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://rucolabrooklyn.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "French Louie",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "French-American restaurant serving bistro dishes, brunch, and cocktails.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://frenchlouienyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mile End Delicatessen",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Montreal-style Jewish deli known for smoked meat sandwiches and poutine.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.mileenddeli.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Michelin Guide",
+        "Eater",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sottocasa",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Neapolitan pizzeria serving wood-fired pizzas, salads, and desserts.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://sottocasanyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Michelin Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Soul Spot",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Caribbean and Southern soul-food restaurant serving jerk chicken, oxtail, and sides.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://thesoulspotnyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Brooklyn's Lifestyle"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lonnies",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "American tavern known for burgers, prime rib, seasonal plates, and cocktails.",
+      "price_band": "$$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://www.lonniesnyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "The New York Times"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sea & Soil",
+      "category": "restaurant",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Worker-owned sandwich shop and bakery serving Cuban sandwiches and arepas.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.seaandsoilcoop.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Grand Army",
+      "category": "bar",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cocktail and oyster bar with seafood, craft beer, and seasonal drinks.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.grandarmybar.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Time Out New York",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ana\u00efs",
+      "category": "bar",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Natural-wine bar and all-day caf\u00e9 with books inspired by Ana\u00efs Nin.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.anaisbk.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Someday Bar",
+      "category": "bar",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Late-night neighborhood bar with cocktails, beer, food, drag shows, and live music.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.somedaybarnyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ruhani Cafe",
+      "category": "tea",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Chai-focused caf\u00e9 serving Indian tea drinks, coffee, and light food.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Coffee Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Betty Bakery",
+      "category": "dessert",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood bakery known for cakes, cupcakes, cookies, rugelach, and hot chocolate.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://bettybakery.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Bridge Parents",
+        "Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Bearded Baker",
+      "category": "dessert",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Bakery specializing in macarons, cookies, brownies, empanadas, and frozen treats.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.beardedbaker.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn neighborhood coverage"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mia's Bakery",
+      "category": "dessert",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Bakery and gelato shop selling cakes, pies, cupcakes, cookies, and pastries.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://miasbrooklyn.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "DNAinfo",
+        "Brooklyn Bridge Parents"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ace Hotel Brooklyn",
+      "category": "hotel_bar",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Boutique hotel with a lobby bar, restaurants, guest rooms, and event spaces.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": true,
+      "website": "https://acehotel.com/brooklyn",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Vogue",
+        "Ace Hotel Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "EastVille Comedy Club",
+      "category": "comedy",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Stand-up comedy club with regular shows, open mics, cocktails, and snacks.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://eastvillecomedybrooklyn.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The BK Brief",
+        "Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Invisible Dog Art Center",
+      "category": "gallery",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Contemporary art center with exhibitions, performances, installations, and public openings.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.theinvisibledog.org",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Hyperallergic",
+        "Boerum Hill Association",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "490 Atlantic",
+      "category": "gallery",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Artist-initiated gallery dedicated to contemporary art exhibitions and openings.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://490atlantic.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Wagmag"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "New York Transit Museum",
+      "category": "museum",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Transportation museum in a historic subway station with vintage train cars.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.nytransitmuseum.org",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Michelin Guide",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Roulette",
+      "category": "theatre",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Experimental music and performing-arts venue presenting concerts, movement, and multimedia work.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://roulette.org",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "TOAST Magazine",
+        "Boerum Hill Association",
+        "Downtown Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sterling Place",
+      "category": "shopping",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Gift and home-furnishings shop featuring artful objects, antiques, and housewares.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://sterlingplace.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Boerum Hill Association"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Michele Varian Shop",
+      "category": "shopping",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Design shop selling textiles, lighting, furniture, home goods, and jewelry.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://michelevarian.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "CitySignal",
+        "The Shopkeepers"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Meg",
+      "category": "shopping",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Independent womenswear boutique specializing in dresses, jumpsuits, knitwear, and accessories.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://megest1994.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Meg"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Whisk",
+      "category": "shopping",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Kitchen shop selling cookware, baking supplies, knives, gadgets, and gifts.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://whisknyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Michelin Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Squarrel Cafe",
+      "category": "shopping",
+      "neighborhood": "Boerum Hill",
+      "borough": "Brooklyn",
+      "one_line": "Board-game caf\u00e9 with hundreds of games, food, drinks, events, and private rooms.",
+      "price_band": "$",
+      "good_for_groups": true,
+      "has_private_space": true,
+      "website": "https://squarrelcafe.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Brooklyn Coffee Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Confidant",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Seasonal New American cooking with dry-aged meats, pastas, and prawn pot pie.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.confidantnyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Brooklyn Magazine",
+        "Michelin Guide",
+        "The BK Brief"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Noodle Pudding",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Cash-only neighborhood Italian restaurant known for handmade pasta and long lines.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Al Badawi",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Palestinian restaurant serving mezze, taboon bread, and wood-fired dishes.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.albadawinyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Chama Mama",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Georgian restaurant specializing in khachapuri, khinkali, and grilled meats.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://chamamama.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Henry's End",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Long-running restaurant known for game meats and its annual wild-game festival.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://henrysend.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Dellarocco's",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Neapolitan pizzeria with wood-fired pies and gluten-free options.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://dellaroccos.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch",
+        "Brooklyn Now"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Felice Montague",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Tuscan trattoria and wine bar near the Brooklyn Heights Promenade.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://felicerestaurants.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Association",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Montague Diner",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "New-school diner serving all-day breakfast, burgers, sandwiches, and late plates.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Caf\u00e9 Brume",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "French-leaning caf\u00e9 and wine bar serving tartines, dinner, and pastries.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Diem Eatery",
+      "category": "restaurant",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Vietnamese caf\u00e9 offering b\u00e1nh m\u00ec, egg coffee, and house-made gelato.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Inga's Bar",
+      "category": "bar",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood tavern serving burgers, pastas, seasonal vegetables, and grilled fish.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Henry Street Ale House",
+      "category": "bar",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Wood-lined neighborhood pub with a broad beer list and classic bar food.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Binc",
+      "category": "bar",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Small Henry Street bar for cocktails, beer, and a quiet neighborhood drink.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Vineapple",
+      "category": "bar",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Coffee shop by day and wine-and-small-plates bar with a back garden by night.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://vineapple.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Montero Bar & Grill",
+      "category": "bar",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Long-running Atlantic Avenue dive bar known for karaoke and neighborhood regulars.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Cloudy Donut Co.",
+      "category": "dessert",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Vegan doughnut shop with rotating small-batch flavors, cinnamon rolls, and cakes.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cloudydonut.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "L'Appartement 4F",
+      "category": "dessert",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "French bakery known for hand-rolled croissants, sourdough, and pastries.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://lappartement4f.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch",
+        "The BK Brief"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ferrane Bakery",
+      "category": "dessert",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Swedish-style bakery serving cardamom buns, princess cake, and pastries.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Center for Brooklyn History",
+      "category": "museum",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Museum, library, and archive documenting Brooklyn's history and communities.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.bklynlibrary.org/locations/center-for-brooklyn-history",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Public Library",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Heights Players",
+      "category": "theatre",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Community theater producing plays, musicals, children's shows, and workshops.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.heightsplayers.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "BroadwayWorld",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Books Are Magic",
+      "category": "shopping",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Independent bookstore with author events, readings, and a wide general selection.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://booksaremagic.net/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Women's Exchange",
+      "category": "shopping",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Nonprofit shop selling handmade gifts, textiles, children's goods, and jewelry.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://brooklynwomensexchange.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Brooklyn Heights Association"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Heights Chateau Fine Wines & Spirits",
+      "category": "shopping",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Specialty wine and spirits shop with tastings and a broad ros\u00e9 selection.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://heightschateau.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Salter House",
+      "category": "shopping",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Home-goods and apothecary shop with textiles, ceramics, and a small caf\u00e9.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://salterhouse.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Picture Room",
+      "category": "shopping",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "one_line": "Shop for art prints, art books, framing, and design-oriented gifts.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://picture-room.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Heights Dispatch"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lucali",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Wood-fired pizza and calzones in a candlelit, reservation-free dining room.",
+      "price_band": "$$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://lucali.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY",
+        "City Guide NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Frankies 457 Spuntino",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Italian small plates, handmade pasta, and a garden dining area.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://frankies457.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY",
+        "City Guide NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Caf\u00e9 Spaghetti",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Sicilian-inspired pasta, Italian-American dishes, and backyard dining.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Swoony's",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "American bar-and-grill food including burgers, wedge salads, and creamed spinach.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Gersi",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Italian cooking with handmade pasta, seafood, and a neighborhood dining-room atmosphere.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://gersi.nyc",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ugly Baby",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Thai restaurant known for intensely spicy dishes and a compact dining room.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Hungry Thirsty",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Thai restaurant serving fiery regional dishes and cocktails.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "F&F Restaurant",
+      "category": "restaurant",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Sit-down Italian restaurant serving pizza, seafood, pasta, and house specialties.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Social",
+      "category": "bar",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Former Italian social club with cocktails, vintage photographs, and a backyard patio.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://brooklynsocialbar.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Travel + Leisure",
+        "The Village Voice"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Clover Club",
+      "category": "bar",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Cocktail bar with classic drinks, punch bowls, food, and a Victorian-inspired interior.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cloverclubny.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bar Great Harry",
+      "category": "bar",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood beer bar with rotating taps, cans, and a relaxed back room.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Your Brooklyn Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Luana's Tavern",
+      "category": "bar",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Casual neighborhood tavern serving drinks, bar food, and occasional comedy shows.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Local neighborhood coverage"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bar Bruno",
+      "category": "bar",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Mexican-American neighborhood bar serving margaritas, cocktails, and casual food.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Brooklyn Farmacy & Soda Fountain",
+      "category": "dessert",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Old-fashioned soda fountain serving sundaes, egg creams, ice cream sandwiches, and pies.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://brooklynfarmacy.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Eater NY",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Court Tree Collective",
+      "category": "gallery",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Contemporary gallery presenting rotating exhibitions and public opening events.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://courttree.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Bklyner",
+        "ArtRabbit"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Black Gold Records",
+      "category": "shopping",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Record shop selling LPs, singles, CDs, cassettes, coffee, and vintage items.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://blackgoldbrooklyn.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Locavore",
+        "DNAinfo"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Liz's Book Bar",
+      "category": "shopping",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Bookstore, caf\u00e9, and wine bar hosting readings, clubs, tastings, and workshops.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.lizsbookbar.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "Bookshop.org",
+        "Local neighborhood coverage"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Yesterday's News Antiques & Collectibles",
+      "category": "shopping",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Vintage shop specializing in furniture, memorabilia, magazines, records, and clothing.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "NYC Vintage Map",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Caputo's Fine Foods",
+      "category": "shopping",
+      "neighborhood": "Carroll Gardens",
+      "borough": "Brooklyn",
+      "one_line": "Italian specialty grocer selling breads, cheeses, meats, cookies, and prepared foods.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Apoth\u00e9ke",
+      "category": "bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Cocktail bar on Doyers Street with theatrical, ingredient-driven drinks.",
+      "price_band": "$$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.apothekenyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/bars/apotheke?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Opera House",
+      "category": "bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Subterranean cocktail bar inspired by Chinese opera and the building\u2019s theater history.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.operahouse.nyc",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/restaurant-openings/405068/nyc-new-restaurant-openings-october-2025?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lei",
+      "category": "bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Doyers Street wine bar serving an extensive list with small plates.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.leiwine.nyc",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/restaurants/chinatown-restaurant-guide?package_page=35599))",
+        "Eater NY ([ny.eater.com](https://ny.eater.com/maps/best-restaurants-chinatown-manhattan-nyc))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Winnie\u2019s",
+      "category": "bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Chinatown bar known for cocktails, snacks, karaoke, and live-music programming.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.winniesbroadway.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Chinatown neighborhood directory ([nychinatown.org](https://www.nychinatown.org/directory/m_lounges.html?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Whiskey Tavern",
+      "category": "bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Casual Baxter Street dive bar with sports, drinks, and a neighborhood atmosphere.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/neighborhoods/chinatown?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Metrograph",
+      "category": "cinema",
+      "neighborhood": "Chinatown edge",
+      "borough": "Manhattan",
+      "one_line": "Independent two-screen cinema showing repertory films, restorations, premieres, and Q&As.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://metrograph.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/culture?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "SESH Comedy",
+      "category": "comedy",
+      "neighborhood": "Chinatown edge",
+      "borough": "Manhattan",
+      "one_line": "Intimate stand-up club with rotating showcases, headliners, a bar, and BYOB.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://seshcomedy.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/profile/time-out-contributors?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Original Chinatown Ice Cream Factory",
+      "category": "dessert",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Family-run ice cream shop known for lychee, black sesame, red bean, and egg-tart flavors.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.chinatownicecreamfactory.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/maps/best-new-ice-cream-shops-new-york-city?utm_source=openai))",
+        "Eater NY ([ny.eater.com](https://ny.eater.com/2018/4/16/17217254/food-walking-tour-chinatown-cheap-eats-nyc?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Penguin Ice Cream",
+      "category": "dessert",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Counter-service shop serving rolled ice cream, bubble tea, juices, and slushies.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/2022/4/29/23013489/canal-street-chinatown-nyc-best-restaurants-bars?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Chinatown Soup",
+      "category": "gallery",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Artist-run space with rotating exhibitions, residencies, studios, and public programming.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.chinatownsoup.nyc",
+      "lat": null,
+      "lon": null,
+      "sources": [],
+      "still_open": true
+    },
+    {
+      "name": "New York Life Gallery",
+      "category": "gallery",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Artist-run gallery presenting emerging artists, archives, photography, and interdisciplinary exhibitions.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.newyorklifegallery.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "AnOther Magazine"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "OCDChinatown",
+      "category": "gallery",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Queer contemporary art project for sound, image, objects, movement, and thought.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://ocdchinatown.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Artforum"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Museum of Chinese in America",
+      "category": "museum",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Museum documenting Chinese American history, culture, migration, and community life.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.mocanyc.org",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/things-to-do/best-things-to-do-in-chinatown-nyc?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mmuseumm",
+      "category": "museum",
+      "neighborhood": "Chinatown edge",
+      "borough": "Manhattan",
+      "one_line": "Tiny museum in a former freight elevator exhibiting vernacular objects and contemporary culture.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.mmuseumm.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/things-to-do/best-things-to-do-in-chinatown-nyc?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Crown",
+      "category": "hotel_bar",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Hotel 50 Bowery rooftop bar with skyline views, cocktails, DJs, and terraces.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.hyatt.com/jdv-by-hyatt/en-US/lgajd-jdv-50-bowery/dining",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Rooftop Guide ([therooftopguide.com](https://www.therooftopguide.com/rooftop-bars-in-new-york/the-crown-nyc.html?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Chinese Tuxedo",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Modern Cantonese restaurant in a former opera-house setting on Doyers Street.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://chinesetuxedo.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/guides/the-best-places-to-eat-in-chinatown?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bridges",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Small-plate American restaurant with seasonal cooking and a dramatic Chatham Square room.",
+      "price_band": "$$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/guides/the-best-places-to-eat-in-chinatown))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Shanghai 21",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Crowded Chinese restaurant known for soup dumplings and Shanghai-style dishes.",
+      "price_band": "$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/guides/the-best-places-to-eat-in-chinatown))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Dim Sum Palace",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Late-night Cantonese restaurant serving dim sum and large-format dishes until 3am.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/guides/the-best-places-to-eat-in-chinatown))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mabu Cafe",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Hong Kong-style cha chaan teng serving French toast, noodles, puddings, and milk tea.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://mabucafe.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/restaurants/chinatown-restaurant-guide?package_page=35599))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Maxi\u2019s Noodle",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Hong Kong-style noodle shop known for oversized wontons and long-simmered broths.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/restaurants/chinatown-restaurant-guide?package_page=35599))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "1915 Lanzhou Hand Pulled Noodles & Dumplings",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Northwestern Chinese noodle shop with hand-pulled noodles made in view of diners.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/restaurants/chinatown-restaurant-guide?package_page=35599))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Yi Ji Shi Mo",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Cash-only counter specializing in fresh Cantonese cheung fun rice noodle rolls.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://yijishimo.site",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/maps/best-restaurants-chinatown-manhattan-nyc))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Wu\u2019s Wonton King",
+      "category": "restaurant",
+      "neighborhood": "Chinatown edge",
+      "borough": "Manhattan",
+      "one_line": "Large-format Cantonese restaurant known for wonton soup, seafood, Peking duck, and BYOB.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation ([theinfatuation.com](https://www.theinfatuation.com/new-york/guides/the-best-places-to-eat-in-chinatown))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sunn\u2019s",
+      "category": "restaurant",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Korean wine bar serving banchan, snacks, and shareable dishes.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://sunnsnyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/maps/best-restaurants-chinatown-manhattan-nyc))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Nom Wah Tea Parlor",
+      "category": "tea",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Historic Doyers Street tea parlor serving dim sum, pastries, and Chinese tea since 1920.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": true,
+      "website": "https://www.nomwah.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/restaurants/nom-wah-tea-parlor?utm_source=openai))",
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/things-to-do/best-things-to-do-in-chinatown-nyc?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Canal Street Market",
+      "category": "shopping",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Retail market and food hall featuring independent design, fashion, jewelry, and food vendors.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://canalstreet.webflow.io",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY ([ny.eater.com](https://ny.eater.com/2022/4/29/23013489/canal-street-chinatown-nyc-best-restaurants-bars?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Magic Jewelry",
+      "category": "shopping",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Jewelry and metaphysical shop known for jade, crystals, aura photography, and readings.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.magicjewelrynyc.com",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York ([timeout.com](https://www.timeout.com/newyork/things-to-do/best-things-to-do-in-chinatown-nyc?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Yu & Me Books",
+      "category": "shopping",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Independent bookstore focused on immigrant stories, with coffee, beer, and author events.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.yuandmebooks.com",
+      "lat": null,
+      "lon": null,
+      "sources": [],
+      "still_open": true
+    },
+    {
+      "name": "Deluxe Food Market",
+      "category": "shopping",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "one_line": "Chinese grocery and prepared-food market with roast meats, produce, seafood, and pantry goods.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Chinatown Partnership local guide ([explorechinatown.com](https://www.explorechinatown.com/see/shop.html?utm_source=openai))"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Place des F\u00eates",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Natural-wine restaurant with Spanish wines, seafood-heavy small plates, and a basement bar.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.pdfnyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Radio Kwara",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Nigerian restaurant serving goat, suya, and shared dishes in a small dining room.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Mariscos El Submarino",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Mexican seafood restaurant known for aguachiles, tacos, and a backyard.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Dinner Party",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Queer-led restaurant offering rotating prix fixe menus and \u00e0 la carte dishes.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://www.dinnerpartybk.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sm\u00f8r",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Scandinavian restaurant serving Danish bakery items, schnitzel, and seasonal dishes.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Entre Nous",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "French wine bar with oysters, seafood plates, and low-intervention wines.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.entrenousbrooklyn.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Cool Stuff NYC"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Rosticceria Evelina",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Italian rotisserie specializing in roast chicken, pizza, and vegetables.",
+      "price_band": "$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Emily",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Restaurant known for its Emmy Burger, cheeseburgers, and pizza.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://pizzalovesemily.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lula Mae",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cambodian restaurant serving lort cha, skewers, fried chicken, and cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.lulamaenyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "B'klyn Burro",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Mission-style Mexican restaurant serving large burritos, tacos, and quesadillas.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.bklynburro.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Aita",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood Italian restaurant serving pasta, oxtail ravioli, brunch, and cocktails.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.aitaclintonhill.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Locanda Vini e Olii",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Tuscan restaurant in a restored former pharmacy serving traditional regional dishes.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.locandany.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "T Magazine",
+        "Serious Eats"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Otway",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "All-day restaurant with brunch, dinner, fried chicken sandwiches, and an adjacent bakery.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://otwaynyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Brooklyn Bridge Parents"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Peck's",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Takeout-focused shop known for breakfast sandwiches, lunch sandwiches, and a backyard.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Myrtle Avenue Brooklyn Partnership"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Chef Katsu",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Counter-service Japanese spot serving curry rice bowls and chazuke.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Fly",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Chicken bar serving rotisserie birds, large salads, natural wine, and cocktails.",
+      "price_band": "$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://www.theflybrooklyn.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Colonia Verde",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Latin American restaurant with duck confit tacos, clams al pastor, and a covered patio.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coloniaverdenyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Margot",
+      "category": "restaurant",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Neighborhood restaurant serving roast chicken, rigatoni, seasonal vegetables, and wine.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.margotbrooklyn.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bar Laika",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "E-flux bar hosting drinks, small plates, screenings, talks, and performances.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.laika.bar/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Financial Times",
+        "Hyperallergic",
+        "Cool Stuff NYC"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Hartley's",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cozy Irish pub serving Guinness, soda bread, stew, and Monday traditional music.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.hartleysnyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Cool Stuff NYC"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Hops Hill",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Craft-beer bar with rotating taps, aged bottles, whiskey, and beer cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://hops-hill.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Brooklyn Paper",
+        "The L Magazine"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Athena Keke's",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Retro-futurist sports bar with televisions, cocktails, beer, and bar food.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.athenakekesnyc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Izzy Rose",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cocktail bar with a backyard, natural wine, DJs, and late-night dancing.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.izzyrosebk.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "A Girl's Guide to Drinking Alone"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Prima Brooklyn",
+      "category": "bar",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cafe by day and wine bar by evening, serving pastries, wine, and bar snacks.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.primabrooklyn.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Brooklyn Coffee Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Petee's Caf\u00e9",
+      "category": "dessert",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Pie cafe serving sweet and savory pies, coffee, wine, and beer until late.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.peteespie.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "New York Magazine",
+        "Myrtle Avenue Brooklyn Partnership"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Dreamery",
+      "category": "dessert",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Plant-based ice-cream shop offering popsicles, cakes, candy, and seasonal flavors.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://dreamerybk.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [],
+      "still_open": true
+    },
+    {
+      "name": "The Good Batch",
+      "category": "dessert",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Bakery known for ice-cream sandwiches, cookies, cakes, and rotating sweets.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://thegoodbatch.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Brooklyn Bridge Parents"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Recess",
+      "category": "gallery",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Artist-run exhibition and project space with publicly accessible storefront shows.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.recessart.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Art in America Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Rubelle and Norman Schafler Gallery",
+      "category": "gallery",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Pratt gallery presenting contemporary exhibitions by faculty, students, and alumni.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.pratt.edu/about/exhibitions/the-rubelle-and-norman-schafler-gallery/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Wagmag",
+        "Pratt Institute"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "BRIC House Gallery",
+      "category": "gallery",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Contemporary art gallery presenting exhibitions, project rooms, and media work.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://bricartsmedia.org/about/bric-house/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Wagmag"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "KUNSTRAUM Brooklyn",
+      "category": "gallery",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Artist hub and gallery presenting member exhibitions, residencies, salons, and openings.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.kunstraumllc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Wagmag",
+        "Art Spiel"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "JACK",
+      "category": "theatre",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Performance space presenting experimental theater, music, dance, and community programs.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.jackny.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Su'juk",
+      "category": "shopping",
+      "neighborhood": "Clinton Hill",
+      "borough": "Brooklyn",
+      "one_line": "Vintage and lifestyle boutique selling clothing, textiles, jewelry, home goods, and rituals.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.sujukbk.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Cool Stuff NYC"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "La Vara",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Spanish restaurant serving Sephardic and Moorish dishes.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.lavarany.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Long Island Bar",
+      "category": "bar",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Retro cocktail bar known for classic drinks, burgers, and panisse.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.thelongislandbar.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "The Infatuation",
+        "Bon App\u00e9tit",
+        "Cond\u00e9 Nast Traveler"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Yemen Caf\u00e9",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Long-running Yemeni restaurant serving roasted lamb, soups, and stews.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lillo Cucina",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Tiny cash-only Italian restaurant specializing in homemade pasta.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Saint Julivert Fisherie",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Seafood restaurant serving small plates and unusual wines.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": null,
+      "website": "https://www.saintjulivert.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Bon App\u00e9tit"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Caf\u00e9 Luluc",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cash-only French-American bistro known for pancakes and brunch.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cafeluluc.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Henry Public",
+      "category": "bar",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Late-night saloon serving burgers, oysters, and classic cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.henrypublic.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Clover Club",
+      "category": "bar",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Cocktail bar with substantial food, brunch, and late hours.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cloverclubny.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Hibino",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Japanese izakaya serving sushi, small plates, and sake.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.hibino.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Bon App\u00e9tit"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Karazishi Botan",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Ramen restaurant serving inventive bowls and Japanese small plates.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Rua Thai",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Casual Thai restaurant with pad thai and blowtorched cocktails.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "El Cedro",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Lebanese-Mexican restaurant combining tacos, kibbe, and mezze.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Shelsky\u2019s of Brooklyn",
+      "category": "restaurant",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Jewish deli serving smoked fish, bagels, and comfort food.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://shelskys.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Bien Cuit",
+      "category": "dessert",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "French bakery known for naturally leavened bread and pastries.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://biencuit.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Bon App\u00e9tit",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "One Girl Cookies",
+      "category": "dessert",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Bakery caf\u00e9 serving cookies, cupcakes, cakes, and pastries.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://onegirlcookies.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Shopkeepers"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Debutea",
+      "category": "tea",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Taiwanese-style tea shop serving fruit teas and cheese teas.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Downtown Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Cobble Hill Cinemas",
+      "category": "cinema",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Independent five-screen theater showing first-run films.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.cobblehillcinema.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Wanderlustre",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Home and gift shop selling globally sourced decorative goods.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://wanderlustre.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Shopkeepers"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Lily",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Women\u2019s boutique carrying European-influenced clothing and accessories.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Rachel Comey",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Designer boutique selling artful, fashion-forward womenswear.",
+      "price_band": "$$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://rachelcomey.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Melissa Joy Manning",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Jewelry boutique focused on ethically made fine jewelry.",
+      "price_band": "$$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://melissajoymanning.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Shopkeepers"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "The Six Bells",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Home shop offering textiles, d\u00e9cor, gifts, and small artworks.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Books Are Magic",
+      "category": "shopping",
+      "neighborhood": "Cobble Hill",
+      "borough": "Brooklyn",
+      "one_line": "Independent bookstore hosting author talks, readings, and storytimes.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://booksaremagic.net/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Visit Brooklyn",
+        "The Shopkeepers"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Ruby\u2019s Bar & Grill",
+      "category": "bar",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Boardwalk bar and grill serving beer, cocktails, seafood, burgers, and beach food.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.rubysconeyisland.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Coney Island Fun Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Freak Bar",
+      "category": "bar",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Coney Island USA bar with vintage arcade games, a jukebox, and local art exhibitions.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coneyisland.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Salt & Sizzle",
+      "category": "bar",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Luna Park bar serving boardwalk food, frozen cocktails, beer, and cheesesteaks.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://lunaparknyc.com/dining/salt-and-sizzle/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Nathan\u2019s Famous",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Historic hot-dog restaurant serving franks, fries, seafood, and other boardwalk staples.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://nathansfamous.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Time Out New York",
+        "Bon App\u00e9tit"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Totonno\u2019s Pizzeria Napolitana",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Family-run pizzeria known for coal-fired Neapolitan-style pies since 1924.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.totonnosconeyisland.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Gargiulo\u2019s Restaurant",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Long-running Southern Italian restaurant serving pasta, seafood, and banquet meals.",
+      "price_band": "$$$",
+      "good_for_groups": true,
+      "has_private_space": true,
+      "website": "https://gargiulos.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Time Out New York",
+        "Visit Brooklyn"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Liman Restaurant",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Mediterranean seafood restaurant with terrace views toward the Coney Island coast.",
+      "price_band": "$$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.limanrestaurant.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Do\u00f1a Zita",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Family-run Mexican restaurant serving tacos, tortas, cemitas, and fruit-based snacks.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://donazita.a-zcompanies.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "The Infatuation",
+        "Visit Brooklyn",
+        "Coney Island Fun Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Paul\u2019s Daughter",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Boardwalk restaurant serving seafood, burgers, hot dogs, knishes, and frozen treats.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://paulsdaughter.shop/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Eater NY",
+        "Coney Island Fun Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Al Cavallino",
+      "category": "restaurant",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Luna Park pizzeria serving personal pies, salads, and paninis near West 16th Street.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://lunaparknyc.com/dining/al-cavallino/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Coney\u2019s Cones",
+      "category": "dessert",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Boardwalk gelato stand with rotating Italian-style flavors, cones, cups, and take-home containers.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Williams Candy",
+      "category": "dessert",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Family-run candy shop serving candy apples, soft serve, chocolates, and nostalgic sweets.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://williamscandy.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Coney Island Fun Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Deno\u2019s Old-Fashioned Sweet Shoppe",
+      "category": "dessert",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Wonder Wheel park sweet shop serving classic amusement-park candy and treats.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.denoswonderwheel.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Coney Island Fun Guide"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "New York Aquarium",
+      "category": "museum",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Aquarium with sharks, rays, sea otters, jellyfish, sea lions, and Aquatheater shows.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://nyaquarium.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Coney Island Museum",
+      "category": "museum",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Museum preserving Coney Island amusement history through photographs, signs, objects, and ephemera.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coneyislandmuseum.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Coney Island History Project Wonder Gallery",
+      "category": "gallery",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Seasonal gallery showing Coney Island photography, zines, and neighborhood-focused exhibitions.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coneyislandhistory.org/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Coney Island History Project",
+        "Brooklyn Paper"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Shooting Gallery / Arts Annex",
+      "category": "gallery",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Coney Island USA arts space for exhibitions, print fairs, and community cultural programming.",
+      "price_band": "free",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coneyisland.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "BroadwayWorld"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Coney Island Amphitheater",
+      "category": "theatre",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Covered open-air boardwalk venue presenting concerts, festivals, and other live events.",
+      "price_band": "$$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": "https://www.coneyislandamp.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York",
+        "Brooklyn Theater"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Sideshows by the Seashore Theater",
+      "category": "theatre",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Coney Island USA theater presenting circus sideshows, burlesque, film programs, and live music.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": true,
+      "website": "https://www.coneyisland.com/",
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Time Out New York"
+      ],
+      "still_open": true
+    },
+    {
+      "name": "Coney Island Beach Shop",
+      "category": "shopping",
+      "neighborhood": "Coney Island",
+      "borough": "Brooklyn",
+      "one_line": "Local beachwear and souvenir shop near Stillwell Avenue and the amusement district.",
+      "price_band": "$",
+      "good_for_groups": null,
+      "has_private_space": null,
+      "website": null,
+      "lat": null,
+      "lon": null,
+      "sources": [
+        "Alliance for Coney Island"
+      ],
+      "still_open": true
     }
   ]
 }

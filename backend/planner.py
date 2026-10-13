@@ -30,6 +30,7 @@ from typing import Any
 
 from brief import Brief, Budget
 from config import DATA_DIR
+from places import canonical
 from models import (
     Entry, Night, PriceBand, Setting, Source, Stop, StopKind, VenueSize,
 )
@@ -45,10 +46,11 @@ CANDIDATES_FILE = DATA_DIR / "candidate_venues.json"
 # A night runs in this order when several kinds are wanted. Shopping and
 # galleries close early; dessert and clubs are where a night ends.
 KIND_ORDER: list[StopKind] = [
-    StopKind.SHOPPING, StopKind.GALLERY, StopKind.MUSEUM, StopKind.TEA,
-    StopKind.COFFEE, StopKind.DINNER, StopKind.THEATRE, StopKind.SCREENING,
-    StopKind.DRINKS, StopKind.HOTEL_BAR, StopKind.SHOW, StopKind.CLUB,
-    StopKind.LATE, StopKind.DESSERT,
+    StopKind.PARK, StopKind.SHOPPING, StopKind.MARKET, StopKind.GALLERY,
+    StopKind.MUSEUM, StopKind.TEA, StopKind.COFFEE, StopKind.DINNER,
+    StopKind.THEATRE, StopKind.SCREENING, StopKind.COMEDY, StopKind.GAMES,
+    StopKind.DRINKS, StopKind.HOTEL_BAR, StopKind.SHOW, StopKind.KARAOKE,
+    StopKind.CLUB, StopKind.LATE, StopKind.DESSERT,
 ]
 
 # Typical start time and length, in minutes, for each kind.
@@ -60,6 +62,11 @@ KIND_TIMING: dict[StopKind, tuple[str, int]] = {
     StopKind.DRINKS: ("21:00", 75), StopKind.HOTEL_BAR: ("21:00", 75),
     StopKind.SHOW: ("21:30", 120), StopKind.CLUB: ("23:00", 150),
     StopKind.LATE: ("23:00", 90), StopKind.DESSERT: ("22:30", 45),
+    # A park or a market is something you do while it is still light; comedy
+    # and games sit in the evening; karaoke is where a night ends up.
+    StopKind.PARK: ("17:00", 60), StopKind.MARKET: ("18:00", 75),
+    StopKind.COMEDY: ("19:30", 105), StopKind.GAMES: ("20:00", 105),
+    StopKind.KARAOKE: ("22:00", 120),
 }
 
 # Which dataset categories can satisfy which kind of stop.
@@ -71,6 +78,9 @@ KIND_CATEGORIES: dict[StopKind, tuple[str, ...]] = {
     StopKind.COFFEE: ("cafe", "tea"), StopKind.GALLERY: ("gallery",),
     StopKind.MUSEUM: ("museum",), StopKind.THEATRE: ("theatre",),
     StopKind.SCREENING: ("cinema",), StopKind.SHOPPING: ("shopping",),
+    StopKind.COMEDY: ("comedy",), StopKind.KARAOKE: ("karaoke", "bar"),
+    StopKind.GAMES: ("games", "bar"), StopKind.MARKET: ("market", "shopping"),
+    StopKind.PARK: ("park",),
 }
 
 # What the button says, by kind of stop. "Book" is wrong for a gallery and
@@ -112,13 +122,33 @@ KIND_KEYWORDS: dict[StopKind, tuple[str, ...]] = {
     StopKind.THEATRE: ("theater", "theatre", "play", "stage", "dance company",
                        "performance"),
     StopKind.SCREENING: ("cinema", "film", "screening", "repertory", "movies"),
-    StopKind.SHOPPING: ("shop", "store", "vintage", "records", "books", "market",
+    StopKind.SHOPPING: ("shop", "store", "vintage", "records", "books",
                         "boutique"),
+    StopKind.COMEDY: ("comedy", "stand-up", "standup", "improv", "sketch",
+                      "open mic"),
+    StopKind.KARAOKE: ("karaoke", "private room", "sing"),
+    StopKind.GAMES: ("bowling", "arcade", "pool", "billiards", "darts",
+                     "shuffleboard", "mini golf", "games", "pinball"),
+    StopKind.MARKET: ("market", "food hall", "vendors", "stalls",
+                      "smorgasburg"),
+    StopKind.PARK: ("park", "pier", "garden", "waterfront", "esplanade",
+                    "promenade", "green"),
 }
 
 # A venue whose description says nothing relevant is not rejected, it just
 # loses to one that does. Rejecting outright would empty the thinner
 # categories entirely.
+# Kinds where the category alone proves nothing. "karaoke" and "games" fall
+# back to the bar category to find candidates, so without this a plain
+# cocktail bar is served up labelled karaoke. For these the description must
+# actually say so; if nothing in the city matches, the stop is dropped rather
+# than mislabelled.
+STRICT_KINDS: frozenset[StopKind] = frozenset({
+    StopKind.KARAOKE, StopKind.GAMES, StopKind.MARKET, StopKind.PARK,
+    StopKind.COMEDY, StopKind.CLUB,
+})
+
+
 def _keyword_miss(row: dict, kind: StopKind) -> int:
     """0 when the description matches what this kind of stop is for, 1 when it
     says nothing either way."""
@@ -133,6 +163,7 @@ def _keyword_miss(row: dict, kind: StopKind) -> int:
 
 TICKETED_KINDS: frozenset[StopKind] = frozenset({
     StopKind.SHOW, StopKind.THEATRE, StopKind.SCREENING, StopKind.CLUB,
+    StopKind.COMEDY,
 })
 
 PRICE_CEILING = {
@@ -322,7 +353,7 @@ def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
         room = v.main_space
         rows.append({
             "name": v.name, "category": "music",
-            "neighborhood": v.neighborhood, "borough": v.borough,
+            "neighborhood": canonical(v.neighborhood), "borough": canonical(v.borough),
             "lat": v.lat, "lon": v.lon,
             "capacity": room.capacity, "seated": room.seated_capacity,
             "setting": room.setting, "size": room.size,
@@ -342,7 +373,8 @@ def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
                         band = None
                 rows.append({
                     "name": v.get("name", ""), "category": v.get("category", ""),
-                    "neighborhood": v.get("neighborhood", ""), "borough": v.get("borough", ""),
+                    "neighborhood": canonical(v.get("neighborhood", "")),
+                    "borough": canonical(v.get("borough", "")),
                     "lat": v.get("lat"), "lon": v.get("lon"),
                     "capacity": None, "seated": None,
                     "setting": Setting.INDOOR, "size": None,
@@ -361,6 +393,9 @@ def _catalogue_cached(fingerprint: tuple) -> list[dict[str, Any]]:
 
 def _matches(row: dict, kind: StopKind, brief: Brief) -> bool:
     if row["category"] not in KIND_CATEGORIES.get(kind, ()):
+        return False
+    # For the strict kinds the venue has to say it is that kind of place.
+    if kind in STRICT_KINDS and _keyword_miss(row, kind):
         return False
     if brief.neighborhood and brief.neighborhood.lower() not in (row["neighborhood"] or "").lower():
         return False
@@ -456,7 +491,7 @@ def _to_stop(row: dict, kind: StopKind, start: datetime, end: datetime | None,
         end_time=end.strftime("%H:%M") if end else None,
         why=why[:320], order_this=copy.get("order_this"),
         venue_size=row["size"], capacity=row["capacity"],
-        setting=row["setting"], price_band=row["price_band"],
+        setting=(Setting.OUTDOOR if kind is StopKind.PARK else row["setting"]),
         entry=(Entry(row["entry"]) if row.get("entry")
                else (Entry.TICKETED if kind in TICKETED_KINDS else Entry.WALK_IN)),
         lat=row.get("lat"), lon=row.get("lon"),

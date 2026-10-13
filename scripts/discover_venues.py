@@ -47,7 +47,11 @@ CATEGORIES: dict[str, str] = {
     "comedy":      "comedy clubs and venues with regular comedy nights",
     "dessert":     "late-night dessert, ice cream and sweet spots",
     "tea":         "tea houses and tea rooms, including ceremonial and late-opening ones",
-    "shopping":    "shopping worth making an evening of: late-opening stores, vintage, record shops, markets",
+    "shopping":    "shopping worth making an evening of: late-opening stores, vintage, record shops",
+    "karaoke":     "karaoke bars and private karaoke rooms",
+    "games":       "bowling alleys, arcade bars, pool halls, darts, mini golf, games bars",
+    "market":      "night markets, food halls and food markets people go to as an outing",
+    "park":        "parks, piers, gardens and waterfront spots worth going to in the evening",
 }
 
 # Where people actually go out. Not every neighborhood -- a grid of all of them
@@ -55,16 +59,27 @@ CATEGORIES: dict[str, str] = {
 NEIGHBORHOODS: list[str] = [
     # Manhattan
     "Lower East Side", "East Village", "West Village", "Greenwich Village",
-    "SoHo", "Tribeca", "Chelsea", "Midtown", "Harlem", "Upper West Side",
+    "SoHo", "NoHo", "Nolita", "Tribeca", "Chinatown", "Financial District",
+    "Chelsea", "Flatiron", "Union Square", "Gramercy", "Murray Hill",
+    "Midtown East", "Midtown West", "Theater District", "Hell's Kitchen",
+    "Upper East Side", "Upper West Side", "Central Harlem", "East Harlem",
+    "Hamilton Heights", "Washington Heights", "Inwood", "Meatpacking District",
     # Brooklyn
-    "Williamsburg", "Greenpoint", "Bushwick", "Bed-Stuy", "Fort Greene",
-    "Gowanus", "Park Slope", "Crown Heights", "Red Hook", "Dumbo",
+    "Williamsburg", "East Williamsburg", "Greenpoint", "Bushwick",
+    "Bedford-Stuyvesant", "Crown Heights", "Prospect Heights", "Park Slope",
+    "Gowanus", "Carroll Gardens", "Cobble Hill", "Boerum Hill",
+    "Brooklyn Heights", "Downtown Brooklyn", "DUMBO", "Fort Greene",
+    "Clinton Hill", "Red Hook", "Sunset Park", "Bay Ridge", "Flatbush",
+    "Ditmas Park", "Coney Island",
     # Queens
-    "Ridgewood", "Astoria", "Long Island City", "Flushing", "Jackson Heights",
+    "Astoria", "Long Island City", "Ridgewood", "Jackson Heights", "Flushing",
+    "Sunnyside", "Woodside", "Forest Hills", "Rockaway Beach",
     # Bronx
     "Mott Haven", "Belmont", "Fordham", "Riverdale", "Concourse",
+    "Hunts Point", "City Island",
     # Staten Island
     "St. George", "Stapleton", "Tompkinsville", "Port Richmond",
+    "New Brighton",
 ]
 
 # Four neighborhoods from every borough, so coverage is even rather than

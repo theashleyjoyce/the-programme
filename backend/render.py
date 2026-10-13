@@ -53,39 +53,6 @@ def e(value: Any) -> str:
     *instructions*; this stops injected *markup*.
     """
     return html.escape(str(value), quote=True) if value is not None else ""
-def _refine_query(brief: Brief | None) -> str:
-    """Rebuild the search form's query string from the brief.
-
-    "Refine" should return you to the form exactly as you left it. Retyping a
-    request to change one field is the fastest way to make someone stop using
-    an app.
-    """
-    if brief is None:
-        return ""
-    from urllib.parse import urlencode
-
-    params: list[tuple[str, str]] = [("vibe", brief.vibe)]
-    if brief.date:
-        params.append(("date", brief.date.isoformat()))
-    if brief.borough:
-        params.append(("borough", brief.borough))
-    if brief.neighborhood:
-        params.append(("neighborhood", brief.neighborhood))
-    if brief.party_size:
-        params.append(("party_size", str(brief.party_size)))
-    if brief.budget:
-        params.append(("budget", brief.budget.value))
-    if brief.occasion:
-        params.append(("occasion", brief.occasion.value))
-    if getattr(brief, "roam", False):
-        params.append(("roam", "1"))
-    params += [("venue_sizes", v.value) for v in brief.venue_sizes]
-    params += [("settings", v.value) for v in brief.settings]
-    params += [("wants", v.value) for v in brief.wants]
-    return "/?" + urlencode(params)
-
-
-
 def _clock(value: str | None) -> str:
     """24h "19:15" -> "7:15pm". Display only.
 
@@ -397,8 +364,12 @@ def _chat(plan_id: str | None, reply: str = "", message: str = "") -> str:
 <section class="chat">
   <h4 class="chat__label">Not quite right?</h4>
   {said}{answer}
-  <form class="chat__form" method="post" action="/night/{e(plan_id)}/refine">
+  <form class="chat__form" method="post" action="/night/{e(plan_id)}/refine"
+        onsubmit="this.querySelector('.chat__go').disabled=true;
+                  this.querySelector('.chat__go').textContent='Changing\u2026';
+                  this.classList.add('is-working');">
     <input class="chat__input" type="text" name="message" autocomplete="off"
+           required
            placeholder="cheaper, somewhere smaller, swap the second one, add dessert after&hellip;">
     <button class="chat__go" type="submit">Change it</button>
   </form>
@@ -443,7 +414,6 @@ def render_night(
 <header class="masthead">
   <a class="masthead__home" href="/">The Programme</a>
   <nav class="masthead__nav">
-    <a href="{_refine_query(brief)}">Refine this</a>
     <a href="/">New search</a>
     <button type="button" class="masthead__print" onclick="window.print()">Print</button>
   </nav>
@@ -462,8 +432,7 @@ def render_night(
 {_chat(plan_id, reply, message)}
 
 <div class="footer-actions">
-  <a class="primary" href="{_refine_query(brief)}">Change something</a>
-  <a href="/">Plan a different night</a>
+  <a class="primary" href="/">Plan a different night</a>
 </div>
 
 {_colophon(night, brief, usage, dataset, budget, show_costs)}

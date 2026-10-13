@@ -79,14 +79,25 @@ def dataset_facts() -> dict:
 
 
 def guardrail_facts() -> dict:
-    """Run the suite so the report can only claim what currently passes."""
+    """Run the suite so the report can only claim what currently passes.
+
+    Strips ANSI first. The colour codes contain digits -- \033[32m is a green
+    escape, not a count -- and an earlier version of this parser read that 32
+    and printed it in the report as the number of passing guardrails while the
+    real figure was 34. A report that quotes a terminal colour code as a
+    result is exactly the kind of error this file exists to prevent.
+    """
+    import re as _re
+
     r = subprocess.run([sys.executable, "-I", str(ROOT / "test_guardrails.py")],
                        capture_output=True, text=True, cwd=ROOT)
-    tail = [ln for ln in r.stdout.splitlines() if "passed," in ln]
-    nums = "".join(c if c.isdigit() or c == " " else " " for c in (tail[-1] if tail else ""))
-    parts = [int(x) for x in nums.split()]
-    return {"passed": parts[0] if parts else 0,
-            "failed": parts[1] if len(parts) > 1 else 0,
+    clean = _re.sub(r"\x1b\[[0-9;]*m", "", r.stdout)
+    m = _re.search(r"(\d+)\s+passed,\s+(\d+)\s+failed", clean)
+    if not m:
+        raise RuntimeError(
+            "Could not read the guardrail result. Refusing to guess a number "
+            "for the report.")
+    return {"passed": int(m.group(1)), "failed": int(m.group(2)),
             "ok": r.returncode == 0}
 
 
@@ -146,8 +157,14 @@ def build() -> str:
         f"<td>{e(what)}</td><td>{e(diff)}</td></tr>"
         for n, w, what, diff in c.COMPETITORS)
 
+    import re as _re
+    kinds_on_form = len(_re.findall(
+        r'name="wants" value="[a-z_]+"',
+        (ROOT / "frontend" / "templates" / "index.html").read_text()))
+
     claims = "".join(
-        f"<h3>{e(h)}</h3><p>{e(' '.join(b.split()))}</p>" for h, b in c.WHATS_NEW_CLAIMS)
+        f"<h3>{e(h)}</h3><p>{e(' '.join(b.format(kinds=kinds_on_form).split()))}</p>"
+        for h, b in c.WHATS_NEW_CLAIMS)
 
     agents = "".join(
         f"<tr><td><strong>{e(n)}</strong></td><td>{e(when)}</td><td><code>{e(tools)}</code></td>"

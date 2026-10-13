@@ -77,6 +77,12 @@ Map the subject of the request onto these kinds:
 | dessert, a sweet treat, ice cream, something sweet | dessert |
 | tea, matcha, a tea room | tea |
 | shopping, vintage, records, browsing | shopping |
+| comedy, stand-up, improv, a laugh | comedy |
+| karaoke, singing | karaoke |
+| bowling, arcade, pool, darts, mini golf, games | games |
+| a market, a food hall, Smorgasburg, street food | market |
+| a park, a pier, a walk, somewhere outside, the waterfront | park |
+| coffee | coffee |
 | a late one, somewhere after, keep going | late |
 | coffee | coffee |
 
