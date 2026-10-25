@@ -19,7 +19,12 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open **http://127.0.0.1:8000**.
+The last command starts the server and stays running. Leave it, and open
+`http://127.0.0.1:8000` in a browser.
+
+That address is your own machine, so it only answers once `python app.py` is
+running in a terminal. Clicking it from this page on GitHub beforehand will
+just fail to connect, which is expected rather than a problem with the app.
 
 That is the whole setup. No database server, no node, no build step.
 
