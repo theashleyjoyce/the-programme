@@ -357,16 +357,19 @@ PER REQUEST ───────────┼──────────�
 <tr><td>Venues covered</td><td>{D['venues_known']:,}</td><td>The committed dataset</td></tr>
 <tr><td>Neighbourhoods</td><td>{D['neighborhoods']}</td><td>All five boroughs</td></tr>
 <tr><td>Guardrails passing</td><td>{G['passed']}</td><td><code>test_guardrails.py</code></td></tr></table>
-<div class="todo"><strong>To add:</strong> the time a real person takes to plan a
-night the usual way versus with this, and a quote from them. One fifteen-minute
-session is enough, and it is the single strongest piece of evidence this report
-could carry.</div>
 <h3>Estimated, and labelled as such</h3>
 <p>If planning a night out the usual way takes twenty minutes of tab-switching
-and this takes two, a user who goes out four times a month saves roughly an
-hour and a quarter a month. That arithmetic is sound; the twenty-minute figure
-is an estimate from the author's own habit and has not been measured on anyone
-else.</p>
+and this takes five seconds, a user who goes out four times a month saves
+roughly an hour and a quarter a month. The arithmetic is sound and the
+five-second figure is measured. The twenty-minute figure is not: it is an
+estimate from the author's own habit, and no one else has been timed against
+it.</p>
+<p>That is a real limit on this section rather than a formatting choice. Every
+other number in this report comes from an instrument, a ledger or a test run,
+and this one comes from memory. It is reported here at the same confidence it
+deserves, which is less than the rest. A single fifteen-minute session with
+three people would replace it, and that is the first thing this project should
+do next.</p>
 
 <h2>8. Limits and next steps</h2>
 <h3>What does not work yet</h3>

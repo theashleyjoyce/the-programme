@@ -223,7 +223,8 @@ def _vibe_from_filters(prefilled: dict) -> str:
     return ", ".join(parts)
 
 
-def _save_plan(plan_id: str, night, brief, page: str, show_costs: bool) -> None:
+def _save_plan(plan_id: str, night, brief, page: str, show_costs: bool,
+               usage: dict | None = None) -> None:
     """Keep the HTML and the objects behind it.
 
     The page alone is enough to re-read a plan, but not to change one. Storing
@@ -234,23 +235,28 @@ def _save_plan(plan_id: str, night, brief, page: str, show_costs: bool) -> None:
     (PLANS_DIR / f"{plan_id}.json").write_text(
         json.dumps({"night": night.model_dump(mode="json"),
                     "brief": brief.model_dump(mode="json"),
-                    "show_costs": show_costs}, indent=1),
+                    "show_costs": show_costs,
+                    "usage": usage or {}}, indent=1),
         encoding="utf-8")
 
 
 def _load_plan(plan_id: str):
-    """The Night and Brief behind a saved plan, or (None, None, False)."""
+    """The Night, Brief and recorded usage behind a saved plan.
+
+    Usage is stored because ?costs=1 on a plan already on disk has nothing to
+    show without it, which made the documented costs URL render the plain page.
+    """
     path = PLANS_DIR / f"{plan_id}.json"
     if not path.is_file():
-        return None, None, False
+        return None, None, False, None
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         from brief import Brief
         from models import Night
         return (Night(**data["night"]), Brief(**data["brief"]),
-                bool(data.get("show_costs")))
+                bool(data.get("show_costs")), data.get("usage") or None)
     except (json.JSONDecodeError, OSError, ValueError):
-        return None, None, False
+        return None, None, False, None
 
 
 def _error_page(title: str, detail: str) -> str:
@@ -310,9 +316,17 @@ def saved_night(plan_id: str, request: Request) -> str:
     if not plan_id.isalnum() or len(plan_id) > 40:
         return _error_page("No such plan", "That link does not look right.")
     user = current_user(request)
-    night, brief, show_costs = _load_plan(plan_id)
+    night, brief, show_costs, usage = _load_plan(plan_id)
+
+    # ?costs=1 turns the token and spend panels on for a plan already on disk.
+    # Only the POST route read this, so the documented costs URL returned the
+    # plain page and the report's costs figure was a copy of the plan figure.
+    if request.query_params.get("costs") == "1":
+        show_costs = True
+
     if night is not None:
-        return render_night(night, brief=brief, dataset=dataset_status(),
+        return render_night(night, brief=brief, usage=usage,
+                            dataset=dataset_status(),
                             budget=budget_status(), show_costs=show_costs,
                             plan_id=plan_id, user=user,
                             saved=bool(user) and accounts.is_saved(user["id"], plan_id))
@@ -334,7 +348,7 @@ async def refine(plan_id: str, request: Request) -> str:
         return _error_page("No such plan", "That link does not look right.")
 
     user = current_user(request)
-    night, brief, show_costs = _load_plan(plan_id)
+    night, brief, show_costs, _prior_usage = _load_plan(plan_id)
     if night is None:
         return _error_page(
             "That night cannot be changed",
@@ -368,7 +382,8 @@ async def refine(plan_id: str, request: Request) -> str:
                         reply=reply, message=message, user=user,
                         saved=bool(user) and accounts.is_saved(user["id"], new_id))
     if result["changed"]:
-        _save_plan(new_id, result["night"], result["brief"], page, show_costs)
+        _save_plan(new_id, result["night"], result["brief"], page, show_costs,
+                   usage=result["usage"].as_dict())
     return page
 
 
@@ -477,7 +492,8 @@ async def plan(request: Request):
     )
 
     plan_id = uuid.uuid4().hex[:12]
-    _save_plan(plan_id, result["night"], result["brief"], page, show_costs)
+    _save_plan(plan_id, result["night"], result["brief"], page, show_costs,
+               usage=result["usage"].as_dict())
 
     if wants_json:
         return JSONResponse({

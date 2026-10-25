@@ -2764,9 +2764,81 @@
       "cached_input_tokens": 0,
       "output_tokens": 62,
       "cost_usd": 0.000266
+    },
+    {
+      "at": "2026-10-25T14:10:18+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:10:19+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 70,
+      "cost_usd": 0.000275
+    },
+    {
+      "at": "2026-10-25T14:11:12+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:11:14+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 67,
+      "cost_usd": 0.000271
+    },
+    {
+      "at": "2026-10-25T14:11:52+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:11:53+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 65,
+      "cost_usd": 0.000269
+    },
+    {
+      "at": "2026-10-25T14:11:56+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 18,
+      "cached_input_tokens": 2260,
+      "output_tokens": 80,
+      "cost_usd": 0.000145
+    },
+    {
+      "at": "2026-10-25T14:11:57+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 959,
+      "cached_input_tokens": 0,
+      "output_tokens": 65,
+      "cost_usd": 0.00027
     }
   ],
-  "total_usd": 1.783323,
+  "total_usd": 1.784979,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,
