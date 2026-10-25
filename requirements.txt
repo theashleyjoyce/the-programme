@@ -7,3 +7,9 @@ openai>=1.40.0
 pydantic>=2.8.0
 python-dotenv>=1.0.1
 httpx>=0.27.0
+
+# Starlette needs this to parse a posted form. Without it every form on the
+# site returns a 500: planning a night, signing up, logging in, saving. It was
+# missing here and present in the author's venv, so it only broke on a fresh
+# clone, which is the one environment that matters for someone else running it.
+python-multipart>=0.0.9
