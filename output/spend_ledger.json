@@ -2836,9 +2836,63 @@
       "cached_input_tokens": 0,
       "output_tokens": 65,
       "cost_usd": 0.00027
+    },
+    {
+      "at": "2026-10-25T14:25:02+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:25:08+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 498,
+      "cost_usd": 0.000789
+    },
+    {
+      "at": "2026-10-25T14:28:05+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:28:07+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 74,
+      "cost_usd": 0.00028
+    },
+    {
+      "at": "2026-10-25T14:30:57+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:31:02+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 377,
+      "cost_usd": 0.000643
     }
   ],
-  "total_usd": 1.784979,
+  "total_usd": 1.787117,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,

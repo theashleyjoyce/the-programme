@@ -27,3 +27,9 @@ data/accounts.db
 # Queued welcome notes. They carry subscriber email addresses, so they stay
 # on the machine that wrote them.
 output/newsletter_outbox/
+
+# The demo video. Ten megabytes that every clone would have to pull, for a
+# file that is submitted on Canvas rather than read from the repo. Regenerate
+# it with scripts/record_demo.py.
+output/demo.webm
+output/_video/
