@@ -123,7 +123,9 @@ letter-spacing:.12em;text-transform:uppercase}}
                   margin:.85em 0 .8em"></div>
       <p class="lead" style="margin:0">{e(c.ONE_LINER)}</p>
       <p style="margin-top:1.5em"><strong>{e(c.AUTHOR)}</strong></p>
-      <p class="foot">{date.today():%B %Y}</p>
+      <p class="foot">{date.today():%B %Y} &nbsp;·&nbsp;
+         <a href="{e(c.REPO_URL)}" style="color:var(--accent);
+         text-decoration:none">{e(c.REPO_URL.replace('https://', ''))}</a></p>
     </div>
     <div style="flex:0 0 auto">{logo_img()}</div>
   </div>
