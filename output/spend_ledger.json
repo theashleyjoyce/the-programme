@@ -2890,9 +2890,27 @@
       "cached_input_tokens": 0,
       "output_tokens": 377,
       "cost_usd": 0.000643
+    },
+    {
+      "at": "2026-10-25T14:38:10+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T14:38:12+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 62,
+      "cost_usd": 0.000265
     }
   ],
-  "total_usd": 1.787117,
+  "total_usd": 1.787524,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,

@@ -221,10 +221,26 @@ def main() -> None:
             say(page, "Every run reports its real token usage and what it cost.", 4600)
             say(page, "Roughly two hundredths of a cent a plan, because the corpus is built offline.", 6000)
 
+        # 7 ── who made it, and what it refuses to do -----------------------
+        # Scrolled rather than flashed: the page says where every fact comes
+        # from and what the app will not claim, which is the argument for
+        # trusting a recommendation at all.
         page.goto(APP + "/about", wait_until="load")
-        page.wait_for_timeout(1200)
-        say(page, "The Programme. New York, your way.", 4600)
-        say(page, "", 900)
+        page.wait_for_timeout(1400)
+        say(page, "The Programme. New York, your way.", 4000)
+        glide(page, 760)
+        say(page, "Who we are, in plain language.", 3600)
+        glide(page, 1180)
+        say(page, "What it does, and where every fact on the page came from.", 4600)
+        glide(page, 1800)
+        say(page, "And what it will not do. It never books for you.", 4400)
+        glide(page, 2050)
+        say(page, "It never invents a venue, and it says so when it does not know.", 4600)
+        glide(page, 2320)
+        say(page, "What an account stores, and what it does not.", 4200)
+        glide(page, 0, 1700)
+        say(page, "An evening for any vibe, in all five boroughs.", 4400)
+        say(page, "", 1000)
 
         ctx.close()
         browser.close()
