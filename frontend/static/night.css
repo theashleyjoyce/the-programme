@@ -781,6 +781,25 @@ body {
 }
 .footer-actions a:hover { background: var(--ink); color: var(--paper); }
 .footer-actions a.primary { background: var(--ink); color: var(--paper); }
+
+/* The Save button is a form submit, not a link, so it has to be told to look
+   like one. Same metrics as .footer-actions a, so the row stays even. */
+.footer-actions .save-form { display: inline; }
+.footer-actions button {
+  font-family: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.85rem 1.7rem;
+  border: 1px solid var(--ink);
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.footer-actions button.primary { background: var(--ink); color: var(--paper); }
+.footer-actions button:hover { background: var(--ink); color: var(--paper); }
 .footer-actions a.primary:hover { background: var(--accent); border-color: var(--accent); }
 
 @media (max-width: 560px) {
@@ -1097,7 +1116,7 @@ body {
 
 /* ---- saved nights ---- */
 
-.saved { padding: clamp(2.5rem, 7vw, 5rem) var(--gutter); max-width: 58rem; }
+.saved { padding: clamp(2.5rem, 7vw, 5rem) var(--gutter); max-width: 72rem; }
 
 .saved__head {
   display: flex;
@@ -1120,11 +1139,46 @@ body {
 
 .saved__item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.6rem 1.5rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 0.6rem 1.8rem;
+  align-items: center;
   padding: 1.6rem 0;
   border-bottom: 1px solid var(--rule);
+}
+
+/* The polaroid sits in the space to the right of the row, which was empty.
+   Tilted, because a photograph dropped on a table is never square to it. */
+.polaroid {
+  margin: 0;
+  width: 8.5rem;
+  background: #fff;
+  padding: 0.45rem 0.45rem 0.2rem;
+  box-shadow: 0 2px 12px rgba(20, 17, 15, 0.14);
+  transform: rotate(-2.2deg);
+  transition: transform 0.18s ease;
+}
+.saved__item:nth-child(even) .polaroid { transform: rotate(1.8deg); }
+.saved__item .polaroid:hover { transform: rotate(0deg) scale(1.03); }
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: 6.2rem;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.02);
+}
+.polaroid figcaption {
+  font-family: var(--body);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+  padding: 0.55rem 0 0.5rem;
+}
+
+@media (max-width: 46rem) {
+  .saved__item { grid-template-columns: minmax(0, 1fr) auto; }
+  .polaroid { display: none; }
 }
 .saved__summary {
   font-family: var(--display);

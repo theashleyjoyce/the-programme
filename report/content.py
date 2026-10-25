@@ -20,7 +20,7 @@ ONE_LINER = (
 )
 
 # TO FILL IN before submitting.
-REPO_URL = "https://github.com/YOUR-USERNAME/the-programme"
+REPO_URL = "https://github.com/theashleyjoyce/the-programme"
 APP_URL = ""           # leave empty if it is not hosted
 
 MOTIVATION = [
@@ -103,7 +103,7 @@ WHATS_NEW_CLAIMS = [
      treat after. Different kinds of activity, in a sensible order, timed so
      one finishes before the next begins, close enough together to walk, and
      chosen to match a single stated vibe rather than assembled from separate
-     searches. {kinds} kinds of evening can appear in one plan.
+     searches.
 
      Nobody else crosses categories. A nightlife app will not book your dinner.
      A restaurant guide does not know what is on at the venue round the corner.
@@ -244,7 +244,7 @@ the measured difference is below.
 
 The second cost is coverage. The fast path can only recommend what is in the
 corpus, so a request the dataset does not cover falls through to the model and
-takes roughly twenty seconds instead of two."""
+takes roughly thirty seconds instead of three."""
 
 SAFETY_INTRO = """
 The app reads third-party editorial pages, venue listings and live search
@@ -336,4 +336,6 @@ NEXT = [
     "Finish geocoding, and re-check venues on a schedule so closures surface.",
     "Richer genre tagging, so a request for techno finds a techno room.",
     "Put it in front of five people and watch where they get stuck.",
+    "Let people add their own photographs to a saved night, in place of the "
+    "stand-in the page shows now.",
 ]

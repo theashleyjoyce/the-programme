@@ -6,7 +6,8 @@ costs more than it gains.
 
 It has already caught two real errors: a terminal colour code printed as the
 guardrail count, and a claim of thirteen kinds of evening after the form had
-grown to nineteen.
+grown to nineteen. That second one is gone for good: counting the kinds was
+both corny and limiting, so the docs describe the range instead of sizing it.
 
     python scripts/check_accuracy.py
 """
@@ -37,9 +38,6 @@ def main() -> int:
 
     rep, sld = report.read_text(), slides.read_text()
     D = dataset_status()
-    form = len(re.findall(r'name="wants" value="[a-z_]+"',
-                          (ROOT / "frontend" / "templates" / "index.html").read_text()))
-
     out = subprocess.run([sys.executable, "-I", str(ROOT / "test_guardrails.py")],
                          capture_output=True, text=True, cwd=ROOT)
     clean = re.sub(r"\x1b\[[0-9;]*m", "", out.stdout)
@@ -52,7 +50,6 @@ def main() -> int:
         ("venues in the report", f"{D['venues_known']:,}" in rep, f"{D['venues_known']:,}"),
         ("venues in the slides", f"{D['venues_known']:,}" in sld, f"{D['venues_known']:,}"),
         ("neighbourhoods", str(D["neighborhoods"]) in rep, str(D["neighborhoods"])),
-        ("kinds of evening", f"{form} kinds" in rep, f"{form}"),
         ("guardrails, report", f">{passed}</span>" in rep, str(passed)),
         ("guardrails, slides", f"{passed} guardrails" in sld, str(passed)),
         ("every guardrail passes", failed == 0, f"{failed} failing"),

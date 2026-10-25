@@ -8,7 +8,7 @@ ABOVE the repo:
 
     submissions/
     ├── .env              <-- their keys live here
-    └── night-editor/     <-- this repo
+    └── the-programme/     <-- this repo
         └── .env          <-- a local .env, if the developer has one
 
 So the search order is: this repo first, then the parent folder. A local .env

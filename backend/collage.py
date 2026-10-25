@@ -11,6 +11,7 @@ dinner, dancing, two people out together, somewhere with art on the wall.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -109,6 +110,40 @@ def collage_images(count: int = 8, seed: int | None = None) -> list[dict]:
     return picked
 
 
+# Stand-ins for a night nobody has photographed yet: streets, rooms full of
+# people, the city doing what it does. Hustle and bustle rather than a pretty
+# empty bar, because a saved night should look like a night out.
+MEMORY_SLOTS: tuple[str, ...] = (
+    "night-street", "dancing", "live-music", "hand-in-hand", "discoball",
+)
+
+
+def memory_image(key: str) -> dict | None:
+    """One picture for a saved night, the same one every time for a given night.
+
+    Stable on purpose. A saved night is a memory, and a memory that shows a
+    different photograph on each visit is not one. Hashing the plan id gives
+    a fixed pick without storing anything.
+    """
+    manifest = _manifest()
+    names = sorted(
+        n for n, meta in manifest.items()
+        if (IMG_DIR / n).is_file()
+        and any(n.startswith(slot + "-") for slot in MEMORY_SLOTS)
+        and (meta.get("quality") or 0) >= MIN_QUALITY
+    )
+    if not names:
+        return None
+    index = int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16) % len(names)
+    name = names[index]
+    meta = manifest[name]
+    return {
+        "src": f"/static/img/{name}",
+        "credit": meta.get("creator") or meta.get("author") or "",
+        "is_original": meta.get("original_photography", False),
+    }
+
+
 def collage_html(count: int = 8, seed: int | None = None) -> str:
     """Markup for the cluster. Empty string when there are no images, so the
     page degrades to the plain layout rather than leaving a hole."""
@@ -125,8 +160,9 @@ def collage_html(count: int = 8, seed: int | None = None) -> str:
 
 
 def collage_credit_line() -> str:
-    """One line for the footer. Says plainly whether the photography is the
-    author's own, because that is worth claiming when it is true."""
+    """One line for the footer. Credits the photographers, which the CC BY
+    licence on most of the set requires, and names Ashley when the set is
+    all her own."""
     images = collage_images(count=12)
     if not images:
         return ""
@@ -136,7 +172,7 @@ def collage_credit_line() -> str:
     if not names:
         return ""
     shown = ", ".join(names[:4]) + (", and others" if len(names) > 4 else "")
-    return f"Placeholder imagery via Openverse: {shown}. To be replaced with original photography."
+    return f"Imagery via Openverse: {shown}."
 
 
 # ---------------------------------------------------------------------------

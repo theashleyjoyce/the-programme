@@ -23,3 +23,7 @@ output/*.corrupt.json
 .DS_Store
 Thumbs.db
 data/accounts.db
+
+# Queued welcome notes. They carry subscriber email addresses, so they stay
+# on the machine that wrote them.
+output/newsletter_outbox/

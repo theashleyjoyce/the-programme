@@ -242,10 +242,6 @@ padding:1.6rem;text-align:center;font-size:.8rem;letter-spacing:.06em}}
 {app_line}
 <p class="meta">Built {date.today():%d %B %Y}</p>
 
-<div class="todo"><strong>Before submitting:</strong> set <code>REPO_URL</code> in
-<code>report/content.py</code>, add the screenshots listed below, then rerun
-<code>python scripts/build_report.py</code>.</div>
-
 <h2>2. Motivation</h2>
 {motivation}
 
@@ -287,6 +283,8 @@ PER REQUEST ───────────┼──────────�
 {figure("02-working.png", "The working page opens immediately rather than leaving a blank tab.")}
 {figure("03-plan.png", "The finished night: stops in order, room size, travel time, nearest train, booking link.")}
 {figure("04-costs.png", "The same plan with ?costs=1, showing measured token usage.")}
+{figure("07-saved.png", "An account keeps the nights you plan, and marks the ones you went to.")}
+{figure("08-newsletter.png", "The welcome note, composed on opt-in and written to an outbox. Nothing is sent: delivery needs a mail provider key this project is not allowed.")}
 
 <h2>5. Tokenomics</h2>
 <p>{e(' '.join(c.TOKENOMICS_INTRO.split()))}</p>
@@ -313,7 +311,7 @@ PER REQUEST ───────────┼──────────�
 <h3>Did it make the app worse?</h3>
 <p>{e(' '.join(c.PERFORMANCE_TRADEOFF.split()))}</p>
 <table><tr><th></th><th>Before</th><th>After</th></tr>
-<tr><td>Time to a plan</td><td>~25 s</td><td>~1.7 s</td></tr>
+<tr><td>Time to a plan</td><td>~25 s</td><td>~5 s</td></tr>
 <tr><td>Model calls per plan</td><td>2</td><td>0 – 1</td></tr>
 <tr><td>Tokens per plan</td><td>~30,000</td><td>~{L['conc_fresh'] + L['conc_cached'] + L['conc_out']:,.0f}</td></tr>
 <tr><td>Cost per plan</td><td>~$0.056</td><td>{money(per_plan_fast)}</td></tr></table>
@@ -333,11 +331,10 @@ PER REQUEST ───────────┼──────────�
 <p>{e(' '.join(c.IMPACT_INTRO.split()))}</p>
 <h3>Measured</h3>
 <table><tr><th>What</th><th>Figure</th><th>Source</th></tr>
-<tr><td>Time to a plan</td><td>~1.7 s</td><td>Timed in-app, recorded per request</td></tr>
+<tr><td>Time to a plan</td><td>~5 s</td><td>Median of 15 timed requests on the fast path</td></tr>
 <tr><td>Cost per plan</td><td>{money(per_plan_fast)}</td><td>Spend ledger, {L['conc_calls']} runs</td></tr>
 <tr><td>Venues covered</td><td>{D['venues_known']:,}</td><td>The committed dataset</td></tr>
 <tr><td>Neighbourhoods</td><td>{D['neighborhoods']}</td><td>All five boroughs</td></tr>
-<tr><td>Kinds of evening</td><td>{D['categories']}</td><td>Dinner through to late-night dessert</td></tr>
 <tr><td>Guardrails passing</td><td>{G['passed']}</td><td><code>test_guardrails.py</code></td></tr></table>
 <div class="todo"><strong>To add:</strong> the time a real person takes to plan a
 night the usual way versus with this, and a quote from them. One fifteen-minute

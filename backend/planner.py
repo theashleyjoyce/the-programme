@@ -552,6 +552,22 @@ def build_night(brief: Brief, seed: int | None = None,
     when = brief.date or Date.today()
     kinds = _wanted_kinds(brief)
 
+    # Resolve the neighbourhood against the catalogue before anything else.
+    # _pick_area used to choose a borough from the whole city while _matches
+    # demanded the neighbourhood too, so a name living in one borough ("downtown"
+    # is only Downtown Brooklyn and Downtown Flushing) could be paired with a
+    # Manhattan pick and match nothing. Narrowing the rows first keeps the two
+    # agreeing; a name the catalogue has never heard of is dropped rather than
+    # allowed to sink the night.
+    hood_rows = rows
+    if brief.neighborhood:
+        matched = [r for r in rows
+                   if brief.neighborhood.lower() in (r["neighborhood"] or "").lower()]
+        if matched:
+            hood_rows = matched
+        else:
+            brief = brief.model_copy(update={"neighborhood": None})
+
     # Someone who asks to bounce around the city is asking for a wider night,
     # so the radius opens up. Everyone else gets the tight one, because the
     # less time spent travelling, the more places you actually get to.
@@ -570,7 +586,7 @@ def build_night(brief: Brief, seed: int | None = None,
     elif roaming:
         area = None
     else:
-        area = _pick_area(rows, kinds, brief, rng)
+        area = _pick_area(hood_rows, kinds, brief, rng)
 
     if area:
         local = [r for r in rows if (r.get("borough") or "").lower() == area.lower()]

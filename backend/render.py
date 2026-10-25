@@ -324,7 +324,7 @@ def _colophon(night: Night, brief: Brief | None, usage: dict | None,
             "<div><h4>Where this came from</h4>"
             f'<p class="colophon__figure">{dataset.get("venues_known", 0):,} venues '
             f'across {dataset.get("neighborhoods", 0)} neighborhoods</p>'
-            f'<p>{dataset.get("categories", 0)} kinds of evening, all five boroughs</p>'
+            f'<p>An evening for any vibe, in all five boroughs</p>'
             f'<p>{dataset.get("venues_mapped", 0):,} with coordinates on file</p></div>')
 
     if budget and show_costs:
@@ -378,6 +378,32 @@ def _chat(plan_id: str | None, reply: str = "", message: str = "") -> str:
 </section>"""
 
 
+def _save_action(plan_id: str | None, night: Night,
+                 user: dict | None, saved: bool) -> str:
+    """The Save control.
+
+    /night/{id}/save, accounts.save_night and the saved list were all finished
+    and reachable only by hand-writing a POST, because nothing on the plan page
+    ever rendered the button. A plan is only worth an account if you can keep it.
+    """
+    if not plan_id:
+        return ""
+    if saved:
+        return '<a href="/saved">Saved</a>'
+    if not user:
+        return '<a class="primary" href="/login">Save</a>'
+    when = night.date.strftime("%-d %b") if night.date else ""
+    return (
+        f'<form method="post" action="/night/{e(plan_id)}/save" class="save-form">'
+        f'<input type="hidden" name="summary" value="{e(night.headline)}">'
+        f'<input type="hidden" name="headline" value="{e(night.headline)}">'
+        f'<input type="hidden" name="night_date" value="{e(when)}">'
+        f'<input type="hidden" name="neighborhood" value="{e(night.neighborhood)}">'
+        f'<button type="submit" class="primary">Save</button>'
+        f'</form>'
+    )
+
+
 def render_night(
     night: Night,
     brief: Brief | None = None,
@@ -389,6 +415,8 @@ def render_night(
     plan_id: str | None = None,
     reply: str = "",
     message: str = "",
+    user: dict | None = None,
+    saved: bool = False,
 ) -> str:
     """Full HTML document for one night."""
     if standalone and CSS_PATH.is_file():
@@ -415,6 +443,7 @@ def render_night(
   <a class="masthead__home" href="/">The Programme</a>
   <nav class="masthead__nav">
     <a href="/">New search</a>
+    {'<a href="/saved">Your nights</a>' if user else ''}
     <button type="button" class="masthead__print" onclick="window.print()">Print</button>
   </nav>
 </header>
@@ -432,7 +461,8 @@ def render_night(
 {_chat(plan_id, reply, message)}
 
 <div class="footer-actions">
-  <a class="primary" href="/">Plan a different night</a>
+  {_save_action(plan_id, night, user, saved)}
+  <a href="/">Plan a different night</a>
 </div>
 
 {_colophon(night, brief, usage, dataset, budget, show_costs)}

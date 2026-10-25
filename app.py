@@ -27,6 +27,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse  # no
 from fastapi.staticfiles import StaticFiles                     # noqa: E402
 
 import accounts                                                  # noqa: E402
+import newsletter                                                # noqa: E402
 import pages                                                     # noqa: E402
 from agents import plan_night, refine_night                     # noqa: E402
 from brief import Budget, Occasion                              # noqa: E402
@@ -304,15 +305,17 @@ def working(request: Request) -> str:
 
 
 @app.get("/night/{plan_id}", response_class=HTMLResponse)
-def saved_night(plan_id: str) -> str:
+def saved_night(plan_id: str, request: Request) -> str:
     """A previously planned night. Stable URL, no model call."""
     if not plan_id.isalnum() or len(plan_id) > 40:
         return _error_page("No such plan", "That link does not look right.")
+    user = current_user(request)
     night, brief, show_costs = _load_plan(plan_id)
     if night is not None:
         return render_night(night, brief=brief, dataset=dataset_status(),
                             budget=budget_status(), show_costs=show_costs,
-                            plan_id=plan_id)
+                            plan_id=plan_id, user=user,
+                            saved=bool(user) and accounts.is_saved(user["id"], plan_id))
 
     path = PLANS_DIR / f"{plan_id}.html"
     if not path.is_file():
@@ -330,6 +333,7 @@ async def refine(plan_id: str, request: Request) -> str:
     if not plan_id.isalnum() or len(plan_id) > 40:
         return _error_page("No such plan", "That link does not look right.")
 
+    user = current_user(request)
     night, brief, show_costs = _load_plan(plan_id)
     if night is None:
         return _error_page(
@@ -361,7 +365,8 @@ async def refine(plan_id: str, request: Request) -> str:
                         usage=result["usage"].as_dict(),
                         dataset=dataset_status(), budget=budget_status(),
                         show_costs=show_costs, plan_id=new_id,
-                        reply=reply, message=message)
+                        reply=reply, message=message, user=user,
+                        saved=bool(user) and accounts.is_saved(user["id"], new_id))
     if result["changed"]:
         _save_plan(new_id, result["night"], result["brief"], page, show_costs)
     return page
@@ -489,6 +494,14 @@ async def plan(request: Request):
 
 # ---------------------------------------------------------------- accounts
 
+@app.get("/newsletter/preview", response_class=HTMLResponse)
+def newsletter_preview(request: Request) -> str:
+    """The welcome note exactly as it would arrive, for anyone who wants to
+    read it before handing over an address."""
+    user = current_user(request)
+    return newsletter.welcome_html((user or {}).get("name") or "")
+
+
 @app.get("/about", response_class=HTMLResponse)
 def about(request: Request) -> str:
     from collections import Counter
@@ -502,8 +515,8 @@ def about(request: Request) -> str:
 
     # One sentence, counted from the same list every time, so the numbers
     # cannot disagree with each other the way two separate counters did.
-    line = (f"{len(rows):,} places across {len(kinds)} kinds of evening "
-            f"and {len(hoods)} neighborhoods, in all five boroughs"
+    line = (f"{len(rows):,} places across {len(hoods)} neighborhoods, "
+            f"in all five boroughs"
             + (f", {rooms} of them with the room size on file." if rooms else "."))
 
     return pages.about_page(css_version(), current_user(request), {"line": line})
@@ -531,6 +544,13 @@ async def signup(request: Request):
     except accounts.AccountError as exc:
         return HTMLResponse(pages.signup_page(css_version(), error=str(exc), values=values),
                             status_code=400)
+
+    # Opting in writes the welcome note to the outbox. Nothing is sent: see
+    # backend/newsletter.py for why, and for the one function that would.
+    if form.get("newsletter"):
+        newsletter.queue_welcome(
+            {"email": values["email"], "username": values["username"],
+             "name": (form.get("name") or "").strip()})
 
     response = RedirectResponse("/saved", status_code=303)
     _set_session(response, accounts.start_session(user_id))

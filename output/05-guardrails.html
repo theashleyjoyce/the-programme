@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{background:#14110F;margin:0}
+body{padding:2rem 2.4rem;font-family:ui-monospace,Menlo,monospace;
+font-size:13px;line-height:1.55;color:#EDE7DF;width:800px;box-sizing:border-box}
+.bar{color:#8A8077;font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+border-bottom:1px solid #322D28;padding-bottom:.8rem;margin-bottom:1.2rem}
+pre{margin:0;white-space:pre-wrap;word-break:break-word}
+</style></head><body><div class="bar">$ python test_guardrails.py</div><pre>
+1. Prompt injection in third-party listing text
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  instruction override is detected and redacted
+        flags=[&#x27;instruction_override&#x27;, &#x27;ranking_manipulation&#x27;]
+  <span style="color:#5FD38A">PASS</span>  zero-width characters are stripped before anything reads the text
+  <span style="color:#5FD38A">PASS</span>  exfiltration attempts are caught
+  <span style="color:#5FD38A">PASS</span>  fake system tags are caught
+  <span style="color:#5FD38A">PASS</span>  untrusted text is wrapped in a data envelope, never concatenated raw
+  <span style="color:#5FD38A">PASS</span>  clean text passes through untouched
+
+2. Booking links — the attack that costs real money
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  a real ticketing domain: trusted
+        https://resy.com/cities/ny  -&gt;  resy.com
+  <span style="color:#5FD38A">PASS</span>  the venue&#x27;s own site: venue
+        https://calendar.houseofyes.org/e/x  -&gt;  houseofyes.org
+  <span style="color:#5FD38A">PASS</span>  lookalike domain: blocked
+        https://resy.com.secure-booking.io/pay  -&gt;  impersonates resy.com
+  <span style="color:#5FD38A">PASS</span>  brand impersonation: blocked
+        https://ticketmaster-tickets.ru/buy  -&gt;  impersonates ticketmaster.com
+  <span style="color:#5FD38A">PASS</span>  not https: blocked
+        http://resy.com/foo  -&gt;  not https (http)
+  <span style="color:#5FD38A">PASS</span>  not a web URL: blocked
+        javascript:alert(1)  -&gt;  not https (javascript)
+
+3. Invented venues and unsourced claims
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  a stop with no source is rejected
+        Value error, Stops without a source are not allowed: The Velve
+  <span style="color:#5FD38A">PASS</span>  an invented venue is dropped, the plan survives
+        kept [&#x27;Bossa Nova Civic Club&#x27;]
+  <span style="color:#5FD38A">PASS</span>  a real venue has its missing facts filled from our own data, not guessed
+        size=VenueSize.INTIMATE coords=True
+  <span style="color:#5FD38A">PASS</span>  a booking link the model invented but did not cite is dropped
+        a remembered Resy URL resolves, but opens a different restaurant
+  <span style="color:#5FD38A">PASS</span>  a cited AND verified booking link survives
+        cited by the model, and the page confirmed to name the venue
+  <span style="color:#5FD38A">PASS</span>  a cited but UNVERIFIED booking link is still hidden
+        a citation is not proof the page opens the right venue
+
+4. Overspending and runaway loops
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  a call that would cross the cap is refused BEFORE it is sent
+        Budget stop: $1.78 of $1.79 already spent. A further ~$0.080 would
+  <span style="color:#5FD38A">PASS</span>  one request cannot exceed its own call limit
+        stopped after 6 calls, limit 6
+  <span style="color:#5FD38A">PASS</span>  the ledger persists to disk, so restarting does not reset the cap
+
+5. Promises the app must not make
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  a room with unknown capacity is never offered for a group
+        40 rooms offered, all with a known capacity
+  <span style="color:#5FD38A">PASS</span>  a ticketed venue says so rather than implying you can walk in
+        1 ticketed stop(s) carried a warning
+
+6. Account security
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  the password never appears in the database as text
+  <span style="color:#5FD38A">PASS</span>  a wrong password is rejected
+  <span style="color:#5FD38A">PASS</span>  an unknown account does not error differently from a wrong password
+  <span style="color:#5FD38A">PASS</span>  a session resolves to its user
+  <span style="color:#5FD38A">PASS</span>  logging out actually revokes the session server-side
+  <span style="color:#5FD38A">PASS</span>  reserved username is rejected
+  <span style="color:#5FD38A">PASS</span>  too short is rejected
+  <span style="color:#5FD38A">PASS</span>  illegal characters is rejected
+  <span style="color:#5FD38A">PASS</span>  a short password is rejected
+
+7. Untrusted text reaching the page
+──────────────────────────────────────────────────────────────────────────
+  <span style="color:#5FD38A">PASS</span>  markup in a venue name is escaped, not rendered
+  <span style="color:#5FD38A">PASS</span>  quotes are escaped so they cannot break out of an attribute
+
+──────────────────────────────────────────────────────────────────────────
+<span style="color:#5FD38A">  34 passed, 0 failed</span>
+──────────────────────────────────────────────────────────────────────────
+
+</pre></body></html>

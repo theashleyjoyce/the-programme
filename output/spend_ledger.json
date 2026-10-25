@@ -1909,9 +1909,666 @@
       "cached_input_tokens": 0,
       "output_tokens": 214,
       "cost_usd": 0.000448
+    },
+    {
+      "at": "2026-10-13T13:11:03+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2276,
+      "cached_input_tokens": 0,
+      "output_tokens": 78,
+      "cost_usd": 0.000549
+    },
+    {
+      "at": "2026-10-13T13:11:07+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 951,
+      "cached_input_tokens": 0,
+      "output_tokens": 254,
+      "cost_usd": 0.000495
+    },
+    {
+      "at": "2026-10-13T13:11:45+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2273,
+      "output_tokens": 78,
+      "cost_usd": 0.00014
+    },
+    {
+      "at": "2026-10-13T13:11:47+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 964,
+      "cached_input_tokens": 0,
+      "output_tokens": 121,
+      "cost_usd": 0.000338
+    },
+    {
+      "at": "2026-10-25T12:30:34+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 2274,
+      "cached_input_tokens": 0,
+      "output_tokens": 77,
+      "cost_usd": 0.000547
+    },
+    {
+      "at": "2026-10-25T12:31:02+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 28318,
+      "cached_input_tokens": 0,
+      "output_tokens": 1784,
+      "cost_usd": 0.007804
+    },
+    {
+      "at": "2026-10-25T12:37:41+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 19,
+      "cached_input_tokens": 2260,
+      "output_tokens": 80,
+      "cost_usd": 0.000145
+    },
+    {
+      "at": "2026-10-25T12:38:12+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 41672,
+      "cached_input_tokens": 6931,
+      "output_tokens": 2000,
+      "cost_usd": 0.010873
+    },
+    {
+      "at": "2026-10-25T12:38:14+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:38:43+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 34628,
+      "cached_input_tokens": 6931,
+      "output_tokens": 2114,
+      "cost_usd": 0.009601
+    },
+    {
+      "at": "2026-10-25T12:38:45+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2271,
+      "output_tokens": 77,
+      "cost_usd": 0.000138
+    },
+    {
+      "at": "2026-10-25T12:38:47+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 953,
+      "cached_input_tokens": 0,
+      "output_tokens": 63,
+      "cost_usd": 0.000266
+    },
+    {
+      "at": "2026-10-25T12:38:48+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2260,
+      "output_tokens": 80,
+      "cost_usd": 0.000144
+    },
+    {
+      "at": "2026-10-25T12:38:52+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 994,
+      "cached_input_tokens": 0,
+      "output_tokens": 333,
+      "cost_usd": 0.000598
+    },
+    {
+      "at": "2026-10-25T12:39:32+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:39:52+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:39:54+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 948,
+      "cached_input_tokens": 0,
+      "output_tokens": 65,
+      "cost_usd": 0.000268
+    },
+    {
+      "at": "2026-10-25T12:39:55+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:39:57+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 949,
+      "cached_input_tokens": 0,
+      "output_tokens": 66,
+      "cost_usd": 0.000269
+    },
+    {
+      "at": "2026-10-25T12:39:59+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:40:00+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 949,
+      "cached_input_tokens": 0,
+      "output_tokens": 66,
+      "cost_usd": 0.000269
+    },
+    {
+      "at": "2026-10-25T12:40:16+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 17,
+      "cached_input_tokens": 2260,
+      "output_tokens": 157,
+      "cost_usd": 0.000237
+    },
+    {
+      "at": "2026-10-25T12:40:19+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 967,
+      "cached_input_tokens": 0,
+      "output_tokens": 190,
+      "cost_usd": 0.000421
+    },
+    {
+      "at": "2026-10-25T12:44:17+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2271,
+      "output_tokens": 77,
+      "cost_usd": 0.000138
+    },
+    {
+      "at": "2026-10-25T12:44:20+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 962,
+      "cached_input_tokens": 0,
+      "output_tokens": 161,
+      "cost_usd": 0.000386
+    },
+    {
+      "at": "2026-10-25T12:47:51+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2271,
+      "output_tokens": 77,
+      "cost_usd": 0.000138
+    },
+    {
+      "at": "2026-10-25T12:47:53+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 950,
+      "cached_input_tokens": 0,
+      "output_tokens": 59,
+      "cost_usd": 0.000261
+    },
+    {
+      "at": "2026-10-25T12:47:54+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2273,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:48:00+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1017,
+      "cached_input_tokens": 0,
+      "output_tokens": 367,
+      "cost_usd": 0.000644
+    },
+    {
+      "at": "2026-10-25T12:48:02+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:48:04+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 62,
+      "cost_usd": 0.000265
+    },
+    {
+      "at": "2026-10-25T12:48:07+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2260,
+      "output_tokens": 145,
+      "cost_usd": 0.000222
+    },
+    {
+      "at": "2026-10-25T12:48:10+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 907,
+      "cached_input_tokens": 0,
+      "output_tokens": 223,
+      "cost_usd": 0.000449
+    },
+    {
+      "at": "2026-10-25T12:48:12+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2260,
+      "output_tokens": 76,
+      "cost_usd": 0.00014
+    },
+    {
+      "at": "2026-10-25T12:48:17+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 960,
+      "cached_input_tokens": 0,
+      "output_tokens": 403,
+      "cost_usd": 0.000676
+    },
+    {
+      "at": "2026-10-25T12:48:18+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 15,
+      "cached_input_tokens": 2260,
+      "output_tokens": 75,
+      "cost_usd": 0.000138
+    },
+    {
+      "at": "2026-10-25T12:48:23+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 958,
+      "cached_input_tokens": 0,
+      "output_tokens": 391,
+      "cost_usd": 0.000661
+    },
+    {
+      "at": "2026-10-25T12:48:26+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 16,
+      "cached_input_tokens": 2260,
+      "output_tokens": 78,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:48:28+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1010,
+      "cached_input_tokens": 0,
+      "output_tokens": 156,
+      "cost_usd": 0.000389
+    },
+    {
+      "at": "2026-10-25T12:48:31+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 14,
+      "cached_input_tokens": 2260,
+      "output_tokens": 186,
+      "cost_usd": 0.000271
+    },
+    {
+      "at": "2026-10-25T12:48:55+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 21409,
+      "cached_input_tokens": 6931,
+      "output_tokens": 1940,
+      "cost_usd": 0.006748
+    },
+    {
+      "at": "2026-10-25T12:52:01+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 18,
+      "cached_input_tokens": 2260,
+      "output_tokens": 86,
+      "cost_usd": 0.000152
+    },
+    {
+      "at": "2026-10-25T12:52:21+00:00",
+      "label": "editor",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 12550,
+      "cached_input_tokens": 6931,
+      "output_tokens": 1662,
+      "cost_usd": 0.004643
+    },
+    {
+      "at": "2026-10-25T12:52:23+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 20,
+      "cached_input_tokens": 2260,
+      "output_tokens": 87,
+      "cost_usd": 0.000154
+    },
+    {
+      "at": "2026-10-25T12:52:31+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 1005,
+      "cached_input_tokens": 0,
+      "output_tokens": 625,
+      "cost_usd": 0.000951
+    },
+    {
+      "at": "2026-10-25T12:54:20+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:54:25+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 334,
+      "cost_usd": 0.000592
+    },
+    {
+      "at": "2026-10-25T12:54:29+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:54:30+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 64,
+      "cost_usd": 0.000268
+    },
+    {
+      "at": "2026-10-25T12:55:06+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 20,
+      "cached_input_tokens": 2260,
+      "output_tokens": 79,
+      "cost_usd": 0.000144
+    },
+    {
+      "at": "2026-10-25T12:55:09+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 957,
+      "cached_input_tokens": 0,
+      "output_tokens": 187,
+      "cost_usd": 0.000416
+    },
+    {
+      "at": "2026-10-25T12:55:11+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T12:55:14+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 152,
+      "cost_usd": 0.000373
+    },
+    {
+      "at": "2026-10-25T12:55:47+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 147,
+      "cost_usd": 0.000223
+    },
+    {
+      "at": "2026-10-25T12:55:50+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 67,
+      "cost_usd": 0.000271
+    },
+    {
+      "at": "2026-10-25T12:57:52+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 22,
+      "cached_input_tokens": 2260,
+      "output_tokens": 169,
+      "cost_usd": 0.000252
+    },
+    {
+      "at": "2026-10-25T12:57:55+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 966,
+      "cached_input_tokens": 0,
+      "output_tokens": 231,
+      "cost_usd": 0.00047
+    },
+    {
+      "at": "2026-10-25T12:58:41+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 25,
+      "cached_input_tokens": 2260,
+      "output_tokens": 83,
+      "cost_usd": 0.00015
+    },
+    {
+      "at": "2026-10-25T12:58:42+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 910,
+      "cached_input_tokens": 0,
+      "output_tokens": 70,
+      "cost_usd": 0.000266
+    },
+    {
+      "at": "2026-10-25T13:01:48+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 19,
+      "cached_input_tokens": 2260,
+      "output_tokens": 77,
+      "cost_usd": 0.000141
+    },
+    {
+      "at": "2026-10-25T13:01:52+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 912,
+      "cached_input_tokens": 0,
+      "output_tokens": 269,
+      "cost_usd": 0.000505
+    },
+    {
+      "at": "2026-10-25T13:02:02+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T13:02:04+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 69,
+      "cost_usd": 0.000274
+    },
+    {
+      "at": "2026-10-25T13:02:06+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 18,
+      "cached_input_tokens": 2260,
+      "output_tokens": 80,
+      "cost_usd": 0.000145
+    },
+    {
+      "at": "2026-10-25T13:02:09+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 959,
+      "cached_input_tokens": 0,
+      "output_tokens": 280,
+      "cost_usd": 0.000528
+    },
+    {
+      "at": "2026-10-25T13:03:18+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T13:03:19+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 955,
+      "cached_input_tokens": 0,
+      "output_tokens": 66,
+      "cost_usd": 0.00027
+    },
+    {
+      "at": "2026-10-25T13:03:21+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2275,
+      "output_tokens": 81,
+      "cost_usd": 0.000143
+    },
+    {
+      "at": "2026-10-25T13:03:23+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 958,
+      "cached_input_tokens": 0,
+      "output_tokens": 74,
+      "cost_usd": 0.00028
+    },
+    {
+      "at": "2026-10-25T13:07:03+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2276,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T13:07:05+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 954,
+      "cached_input_tokens": 0,
+      "output_tokens": 71,
+      "cost_usd": 0.000276
+    },
+    {
+      "at": "2026-10-25T13:07:06+00:00",
+      "label": "concierge",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 3,
+      "cached_input_tokens": 2275,
+      "output_tokens": 80,
+      "cost_usd": 0.000142
+    },
+    {
+      "at": "2026-10-25T13:07:08+00:00",
+      "label": "critic",
+      "model": "gpt-5.6-luna",
+      "input_tokens": 963,
+      "cached_input_tokens": 0,
+      "output_tokens": 69,
+      "cost_usd": 0.000275
     }
   ],
-  "total_usd": 1.718788,
+  "total_usd": 1.777708,
   "budget_usd": 10.0,
   "prices_used": {
     "input_per_m": 0.2,

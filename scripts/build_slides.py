@@ -188,6 +188,12 @@ PER REQUEST ───┼──────────────────�
 </section>
 
 <section>
+  <p class="kicker">The app</p>
+  <h2>Keep the ones worth keeping</h2>
+  {shot("07-saved.png", "Saved nights, with the ones you went to marked")}
+</section>
+
+<section>
   <p class="kicker">Cost to run</p>
   <h2>{money(per_plan)} a plan</h2>
   <div class="grid">
@@ -198,7 +204,7 @@ PER REQUEST ───┼──────────────────�
   </div>
   <table style="margin-top:1em">
     <tr><th></th><th>Before</th><th>After</th></tr>
-    <tr><td>Time to a plan</td><td>~25 s</td><td class="accent"><strong>~1.7 s</strong></td></tr>
+    <tr><td>Time to a plan</td><td>~25 s</td><td class="accent"><strong>~5 s</strong></td></tr>
     <tr><td>Tokens per plan</td><td>~30,000</td><td class="accent"><strong>~1,450</strong></td></tr>
     <tr><td>Cost per plan</td><td>~$0.0090</td><td class="accent"><strong>{money(per_plan)}</strong></td></tr>
   </table>
@@ -231,14 +237,14 @@ PER REQUEST ───┼──────────────────�
   <p class="kicker">Impact</p>
   <h2>The numbers</h2>
   <div class="grid">
-    <div><span class="big">1.7s</span><span class="lbl">to plan a night</span></div>
+    <div><span class="big">~5s</span><span class="lbl">to plan a night</span></div>
     <div><span class="big">{D['venues_known']:,}</span><span class="lbl">venues</span></div>
     <div><span class="big">{D['neighborhoods']}</span><span class="lbl">neighbourhoods</span></div>
-    <div><span class="big">{D['categories']}</span><span class="lbl">kinds of evening</span></div>
+    <div><span class="big">5</span><span class="lbl">boroughs</span></div>
   </div>
-  <p style="margin-top:1em;font-size:.68em">All five boroughs. Dinner through to
-  a late-night sweet treat. Every room size researched and cited; every booking
-  link fetched and confirmed to open that venue.</p>
+  <p style="margin-top:1em;font-size:.68em">An evening for any vibe. Every room
+  size researched and cited; every booking link fetched and confirmed to open
+  that venue.</p>
   <p style="font-size:.56em;color:var(--accent)">TO ADD: measured comparison
   against planning a night the usual way, with a real user.</p>
 </section>

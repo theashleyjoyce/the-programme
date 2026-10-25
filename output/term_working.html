@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="http://127.0.0.1:8010/"><script>window.fetch=function(){return new Promise(function(){});};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planning your night — The Programme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/night.css?v=c418d652">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead__home" href="/">The Programme</a>
+  <nav class="masthead__nav"><a href="/">Cancel</a></nav>
+</header>
+
+<section class="working">
+  <p class="hero__kicker">Working on it</p>
+  <h2 class="working__vibe">&ldquo;a gallery opening then dinner in the east village&rdquo;</h2>
+
+  <ol class="stages" id="stages">
+    <li data-stage="read">Reading what you asked for</li>
+    <li data-stage="rooms">Matching rooms to the night</li>
+    <li data-stage="write">Sequencing and writing it up</li>
+  </ol>
+
+  <p class="working__note" id="note">This usually takes a few seconds.</p>
+
+  <div class="error" id="error" hidden></div>
+</section>
+
+<script>
+  var PAYLOAD = {"vibe": "a gallery opening then dinner in the east village", "date": "2026-10-26", "borough": "", "neighborhood": "", "party_size": "", "budget": "", "occasion": "", "roam": "", "suggested": "", "costs": "", "venue_sizes": [], "settings": [], "wants": []};
+
+  // Stages advance on a timer rather than from the server. The work is two
+  // sequential model calls with no progress events to report, so an honest
+  // "here is roughly where we are" beats a spinner that says nothing. The
+  // timings are taken from measured runs.
+  var SCHEDULE = [[0, 'read'], [1500, 'rooms'], [4500, 'write']];
+  var started = Date.now();
+
+  function mark(stage) {
+    var items = document.querySelectorAll('#stages li');
+    var hit = false;
+    items.forEach(function (li) {
+      if (li.dataset.stage === stage) { hit = true; li.className = 'is-active'; }
+      else if (!hit) { li.className = 'is-done'; }
+    });
+  }
+  SCHEDULE.forEach(function (pair) { setTimeout(function () { mark(pair[1]); }, pair[0]); });
+
+  // If it runs long, say so rather than letting the page look stuck.
+  setTimeout(function () {
+    document.getElementById('note').textContent =
+      'Still going. Looking things up on the web takes a little longer.';
+  }, 18000);
+
+  var body = new URLSearchParams();
+  Object.keys(PAYLOAD).forEach(function (k) {
+    var v = PAYLOAD[k];
+    if (Array.isArray(v)) { v.forEach(function (one) { body.append(k, one); }); }
+    else if (v !== null && v !== '') { body.append(k, v); }
+  });
+
+  fetch('/plan', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: body.toString()
+  })
+    .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+    .then(function (res) {
+      if (res.j && res.j.redirect) { window.location.replace(res.j.redirect); return; }
+      throw new Error((res.j && res.j.detail) || 'Something went wrong.');
+    })
+    .catch(function (err) {
+      var box = document.getElementById('error');
+      box.hidden = false;
+      box.innerHTML = '<strong>That didn’t work</strong>' + String(err.message || err) +
+        '<br><br><a href="/">Try a different vibe</a>';
+      document.getElementById('stages').hidden = true;
+      document.getElementById('note').hidden = true;
+    });
+</script>
+
+</body>
+</html>

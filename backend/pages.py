@@ -9,6 +9,8 @@ from __future__ import annotations
 import html
 from pathlib import Path
 
+from collage import memory_image
+
 TEMPLATES = Path(__file__).resolve().parent.parent / "frontend" / "templates"
 
 
@@ -69,7 +71,8 @@ def signup_page(css_v: str, error: str = "", values: dict | None = None,
     <label class="account__check">
       <input type="checkbox" name="newsletter" value="1">
       <span><strong>Send me the newsletter.</strong> A curated note on what is
-      worth going to, and the new places opening around the city.</span>
+      worth going to, and the new places opening around the city.
+      <a href="/newsletter/preview" target="_blank" rel="noopener">See it first</a>.</span>
     </label>
     """
     return _shell(
@@ -206,6 +209,30 @@ def about_page(css_v: str, user: dict | None, facts: dict) -> str:
 </html>"""
 
 
+def _polaroid(night: dict) -> str:
+    """A picture for a saved night, in the space beside it.
+
+    A placeholder until people can add their own, and it says so rather than
+    passing someone else's evening off as yours.
+    """
+    shot = memory_image(night.get("plan_id") or "")
+    if not shot:
+        return ""
+    caption = night.get("night_date") or night.get("neighborhood") or "A night out"
+    mine = shot.get("is_original")
+    return (
+        f'<figure class="polaroid">'
+        f'<img src="{e(shot["src"])}" alt="" loading="lazy" decoding="async">'
+        f'<figcaption>{e(caption)}</figcaption>'
+        f'</figure>' if mine else
+        f'<figure class="polaroid polaroid--stock" '
+        f'title="A stand-in photograph, not from this night">'
+        f'<img src="{e(shot["src"])}" alt="" loading="lazy" decoding="async">'
+        f'<figcaption>{e(caption)}</figcaption>'
+        f'</figure>'
+    )
+
+
 def saved_page(css_v: str, user: dict, nights: list[dict]) -> str:
     if nights:
         items = []
@@ -230,6 +257,7 @@ def saved_page(css_v: str, user: dict, nights: list[dict]) -> str:
                   <button type="submit">Remove</button>
                 </form>
               </div>
+              {_polaroid(n)}
             </article>""")
         body = "".join(items)
     else:
