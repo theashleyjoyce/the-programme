@@ -32,7 +32,7 @@ from config import DATA_DIR  # noqa: E402
 VENUES = DATA_DIR / "nyc_venues.json"
 CANDIDATES = DATA_DIR / "candidate_venues.json"
 API = "https://nominatim.openstreetmap.org/search"
-UA = {"User-Agent": "TheProgramme/0.1 (Yale MGT409 course project; ashley.wheeler@yale.edu)"}
+UA = {"User-Agent": "TheProgramme/0.1 (Yale MGT409 course project; https://github.com/theashleyjoyce/the-programme)"}
 
 # Rough bounds for the five boroughs. Anything outside is a bad match, not a
 # venue -- Nominatim will happily return a "Bowery Ballroom" in another country.

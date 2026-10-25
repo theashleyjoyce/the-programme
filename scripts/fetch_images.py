@@ -33,7 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 IMG_DIR = ROOT / "frontend" / "static" / "img"
 CREDITS = IMG_DIR / "credits.json"
 API = "https://api.openverse.org/v1/images/"
-UA = "NightEditor/0.1 (Yale MGT409 course project; ashley.wheeler@yale.edu)"
+UA = "TheProgramme/0.1 (Yale MGT409 course project; https://github.com/theashleyjoyce/the-programme)"
 
 # Licences we will ship. "pdm" = public domain mark.
 ALLOWED = {"cc0", "pdm", "by"}

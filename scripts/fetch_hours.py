@@ -27,7 +27,7 @@ from hours import parse       # noqa: E402
 CANDIDATES = DATA_DIR / "candidate_venues.json"
 VENUES = DATA_DIR / "nyc_venues.json"
 API = "https://nominatim.openstreetmap.org/search"
-UA = {"User-Agent": "TheProgramme/0.1 (Yale MGT409 course project; ashley.wheeler@yale.edu)"}
+UA = {"User-Agent": "TheProgramme/0.1 (Yale MGT409 course project; https://github.com/theashleyjoyce/the-programme)"}
 
 
 def main() -> int:
