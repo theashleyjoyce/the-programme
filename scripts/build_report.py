@@ -78,6 +78,24 @@ def dataset_facts() -> dict:
             "with_genre": sum(1 for r in rows if r.get("genre"))}
 
 
+def link_facts() -> dict:
+    """How many booking links were fetched, confirmed and rejected.
+
+    The claim that a link is only shown once the page has been read is only
+    worth making with the count attached, and the count has to come from the
+    cache the app actually reads rather than from memory.
+    """
+    path = ROOT / "data" / "link_checks.json"
+    if not path.is_file():
+        return {"checked": 0, "verified": 0, "rejected": 0}
+    import json as _json
+    rows = _json.loads(path.read_text(encoding="utf-8"))
+    values = list(rows.values()) if isinstance(rows, dict) else list(rows)
+    ok = sum(1 for v in values
+             if (v.get("ok") if isinstance(v, dict) else bool(v)))
+    return {"checked": len(values), "verified": ok, "rejected": len(values) - ok}
+
+
 def guardrail_facts() -> dict:
     """Run the suite so the report can only claim what currently passes.
 
@@ -174,8 +192,9 @@ def build() -> str:
         r'name="wants" value="[a-z_]+"',
         (ROOT / "frontend" / "templates" / "index.html").read_text()))
 
+    LK = link_facts()
     claims = "".join(
-        f"<h3>{e(h)}</h3><p>{e(' '.join(b.format(kinds=kinds_on_form).split()))}</p>"
+        f"<h3>{e(h)}</h3><p>{e(' '.join(b.format(kinds=kinds_on_form, **LK, **D).split()))}</p>"
         for h, b in c.WHATS_NEW_CLAIMS)
 
     agents = "".join(

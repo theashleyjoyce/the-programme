@@ -46,6 +46,11 @@ def main() -> int:
 
     led = json.loads((ROOT / "output" / "spend_ledger.json").read_text())
 
+    checks_raw = json.loads((ROOT / "data" / "link_checks.json").read_text())
+    vals = list(checks_raw.values()) if isinstance(checks_raw, dict) else list(checks_raw)
+    ok = sum(1 for v in vals if (v.get("ok") if isinstance(v, dict) else bool(v)))
+    links = {"checked": len(vals), "verified": ok, "rejected": len(vals) - ok}
+
     checks = [
         ("venues in the report", f"{D['venues_known']:,}" in rep, f"{D['venues_known']:,}"),
         ("venues in the slides", f"{D['venues_known']:,}" in sld, f"{D['venues_known']:,}"),
@@ -55,6 +60,11 @@ def main() -> int:
         ("every guardrail passes", failed == 0, f"{failed} failing"),
         ("no placeholder repo URL", "YOUR-USERNAME" not in rep, "set REPO_URL"),
         ("no missing screenshots", "SCREENSHOT TO ADD" not in rep, "add them"),
+        # The novelty claim quotes these, so they have to match the cache the
+        # app actually reads rather than whatever was true when it was written.
+        ("link checks in the report",
+         f"{links['verified']} named their venue" in rep,
+         f"{links['verified']} of {links['checked']}"),
         ("prices are the checked ones",
          abs(led.get("prices_used", {}).get("input_per_m", 0) - 0.20) < 1e-9,
          str(led.get("prices_used"))),

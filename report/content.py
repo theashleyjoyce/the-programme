@@ -58,6 +58,14 @@ MOTIVATION = [
 ]
 
 WHATS_NEW_INTRO = """
+This is not a trip planner. It plans one evening, in one city, for people who
+already live there. No flights, no hotels, no itinerary spread across days.
+The unit is a single night, and the hard part is not finding somewhere good.
+It is sequencing: what is on, what sits near it, what is still open when the
+first thing finishes, and whether anyone can get between the two without the
+evening turning into a commute. That is a different problem from planning a
+trip, and it is solved with different machinery.
+
 There is no shortage of products here, and several are close. Being honest
 about that is the point of this section."""
 
@@ -123,7 +131,9 @@ WHATS_NEW_CLAIMS = [
 
     ("We sequence, and we respect travel.",
      """A plan is stops in order, with real walking times between them, and a
-     bias toward keeping the night tight. Less time on the train means more of
+     bias toward keeping the night tight. Travel time is computed from the
+     venues' own coordinates with a street-grid correction, not guessed, and
+     the nearest station comes from MTA open data. Less time on the train means more of
      the evening spent somewhere. Anyone who wants to range across the city
      can say so and the radius opens up."""),
 
@@ -137,7 +147,10 @@ WHATS_NEW_CLAIMS = [
      """A room whose capacity nobody has checked is never offered to a group. A
      venue that only opens for ticketed events says so rather than implying you
      can walk in. A booking link is shown only once we have fetched the page
-     and confirmed it names that venue."""),
+     and confirmed it names that venue: {checked} links have been read that
+     way, {verified} named their venue and are shown, and {rejected} did not
+     and stay hidden. Two of those rejected links were invented by the model,
+     returned HTTP 200, and opened a different restaurant."""),
 ]
 
 AGENTS_INTRO = """
