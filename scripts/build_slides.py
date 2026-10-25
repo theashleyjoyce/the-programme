@@ -266,8 +266,9 @@ PER REQUEST ───┼──────────────────�
   <p style="margin-top:1em;font-size:.68em">An evening for any vibe. Every room
   size researched and cited; every booking link fetched and confirmed to open
   that venue.</p>
-  <p style="font-size:.56em;color:var(--accent)">TO ADD: measured comparison
-  against planning a night the usual way, with a real user.</p>
+  <p style="font-size:.56em;color:var(--soft)">All four measured. The time
+  saved against planning a night by hand is estimated, and labelled as such in
+  the report.</p>
 </section>
 
 <section>
