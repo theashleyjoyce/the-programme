@@ -110,6 +110,18 @@ def embed(name: str) -> str:
     return f"data:{mime};base64,{base64.b64encode(p.read_bytes()).decode()}"
 
 
+def logo_img(width: str = "160px") -> str:
+    """The mark, base64'd rather than inlined, so the SVG's own <style> block
+    cannot leak its rules into the report."""
+    path = ROOT / "frontend" / "static" / "img" / "programme.svg"
+    if not path.is_file():
+        return ""
+    import base64 as _b64
+    data = _b64.b64encode(path.read_bytes()).decode("ascii")
+    return (f'<img src="data:image/svg+xml;base64,{data}" alt="" '
+            f'style="width:{width};height:auto;display:block">')
+
+
 def figure(name: str, caption: str) -> str:
     src = embed(name)
     if not src:
@@ -234,10 +246,17 @@ padding:1.6rem;text-align:center;font-size:.8rem;letter-spacing:.06em}}
 .shot,table,.diagram{{page-break-inside:avoid}}}}
 </style></head><body><div class="page">
 
-<p class="meta">{e(c.COURSE)} · Final project</p>
-<h1>{e(c.TITLE)}</h1>
-<p class="lead">{e(c.TAGLINE)}. {e(c.ONE_LINER)}</p>
-<p><strong>{e(c.AUTHOR)}</strong></p>
+<div style="display:flex;align-items:flex-start;gap:2rem;justify-content:space-between">
+  <div style="flex:1 1 auto">
+    <p class="meta">{e(c.COURSE)} · Final project</p>
+    <h1 style="margin-bottom:.35rem">{e(c.TITLE)}</h1>
+    <p class="lead" style="margin:0">{e(c.TAGLINE)}.</p>
+    <div style="width:2.6rem;height:2px;background:#B8402C;margin:.7rem 0 .7rem"></div>
+    <p class="lead" style="margin:0">{e(c.ONE_LINER)}</p>
+  </div>
+  <div style="flex:0 0 auto">{logo_img()}</div>
+</div>
+<p style="margin-top:1.4rem"><strong>{e(c.AUTHOR)}</strong></p>
 <p><strong>Repository:</strong> <a href="{e(repo)}">{e(repo)}</a></p>
 {app_line}
 <p class="meta">Built {date.today():%d %B %Y}</p>

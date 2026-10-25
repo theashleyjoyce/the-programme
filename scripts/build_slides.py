@@ -45,6 +45,22 @@ def img(name: str) -> str:
     return f"data:{mime};base64,{base64.b64encode(p.read_bytes()).decode()}"
 
 
+def logo_img(height: str = "56vh") -> str:
+    """The mark, base64'd rather than inlined.
+
+    The SVG carries its own <style> block, and an inlined <svg> leaks those
+    rules into the deck, where a class as generic as .fill will find something
+    it was never meant to touch. As an image it is sealed, and the deck stays
+    a single file.
+    """
+    path = ROOT / "frontend" / "static" / "img" / "programme.svg"
+    if not path.is_file():
+        return ""
+    data = base64.b64encode(path.read_bytes()).decode("ascii")
+    return (f'<img src="data:image/svg+xml;base64,{data}" alt="" '
+            f'style="height:{height};width:auto;display:block">')
+
+
 def shot(name: str, alt: str = "") -> str:
     src = img(name)
     return (f'<img class="shot" src="{src}" alt="{e(alt)}">' if src
@@ -98,11 +114,19 @@ letter-spacing:.12em;text-transform:uppercase}}
 </style></head><body><div class="reveal"><div class="slides">
 
 <section>
-  <p class="kicker">{e(c.COURSE)}</p>
-  <h1>{e(c.TITLE)}</h1>
-  <p class="lead">{e(c.TAGLINE)}.<br>{e(c.ONE_LINER)}</p>
-  <p style="margin-top:1.4em"><strong>{e(c.AUTHOR)}</strong></p>
-  <p class="foot">{date.today():%B %Y}</p>
+  <div style="display:flex;align-items:center;gap:2.6em;text-align:left">
+    <div style="flex:1 1 60%">
+      <p class="kicker">{e(c.COURSE)}</p>
+      <h1 style="margin-bottom:.3em">{e(c.TITLE)}</h1>
+      <p class="lead" style="margin:0">{e(c.TAGLINE)}.</p>
+      <div style="width:3.2em;height:2px;background:var(--accent);
+                  margin:.85em 0 .8em"></div>
+      <p class="lead" style="margin:0">{e(c.ONE_LINER)}</p>
+      <p style="margin-top:1.5em"><strong>{e(c.AUTHOR)}</strong></p>
+      <p class="foot">{date.today():%B %Y}</p>
+    </div>
+    <div style="flex:0 0 auto">{logo_img()}</div>
+  </div>
 </section>
 
 <section>
