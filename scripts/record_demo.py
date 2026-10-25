@@ -255,6 +255,22 @@ def main() -> None:
     shutil.rmtree(tmp, ignore_errors=True)
     print(f"wrote {OUT.relative_to(ROOT)}  ({OUT.stat().st_size // 1024} KB)")
 
+    # Playwright only writes WebM, and macOS has no VP9 decoder, so a marker
+    # double-clicking the file would get nothing. imageio-ffmpeg ships a build
+    # with libx264; without it the WebM is still perfectly good in a browser.
+    try:
+        import imageio_ffmpeg
+        import subprocess
+        mp4 = OUT.with_suffix(".mp4")
+        subprocess.run(
+            [imageio_ffmpeg.get_ffmpeg_exe(), "-hide_banner", "-loglevel", "error",
+             "-i", str(OUT), "-c:v", "libx264", "-preset", "slow", "-crf", "23",
+             "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(mp4), "-y"],
+            check=True)
+        print(f"wrote {mp4.relative_to(ROOT)}  ({mp4.stat().st_size // 1024} KB)")
+    except Exception as exc:                                   # noqa: BLE001
+        print(f"no mp4 ({exc}); the webm plays in any browser")
+
 
 if __name__ == "__main__":
     main()

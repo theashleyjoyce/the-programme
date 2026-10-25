@@ -32,4 +32,5 @@ output/newsletter_outbox/
 # file that is submitted on Canvas rather than read from the repo. Regenerate
 # it with scripts/record_demo.py.
 output/demo.webm
+output/demo.mp4
 output/_video/
