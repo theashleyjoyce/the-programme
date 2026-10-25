@@ -36,11 +36,22 @@ SHOTS = ROOT / "report" / "screenshots"
 WORK = ROOT / "output"
 APP = "http://127.0.0.1:8010"
 
-WIDTH = 800
+# The app pages are shot wide. At 800px the plan page is 1:3.2 and eats three
+# printed pages on its own, which is how the report got to 26 against a limit
+# of 15. The same page at 1440px is 1:1.4 for identical content, because the
+# layout puts the map and transit beside the stop rather than under it.
+WIDTH = 1440
+TERM_WIDTH = 800
+
+# Tall on purpose. The maps are loading="lazy" iframes, and a full_page
+# screenshot does not scroll, so anything below the fold never loads: the
+# first stop had a map and the second was an empty box. A viewport taller
+# than the page means nothing is ever below the fold.
+VIEW_H = 2000
 
 # Long enough for OpenStreetMap to fetch and paint its tiles. Short of this
 # the map is a grey rectangle and the figure quietly lies about the product.
-MAP_WAIT = 9000
+MAP_WAIT = 14000
 PAGE_WAIT = 2500
 
 # A throwaway account so the saved-nights figure has something in it. Reused
@@ -84,7 +95,7 @@ def ansi_to_html(text: str) -> str:
 TERM_PAGE = """<!DOCTYPE html><html><head><meta charset="utf-8"><style>
 html,body{{background:#14110F;margin:0}}
 body{{padding:2rem 2.4rem;font-family:ui-monospace,Menlo,monospace;
-font-size:13px;line-height:1.55;color:#EDE7DF;width:800px;box-sizing:border-box}}
+font-size:13px;line-height:1.55;color:#EDE7DF;width:{TERM_WIDTH}px;box-sizing:border-box}}
 .bar{{color:#8A8077;font-size:13px;letter-spacing:.16em;text-transform:uppercase;
 border-bottom:1px solid #322D28;padding-bottom:.8rem;margin-bottom:1.2rem}}
 pre{{margin:0;white-space:pre-wrap;word-break:break-word}}
@@ -107,6 +118,29 @@ def plan_id(vibe: str) -> str:
         return json.load(r)["redirect"].rsplit("/", 1)[1]
 
 
+def _wake_lazy(page) -> None:
+    """Scroll the whole page so lazy content actually loads.
+
+    The maps are loading="lazy" iframes. A full_page screenshot does not
+    scroll, so every map below the fold stayed an empty box: the first stop
+    had a map and the second did not, in a figure whose whole job is to show
+    that each stop has one.
+    """
+    page.evaluate("""() => new Promise(resolve => {
+        const step = Math.round(window.innerHeight * 0.8);
+        let y = 0;
+        const timer = setInterval(() => {
+            window.scrollTo(0, y);
+            y += step;
+            if (y > document.body.scrollHeight) {
+                clearInterval(timer);
+                window.scrollTo(0, 0);
+                resolve();
+            }
+        }, 120);
+    })""")
+
+
 def main() -> None:
     try:
         from playwright.sync_api import sync_playwright
@@ -125,7 +159,7 @@ def main() -> None:
 
     with sync_playwright() as p:
         browser = p.chromium.launch(channel="chrome", headless=True)
-        page = browser.new_page(viewport={"width": WIDTH, "height": 1000})
+        page = browser.new_page(viewport={"width": WIDTH, "height": VIEW_H})
 
         def shoot(name: str, wait: int = PAGE_WAIT) -> None:
             page.wait_for_timeout(wait)
@@ -146,9 +180,10 @@ def main() -> None:
         shoot("02-working.png", 2200)
 
         # Undo the stub for everything that follows.
-        page = browser.new_page(viewport={"width": WIDTH, "height": 1000})
+        page = browser.new_page(viewport={"width": WIDTH, "height": VIEW_H})
 
         def shoot2(name: str, wait: int = PAGE_WAIT) -> None:
+            _wake_lazy(page)
             page.wait_for_timeout(wait)
             page.screenshot(path=str(SHOTS / name), full_page=True)
             print(f"  {name}")
@@ -193,9 +228,13 @@ def main() -> None:
             print(f"  running {script}...")
             body = ansi_to_html(run_terminal(script))
             tmp = WORK / name.replace(".png", ".html")
-            tmp.write_text(TERM_PAGE.format(cmd=cmd, body=body), encoding="utf-8")
-            page.goto(tmp.as_uri(), wait_until="load")
-            shoot2(name, 400)
+            tmp.write_text(TERM_PAGE.format(cmd=cmd, body=body, TERM_WIDTH=TERM_WIDTH), encoding="utf-8")
+            term = browser.new_page(viewport={"width": TERM_WIDTH, "height": VIEW_H})
+            term.goto(tmp.as_uri(), wait_until="load")
+            term.wait_for_timeout(400)
+            term.screenshot(path=str(SHOTS / name), full_page=True)
+            term.close()
+            print(f"  {name}")
 
         browser.close()
 

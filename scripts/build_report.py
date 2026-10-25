@@ -237,13 +237,15 @@ li{{margin-bottom:.55rem}}
 .diagram{{font-family:ui-monospace,Menlo,monospace;font-size:.72rem;line-height:1.5;
 background:#F2EDE6;padding:1.2rem;white-space:pre;overflow-x:auto;margin:1.2rem 0}}
 .shot{{margin:1.4rem 0}}
-.shot img{{width:100%;border:1px solid var(--rule);display:block}}
+.shot img{{width:auto;max-width:100%;max-height:620px;border:1px solid var(--rule);
+display:block;margin:0 auto}}
 .shot figcaption{{font-size:.76rem;color:var(--soft);padding-top:.5rem}}
 .shot--missing .shot__todo{{border:1px dashed var(--accent);color:var(--accent);
 padding:1.6rem;text-align:center;font-size:.8rem;letter-spacing:.06em}}
 .todo{{background:#FFF4E5;border-left:2px solid #C98A00;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.9rem}}
 @media print{{body{{font-size:10.5pt}}.page{{max-width:none;padding:0}}h2{{page-break-after:avoid}}
-.shot,table,.diagram{{page-break-inside:avoid}}}}
+.shot,table,.diagram{{page-break-inside:avoid}}
+.shot img{{max-height:4in}}}}
 </style></head><body><div class="page">
 
 <div style="display:flex;align-items:flex-start;gap:2rem;justify-content:space-between">

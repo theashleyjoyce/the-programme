@@ -13,6 +13,7 @@ an email has to be. Mail clients strip stylesheets.
 
 from __future__ import annotations
 
+import base64
 import html
 import re
 from datetime import datetime
@@ -20,6 +21,8 @@ from pathlib import Path
 from typing import Any
 
 OUTBOX = Path(__file__).resolve().parent.parent / "output" / "newsletter_outbox"
+MARK = (Path(__file__).resolve().parent.parent
+        / "frontend" / "static" / "img" / "programme-mark.png")
 
 SUBJECT = "Welcome to The Programme!"
 PREHEADER = "Tell us the vibe. We plan the night."
@@ -34,6 +37,22 @@ RULE = "#E4DCD2"
 def _safe_name(value: str) -> str:
     """A filename that cannot climb out of the outbox."""
     return re.sub(r"[^A-Za-z0-9_.-]", "-", value)[:48] or "subscriber"
+
+
+def _mark_tag(width: int = 150) -> str:
+    """The mark, base64'd into the message body.
+
+    A PNG rather than the SVG the site uses: Gmail and Outlook will not render
+    inline SVG, and a linked image needs a public host this project does not
+    have. Embedding it means the note looks right wherever it is opened, and
+    it stays a single self-contained file in the outbox.
+    """
+    if not MARK.is_file():
+        return ""
+    data = base64.b64encode(MARK.read_bytes()).decode("ascii")
+    return (f'<img src="data:image/png;base64,{data}" width="{width}" '
+            f'alt="The Programme" style="width:{width}px;height:auto;'
+            f'display:block;border:0;">')
 
 
 def welcome_html(name: str = "") -> str:
@@ -59,12 +78,19 @@ def welcome_html(name: str = "") -> str:
   </td></tr>
 
   <tr><td style="padding:38px 0 0;">
-    <p style="margin:0 0 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;
-       letter-spacing:.2em;text-transform:uppercase;color:{ACCENT};font-weight:600;">
-      New York, Your Way</p>
-    <h1 style="margin:0 0 22px;font-family:Georgia,'Times New Roman',serif;
-       font-size:36px;line-height:1.15;font-weight:500;color:{INK};">
-      Tell us the vibe.<br>We plan the night.</h1>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td valign="top" style="padding-right:18px;">
+          <p style="margin:0 0 6px;font-family:Helvetica,Arial,sans-serif;
+             font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+             color:{ACCENT};font-weight:600;">New York, Your Way</p>
+          <h1 style="margin:0 0 22px;font-family:Georgia,'Times New Roman',serif;
+             font-size:34px;line-height:1.15;font-weight:500;color:{INK};">
+            Tell us the vibe.<br>We plan the night.</h1>
+        </td>
+        <td valign="top" width="150" style="width:150px;">{_mark_tag()}</td>
+      </tr>
+    </table>
   </td></tr>
 
   <tr><td style="font-family:Helvetica,Arial,sans-serif;font-size:15px;

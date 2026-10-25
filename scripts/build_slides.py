@@ -207,14 +207,11 @@ PER REQUEST ───┼──────────────────�
 
 <section>
   <p class="kicker">The app</p>
-  <h2>Get a night, in order</h2>
-  {shot("03-plan.png", "A finished plan")}
-</section>
-
-<section>
-  <p class="kicker">The app</p>
-  <h2>Keep the ones worth keeping</h2>
-  {shot("07-saved.png", "Saved nights, with the ones you went to marked")}
+  <h2>Get a night, then keep it</h2>
+  <div class="two">
+    <div>{shot("03-plan.png", "A finished plan")}</div>
+    <div>{shot("07-saved.png", "Saved nights, with the ones you went to marked")}</div>
+  </div>
 </section>
 
 <section>
